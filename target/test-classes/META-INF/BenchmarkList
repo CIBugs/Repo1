@@ -1,0 +1,2 @@
+JMH S 40 com.github.davidmoten.rx.jdbc.Benchmarks S 97 com.github.davidmoten.rx.jdbc.generated.Benchmarks_selectUsingLibraryUsingExplicitMapping_jmhTest S 38 selectUsingLibraryUsingExplicitMapping S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 40 com.github.davidmoten.rx.jdbc.Benchmarks S 77 com.github.davidmoten.rx.jdbc.generated.Benchmarks_selectUsingRawJdbc_jmhTest S 18 selectUsingRawJdbc S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
