@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.builder.ToStringBuilderTest
+-------------------------------------------------------------------------------
+Tests run: 74, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec <<< FAILURE! - in org.apache.commons.lang3.builder.ToStringBuilderTest
+testReflectionHierarchyArrayList(org.apache.commons.lang3.builder.ToStringBuilderTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...e50ce6[elementData={[<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>]},size=0,modCount=0]> but was:<...e50ce6[elementData={[]},size=0,modCount=0]>
+	at org.apache.commons.lang3.builder.ToStringBuilderTest.testReflectionHierarchyArrayList(ToStringBuilderTest.java:323)
+
