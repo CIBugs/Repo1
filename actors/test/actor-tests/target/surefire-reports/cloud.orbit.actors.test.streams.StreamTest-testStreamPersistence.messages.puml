@@ -1,0 +1,31 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[srgXTmAqaalgCxZ57-p6gB]]]
+"Thread:197" -> "SimpleStream:1195259493:test" : [s1:m3] publish(data)
+activate "SimpleStream:1195259493:test"
+hnote over "SimpleStream:1195259493:test" #white : [s1] activate
+"SimpleStream:1195259493:test" --> "Thread:197" : [s1:r3; 1,168us] (response to publish): null
+deactivate "SimpleStream:1195259493:test"
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[QtWURVVxxYdPttVuHt6cPB]]]
+"Thread:197" -> "SimpleStream:1195259493:test" : [s2:m2] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n29c1b8ff)
+activate "SimpleStream:1195259493:test"
+"SimpleStream:1195259493:test" --> "Thread:197" : [s2:r2; 1,994us] (response to subscribe): Xy3kH_\nD866nE_Vhn
+deactivate "SimpleStream:1195259493:test"
+"Thread:197" -> "SimpleStream:1195259493:test" : [s2:m3] publish(hello)
+activate "SimpleStream:1195259493:test"
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:_lMhGCh_\nmVircbffcTqb4B" : [s1:m5] onNext(hello, null)
+activate "SimpleStreamProxy:_lMhGCh_\nmVircbffcTqb4B"
+"SimpleStreamProxy:_lMhGCh_\nmVircbffcTqb4B" --> "SimpleStream:1195259493:test" : [s1:r5; 716us] (response to onNext): null
+deactivate "SimpleStreamProxy:_lMhGCh_\nmVircbffcTqb4B"
+"SimpleStream:1195259493:test" --> "Thread:197" : [s2:r3; 1,529us] (response to publish): null
+deactivate "SimpleStream:1195259493:test"
+hnote over "SimpleStream:1195259493:test" #white : [s1] deactivate
+"Thread:197" -> "SimpleStream:1195259493:test" : [s2:m4] publish(hello2)
+activate "SimpleStream:1195259493:test"
+hnote over "SimpleStream:1195259493:test" #white : [s2] activate
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:_lMhGCh_\nmVircbffcTqb4B" : [s2:m6] onNext(hello2, null)
+activate "SimpleStreamProxy:_lMhGCh_\nmVircbffcTqb4B"
+"SimpleStreamProxy:_lMhGCh_\nmVircbffcTqb4B" --> "SimpleStream:1195259493:test" : [s2:r6; 439us] (response to onNext): null
+deactivate "SimpleStreamProxy:_lMhGCh_\nmVircbffcTqb4B"
+"SimpleStream:1195259493:test" --> "Thread:197" : [s2:r4; 4,825us] (response to publish): null
+deactivate "SimpleStream:1195259493:test"
+@enduml

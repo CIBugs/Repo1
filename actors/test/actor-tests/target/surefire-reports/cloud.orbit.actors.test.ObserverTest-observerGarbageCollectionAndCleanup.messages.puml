@@ -1,0 +1,11 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[OQ5Rjx7oan-sZY6V6s6lqA]]]
+"Thread:355" -> "SomeChatObserver:3aIbdeur2_\neIpWEGOAor3D" : [s1:m3] receiveMessage(null, hello)
+activate "SomeChatObserver:3aIbdeur2_\neIpWEGOAor3D"
+"SomeChatObserver:3aIbdeur2_\neIpWEGOAor3D" --> "Thread:355" : [s1:r3; 117us] (response to receiveMessage): \nnull
+deactivate "SomeChatObserver:3aIbdeur2_\neIpWEGOAor3D"
+"Thread:355" -> "SomeChatObserver:3aIbdeur2_\neIpWEGOAor3D" : [s1:m4] receiveMessage(null, hello)
+activate "SomeChatObserver:3aIbdeur2_\neIpWEGOAor3D"
+"SomeChatObserver:3aIbdeur2_\neIpWEGOAor3D" --> "Thread:355" : [s1:r4; 708us] (exception at receiveMessage):\ncloud.orbit.actors.exceptions.ObserverNotFound
+deactivate "SomeChatObserver:3aIbdeur2_\neIpWEGOAor3D"
+@enduml

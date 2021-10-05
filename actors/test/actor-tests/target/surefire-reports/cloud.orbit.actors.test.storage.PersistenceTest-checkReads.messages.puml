@@ -1,0 +1,19 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[UJlfk-VSfbq2D1_l4BlLNA]]]
+"checkReads" -> "SomeMatch:300" : [s1:m3] addPlayer(SomePlayer:101)
+activate "SomeMatch:300"
+hnote over "SomeMatch:300" #white : [s1] activate
+"SomeMatch:300" --> "checkReads" : [s1:r3; 8,408us] (response to addPlayer): null
+deactivate "SomeMatch:300"
+hnote over "SomeMatch:300" #white : [s1] deactivate
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[WnqmTxRfUqGxbJYur2ssqD]]]
+"checkReads" -> "SomeMatch:300" : [s2:m3] getPlayers
+activate "SomeMatch:300"
+hnote over "SomeMatch:300" #white : [s2] activate
+"SomeMatch:300" --> "checkReads" : [s2:r3; 4,993us] (response to getPlayers): [\ncloud.orbit.actors.test.actors.\nSomePlayer:101]
+deactivate "SomeMatch:300"
+"checkReads" -> "SomeMatch:300" : [s2:m5] getPlayers
+activate "SomeMatch:300"
+"SomeMatch:300" --> "checkReads" : [s2:r5; 256us] (response to getPlayers): [\ncloud.orbit.actors.test.actors.\nSomePlayer:101]
+deactivate "SomeMatch:300"
+@enduml

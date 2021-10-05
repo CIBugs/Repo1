@@ -1,0 +1,70 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[HzKjVSvwPGdkGwPjZCWx5C]]]
+"checkWritesTest" -> "Storage1:301" : [s1:m3] put(I)
+activate "Storage1:301"
+hnote over "Storage1:301" #white : [s1] activate
+"Storage1:301" --> "checkWritesTest" : [s1:r3; 16,251us] (response to put): null
+deactivate "Storage1:301"
+"checkWritesTest" -> "Storage1:302" : [s1:m5] put(am)
+activate "Storage1:302"
+hnote over "Storage1:302" #white : [s1] activate
+"Storage1:302" --> "checkWritesTest" : [s1:r5; 447us] (response to put): null
+deactivate "Storage1:302"
+"checkWritesTest" -> "Storage1:303" : [s1:m6] put(testing)
+activate "Storage1:303"
+hnote over "Storage1:303" #white : [s1] activate
+"Storage1:303" --> "checkWritesTest" : [s1:r6; 366us] (response to put): null
+deactivate "Storage1:303"
+"checkWritesTest" -> "Storage1:304" : [s1:m7] put(something)
+activate "Storage1:304"
+hnote over "Storage1:304" #white : [s1] activate
+"Storage1:304" --> "checkWritesTest" : [s1:r7; 304us] (response to put): null
+deactivate "Storage1:304"
+"checkWritesTest" -> "Storage2:400" : [s1:m8] put(really)
+activate "Storage2:400"
+hnote over "Storage2:400" #white : [s1] activate
+"Storage2:400" --> "checkWritesTest" : [s1:r8; 17,458us] (response to put): null
+deactivate "Storage2:400"
+"checkWritesTest" -> "Storage2:401" : [s1:m10] put(cool)
+activate "Storage2:401"
+hnote over "Storage2:401" #white : [s1] activate
+"Storage2:401" --> "checkWritesTest" : [s1:r10; 1,288us] (response to put): null
+deactivate "Storage2:401"
+hnote over "Storage1:304" #white : [s1] deactivate
+hnote over "Storage1:303" #white : [s1] deactivate
+hnote over "Storage1:302" #white : [s1] deactivate
+hnote over "Storage1:301" #white : [s1] deactivate
+hnote over "Storage2:401" #white : [s1] deactivate
+hnote over "Storage2:400" #white : [s1] deactivate
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[myCUaLAKgoEIaVdOVfKdrA]]]
+"checkWritesTest" -> "Storage1:301" : [s2:m3] get
+activate "Storage1:301"
+hnote over "Storage1:301" #white : [s2] activate
+"Storage1:301" --> "checkWritesTest" : [s2:r3; 1,746us] (response to get): I
+deactivate "Storage1:301"
+"checkWritesTest" -> "Storage1:302" : [s2:m5] get
+activate "Storage1:302"
+hnote over "Storage1:302" #white : [s2] activate
+"Storage1:302" --> "checkWritesTest" : [s2:r5; 625us] (response to get): am
+deactivate "Storage1:302"
+"checkWritesTest" -> "Storage1:303" : [s2:m6] get
+activate "Storage1:303"
+hnote over "Storage1:303" #white : [s2] activate
+"Storage1:303" --> "checkWritesTest" : [s2:r6; 542us] (response to get): testing
+deactivate "Storage1:303"
+"checkWritesTest" -> "Storage1:304" : [s2:m7] get
+activate "Storage1:304"
+hnote over "Storage1:304" #white : [s2] activate
+"Storage1:304" --> "checkWritesTest" : [s2:r7; 1,255us] (response to get): something
+deactivate "Storage1:304"
+"checkWritesTest" -> "Storage2:400" : [s2:m8] get
+activate "Storage2:400"
+hnote over "Storage2:400" #white : [s2] activate
+"Storage2:400" --> "checkWritesTest" : [s2:r8; 1,449us] (response to get): really
+deactivate "Storage2:400"
+"checkWritesTest" -> "Storage2:401" : [s2:m10] get
+activate "Storage2:401"
+hnote over "Storage2:401" #white : [s2] activate
+"Storage2:401" --> "checkWritesTest" : [s2:r10; 549us] (response to get): cool
+deactivate "Storage2:401"
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[4mvkiOtHOZFGwbDuCO_mYB]]]
+"waitForNodeTest" -> "SomeMatch:100" : [s1:m2] getNodeId
+activate "SomeMatch:100"
+note over "Execution:2054787417": debug: Invoking [cloud.orbit.actors.runtime.NodeCapabilities:.1213301087] 
+note over "Execution:2054787417": debug: Invoking [cloud.orbit.actors.runtime.NodeCapabilities:.1213301087] 
+hnote over "SomeMatch:100" #white : [s1] activate
+note over "Execution:2054787417": debug: Invoking [cloud.orbit.actors.runtime.ReminderController:null.-456682811] 
+note over "Execution:2054787417": debug: Invoking [cloud.orbit.actors.test.actors.SomeMatch:100.-1094334988] 
+"SomeMatch:100" --> "waitForNodeTest" : [s1:r2; 2,925us] (response to getNodeId): Orbit[\n4mvkiOtHOZFGwbDuCO_mYB]
+deactivate "SomeMatch:100"
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[DhcowtX8_r9ll7jVCfLTnC]]]
+@enduml

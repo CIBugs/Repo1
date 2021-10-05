@@ -1,0 +1,156 @@
+@startuml
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r112; 321us] (response to sayHello): bla 74
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m113] sayHello(bla 75)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r113; 333us] (response to sayHello): bla 75
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m115] sayHello(bla 76)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r115; 319us] (response to sayHello): bla 76
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m116] sayHello(bla 77)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r116; 209us] (response to sayHello): bla 77
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m118] sayHello(bla 78)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r118; 207us] (response to sayHello): bla 78
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m120] sayHello(bla 79)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r120; 258us] (response to sayHello): bla 79
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m121] sayHello(bla 80)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r121; 349us] (response to sayHello): bla 80
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m122] sayHello(bla 81)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r122; 208us] (response to sayHello): bla 81
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m124] sayHello(bla 82)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r124; 420us] (response to sayHello): bla 82
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m125] sayHello(bla 83)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r125; 501us] (response to sayHello): bla 83
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m127] sayHello(bla 84)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r127; 301us] (response to sayHello): bla 84
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m129] sayHello(bla 85)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r129; 264us] (response to sayHello): bla 85
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m131] sayHello(bla 86)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r131; 205us] (response to sayHello): bla 86
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m133] sayHello(bla 87)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r133; 308us] (response to sayHello): bla 87
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m135] sayHello(bla 88)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r135; 353us] (response to sayHello): bla 88
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m136] sayHello(bla 89)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r136; 204us] (response to sayHello): bla 89
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m138] sayHello(bla 90)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r138; 300us] (response to sayHello): bla 90
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m139] sayHello(bla 91)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r139; 272us] (response to sayHello): bla 91
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m140] sayHello(bla 92)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r140; 166us] (response to sayHello): bla 92
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m142] sayHello(bla 93)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r142; 260us] (response to sayHello): bla 93
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m143] sayHello(bla 94)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r143; 219us] (response to sayHello): bla 94
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m144] sayHello(bla 95)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r144; 430us] (response to sayHello): bla 95
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m146] sayHello(bla 96)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r146; 274us] (response to sayHello): bla 96
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m147] sayHello(bla 97)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s2] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r147; 133us] (response to sayHello): bla 97
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s2] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m149] sayHello(bla 98)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r149; 248us] (response to sayHello): bla 98
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+"twoStagesSameActor" -> "Hello:1" : [s2:m150] sayHello(bla 99)
+activate "Hello:1"
+hnote over "Hello:1" #white : [s1] activate
+"Hello:1" --> "twoStagesSameActor" : [s2:r150; 232us] (response to sayHello): bla 99
+deactivate "Hello:1"
+hnote over "Hello:1" #white : [s1] deactivate
+@enduml

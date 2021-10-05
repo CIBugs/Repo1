@@ -68,6 +68,7 @@ cloud/orbit/actors/cloner/KryoCloner$1$3.class
 cloud/orbit/actors/runtime/Execution.class
 cloud/orbit/actors/Stage$4$1.class
 META-INF/services/orbit/classes/cloud.orbit.actors.runtime.ReminderControllerActor.yml
+cloud/orbit/actors/runtime/DefaultActorConstructionExtension.class
 cloud/orbit/actors/Stage$Builder.class
 cloud/orbit/actors/runtime/InternalUtils.class
 cloud/orbit/actors/cloner/KryoCloner$1$1.class

@@ -1,0 +1,34 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[WvE1FkB-2ETumqGeu4TFEB]]]
+"Thread:166" -> "Hello:0" : [cc0:m1] getStreamReference
+activate "Hello:0"
+"Thread:22" -> "Hello:0" : [s1:m3] getStreamReference
+activate "Hello:0"
+hnote over "Hello:0" #white : [s1] activate
+"Hello:0" --> "Thread:22" : [s1:r3; 31,285us] (response to getStreamReference)\n: cloud.orbit.actors.runtime.\nAsyncStreamReference@5b6bdc41
+deactivate "Hello:0"
+"Hello:0" --> "Thread:166" : [cc0:r1; 116,178us] (response to getStreamReference)\n: cloud.orbit.actors.runtime.\nAsyncStreamReference@57679be5
+deactivate "Hello:0"
+"Thread:166" -> "ServerSideStreamProxy:0" : [cc0:m2] subscribe(default, 1195259493, hello:0,\n ClientSideStreamProxy:\num0ZEl7CMys5IyBTVtwGVC)
+activate "ServerSideStreamProxy:0"
+"Thread:107" -> "SimpleStream:1195259493:hello:0" : [s1:m5] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\ne1f678c)
+activate "SimpleStream:1195259493:hello:0"
+hnote over "SimpleStream:1195259493:hello:0" #white : [s1] activate
+"SimpleStream:1195259493:hello:0" --> "Thread:107" : [s1:r5; 3,376us] (response to subscribe): \nnnYwnPvgIU0DqnVA
+deactivate "SimpleStream:1195259493:hello:0"
+"ServerSideStreamProxy:0" --> "Thread:166" : [cc0:r2; 22,640us] (response to subscribe): cloud.\norbit.actors.streams.simple.\nStreamReference$\nSimpleStreamHandle@67836900
+deactivate "ServerSideStreamProxy:0"
+"Thread:166" -> "Hello:0" : [s1:m7] sayHello(hello2)
+activate "Hello:0"
+"Hello:0" -> "SimpleStream:1195259493:hello:0" : [s1:m8] publish(hello2)
+activate "SimpleStream:1195259493:hello:0"
+"SimpleStream:1195259493:hello:0" -> "SimpleStreamProxy:\nXus8dpk1y9UG1b3JmGi7MC" : [s1:m9] onNext(hello2, null)
+activate "SimpleStreamProxy:\nXus8dpk1y9UG1b3JmGi7MC"
+"Thread:22" -> "ClientSideStreamProxy:\num0ZEl7CMys5IyBTVtwGVC" : [3] onNext(default, hello:0, hello2)
+"SimpleStreamProxy:\nXus8dpk1y9UG1b3JmGi7MC" --> "SimpleStream:1195259493:hello:0" : [s1:r9; 4,730us] (response to onNext): null
+deactivate "SimpleStreamProxy:\nXus8dpk1y9UG1b3JmGi7MC"
+"SimpleStream:1195259493:hello:0" --> "Hello:0" : [s1:r8; 4,979us] (response to publish): null
+deactivate "SimpleStream:1195259493:hello:0"
+"Hello:0" --> "Thread:166" : [s1:r7; 5,262us] (response to sayHello): null
+deactivate "Hello:0"
+@enduml

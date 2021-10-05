@@ -1,0 +1,26 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[QaWnBWnNUV64S0GH2eRO6A]]]
+"Thread:186" -> "SimpleStream:1195259493:test" : [s1:m3] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n60352f0f)
+activate "SimpleStream:1195259493:test"
+hnote over "SimpleStream:1195259493:test" #white : [s1] activate
+"SimpleStream:1195259493:test" --> "Thread:186" : [s1:r3; 9,947us] (response to subscribe): \ng4UFZiGanaP-IUIZ
+deactivate "SimpleStream:1195259493:test"
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[v5W2kNey6Zb7FPKZmoRixC]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[Z4B37QHQAET8Xp0alLhLBC]]]
+"Thread:186" -> "SimpleStream:1195259493:test" : [s2:m2] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n1d640435)
+activate "SimpleStream:1195259493:test"
+"SimpleStream:1195259493:test" --> "Thread:186" : [s2:r2; 3,621us] (response to subscribe): \n1LU8QLmLRhv0iY3t
+deactivate "SimpleStream:1195259493:test"
+"Thread:186" -> "SimpleStream:1195259493:test" : [s2:m3] unsubscribe(g4UFZiGanaP-IUIZ)
+activate "SimpleStream:1195259493:test"
+"SimpleStream:1195259493:test" --> "Thread:186" : [s2:r3; 794us] (response to unsubscribe): null
+deactivate "SimpleStream:1195259493:test"
+"Thread:186" -> "SimpleStream:1195259493:test" : [s2:m4] publish(hello2)
+activate "SimpleStream:1195259493:test"
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:\n73MRLAOwubPY9ZBP7Nl74A" : [s1:m5] onNext(hello2, null)
+activate "SimpleStreamProxy:\n73MRLAOwubPY9ZBP7Nl74A"
+"SimpleStreamProxy:\n73MRLAOwubPY9ZBP7Nl74A" --> "SimpleStream:1195259493:test" : [s1:r5; 774us] (response to onNext): null
+deactivate "SimpleStreamProxy:\n73MRLAOwubPY9ZBP7Nl74A"
+"SimpleStream:1195259493:test" --> "Thread:186" : [s2:r4; 2,602us] (response to publish): null
+deactivate "SimpleStream:1195259493:test"
+@enduml

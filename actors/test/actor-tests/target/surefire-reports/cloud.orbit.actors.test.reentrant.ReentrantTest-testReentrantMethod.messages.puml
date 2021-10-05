@@ -1,0 +1,12 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[EcUlG6lmtdPzGm7BD25o_B]]]
+"Thread:471" -> "ReentrantActor:1" : [s1:m3] doSomething
+activate "ReentrantActor:1"
+hnote over "ReentrantActor:1" #white : [s1] activate
+"Thread:471" -> "ReentrantActor:1" : [s1:m5] doSomething3
+activate "ReentrantActor:1"
+"ReentrantActor:1" --> "Thread:471" : [s1:r5; 316us] (response to doSomething3): null
+deactivate "ReentrantActor:1"
+"ReentrantActor:1" --> "Thread:471" : [s1:r3; 2,707us] (response to doSomething): null
+deactivate "ReentrantActor:1"
+@enduml

@@ -41,15 +41,5 @@ public interface ActorConstructionExtension extends ActorExtension
      * @param concreteClass concrete class of actor instance to construct
      * @return instance of concreteClass
      */
-    default <T> T newInstance(Class<T> concreteClass)
-    {
-        try
-        {
-            return concreteClass.newInstance();
-        }
-        catch (Exception ex)
-        {
-            throw new UncheckedException(ex);
-        }
-    }
+    <T> T newInstance(Class<T> concreteClass);
 }
