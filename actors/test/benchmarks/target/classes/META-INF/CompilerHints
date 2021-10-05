@@ -1,0 +1,12 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,cloud/orbit/actors/test/SingleNodeBenchmark.avgRequestTime_batched
+inline,cloud/orbit/actors/test/SingleNodeBenchmark.avgRequestTime_singleThread
+inline,cloud/orbit/actors/test/SingleNodeBenchmark.requestThroughput
+inline,cloud/orbit/actors/test/SingleNodeBenchmark.setup
+inline,cloud/orbit/actors/test/SingleNodeBenchmark.setupIteration
+inline,cloud/orbit/actors/test/SingleNodeBenchmark.tearDown
+inline,org/openjdk/jmh/infra/Blackhole.clearSinks

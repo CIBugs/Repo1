@@ -1,0 +1,14 @@
+cloud/orbit/actors/extensions/json/ActorReferenceModule$1.class
+cloud/orbit/actors/extensions/json/ActorReferenceModule$2.class
+cloud/orbit/actors/extensions/json/ActorReferenceModule$ObserverRefDeserializer.class
+cloud/orbit/actors/extensions/json/ActorReferenceModule$RefSerializer.class
+cloud/orbit/actors/extensions/json/ClassIdTypeResolverBuilder$1.class
+cloud/orbit/actors/extensions/json/ActorReferenceModule$RefDeserializer.class
+cloud/orbit/actors/extensions/json/JsonMessageSerializer.class
+cloud/orbit/actors/extensions/json/ClassIdResolver.class
+cloud/orbit/actors/extensions/json/ClassIdAsPropertyTypeDeserializer.class
+cloud/orbit/actors/extensions/json/ClassIdTypeResolverBuilder.class
+cloud/orbit/actors/extensions/json/ActorReferenceModule$ObserverRefSerializer.class
+cloud/orbit/actors/extensions/json/ClassIdAsPropertyTypeSerializer.class
+cloud/orbit/actors/extensions/json/InMemoryJSONStorageExtension.class
+cloud/orbit/actors/extensions/json/ActorReferenceModule.class
