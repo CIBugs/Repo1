@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="30" failures="0" name="retrofit.RestAdapterTest" time="0.157" errors="0" skipped="0">
+<testsuite tests="30" failures="0" name="retrofit.RestAdapterTest" time="0.097" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/retrofit-1411059b62c1abfe51b1b10d63ae8c254c0786a7"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/retrofit-fe1d01684c96d55224c67e67c31c3fd8faa05c24"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/retrofit-1411059b62c1abfe51b1b10d63ae8c254c0786a7"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/retrofit-fe1d01684c96d55224c67e67c31c3fd8faa05c24"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -62,34 +62,34 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseHeadersAndArgsWhenResponseBodyAbsent" time="0.008"/>
-  <testcase classname="retrofit.RestAdapterTest" name="logErrorRequestResponseFullWhenResponseBodyAbsent" time="0"/>
-  <testcase classname="retrofit.RestAdapterTest" name="getResponseDirectlyAsync" time="0.002"/>
-  <testcase classname="retrofit.RestAdapterTest" name="closeInputStream" time="0.025"/>
-  <testcase classname="retrofit.RestAdapterTest" name="synchronousDoesNotUseExecutors" time="0.002"/>
-  <testcase classname="retrofit.RestAdapterTest" name="unexpectedExceptionThrows" time="0.012"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseHeadersAndArgsWhenResponseBodyAbsent" time="0.007"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logErrorRequestResponseFullWhenResponseBodyAbsent" time="0.004"/>
+  <testcase classname="retrofit.RestAdapterTest" name="getResponseDirectlyAsync" time="0.003"/>
+  <testcase classname="retrofit.RestAdapterTest" name="closeInputStream" time="0.023"/>
+  <testcase classname="retrofit.RestAdapterTest" name="synchronousDoesNotUseExecutors" time="0.001"/>
+  <testcase classname="retrofit.RestAdapterTest" name="unexpectedExceptionThrows" time="0.001"/>
   <testcase classname="retrofit.RestAdapterTest" name="errorResponseThrowsHttpError" time="0"/>
-  <testcase classname="retrofit.RestAdapterTest" name="streamingResponse" time="0"/>
-  <testcase classname="retrofit.RestAdapterTest" name="logRequestResponseHeadersAndArgs" time="0"/>
-  <testcase classname="retrofit.RestAdapterTest" name="clientExceptionThrowsNetworkError" time="0"/>
-  <testcase classname="retrofit.RestAdapterTest" name="logRequestResponseBasic" time="0"/>
-  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseFullWhenResponseBodyAbsent" time="0"/>
-  <testcase classname="retrofit.RestAdapterTest" name="getResponseDirectly" time="0"/>
-  <testcase classname="retrofit.RestAdapterTest" name="bodyTypedInputExceptionThrowsNetworkError" time="0.011"/>
-  <testcase classname="retrofit.RestAdapterTest" name="logErrorRequestResponseFullWhenMimeTypeMissing" time="0.001"/>
-  <testcase classname="retrofit.RestAdapterTest" name="observableUsesHttpExecutor" time="0.005"/>
-  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseHeadersAndArgsWhenResponseBodyPresent" time="0.005"/>
+  <testcase classname="retrofit.RestAdapterTest" name="streamingResponse" time="0.001"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logRequestResponseHeadersAndArgs" time="0.002"/>
+  <testcase classname="retrofit.RestAdapterTest" name="clientExceptionThrowsNetworkError" time="0.001"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logRequestResponseBasic" time="0.001"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseFullWhenResponseBodyAbsent" time="0.002"/>
+  <testcase classname="retrofit.RestAdapterTest" name="getResponseDirectly" time="0.001"/>
+  <testcase classname="retrofit.RestAdapterTest" name="bodyTypedInputExceptionThrowsNetworkError" time="0.013"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logErrorRequestResponseFullWhenMimeTypeMissing" time="0.002"/>
+  <testcase classname="retrofit.RestAdapterTest" name="observableUsesHttpExecutor" time="0.006"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseHeadersAndArgsWhenResponseBodyPresent" time="0.003"/>
   <testcase classname="retrofit.RestAdapterTest" name="observableHandlesParams" time="0.002"/>
   <testcase classname="retrofit.RestAdapterTest" name="observableCallsOnError" time="0.001"/>
   <testcase classname="retrofit.RestAdapterTest" name="objectMethodsStillWork" time="0"/>
-  <testcase classname="retrofit.RestAdapterTest" name="malformedResponseThrowsConversionException" time="0.001"/>
-  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseFullWhenMimeTypeMissing" time="0.002"/>
-  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseFullWhenResponseBodyPresent" time="0.003"/>
-  <testcase classname="retrofit.RestAdapterTest" name="logRequestResponseHeaders" time="0.002"/>
-  <testcase classname="retrofit.RestAdapterTest" name="asynchronousUsesExecutors" time="0.001"/>
-  <testcase classname="retrofit.RestAdapterTest" name="interfaceWithExtendIsNotSupported" time="0.067"/>
-  <testcase classname="retrofit.RestAdapterTest" name="observableCallsOnNext" time="0.002"/>
-  <testcase classname="retrofit.RestAdapterTest" name="errorAsync" time="0.002"/>
+  <testcase classname="retrofit.RestAdapterTest" name="malformedResponseThrowsConversionException" time="0"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseFullWhenMimeTypeMissing" time="0.001"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logSuccessfulRequestResponseFullWhenResponseBodyPresent" time="0.001"/>
+  <testcase classname="retrofit.RestAdapterTest" name="logRequestResponseHeaders" time="0.001"/>
+  <testcase classname="retrofit.RestAdapterTest" name="asynchronousUsesExecutors" time="0.002"/>
+  <testcase classname="retrofit.RestAdapterTest" name="interfaceWithExtendIsNotSupported" time="0.014"/>
+  <testcase classname="retrofit.RestAdapterTest" name="observableCallsOnNext" time="0.001"/>
+  <testcase classname="retrofit.RestAdapterTest" name="errorAsync" time="0.001"/>
   <testcase classname="retrofit.RestAdapterTest" name="getAsync" time="0.001"/>
-  <testcase classname="retrofit.RestAdapterTest" name="successfulRequestResponseWhenMimeTypeMissing" time="0.002"/>
+  <testcase classname="retrofit.RestAdapterTest" name="successfulRequestResponseWhenMimeTypeMissing" time="0.001"/>
 </testsuite>
