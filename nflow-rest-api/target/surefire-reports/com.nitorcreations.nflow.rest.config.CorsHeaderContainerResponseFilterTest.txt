@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.nitorcreations.nflow.rest.config.CorsHeaderContainerResponseFilterTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.nitorcreations.nflow.rest.config.CorsHeaderContainerResponseFilterTest

@@ -1,0 +1,986 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "nFlow REST API",
+    "version" : "2.0.1-SNAPSHOT",
+    "title" : "nflow-rest-api",
+    "contact" : {
+      "name" : "nFlow community",
+      "url" : "http://nflow.io",
+      "email" : "nflow-users@googlegroups.com"
+    },
+    "license" : {
+      "name" : "European Union Public Licence V. 1.1",
+      "url" : "https://raw.githubusercontent.com/NitorCreations/nflow/master/EUPL-v1.1-Licence.txt"
+    }
+  },
+  "basePath" : "/api",
+  "tags" : [ {
+    "name" : "Workflow instance management"
+  }, {
+    "name" : "Archiving"
+  }, {
+    "name" : "Workflow executor management"
+  }, {
+    "name" : "Statistics"
+  }, {
+    "name" : "Workflow definition management"
+  } ],
+  "paths" : {
+    "/v1/archive" : {
+      "post" : {
+        "tags" : [ "Archiving" ],
+        "summary" : "Archive workflows",
+        "description" : "",
+        "operationId" : "archiveWorkflows",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/ArchiveRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ArchiveResponse"
+            }
+          }
+        }
+      }
+    },
+    "/v1/statistics" : {
+      "get" : {
+        "tags" : [ "Statistics" ],
+        "summary" : "Query statistics",
+        "description" : "",
+        "operationId" : "queryStatistics",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/StatisticsResponse"
+            }
+          }
+        }
+      }
+    },
+    "/v1/statistics/workflow/{type}" : {
+      "get" : {
+        "tags" : [ "Statistics" ],
+        "summary" : "Get workflow definition statistics",
+        "description" : "",
+        "operationId" : "getStatistics",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "type",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "createdAfter",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "format" : "date-time"
+        }, {
+          "name" : "createdBefore",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "format" : "date-time"
+        }, {
+          "name" : "modifiedAfter",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "format" : "date-time"
+        }, {
+          "name" : "modifiedBefore",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "format" : "date-time"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/WorkflowDefinitionStatisticsResponse"
+            }
+          }
+        }
+      }
+    },
+    "/v1/workflow-definition" : {
+      "get" : {
+        "tags" : [ "Workflow definition management" ],
+        "summary" : "List workflow definitions",
+        "description" : "",
+        "operationId" : "listWorkflowDefinitions",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "type",
+          "in" : "query",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          },
+          "collectionFormat" : "multi"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ListWorkflowDefinitionResponse"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/workflow-executor" : {
+      "get" : {
+        "tags" : [ "Workflow executor management" ],
+        "summary" : "List workflow executors",
+        "description" : "",
+        "operationId" : "listWorkflowExecutors",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ListWorkflowExecutorResponse"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/workflow-instance" : {
+      "get" : {
+        "tags" : [ "Workflow instance management" ],
+        "summary" : "List workflow instances",
+        "description" : "",
+        "operationId" : "listWorkflowInstances",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "query",
+          "description" : "Internal id of workflow instance",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "collectionFormat" : "multi"
+        }, {
+          "name" : "type",
+          "in" : "query",
+          "description" : "Type of workflow instance",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          },
+          "collectionFormat" : "multi"
+        }, {
+          "name" : "parentWorkflowId",
+          "in" : "query",
+          "description" : "Id of parent workflow instance",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "parentActionId",
+          "in" : "query",
+          "description" : "Id of parent workflow instance action",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "state",
+          "in" : "query",
+          "description" : "Current state of workflow instance",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          },
+          "collectionFormat" : "multi"
+        }, {
+          "name" : "status",
+          "in" : "query",
+          "description" : "Current status of workflow instance",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string",
+            "enum" : [ "created", "inProgress", "finished", "manual", "executing" ]
+          },
+          "collectionFormat" : "multi"
+        }, {
+          "name" : "businessKey",
+          "in" : "query",
+          "description" : "Business key for workflow instance",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "externalId",
+          "in" : "query",
+          "description" : "External id for workflow instance",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "include",
+          "in" : "query",
+          "description" : "Data to include in response. currentStateVariables = current stateVariables for worfklow, actions = state transitions, actionStateVariables = state variable changes for actions, childWorkflows = map of created child workflow instance IDs by action ID",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string",
+            "enum" : [ "currentStateVariables", "actions", "actionStateVariables", "childWorkflows" ]
+          },
+          "collectionFormat" : "multi"
+        }, {
+          "name" : "maxResults",
+          "in" : "query",
+          "description" : "Maximum number of workflow instances to be returned",
+          "required" : false,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ListWorkflowInstanceResponse"
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Workflow instance management" ],
+        "summary" : "Submit new workflow instance",
+        "description" : "",
+        "operationId" : "createWorkflowInstance",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/CreateWorkflowInstanceRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/CreateWorkflowInstanceResponse"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/workflow-instance/{id}" : {
+      "get" : {
+        "tags" : [ "Workflow instance management" ],
+        "summary" : "Fetch a workflow instance",
+        "description" : "",
+        "operationId" : "fetchWorkflowInstance",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Internal id for workflow instance",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "name" : "include",
+          "in" : "query",
+          "description" : "Data to include in response. currentStateVariables = current stateVariables for worfklow, actions = state transitions, actionStateVariables = state variable changes for actions, childWorkflows = map of created child workflow instance IDs by action ID",
+          "required" : false,
+          "type" : "array",
+          "items" : {
+            "type" : "string",
+            "enum" : [ "currentStateVariables", "actions", "actionStateVariables", "childWorkflows" ]
+          },
+          "collectionFormat" : "multi"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/ListWorkflowInstanceResponse"
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Workflow instance management" ],
+        "summary" : "Update workflow instance state",
+        "description" : "",
+        "operationId" : "updateWorkflowInstance",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Internal id for workflow instance",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int32"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/UpdateWorkflowInstanceRequest"
+          }
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "If update was successful"
+          },
+          "409" : {
+            "description" : "If workflow was executing and no update was done"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Action" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Identifier of the workflow instance action."
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of state: 'stateExecution', 'stateExecutionFailed', 'externalChange' or 'recovery'."
+        },
+        "state" : {
+          "type" : "string",
+          "description" : "Name of state"
+        },
+        "stateText" : {
+          "type" : "string",
+          "description" : "Description of state"
+        },
+        "retryNo" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Number of retries in this state"
+        },
+        "executionStartTime" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Start time for execution"
+        },
+        "executionEndTime" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "End time for execution"
+        },
+        "executorId" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Identifier of the executor that executed this action"
+        },
+        "updatedStateVariables" : {
+          "type" : "object",
+          "description" : "Updated state variables.",
+          "additionalProperties" : {
+            "type" : "object"
+          }
+        }
+      },
+      "description" : "State change attempt. A new instance for every retry attempt."
+    },
+    "All" : {
+      "type" : "object",
+      "required" : [ "allInstances" ],
+      "properties" : {
+        "allInstances" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Statistics per state"
+        }
+      },
+      "description" : "All instances"
+    },
+    "AllAndQueued" : {
+      "type" : "object",
+      "required" : [ "allInstances", "queuedInstances" ],
+      "properties" : {
+        "allInstances" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Statistics per state"
+        },
+        "queuedInstances" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Statistics per state"
+        }
+      },
+      "description" : "All and queued instances"
+    },
+    "ArchiveRequest" : {
+      "type" : "object",
+      "required" : [ "olderThan" ],
+      "properties" : {
+        "olderThan" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Passive workflow instances whose modified time is before this will be archived."
+        },
+        "batchSize" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Number of workflow hierarchies to archive in a single transaction."
+        }
+      },
+      "description" : "Request to start archiving process"
+    },
+    "ArchiveResponse" : {
+      "type" : "object",
+      "properties" : {
+        "archivedWorkflows" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Total number of archived workflows"
+        }
+      },
+      "description" : "Archiving result response"
+    },
+    "CreateWorkflowInstanceRequest" : {
+      "type" : "object",
+      "required" : [ "type" ],
+      "properties" : {
+        "type" : {
+          "type" : "string",
+          "description" : "Workflow definition identifier",
+          "minLength" : 0,
+          "maxLength" : 30
+        },
+        "businessKey" : {
+          "type" : "string",
+          "description" : "Main business key or identifier for the started workflow instance",
+          "minLength" : 0,
+          "maxLength" : 64
+        },
+        "startState" : {
+          "type" : "string",
+          "description" : "Start state identifier if other than default initial state set in workflow definition",
+          "minLength" : 0,
+          "maxLength" : 64
+        },
+        "externalId" : {
+          "type" : "string",
+          "description" : "Unique external identifier under workflow type. Generated by nflow if not given.",
+          "minLength" : 0,
+          "maxLength" : 64
+        },
+        "requestData" : {
+          "description" : "JSON document that contains business information",
+          "$ref" : "#/definitions/JsonNode"
+        },
+        "activationTime" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Start time for workflow execution, if missing 'now'"
+        }
+      },
+      "description" : "Request for submit new workflow instance. Note that if externalId is given, type and externalId pair must be unique hence enabling retry-safety."
+    },
+    "CreateWorkflowInstanceResponse" : {
+      "type" : "object",
+      "required" : [ "id", "type" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Idenfier of the new workflow instance"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Workflow definition identifier (e.g. withdrawLoan"
+        },
+        "businessKey" : {
+          "type" : "string",
+          "description" : "Main business key or identifier for the started workflow instance (e.g. credit application identifier)"
+        },
+        "externalId" : {
+          "type" : "string",
+          "description" : "Unique external identifier under workflow type. Generated by nflow if not given.",
+          "minLength" : 0,
+          "maxLength" : 64
+        }
+      },
+      "description" : "Response for submit new workflow instance"
+    },
+    "JsonNode" : {
+      "type" : "object",
+      "properties" : {
+        "float" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "nodeType" : {
+          "type" : "string",
+          "enum" : [ "ARRAY", "BINARY", "BOOLEAN", "MISSING", "NULL", "NUMBER", "OBJECT", "POJO", "STRING" ]
+        },
+        "number" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "valueNode" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "containerNode" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "missingNode" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "object" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "integralNumber" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "floatingPointNumber" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "short" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "int" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "long" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "double" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "bigDecimal" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "bigInteger" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "textual" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "boolean" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "binary" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "pojo" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "array" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "null" : {
+          "type" : "boolean",
+          "default" : false
+        }
+      }
+    },
+    "ListWorkflowDefinitionResponse" : {
+      "type" : "object",
+      "required" : [ "name", "onError", "settings", "states", "type", "version" ],
+      "properties" : {
+        "type" : {
+          "type" : "string",
+          "description" : "Type of the workflow definition"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name of the workflow definition"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Description workflow definition"
+        },
+        "version" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Version of the workflow definition"
+        },
+        "onError" : {
+          "type" : "string",
+          "description" : "Generic error state"
+        },
+        "states" : {
+          "type" : "array",
+          "description" : "Workflow definition states and transitions",
+          "items" : {
+            "$ref" : "#/definitions/State"
+          }
+        },
+        "settings" : {
+          "description" : "Workflow settings",
+          "$ref" : "#/definitions/Settings"
+        }
+      },
+      "description" : "Basic information of workflow definition"
+    },
+    "ListWorkflowExecutorResponse" : {
+      "type" : "object",
+      "required" : [ "active", "executorGroup", "expires", "host", "id", "pid", "started" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Identifier of the workflow executor"
+        },
+        "host" : {
+          "type" : "string",
+          "description" : "Host where the executor is running"
+        },
+        "pid" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Executor process identifier assigned by the operating system"
+        },
+        "executorGroup" : {
+          "type" : "string",
+          "description" : "Executor group the executor belongs to"
+        },
+        "started" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Time when the executor was started"
+        },
+        "active" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Last time the executor updated it's heart beat to the database"
+        },
+        "expires" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Time after which the executor is considered as crashed"
+        }
+      },
+      "description" : "Basic information of workflow executor"
+    },
+    "ListWorkflowInstanceResponse" : {
+      "type" : "object",
+      "required" : [ "created", "externalId", "id", "modified", "retries", "state", "status", "type" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Identifier of the new workflow instance"
+        },
+        "status" : {
+          "type" : "string",
+          "description" : "Workflow instance status: 'created', 'executing', 'inProgress', 'finished', 'manual'"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Workflow definition identifier"
+        },
+        "parentWorkflowId" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Parent workflow instance id for child workflows"
+        },
+        "parentActionId" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Parent workflow instance action id for child workflows"
+        },
+        "businessKey" : {
+          "type" : "string",
+          "description" : "Main business key or identifier for the started workflow instance"
+        },
+        "externalId" : {
+          "type" : "string",
+          "description" : "Unique external identifier under workflow type. Generated by nflow if not given."
+        },
+        "state" : {
+          "type" : "string",
+          "description" : "State of the workflow instance"
+        },
+        "stateText" : {
+          "type" : "string",
+          "description" : "Text of describing the reason for state (free text)"
+        },
+        "nextActivation" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Next activation time for workflow instance processing"
+        },
+        "stateVariables" : {
+          "type" : "object",
+          "description" : "State variables for current state.",
+          "additionalProperties" : {
+            "type" : "object"
+          }
+        },
+        "retries" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Number of times current state has been retried."
+        },
+        "actions" : {
+          "type" : "array",
+          "description" : "State change attempts. One instance for each processing attempt.",
+          "items" : {
+            "$ref" : "#/definitions/Action"
+          }
+        },
+        "created" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Workflow instance creation timestamp"
+        },
+        "modified" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Workflow instance latest modification timestamp"
+        },
+        "started" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Time when workflow processing stared (start time for first action)"
+        },
+        "childWorkflows" : {
+          "type" : "object",
+          "description" : "Child workflow instance IDs created by this instance, grouped by instance action ID",
+          "additionalProperties" : {
+            "type" : "array",
+            "items" : {
+              "type" : "integer",
+              "format" : "int32"
+            }
+          }
+        }
+      },
+      "description" : "Basic information of workflow instance"
+    },
+    "QueueStatistics" : {
+      "type" : "object",
+      "required" : [ "count" ],
+      "properties" : {
+        "count" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Number for workflow instances."
+        },
+        "maxAge" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Maximum time (ms) currently queued workflow instances have been in queue."
+        },
+        "minAge" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Minimum time (ms) currently queued workflow instances have been in queue."
+        }
+      },
+      "description" : "Global statistics for workflow instances."
+    },
+    "Settings" : {
+      "type" : "object",
+      "required" : [ "maxRetries", "transitionDelaysInMilliseconds" ],
+      "properties" : {
+        "transitionDelaysInMilliseconds" : {
+          "description" : "Global transition delays for the workflow",
+          "$ref" : "#/definitions/TransitionDelays"
+        },
+        "maxRetries" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Maximum retries for a state before moving to failure"
+        }
+      }
+    },
+    "State" : {
+      "type" : "object",
+      "required" : [ "description", "id", "type" ],
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "State identifier"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "State type"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "State description"
+        },
+        "transitions" : {
+          "type" : "array",
+          "description" : "Alternative transitions from this state",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "onFailure" : {
+          "type" : "string",
+          "description" : "Failure state for the this state"
+        }
+      },
+      "description" : "Workflow definition states and transition to next states"
+    },
+    "StateStatistics" : {
+      "type" : "object",
+      "required" : [ "created", "executing", "finished", "inProgress", "manual" ],
+      "properties" : {
+        "created" : {
+          "description" : "Instances created",
+          "$ref" : "#/definitions/AllAndQueued"
+        },
+        "inProgress" : {
+          "description" : "Instances in progress",
+          "$ref" : "#/definitions/AllAndQueued"
+        },
+        "executing" : {
+          "description" : "Instances executing",
+          "$ref" : "#/definitions/All"
+        },
+        "manual" : {
+          "description" : "Instances in manual state",
+          "$ref" : "#/definitions/All"
+        },
+        "finished" : {
+          "description" : "Instances finished",
+          "$ref" : "#/definitions/All"
+        }
+      },
+      "description" : "Statistics for a state"
+    },
+    "StatisticsResponse" : {
+      "type" : "object",
+      "required" : [ "executionStatistics", "queueStatistics" ],
+      "properties" : {
+        "queueStatistics" : {
+          "description" : "Statistics for queued workflows. Workflows waiting for free executors.",
+          "$ref" : "#/definitions/QueueStatistics"
+        },
+        "executionStatistics" : {
+          "description" : "Statistics for workflows in execution. Workflows currently processed by an executor.",
+          "$ref" : "#/definitions/QueueStatistics"
+        }
+      },
+      "description" : "Response for statistics"
+    },
+    "TransitionDelays" : {
+      "type" : "object",
+      "required" : [ "immediate", "maxErrorWait", "minErrorWait", "waitShort" ],
+      "properties" : {
+        "immediate" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Delay in immediate transition"
+        },
+        "waitShort" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Short delay between transitions"
+        },
+        "minErrorWait" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "First retry delay after failure"
+        },
+        "maxErrorWait" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Maximum delay between failure retries"
+        }
+      }
+    },
+    "UpdateWorkflowInstanceRequest" : {
+      "type" : "object",
+      "properties" : {
+        "state" : {
+          "type" : "string",
+          "description" : "New state of the workflow instance"
+        },
+        "nextActivationTime" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "New next activation time for next workflow instance processing"
+        },
+        "actionDescription" : {
+          "type" : "string",
+          "description" : "Description of the action"
+        }
+      },
+      "description" : "Request for update workflow instance"
+    },
+    "WorkflowDefinitionStatisticsResponse" : {
+      "type" : "object",
+      "required" : [ "stateStatistics" ],
+      "properties" : {
+        "stateStatistics" : {
+          "type" : "object",
+          "description" : "Statistics per state",
+          "additionalProperties" : {
+            "$ref" : "#/definitions/StateStatistics"
+          }
+        }
+      },
+      "description" : "Response for workflow definition statistics"
+    }
+  }
+}

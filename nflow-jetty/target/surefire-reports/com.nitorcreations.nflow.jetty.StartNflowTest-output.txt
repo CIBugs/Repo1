@@ -1,0 +1,18 @@
+2021-10-05 17:35:50 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-05 17:35:51 INFO  [main] eations.nflow.jetty.StartNflow - [] Static resources served from [file:/home/suvarna/Vinay/Sept-2021/nflow-5fd873e39fa6e8a4820d1dcb904f765c5d496641/nflow-jetty/target/classes/static, file:/home/suvarna/Vinay/Sept-2021/nflow-5fd873e39fa6e8a4820d1dcb904f765c5d496641/nflow-rest-api/target/classes/static]
+2021-10-05 17:35:51 INFO  [main] ionConfigWebApplicationContext - [] Refreshing Root WebApplicationContext: startup date [Tue Oct 05 23:05:51 IST 2021]; root of context hierarchy
+2021-10-05 17:35:51 INFO  [main] ionConfigWebApplicationContext - [] Registering annotated classes: [class com.nitorcreations.nflow.jetty.StartNflowTest$DummyContext]
+2021-10-05 17:35:51 INFO  [main] ionConfigWebApplicationContext - [] Successfully resolved class for [com.nitorcreations.nflow.jetty.config.NflowJettyConfiguration]
+2021-10-05 17:35:52 INFO  [main] orage.db.DatabaseConfiguration - [] Database connection to h2 using jdbc:h2:mem:test;TRACE_LEVEL_FILE=4
+2021-10-05 17:35:54 INFO  [main] storage.db.DatabaseInitializer - [] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
+2021-10-05 17:35:55 INFO  [main] storage.db.DatabaseInitializer - [] Database created.
+2021-10-05 17:35:55 INFO  [main] vice.WorkflowDefinitionService - [] No non-Spring workflow definitions
+2021-10-05 17:36:00 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Starting.
+2021-10-05 17:36:00 INFO  [main] eations.nflow.jetty.StartNflow - [] Successfully started Jetty on port 42917 in 10.387 seconds in environment [junit, jmx, nflow.db.h2]
+2021-10-05 17:36:00 INFO  [main] eations.nflow.jetty.StartNflow - [] API available at http://0.0.0.0:42917/api/
+2021-10-05 17:36:00 INFO  [main] eations.nflow.jetty.StartNflow - [] Swagger available at http://0.0.0.0:42917/doc/
+2021-10-05 17:36:00 INFO  [main] eations.nflow.jetty.StartNflow - [] Explorer available at http://0.0.0.0:42917/explorer/
+2021-10-05 17:36:00 INFO  [main] eations.nflow.jetty.StartNflow - [] Metrics and health checks available at http://0.0.0.0:42917/metrics/
+2021-10-05 17:36:00 INFO  [main] ionConfigWebApplicationContext - [] Closing Root WebApplicationContext: startup date [Tue Oct 05 23:05:51 IST 2021]; root of context hierarchy
+2021-10-05 17:36:00 INFO  [main] al.executor.WorkflowDispatcher - [] Shutdown requested.
+2021-10-05 17:36:01 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Shutdown finished.

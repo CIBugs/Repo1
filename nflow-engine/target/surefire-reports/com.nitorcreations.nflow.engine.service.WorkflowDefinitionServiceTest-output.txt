@@ -1,0 +1,12 @@
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Preparing workflow com.nitorcreations.nflow.engine.service.DummyTestWorkflow
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Added workflow type: dummy (com.nitorcreations.nflow.engine.service.DummyTestWorkflow)
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Preparing workflow com.nitorcreations.nflow.engine.service.DummyTestWorkflow
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Preparing workflow com.nitorcreations.nflow.engine.service.DummyTestWorkflow
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Added workflow type: dummy (com.nitorcreations.nflow.engine.service.DummyTestWorkflow)
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] No non-Spring workflow definitions
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Preparing workflow com.nitorcreations.nflow.engine.service.DummyTestWorkflow
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Added workflow type: dummy (com.nitorcreations.nflow.engine.service.DummyTestWorkflow)
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Preparing workflow com.nitorcreations.nflow.engine.service.DummyTestWorkflow
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Added workflow type: dummy (com.nitorcreations.nflow.engine.service.DummyTestWorkflow)
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Preparing workflow com.nitorcreations.nflow.engine.service.DummyTestWorkflow
+05.10.2021 17:35:36 INFO  [main] vice.WorkflowDefinitionService - [user:] Added workflow type: dummy (com.nitorcreations.nflow.engine.service.DummyTestWorkflow)

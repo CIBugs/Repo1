@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest" time="0.43" tests="4" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nflow-5fd873e39fa6e8a4820d1dcb904f765c5d496641"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nflow-5fd873e39fa6e8a4820d1dcb904f765c5d496641"/>
+    <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/suvarna/maven/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/suvarna/maven/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-142-generic"/>
+    <property name="library.jansi.path" value="/home/suvarna/maven/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/home/suvarna"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="suvarna"/>
+    <property name="java.class.path" value="/home/suvarna/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/home/suvarna/maven/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="afterSuccess" classname="com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest" time="0.329">
+    <error message="Error creating bean with name &apos;nflowMetrics/metricsContext&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}" type="org.springframework.beans.factory.BeanCreationException"><![CDATA[org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nflowMetrics/metricsContext': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1.<init>(MetricsWorkflowExecutorListenerTest.java:45)
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest.setup(MetricsWorkflowExecutorListenerTest.java:45)
+]]></error>
+    <system-out><![CDATA[23:06:03.102 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
+23:06:03.105 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
+23:06:03.105 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
+23:06:03.105 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
+23:06:03.106 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
+23:06:03.106 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
+23:06:03.120 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+23:06:03.141 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@7113b13f: startup date [Tue Oct 05 23:06:03 IST 2021]; root of context hierarchy
+23:06:03.143 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@7113b13f: org.springframework.beans.factory.support.DefaultListableBeanFactory@37e547da: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
+23:06:03.152 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.152 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.159 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.161 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.186 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
+23:06:03.191 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
+23:06:03.192 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.databaseConnectionHealthCheck()
+23:06:03.193 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
+23:06:03.194 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
+23:06:03.243 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$d852b377
+23:06:03.243 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$d852b377'
+23:06:03.246 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048
+23:06:03.246 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048'
+23:06:03.248 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.248 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.249 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:06:03.249 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.249 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.249 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.249 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.250 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.250 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.250 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.250 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.252 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.252 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.252 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.252 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+23:06:03.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+23:06:03.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.254 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3e694b3f]
+23:06:03.255 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5fe94a96]
+23:06:03.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@37e547da: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,jmxMetricsReporter,databaseConnectionHealthCheck,metricsWorkflowExecutorListener,executorDao]; root of factory hierarchy
+23:06:03.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.258 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+23:06:03.267 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.267 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.267 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.268 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+23:06:03.269 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.269 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.269 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.272 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
+23:06:03.275 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.275 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.275 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.275 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
+23:06:03.275 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
+23:06:03.276 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: public void com.nitorcreations.nflow.metrics.NflowMetricsContext.registerHealthChecks()
+23:06:03.277 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@e2261c2a
+23:06:03.281 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService
+23:06:03.281 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.codahale.metrics.MetricRegistry com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry
+23:06:03.281 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.codahale.metrics.health.HealthCheckRegistry com.nitorcreations.nflow.metrics.NflowMetricsContext.healthCheckRegistry
+23:06:03.281 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
+23:06:03.283 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'nflowMetrics/metricsContext': AutowiredFieldElement for private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService
+23:06:03.290 [main] WARN  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nflowMetrics/metricsContext': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834) ~[spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84) [spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1.<init>(MetricsWorkflowExecutorListenerTest.java:45) [test-classes/:na]
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest.setup(MetricsWorkflowExecutorListenerTest.java:45) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:571) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 39 common frames omitted
+23:06:03.291 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@37e547da: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,jmxMetricsReporter,databaseConnectionHealthCheck,metricsWorkflowExecutorListener,executorDao]; root of factory hierarchy
+]]></system-out>
+  </testcase>
+  <testcase name="afterFailure" classname="com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest" time="0.035">
+    <error message="Error creating bean with name &apos;nflowMetrics/metricsContext&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}" type="org.springframework.beans.factory.BeanCreationException"><![CDATA[org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nflowMetrics/metricsContext': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1.<init>(MetricsWorkflowExecutorListenerTest.java:45)
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest.setup(MetricsWorkflowExecutorListenerTest.java:45)
+]]></error>
+    <system-out><![CDATA[23:06:03.302 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
+23:06:03.302 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
+23:06:03.302 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
+23:06:03.302 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
+23:06:03.302 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
+23:06:03.303 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
+23:06:03.303 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+23:06:03.304 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@4c178a76: startup date [Tue Oct 05 23:06:03 IST 2021]; root of context hierarchy
+23:06:03.305 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@4c178a76: org.springframework.beans.factory.support.DefaultListableBeanFactory@fa4c865: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
+23:06:03.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.309 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
+23:06:03.311 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
+23:06:03.311 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.databaseConnectionHealthCheck()
+23:06:03.312 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
+23:06:03.313 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
+23:06:03.315 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$d852b377
+23:06:03.315 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$d852b377'
+23:06:03.315 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048
+23:06:03.316 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048'
+23:06:03.317 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.318 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.318 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:06:03.318 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.318 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.318 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.319 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.319 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.319 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.319 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.319 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+23:06:03.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.321 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.321 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.321 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+23:06:03.321 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.321 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@41a2befb]
+23:06:03.321 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@6c40365c]
+23:06:03.322 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fa4c865: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,jmxMetricsReporter,databaseConnectionHealthCheck,metricsWorkflowExecutorListener,executorDao]; root of factory hierarchy
+23:06:03.322 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.322 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.323 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.323 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.323 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.323 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.323 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+23:06:03.324 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.324 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.325 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.325 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+23:06:03.326 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.326 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.326 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.327 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
+23:06:03.327 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.327 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.327 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.328 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
+23:06:03.328 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
+23:06:03.328 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: public void com.nitorcreations.nflow.metrics.NflowMetricsContext.registerHealthChecks()
+23:06:03.328 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@e2261c2a
+23:06:03.329 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService
+23:06:03.330 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.codahale.metrics.MetricRegistry com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry
+23:06:03.330 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.codahale.metrics.health.HealthCheckRegistry com.nitorcreations.nflow.metrics.NflowMetricsContext.healthCheckRegistry
+23:06:03.330 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
+23:06:03.331 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'nflowMetrics/metricsContext': AutowiredFieldElement for private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService
+23:06:03.332 [main] WARN  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nflowMetrics/metricsContext': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834) ~[spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84) [spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1.<init>(MetricsWorkflowExecutorListenerTest.java:45) [test-classes/:na]
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest.setup(MetricsWorkflowExecutorListenerTest.java:45) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:571) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 39 common frames omitted
+23:06:03.333 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@fa4c865: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,jmxMetricsReporter,databaseConnectionHealthCheck,metricsWorkflowExecutorListener,executorDao]; root of factory hierarchy
+]]></system-out>
+  </testcase>
+  <testcase name="whenNextActivationIsSetBeforeContext" classname="com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest" time="0.026">
+    <error message="Error creating bean with name &apos;nflowMetrics/metricsContext&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}" type="org.springframework.beans.factory.BeanCreationException"><![CDATA[org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nflowMetrics/metricsContext': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1.<init>(MetricsWorkflowExecutorListenerTest.java:45)
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest.setup(MetricsWorkflowExecutorListenerTest.java:45)
+]]></error>
+    <system-out><![CDATA[23:06:03.337 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
+23:06:03.337 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
+23:06:03.338 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
+23:06:03.338 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
+23:06:03.338 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
+23:06:03.338 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
+23:06:03.339 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+23:06:03.340 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@7bedc48a: startup date [Tue Oct 05 23:06:03 IST 2021]; root of context hierarchy
+23:06:03.340 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@7bedc48a: org.springframework.beans.factory.support.DefaultListableBeanFactory@131ef10: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
+23:06:03.341 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.341 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.341 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.341 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.343 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
+23:06:03.344 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
+23:06:03.345 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.databaseConnectionHealthCheck()
+23:06:03.346 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
+23:06:03.346 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
+23:06:03.347 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$d852b377
+23:06:03.348 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$d852b377'
+23:06:03.348 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048
+23:06:03.348 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048'
+23:06:03.349 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.349 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.349 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:06:03.349 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+23:06:03.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+23:06:03.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.352 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@2002fc1d]
+23:06:03.352 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@69453e37]
+23:06:03.352 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@131ef10: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,jmxMetricsReporter,databaseConnectionHealthCheck,metricsWorkflowExecutorListener,executorDao]; root of factory hierarchy
+23:06:03.352 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.352 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.352 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.352 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.352 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.353 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.353 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+23:06:03.353 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.354 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.354 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.354 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+23:06:03.354 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.354 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.355 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.355 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
+23:06:03.356 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.356 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.356 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.356 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
+23:06:03.356 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
+23:06:03.356 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: public void com.nitorcreations.nflow.metrics.NflowMetricsContext.registerHealthChecks()
+23:06:03.356 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@e2261c2a
+23:06:03.357 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService
+23:06:03.357 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.codahale.metrics.MetricRegistry com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry
+23:06:03.357 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.codahale.metrics.health.HealthCheckRegistry com.nitorcreations.nflow.metrics.NflowMetricsContext.healthCheckRegistry
+23:06:03.357 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
+23:06:03.358 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'nflowMetrics/metricsContext': AutowiredFieldElement for private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService
+23:06:03.359 [main] WARN  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nflowMetrics/metricsContext': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834) ~[spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84) [spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1.<init>(MetricsWorkflowExecutorListenerTest.java:45) [test-classes/:na]
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest.setup(MetricsWorkflowExecutorListenerTest.java:45) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:571) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 39 common frames omitted
+23:06:03.360 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@131ef10: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,jmxMetricsReporter,databaseConnectionHealthCheck,metricsWorkflowExecutorListener,executorDao]; root of factory hierarchy
+]]></system-out>
+  </testcase>
+  <testcase name="beforeContext" classname="com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest" time="0.04">
+    <error message="Error creating bean with name &apos;nflowMetrics/metricsContext&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}" type="org.springframework.beans.factory.BeanCreationException"><![CDATA[org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nflowMetrics/metricsContext': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84)
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1.<init>(MetricsWorkflowExecutorListenerTest.java:45)
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest.setup(MetricsWorkflowExecutorListenerTest.java:45)
+]]></error>
+    <system-out><![CDATA[23:06:03.363 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
+23:06:03.363 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
+23:06:03.364 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
+23:06:03.364 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
+23:06:03.364 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
+23:06:03.364 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
+23:06:03.365 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+23:06:03.381 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@6f4a47c7: startup date [Tue Oct 05 23:06:03 IST 2021]; root of context hierarchy
+23:06:03.381 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@6f4a47c7: org.springframework.beans.factory.support.DefaultListableBeanFactory@ae13544: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
+23:06:03.381 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.382 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.382 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.382 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.384 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
+23:06:03.386 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
+23:06:03.387 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.databaseConnectionHealthCheck()
+23:06:03.387 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
+23:06:03.389 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
+23:06:03.389 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$d852b377
+23:06:03.390 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$d852b377'
+23:06:03.390 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048
+23:06:03.390 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048'
+23:06:03.391 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.391 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.391 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:06:03.391 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.391 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.391 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.391 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.392 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.393 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+23:06:03.393 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.393 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@bccb269]
+23:06:03.393 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@609cd4d8]
+23:06:03.393 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ae13544: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,jmxMetricsReporter,databaseConnectionHealthCheck,metricsWorkflowExecutorListener,executorDao]; root of factory hierarchy
+23:06:03.393 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:06:03.393 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:06:03.393 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:06:03.395 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:06:03.395 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.395 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.395 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+23:06:03.396 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+23:06:03.396 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.396 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.396 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+23:06:03.397 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+23:06:03.397 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.397 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.397 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
+23:06:03.398 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+23:06:03.398 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:06:03.398 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:06:03.398 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
+23:06:03.398 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
+23:06:03.398 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: public void com.nitorcreations.nflow.metrics.NflowMetricsContext.registerHealthChecks()
+23:06:03.398 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@e2261c2a
+23:06:03.399 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService
+23:06:03.399 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.codahale.metrics.MetricRegistry com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry
+23:06:03.399 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$9932048]: AutowiredFieldElement for private com.codahale.metrics.health.HealthCheckRegistry com.nitorcreations.nflow.metrics.NflowMetricsContext.healthCheckRegistry
+23:06:03.399 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
+23:06:03.400 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'nflowMetrics/metricsContext': AutowiredFieldElement for private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService
+23:06:03.401 [main] WARN  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'nflowMetrics/metricsContext': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834) ~[spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:84) [spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1.<init>(MetricsWorkflowExecutorListenerTest.java:45) [test-classes/:na]
+	at com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest.setup(MetricsWorkflowExecutorListenerTest.java:45) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.nitorcreations.nflow.engine.service.StatisticsService com.nitorcreations.nflow.metrics.NflowMetricsContext.statisticsService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:571) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.nitorcreations.nflow.engine.service.StatisticsService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.inject.Inject()}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543) ~[spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 39 common frames omitted
+23:06:03.401 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ae13544: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,jmxMetricsReporter,databaseConnectionHealthCheck,metricsWorkflowExecutorListener,executorDao]; root of factory hierarchy
+]]></system-out>
+  </testcase>
+</testsuite>
