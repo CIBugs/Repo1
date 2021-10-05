@@ -1,0 +1,443 @@
+2021-10-05 17:37:16 INFO  [main] DefaultTestContextBootstrapper - [] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-10-05 17:37:16 INFO  [main] DefaultTestContextBootstrapper - [] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c03a37, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2e140e59, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49a71302, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5cd61783, org.springframework.test.context.transaction.TransactionalTestExecutionListener@59429fac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@57aa341b]
+2021-10-05 17:37:16 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-05 17:37:17 INFO  [main] eations.nflow.jetty.StartNflow - [] Static resources served from [file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static]
+2021-10-05 17:37:17 INFO  [main] rg.eclipse.jetty.server.Server - [] jetty-9.2.13.v20150730
+2021-10-05 17:37:17 INFO  [main] /                              - [] Initializing Spring root WebApplicationContext
+2021-10-05 17:37:17 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization started
+2021-10-05 17:37:17 INFO  [main] ionConfigWebApplicationContext - [] Refreshing Root WebApplicationContext: startup date [Tue Oct 05 23:07:17 IST 2021]; root of context hierarchy
+2021-10-05 17:37:17 INFO  [main] ionConfigWebApplicationContext - [] Registering annotated classes: [class com.nitorcreations.nflow.tests.DemoWorkflowTest$DemoConfiguration]
+2021-10-05 17:37:17 INFO  [main] ionConfigWebApplicationContext - [] Successfully resolved class for [com.nitorcreations.nflow.jetty.config.NflowJettyConfiguration]
+2021-10-05 17:37:17 INFO  [main] redAnnotationBeanPostProcessor - [] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-10-05 17:37:17 INFO  [main] orage.db.DatabaseConfiguration - [] Database connection to h2 using jdbc:h2:mem:statisticstest;TRACE_LEVEL_FILE=4;DB_CLOSE_DELAY=-1
+2021-10-05 17:37:17 INFO  [main] zaxxer.hikari.HikariDataSource - [] HikariCP pool nflow is starting.
+2021-10-05 17:37:17 INFO  [main] storage.db.DatabaseInitializer - [] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
+2021-10-05 17:37:17 INFO  [main] bc.datasource.init.ScriptUtils - [] Executing SQL script from class path resource [scripts/db/h2.create.ddl.sql]
+2021-10-05 17:37:17 INFO  [main] bc.datasource.init.ScriptUtils - [] Executed SQL script from class path resource [scripts/db/h2.create.ddl.sql] in 28 ms.
+2021-10-05 17:37:17 INFO  [main] storage.db.DatabaseInitializer - [] Database created.
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: demo (com.nitorcreations.nflow.tests.demo.DemoWorkflow)
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGenerator (com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow)
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGeneratorErrors (com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow)
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: creditApplicationProcess (com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow)
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.SlowWorkflow
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: slowWorkflow (com.nitorcreations.nflow.tests.demo.SlowWorkflow)
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.FibonacciWorkflow
+2021-10-05 17:37:17 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: fibonacci (com.nitorcreations.nflow.tests.demo.FibonacciWorkflow)
+2021-10-05 17:37:17 INFO  [main] apache.cxf.endpoint.ServerImpl - [] Setting the server's publish address to be //
+2021-10-05 17:37:17 INFO  [main] port.DefaultLifecycleProcessor - [] Starting beans in phase 2147483647
+2021-10-05 17:37:17 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Starting.
+2021-10-05 17:37:17 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization completed in 268 ms
+2021-10-05 17:37:17 INFO  [main] .server.handler.ContextHandler - [] Started o.e.j.s.ServletContextHandler@68c87fc3{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static/],AVAILABLE}
+2021-10-05 17:37:17 INFO  [main] .server.AbstractNCSARequestLog - [] Opened /home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-tests/log/2021_10_05.request.log
+2021-10-05 17:37:17 INFO  [main] e.jetty.server.ServerConnector - [] Started 0@bc0f53b{HTTP/1.1}{0.0.0.0:36071}
+2021-10-05 17:37:17 INFO  [main] rg.eclipse.jetty.server.Server - [] Started @6617ms
+2021-10-05 17:37:17 INFO  [main] eations.nflow.jetty.StartNflow - [] Successfully started Jetty on port 36071 in 0.717 seconds in environment [local, nflow.db.h2]
+2021-10-05 17:37:17 INFO  [main] eations.nflow.jetty.StartNflow - [] API available at http://0.0.0.0:36071/api/
+2021-10-05 17:37:17 INFO  [main] eations.nflow.jetty.StartNflow - [] Swagger available at http://0.0.0.0:36071/doc/
+2021-10-05 17:37:17 INFO  [main] eations.nflow.jetty.StartNflow - [] Explorer available at http://0.0.0.0:36071/explorer/
+2021-10-05 17:37:17 INFO  [main] eations.nflow.jetty.StartNflow - [] Metrics and health checks available at http://0.0.0.0:36071/metrics/
+2021-10-05 17:37:17 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 17
+Address: http://localhost:36071/api/v1/workflow-instance
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+Payload: {"type":"demo","businessKey":"1","activationTime":"2022-10-05T17:37:16.602Z"}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [qtp27053221-43] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 18
+Address: http://localhost:36071/api/v1/workflow-instance
+Encoding: UTF-8
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[77], content-type=[application/json], Host=[localhost:36071], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+Payload: {"type":"demo","businessKey":"1","activationTime":"2022-10-05T17:37:16.602Z"}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [qtp27053221-43] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 18
+Response-Code: 201
+Content-Type: application/json
+Headers: {Location=[http://localhost:36071/api/1], Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:17 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"type":"demo","businessKey":"1","externalId":"d742515c-0da2-4ce1-a1f7-7c4ba3fb7ce3"}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 17
+Response-Code: 201
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:17 GMT, Tue, 05 Oct 2021 17:37:17 GMT], Location=[http://localhost:36071/api/1], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"type":"demo","businessKey":"1","externalId":"d742515c-0da2-4ce1-a1f7-7c4ba3fb7ce3"}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 19
+Address: http://localhost:36071/api/v1/statistics
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [qtp27053221-43] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 20
+Address: http://localhost:36071/api/v1/statistics
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:36071], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [qtp27053221-43] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 20
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:17 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"queueStatistics":{},"executionStatistics":{}}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 19
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:17 GMT, Tue, 05 Oct 2021 17:37:17 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"queueStatistics":{},"executionStatistics":{}}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 21
+Address: http://localhost:36071/api/v1/statistics/workflow/demo
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [qtp27053221-44] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 22
+Address: http://localhost:36071/api/v1/statistics/workflow/demo
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:36071], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [qtp27053221-44] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 22
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:17 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"stateStatistics":{"begin":{"created":{"allInstances":1},"inProgress":{},"executing":{},"manual":{},"finished":{}}}}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 21
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:17 GMT, Tue, 05 Oct 2021 17:37:17 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"stateStatistics":{"begin":{"created":{"allInstances":1},"inProgress":{},"executing":{},"manual":{},"finished":{}}}}
+--------------------------------------
+2021-10-05 17:37:17 INFO  [main] e.jetty.server.ServerConnector - [] Stopped 0@bc0f53b{HTTP/1.1}{0.0.0.0:0}
+2021-10-05 17:37:17 INFO  [main] /                              - [] Closing Spring root WebApplicationContext
+2021-10-05 17:37:17 INFO  [main] ionConfigWebApplicationContext - [] Closing Root WebApplicationContext: startup date [Tue Oct 05 23:07:17 IST 2021]; root of context hierarchy
+2021-10-05 17:37:17 INFO  [main] port.DefaultLifecycleProcessor - [] Stopping beans in phase 2147483647
+2021-10-05 17:37:17 INFO  [main] al.executor.WorkflowDispatcher - [] Shutdown requested.
+2021-10-05 17:37:18 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Shutdown finished.
+2021-10-05 17:37:18 INFO  [main] .zaxxer.hikari.pool.HikariPool - [] HikariCP pool nflow is shutting down.
+2021-10-05 17:37:18 INFO  [main] .server.handler.ContextHandler - [] Stopped o.e.j.s.ServletContextHandler@68c87fc3{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static/],UNAVAILABLE}
+2021-10-05 17:37:18 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-05 17:37:18 INFO  [main] eations.nflow.jetty.StartNflow - [] Static resources served from [file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static]
+2021-10-05 17:37:18 INFO  [main] rg.eclipse.jetty.server.Server - [] jetty-9.2.13.v20150730
+2021-10-05 17:37:18 INFO  [main] /                              - [] Initializing Spring root WebApplicationContext
+2021-10-05 17:37:18 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization started
+2021-10-05 17:37:18 INFO  [main] ionConfigWebApplicationContext - [] Refreshing Root WebApplicationContext: startup date [Tue Oct 05 23:07:18 IST 2021]; root of context hierarchy
+2021-10-05 17:37:18 INFO  [main] ionConfigWebApplicationContext - [] Registering annotated classes: [class com.nitorcreations.nflow.tests.DemoWorkflowTest$DemoConfiguration]
+2021-10-05 17:37:18 INFO  [main] ionConfigWebApplicationContext - [] Successfully resolved class for [com.nitorcreations.nflow.jetty.config.NflowJettyConfiguration]
+2021-10-05 17:37:18 INFO  [main] redAnnotationBeanPostProcessor - [] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-10-05 17:37:18 INFO  [main] orage.db.DatabaseConfiguration - [] Database connection to h2 using jdbc:h2:mem:statisticstest;TRACE_LEVEL_FILE=4;DB_CLOSE_DELAY=-1
+2021-10-05 17:37:18 INFO  [main] zaxxer.hikari.HikariDataSource - [] HikariCP pool nflow is starting.
+2021-10-05 17:37:18 INFO  [main] storage.db.DatabaseInitializer - [] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
+2021-10-05 17:37:18 INFO  [main] bc.datasource.init.ScriptUtils - [] Executing SQL script from class path resource [scripts/db/h2.create.ddl.sql]
+2021-10-05 17:37:18 ERROR [main] h2database                     - [] jdbc[7] exception
+org.h2.jdbc.JdbcSQLException: Constraint "FK_WORKFLOW_PARENT" already exists; SQL statement:
+alter table nflow_workflow add constraint fk_workflow_parent foreign key (parent_workflow_id, parent_action_id) references nflow_workflow_action (workflow_id, id) on delete cascade [90045-189]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[h2-1.4.189.jar:1.4.189]
+	at org.h2.message.DbException.get(DbException.java:179) ~[h2-1.4.189.jar:1.4.189]
+	at org.h2.message.DbException.get(DbException.java:155) ~[h2-1.4.189.jar:1.4.189]
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:98) ~[h2-1.4.189.jar:1.4.189]
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:72) ~[h2-1.4.189.jar:1.4.189]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78) ~[h2-1.4.189.jar:1.4.189]
+	at org.h2.command.Command.executeUpdate(Command.java:253) ~[h2-1.4.189.jar:1.4.189]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184) ~[h2-1.4.189.jar:1.4.189]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158) ~[h2-1.4.189.jar:1.4.189]
+	at com.zaxxer.hikari.proxy.StatementProxy.execute(StatementProxy.java:83) [HikariCP-java6-2.3.9.jar:na]
+	at com.zaxxer.hikari.proxy.StatementJavassistProxy.execute(StatementJavassistProxy.java) [HikariCP-java6-2.3.9.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:472) [spring-jdbc-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:229) [spring-jdbc-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:48) [spring-jdbc-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at com.nitorcreations.nflow.engine.internal.storage.db.DatabaseInitializer.populate(DatabaseInitializer.java:30) [classes/:na]
+	at com.nitorcreations.nflow.engine.internal.storage.db.DatabaseInitializer.<init>(DatabaseInitializer.java:25) [classes/:na]
+	at com.nitorcreations.nflow.engine.internal.storage.db.DatabaseConfiguration.nflowDatabaseInitializer(DatabaseConfiguration.java:103) [classes/:na]
+	at com.nitorcreations.nflow.engine.internal.storage.db.H2DatabaseConfiguration$$EnhancerBySpringCGLIB$$f1290633.CGLIB$nflowDatabaseInitializer$7(<generated>) [spring-core-4.2.1.RELEASE.jar:na]
+	at com.nitorcreations.nflow.engine.internal.storage.db.H2DatabaseConfiguration$$EnhancerBySpringCGLIB$$f1290633$$FastClassBySpringCGLIB$$f60d281d.invoke(<generated>) [spring-core-4.2.1.RELEASE.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:318) [spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at com.nitorcreations.nflow.engine.internal.storage.db.H2DatabaseConfiguration$$EnhancerBySpringCGLIB$$f1290633.nflowDatabaseInitializer(<generated>) [spring-core-4.2.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:295) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1145) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1069) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:616) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1145) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1069) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1145) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1069) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772) [spring-beans-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834) [spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) [spring-context-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446) [spring-web-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328) [spring-web-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107) [spring-web-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:800) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:444) [jetty-servlet-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:791) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:294) [jetty-servlet-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-util-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) [jetty-util-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114) [jetty-util-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-util-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) [jetty-util-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.Server.start(Server.java:387) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114) [jetty-util-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354) [jetty-server-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-util-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at com.nitorcreations.nflow.jetty.StartNflow.startJetty(StartNflow.java:98) [classes/:na]
+	at com.nitorcreations.nflow.jetty.StartNflow.startJetty(StartNflow.java:78) [classes/:na]
+	at com.nitorcreations.nflow.tests.runner.NflowServerRule.startJetty(NflowServerRule.java:121) [test-classes/:na]
+	at com.nitorcreations.nflow.tests.runner.NflowServerRule.startServer(NflowServerRule.java:90) [test-classes/:na]
+	at com.nitorcreations.nflow.tests.StatisticsTest.t05_restartServer(StatisticsTest.java:92) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:85) [spring-test-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at com.nitorcreations.nflow.tests.runner.SkipTestMethodsAfterFirstFailureRule$1.evaluate(SkipTestMethodsAfterFirstFailureRule.java:37) [test-classes/:na]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:86) [spring-test-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:241) [spring-test-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87) [spring-test-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48) [junit-4.12.jar:4.12]
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180) [spring-test-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+2021-10-05 17:37:18 WARN  [main] storage.db.DatabaseInitializer - [] Failed to create the database, possibly already created: Failed to execute SQL script statement #6 of class path resource [scripts/db/h2.create.ddl.sql]: alter table nflow_workflow add constraint fk_workflow_parent foreign key (parent_workflow_id, parent_action_id) references nflow_workflow_action (workflow_id, id) on delete cascade; nested exception is org.h2.jdbc.JdbcSQLException: Constraint "FK_WORKFLOW_PARENT" already exists; SQL statement:
+alter table nflow_workflow add constraint fk_workflow_parent foreign key (parent_workflow_id, parent_action_id) references nflow_workflow_action (workflow_id, id) on delete cascade [90045-189]
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: demo (com.nitorcreations.nflow.tests.demo.DemoWorkflow)
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGenerator (com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow)
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGeneratorErrors (com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow)
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: creditApplicationProcess (com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow)
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.SlowWorkflow
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: slowWorkflow (com.nitorcreations.nflow.tests.demo.SlowWorkflow)
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.FibonacciWorkflow
+2021-10-05 17:37:18 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: fibonacci (com.nitorcreations.nflow.tests.demo.FibonacciWorkflow)
+2021-10-05 17:37:18 INFO  [main] ry.xml.XmlBeanDefinitionReader - [] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2021-10-05 17:37:18 INFO  [main] c.support.SQLErrorCodesFactory - [] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2021-10-05 17:37:19 INFO  [main] ernal.config.WorkflowLifecycle - [] nFlow engine autostart disabled (system property nflow.autostart=false)
+2021-10-05 17:37:19 INFO  [main] apache.cxf.endpoint.ServerImpl - [] Setting the server's publish address to be //
+2021-10-05 17:37:19 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization completed in 269 ms
+2021-10-05 17:37:19 INFO  [main] .server.handler.ContextHandler - [] Started o.e.j.s.ServletContextHandler@68fe48d7{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static/],AVAILABLE}
+2021-10-05 17:37:19 INFO  [main] .server.AbstractNCSARequestLog - [] Opened /home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-tests/log/2021_10_05.request.log
+2021-10-05 17:37:19 INFO  [main] e.jetty.server.ServerConnector - [] Started 36071@379ce046{HTTP/1.1}{0.0.0.0:36071}
+2021-10-05 17:37:19 INFO  [main] rg.eclipse.jetty.server.Server - [] Started @8337ms
+2021-10-05 17:37:19 INFO  [main] eations.nflow.jetty.StartNflow - [] Successfully started Jetty on port 36071 in 0.708 seconds in environment [local, nflow.db.h2]
+2021-10-05 17:37:19 INFO  [main] eations.nflow.jetty.StartNflow - [] API available at http://0.0.0.0:36071/api/
+2021-10-05 17:37:19 INFO  [main] eations.nflow.jetty.StartNflow - [] Swagger available at http://0.0.0.0:36071/doc/
+2021-10-05 17:37:19 INFO  [main] eations.nflow.jetty.StartNflow - [] Explorer available at http://0.0.0.0:36071/explorer/
+2021-10-05 17:37:19 INFO  [main] eations.nflow.jetty.StartNflow - [] Metrics and health checks available at http://0.0.0.0:36071/metrics/
+2021-10-05 17:37:19 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 23
+Address: http://localhost:36071/api/v1/workflow-instance/1
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+Payload: {"nextActivationTime":"2021-10-05T17:32:19.042Z"}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [qtp256642638-58] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 24
+Address: http://localhost:36071/api/v1/workflow-instance/1
+Encoding: UTF-8
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[49], content-type=[application/json], Host=[localhost:36071], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+Payload: {"nextActivationTime":"2021-10-05T17:32:19.042Z"}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [qtp256642638-58] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 24
+Response-Code: 204
+Content-Type: application/json
+Headers: {Date=[Tue, 05 Oct 2021 17:37:19 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true], Content-Length=[0]}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 23
+Response-Code: 204
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], Date=[Tue, 05 Oct 2021 17:37:19 GMT, Tue, 05 Oct 2021 17:37:19 GMT], Server=[Jetty(9.2.13.v20150730)]}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 25
+Address: http://localhost:36071/api/v1/statistics
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [qtp256642638-58] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 26
+Address: http://localhost:36071/api/v1/statistics
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:36071], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [qtp256642638-58] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 26
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:19 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"queueStatistics":{"count":1,"maxAge":300028,"minAge":300028},"executionStatistics":{}}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 25
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:19 GMT, Tue, 05 Oct 2021 17:37:19 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"queueStatistics":{"count":1,"maxAge":300028,"minAge":300028},"executionStatistics":{}}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 27
+Address: http://localhost:36071/api/v1/statistics/workflow/demo
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [qtp256642638-58] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 28
+Address: http://localhost:36071/api/v1/statistics/workflow/demo
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:36071], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [qtp256642638-58] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 28
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:19 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"stateStatistics":{"begin":{"created":{"allInstances":1,"queuedInstances":1},"inProgress":{},"executing":{},"manual":{},"finished":{}}}}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 27
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:19 GMT, Tue, 05 Oct 2021 17:37:19 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"stateStatistics":{"begin":{"created":{"allInstances":1,"queuedInstances":1},"inProgress":{},"executing":{},"manual":{},"finished":{}}}}
+--------------------------------------
+2021-10-05 17:37:19 INFO  [main] e.jetty.server.ServerConnector - [] Stopped 36071@379ce046{HTTP/1.1}{0.0.0.0:36071}
+2021-10-05 17:37:19 INFO  [main] /                              - [] Closing Spring root WebApplicationContext
+2021-10-05 17:37:19 INFO  [main] ionConfigWebApplicationContext - [] Closing Root WebApplicationContext: startup date [Tue Oct 05 23:07:18 IST 2021]; root of context hierarchy
+2021-10-05 17:37:19 INFO  [main] port.DefaultLifecycleProcessor - [] Stopping beans in phase 2147483647
+2021-10-05 17:37:19 INFO  [main] .zaxxer.hikari.pool.HikariPool - [] HikariCP pool nflow is shutting down.
+2021-10-05 17:37:19 INFO  [main] .server.handler.ContextHandler - [] Stopped o.e.j.s.ServletContextHandler@68fe48d7{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static/],UNAVAILABLE}

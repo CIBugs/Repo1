@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.nitorcreations.nflow.jetty.spring.NflowStandardEnvironmentTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.988 sec - in com.nitorcreations.nflow.jetty.spring.NflowStandardEnvironmentTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 sec - in com.nitorcreations.nflow.jetty.spring.NflowStandardEnvironmentTest

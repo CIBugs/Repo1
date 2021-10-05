@@ -16,15 +16,15 @@
   },
   "basePath" : "/api",
   "tags" : [ {
-    "name" : "Workflow instance management"
+    "name" : "Workflow executor management"
   }, {
     "name" : "Archiving"
-  }, {
-    "name" : "Workflow executor management"
   }, {
     "name" : "Statistics"
   }, {
     "name" : "Workflow definition management"
+  }, {
+    "name" : "Workflow instance management"
   } ],
   "paths" : {
     "/v1/archive" : {
@@ -560,6 +560,14 @@
           "type" : "string",
           "enum" : [ "ARRAY", "BINARY", "BOOLEAN", "MISSING", "NULL", "NUMBER", "OBJECT", "POJO", "STRING" ]
         },
+        "array" : {
+          "type" : "boolean",
+          "default" : false
+        },
+        "null" : {
+          "type" : "boolean",
+          "default" : false
+        },
         "number" : {
           "type" : "boolean",
           "default" : false
@@ -580,7 +588,7 @@
           "type" : "boolean",
           "default" : false
         },
-        "integralNumber" : {
+        "pojo" : {
           "type" : "boolean",
           "default" : false
         },
@@ -624,15 +632,7 @@
           "type" : "boolean",
           "default" : false
         },
-        "pojo" : {
-          "type" : "boolean",
-          "default" : false
-        },
-        "array" : {
-          "type" : "boolean",
-          "default" : false
-        },
-        "null" : {
+        "integralNumber" : {
           "type" : "boolean",
           "default" : false
         }

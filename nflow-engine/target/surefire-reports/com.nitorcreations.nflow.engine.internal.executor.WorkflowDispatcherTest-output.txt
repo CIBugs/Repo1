@@ -1,14 +1,14 @@
-05.10.2021 17:35:26 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
-05.10.2021 17:35:26 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
-05.10.2021 17:35:27 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown interrupted.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
-05.10.2021 17:35:27 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
-05.10.2021 17:35:27 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
-05.10.2021 17:35:27 ERROR [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Error in shutting down thread pool.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
+05.10.2021 17:36:51 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
+05.10.2021 17:36:51 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown interrupted.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
+05.10.2021 17:36:51 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
+05.10.2021 17:36:51 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
+05.10.2021 17:36:51 ERROR [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Error in shutting down thread pool.
 java.lang.RuntimeException: Expected: exception on pool shutdown
 	at com.nitorcreations.nflow.engine.internal.executor.WorkflowDispatcher.shutdownPool(WorkflowDispatcher.java:89) [classes/:na]
 	at com.nitorcreations.nflow.engine.internal.executor.WorkflowDispatcher.run(WorkflowDispatcher.java:70) [classes/:na]
@@ -19,17 +19,17 @@ java.lang.RuntimeException: Expected: exception on pool shutdown
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
 	at edu.umd.cs.mtc.TestFramework$2.run(TestFramework.java:592) [multithreadedtc-1.01.jar:na]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
-05.10.2021 17:35:27 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
-05.10.2021 17:35:27 INFO  [main] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
-05.10.2021 17:35:27 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
-05.10.2021 17:35:27 ERROR [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Exception in executing dispatcher - retrying after sleep period (Expected: exception during dispatcher execution)
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
+05.10.2021 17:36:51 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
+05.10.2021 17:36:51 INFO  [main] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
+05.10.2021 17:36:51 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
+05.10.2021 17:36:51 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Starting.
+05.10.2021 17:36:51 ERROR [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Exception in executing dispatcher - retrying after sleep period (Expected: exception during dispatcher execution)
 java.lang.RuntimeException: Expected: exception during dispatcher execution
 	at com.nitorcreations.nflow.engine.internal.executor.WorkflowDispatcher.getNextInstanceIds(WorkflowDispatcher.java:110) ~[classes/:na]
 	at com.nitorcreations.nflow.engine.internal.executor.WorkflowDispatcher.run(WorkflowDispatcher.java:58) ~[classes/:na]
@@ -40,5 +40,5 @@ java.lang.RuntimeException: Expected: exception during dispatcher execution
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_292]
 	at edu.umd.cs.mtc.TestFramework$2.run(TestFramework.java:592) [multithreadedtc-1.01.jar:na]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
-05.10.2021 17:35:27 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
-05.10.2021 17:35:27 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.
+05.10.2021 17:36:51 INFO  [thread Shutdown] al.executor.WorkflowDispatcher - [user:] Shutdown requested.
+05.10.2021 17:36:52 INFO  [thread Dispatcher] al.executor.WorkflowDispatcher - [user:] Shutdown finished.

@@ -1,0 +1,499 @@
+2021-10-05 17:38:09 INFO  [main] DefaultTestContextBootstrapper - [] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-10-05 17:38:09 INFO  [main] DefaultTestContextBootstrapper - [] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6bccd036, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4f4c88f9, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a756082, org.springframework.test.context.support.DirtiesContextTestExecutionListener@cb39552, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1f3b992, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a53f215]
+2021-10-05 17:38:09 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-05 17:38:10 INFO  [main] eations.nflow.jetty.StartNflow - [] Static resources served from [file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static]
+2021-10-05 17:38:10 INFO  [main] rg.eclipse.jetty.server.Server - [] jetty-9.2.13.v20150730
+2021-10-05 17:38:10 INFO  [main] /                              - [] Initializing Spring root WebApplicationContext
+2021-10-05 17:38:10 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization started
+2021-10-05 17:38:10 INFO  [main] ionConfigWebApplicationContext - [] Refreshing Root WebApplicationContext: startup date [Tue Oct 05 23:08:10 IST 2021]; root of context hierarchy
+2021-10-05 17:38:10 INFO  [main] ionConfigWebApplicationContext - [] Successfully resolved class for [com.nitorcreations.nflow.jetty.config.NflowJettyConfiguration]
+2021-10-05 17:38:10 INFO  [main] redAnnotationBeanPostProcessor - [] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-10-05 17:38:10 INFO  [main] orage.db.DatabaseConfiguration - [] Database connection to h2 using jdbc:h2:mem:test;TRACE_LEVEL_FILE=4
+2021-10-05 17:38:10 INFO  [main] zaxxer.hikari.HikariDataSource - [] HikariCP pool nflow is starting.
+2021-10-05 17:38:10 INFO  [main] storage.db.DatabaseInitializer - [] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
+2021-10-05 17:38:10 INFO  [main] bc.datasource.init.ScriptUtils - [] Executing SQL script from class path resource [scripts/db/h2.create.ddl.sql]
+2021-10-05 17:38:10 INFO  [main] bc.datasource.init.ScriptUtils - [] Executed SQL script from class path resource [scripts/db/h2.create.ddl.sql] in 20 ms.
+2021-10-05 17:38:10 INFO  [main] storage.db.DatabaseInitializer - [] Database created.
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGenerator (com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow)
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGeneratorErrors (com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow)
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: creditApplicationProcess (com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow)
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.SlowWorkflow
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: slowWorkflow (com.nitorcreations.nflow.tests.demo.SlowWorkflow)
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.FibonacciWorkflow
+2021-10-05 17:38:10 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: fibonacci (com.nitorcreations.nflow.tests.demo.FibonacciWorkflow)
+2021-10-05 17:38:10 INFO  [main] apache.cxf.endpoint.ServerImpl - [] Setting the server's publish address to be //
+2021-10-05 17:38:10 INFO  [main] port.DefaultLifecycleProcessor - [] Starting beans in phase 2147483647
+2021-10-05 17:38:10 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization completed in 176 ms
+2021-10-05 17:38:10 INFO  [main] .server.handler.ContextHandler - [] Started o.e.j.s.ServletContextHandler@5f1483fd{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static/],AVAILABLE}
+2021-10-05 17:38:10 INFO  [main] .server.AbstractNCSARequestLog - [] Opened /home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-tests/log/2021_10_05.request.log
+2021-10-05 17:38:10 INFO  [main] e.jetty.server.ServerConnector - [] Started 0@44d91dad{HTTP/1.1}{0.0.0.0:37219}
+2021-10-05 17:38:10 INFO  [main] rg.eclipse.jetty.server.Server - [] Started @59512ms
+2021-10-05 17:38:10 INFO  [main] eations.nflow.jetty.StartNflow - [] Successfully started Jetty on port 37219 in 0.639 seconds in environment [local, nflow.db.h2]
+2021-10-05 17:38:10 INFO  [main] eations.nflow.jetty.StartNflow - [] API available at http://0.0.0.0:37219/api/
+2021-10-05 17:38:10 INFO  [main] eations.nflow.jetty.StartNflow - [] Swagger available at http://0.0.0.0:37219/doc/
+2021-10-05 17:38:10 INFO  [main] eations.nflow.jetty.StartNflow - [] Explorer available at http://0.0.0.0:37219/explorer/
+2021-10-05 17:38:10 INFO  [main] eations.nflow.jetty.StartNflow - [] Metrics and health checks available at http://0.0.0.0:37219/metrics/
+2021-10-05 17:38:10 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 191
+Address: http://localhost:37219/api/v1/workflow-instance
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+Payload: {"type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","startState":"previewCreditApplication","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","requestData":{"customerId":"CUST123","amount":1E+2,"simulation":false}}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Starting.
+2021-10-05 17:38:10 INFO  [qtp1732902480-166] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 192
+Address: http://localhost:37219/api/v1/workflow-instance
+Encoding: UTF-8
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[252], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+Payload: {"type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","startState":"previewCreditApplication","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","requestData":{"customerId":"CUST123","amount":1E+2,"simulation":false}}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [qtp1732902480-166] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 192
+Response-Code: 201
+Content-Type: application/json
+Headers: {Location=[http://localhost:37219/api/1], Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:10 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4"}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 191
+Response-Code: 201
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:10 GMT, Tue, 05 Oct 2021 17:38:10 GMT], Location=[http://localhost:37219/api/1], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4"}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 193
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [qtp1732902480-167] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 194
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [qtp1732902480-167] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 194
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:10 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"previewCreditApplication","nextActivation":"2021-10-05T17:38:10.241Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":false}},"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:10.244Z"}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 193
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:10 GMT, Tue, 05 Oct 2021 17:38:10 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"previewCreditApplication","nextActivation":"2021-10-05T17:38:10.241Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":false}},"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:10.244Z"}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 195
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [qtp1732902480-168] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 196
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [qtp1732902480-168] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 196
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:10 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"previewCreditApplication","nextActivation":"2021-10-05T17:38:10.241Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":false}},"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:10.244Z"}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 195
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:10 GMT, Tue, 05 Oct 2021 17:38:10 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"previewCreditApplication","nextActivation":"2021-10-05T17:38:10.241Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":false}},"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:10.244Z"}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 197
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [qtp1732902480-169] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 198
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [qtp1732902480-169] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 198
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:10 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"previewCreditApplication","nextActivation":"2021-10-05T17:38:10.241Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":false}},"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:10.244Z"}
+--------------------------------------
+2021-10-05 17:38:10 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 197
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:10 GMT, Tue, 05 Oct 2021 17:38:10 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"previewCreditApplication","nextActivation":"2021-10-05T17:38:10.241Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":false}},"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:10.244Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 199
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-170] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 200
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-170] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 200
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"previewCreditApplication","nextActivation":"2021-10-05T17:38:10.241Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":false}},"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:10.244Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 199
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT, Tue, 05 Oct 2021 17:38:11 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"previewCreditApplication","nextActivation":"2021-10-05T17:38:10.241Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":false}},"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:10.244Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [nflow-executor-2] demo.CreditApplicationWorkflow - [1] IRL: external service call for persisting credit application using request data
+2021-10-05 17:38:11 WARN  [nflow-executor-2] xecutor.WorkflowStateProcessor - [1] State transition from 'previewCreditApplication' to 'acceptCreditApplication' is not allowed by workflow definition.
+2021-10-05 17:38:11 INFO  [nflow-executor-2] demo.CreditApplicationWorkflow - [1] IRL: descheduling workflow instance, next state set externally
+2021-10-05 17:38:11 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 201
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-166] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 202
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-166] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 202
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"manual","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"acceptCreditApplication","stateText":"Stopped in state acceptCreditApplication","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.236Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 201
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT, Tue, 05 Oct 2021 17:38:11 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"manual","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"acceptCreditApplication","stateText":"Stopped in state acceptCreditApplication","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.236Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 203
+Address: http://localhost:37219/api/v1/workflow-instance/1
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+Payload: {"state":"grantLoan","nextActivationTime":"2021-10-05T17:38:11.290Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-167] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 204
+Address: http://localhost:37219/api/v1/workflow-instance/1
+Encoding: UTF-8
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[69], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+Payload: {"state":"grantLoan","nextActivationTime":"2021-10-05T17:38:11.290Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-167] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 204
+Response-Code: 204
+Content-Type: application/json
+Headers: {Date=[Tue, 05 Oct 2021 17:38:11 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true], Content-Length=[0]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 203
+Response-Code: 204
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], Date=[Tue, 05 Oct 2021 17:38:11 GMT, Tue, 05 Oct 2021 17:38:11 GMT], Server=[Jetty(9.2.13.v20150730)]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 205
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-168] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 206
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-168] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 206
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z. ","nextActivation":"2021-10-05T17:38:11.290Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.294Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 205
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT, Tue, 05 Oct 2021 17:38:11 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z. ","nextActivation":"2021-10-05T17:38:11.290Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.294Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 207
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-169] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 208
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-169] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 208
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z. ","nextActivation":"2021-10-05T17:38:11.290Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.294Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 207
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT, Tue, 05 Oct 2021 17:38:11 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z. ","nextActivation":"2021-10-05T17:38:11.290Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.294Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 209
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-170] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 210
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [qtp1732902480-170] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 210
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z. ","nextActivation":"2021-10-05T17:38:11.290Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.294Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:11 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 209
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:11 GMT, Tue, 05 Oct 2021 17:38:11 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z. ","nextActivation":"2021-10-05T17:38:11.290Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.294Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 211
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [qtp1732902480-166] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 212
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [qtp1732902480-166] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 212
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:12 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z. ","nextActivation":"2021-10-05T17:38:11.290Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.294Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 211
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:12 GMT, Tue, 05 Oct 2021 17:38:12 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z. ","nextActivation":"2021-10-05T17:38:11.290Z","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:11.294Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [nflow-executor-3] demo.CreditApplicationWorkflow - [1] IRL: external service call for granting a loan
+2021-10-05 17:38:12 INFO  [nflow-executor-3] demo.CreditApplicationWorkflow - [1] STUPID USER
+2021-10-05 17:38:12 WARN  [nflow-executor-3] xecutor.WorkflowStateProcessor - [1] State transition from 'grantLoan' to 'finishCreditApplication' is not allowed by workflow definition.
+2021-10-05 17:38:12 INFO  [nflow-executor-3] demo.CreditApplicationWorkflow - [1] IRL: external service call for updating credit application status
+2021-10-05 17:38:12 INFO  [nflow-executor-3] demo.CreditApplicationWorkflow - [1] Credit application process ended
+2021-10-05 17:38:12 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 213
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [qtp1732902480-167] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 214
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [qtp1732902480-167] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 214
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:12 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"finished","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"done","stateText":"Stopped in state done","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1},{"id":4,"type":"stateExecution","state":"grantLoan","stateText":"lörläbä","executionStartTime":"2021-10-05T17:38:12.227Z","executionEndTime":"2021-10-05T17:38:12.228Z","executorId":1},{"id":5,"type":"stateExecution","state":"finishCreditApplication","stateText":"Credit application finished","executionStartTime":"2021-10-05T17:38:12.229Z","executionEndTime":"2021-10-05T17:38:12.229Z","executorId":1},{"id":6,"type":"stateExecution","state":"done","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:12.229Z","executionEndTime":"2021-10-05T17:38:12.229Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:12.230Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 213
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:12 GMT, Tue, 05 Oct 2021 17:38:12 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"finished","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"done","stateText":"Stopped in state done","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1},{"id":4,"type":"stateExecution","state":"grantLoan","stateText":"lÃ¶rlÃ¤bÃ¤","executionStartTime":"2021-10-05T17:38:12.227Z","executionEndTime":"2021-10-05T17:38:12.228Z","executorId":1},{"id":5,"type":"stateExecution","state":"finishCreditApplication","stateText":"Credit application finished","executionStartTime":"2021-10-05T17:38:12.229Z","executionEndTime":"2021-10-05T17:38:12.229Z","executorId":1},{"id":6,"type":"stateExecution","state":"done","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:12.229Z","executionEndTime":"2021-10-05T17:38:12.229Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:12.230Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 215
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [qtp1732902480-168] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 216
+Address: http://localhost:37219/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:37219], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [qtp1732902480-168] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 216
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:12 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"finished","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"done","stateText":"Stopped in state done","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1},{"id":4,"type":"stateExecution","state":"grantLoan","stateText":"lörläbä","executionStartTime":"2021-10-05T17:38:12.227Z","executionEndTime":"2021-10-05T17:38:12.228Z","executorId":1},{"id":5,"type":"stateExecution","state":"finishCreditApplication","stateText":"Credit application finished","executionStartTime":"2021-10-05T17:38:12.229Z","executionEndTime":"2021-10-05T17:38:12.229Z","executorId":1},{"id":6,"type":"stateExecution","state":"done","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:12.229Z","executionEndTime":"2021-10-05T17:38:12.229Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:12.230Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 215
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:12 GMT, Tue, 05 Oct 2021 17:38:12 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"finished","type":"creditApplicationProcess","businessKey":"d7c41364-732b-46ea-915a-5c4aa34857d7","externalId":"42075467-ff9a-4c12-8669-f5d994a717d4","state":"done","stateText":"Stopped in state done","stateVariables":{"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true},"info":{"applicationId":"abcCUST123"}},"actions":[{"id":1,"type":"stateExecution","state":"previewCreditApplication","stateText":"Credit application previewed","executionStartTime":"2021-10-05T17:38:11.230Z","executionEndTime":"2021-10-05T17:38:11.234Z","executorId":1,"updatedStateVariables":{"info":{"applicationId":"abcCUST123"},"requestData":{"customerId":"CUST123","amount":100.0,"simulation":true}}},{"id":2,"type":"stateExecution","state":"acceptCreditApplication","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:11.235Z","executionEndTime":"2021-10-05T17:38:11.236Z","executorId":1},{"id":3,"type":"externalChange","state":"grantLoan","stateText":"API changed state to grantLoan. API changed nextActivationTime to 2021-10-05T17:38:11.290Z.","executionStartTime":"2021-10-05T17:38:11.293Z","executionEndTime":"2021-10-05T17:38:11.293Z","executorId":1},{"id":4,"type":"stateExecution","state":"grantLoan","stateText":"lÃ¶rlÃ¤bÃ¤","executionStartTime":"2021-10-05T17:38:12.227Z","executionEndTime":"2021-10-05T17:38:12.228Z","executorId":1},{"id":5,"type":"stateExecution","state":"finishCreditApplication","stateText":"Credit application finished","executionStartTime":"2021-10-05T17:38:12.229Z","executionEndTime":"2021-10-05T17:38:12.229Z","executorId":1},{"id":6,"type":"stateExecution","state":"done","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:12.229Z","executionEndTime":"2021-10-05T17:38:12.229Z","executorId":1}],"created":"2021-10-05T17:38:10.244Z","modified":"2021-10-05T17:38:12.230Z","started":"2021-10-05T17:38:11.230Z"}
+--------------------------------------
+2021-10-05 17:38:12 INFO  [main] e.jetty.server.ServerConnector - [] Stopped 0@44d91dad{HTTP/1.1}{0.0.0.0:0}
+2021-10-05 17:38:12 INFO  [main] /                              - [] Closing Spring root WebApplicationContext
+2021-10-05 17:38:12 INFO  [main] ionConfigWebApplicationContext - [] Closing Root WebApplicationContext: startup date [Tue Oct 05 23:08:10 IST 2021]; root of context hierarchy
+2021-10-05 17:38:12 INFO  [main] port.DefaultLifecycleProcessor - [] Stopping beans in phase 2147483647
+2021-10-05 17:38:12 INFO  [main] al.executor.WorkflowDispatcher - [] Shutdown requested.
+2021-10-05 17:38:13 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Shutdown finished.
+2021-10-05 17:38:13 INFO  [main] .zaxxer.hikari.pool.HikariPool - [] HikariCP pool nflow is shutting down.
+2021-10-05 17:38:13 INFO  [main] .server.handler.ContextHandler - [] Stopped o.e.j.s.ServletContextHandler@5f1483fd{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static/],UNAVAILABLE}

@@ -1,8 +1,8 @@
-05.10.2021 17:35:25 INFO  [main] orage.db.DatabaseConfiguration - [user:] Database connection to h2 using jdbc:h2:mem:test;TRACE_LEVEL_FILE=4
-05.10.2021 17:35:25 INFO  [main] storage.db.DatabaseInitializer - [user:] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
-05.10.2021 17:35:25 INFO  [main] storage.db.DatabaseInitializer - [user:] Database created.
-05.10.2021 17:35:26 INFO  [main] storage.db.DatabaseInitializer - [user:] Creating database populator using script 'scripts/db/fails.create.ddl.sql'
-05.10.2021 17:35:26 ERROR [main] h2database                     - [user:] jdbc[3] exception
+05.10.2021 17:36:50 INFO  [main] orage.db.DatabaseConfiguration - [user:] Database connection to h2 using jdbc:h2:mem:test;TRACE_LEVEL_FILE=4
+05.10.2021 17:36:50 INFO  [main] storage.db.DatabaseInitializer - [user:] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
+05.10.2021 17:36:50 INFO  [main] storage.db.DatabaseInitializer - [user:] Database created.
+05.10.2021 17:36:51 INFO  [main] storage.db.DatabaseInitializer - [user:] Creating database populator using script 'scripts/db/fails.create.ddl.sql'
+05.10.2021 17:36:51 ERROR [main] h2database                     - [user:] jdbc[3] exception
 org.h2.jdbc.JdbcSQLException: Table "FOO" already exists; SQL statement:
 create table foo [42101-189]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[h2-1.4.189.jar:1.4.189]
@@ -53,5 +53,5 @@ create table foo [42101-189]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
-05.10.2021 17:35:26 WARN  [main] storage.db.DatabaseInitializer - [user:] Failed to create the database, possibly already created: Failed to execute SQL script statement #2 of class path resource [scripts/db/fails.create.ddl.sql]: create table foo; nested exception is org.h2.jdbc.JdbcSQLException: Table "FOO" already exists; SQL statement:
+05.10.2021 17:36:51 WARN  [main] storage.db.DatabaseInitializer - [user:] Failed to create the database, possibly already created: Failed to execute SQL script statement #2 of class path resource [scripts/db/fails.create.ddl.sql]: create table foo; nested exception is org.h2.jdbc.JdbcSQLException: Table "FOO" already exists; SQL statement:
 create table foo [42101-189]

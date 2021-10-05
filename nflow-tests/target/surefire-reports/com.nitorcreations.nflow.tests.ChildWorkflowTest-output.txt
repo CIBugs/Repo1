@@ -1,0 +1,1274 @@
+2021-10-05 17:37:55 INFO  [main] DefaultTestContextBootstrapper - [] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-10-05 17:37:55 INFO  [main] DefaultTestContextBootstrapper - [] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@61cd1c71, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6724cdec, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6944e53e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@52e04737, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5bc7e78e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1a4d1ab7]
+2021-10-05 17:37:55 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-05 17:37:55 INFO  [main] eations.nflow.jetty.StartNflow - [] Static resources served from [file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static]
+2021-10-05 17:37:55 INFO  [main] rg.eclipse.jetty.server.Server - [] jetty-9.2.13.v20150730
+2021-10-05 17:37:55 INFO  [main] /                              - [] Initializing Spring root WebApplicationContext
+2021-10-05 17:37:55 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization started
+2021-10-05 17:37:55 INFO  [main] ionConfigWebApplicationContext - [] Refreshing Root WebApplicationContext: startup date [Tue Oct 05 23:07:55 IST 2021]; root of context hierarchy
+2021-10-05 17:37:55 INFO  [main] ionConfigWebApplicationContext - [] Successfully resolved class for [com.nitorcreations.nflow.jetty.config.NflowJettyConfiguration]
+2021-10-05 17:37:56 INFO  [main] redAnnotationBeanPostProcessor - [] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-10-05 17:37:56 INFO  [main] orage.db.DatabaseConfiguration - [] Database connection to h2 using jdbc:h2:mem:test;TRACE_LEVEL_FILE=4
+2021-10-05 17:37:56 INFO  [main] zaxxer.hikari.HikariDataSource - [] HikariCP pool nflow is starting.
+2021-10-05 17:37:56 INFO  [main] storage.db.DatabaseInitializer - [] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
+2021-10-05 17:37:56 INFO  [main] bc.datasource.init.ScriptUtils - [] Executing SQL script from class path resource [scripts/db/h2.create.ddl.sql]
+2021-10-05 17:37:56 INFO  [main] bc.datasource.init.ScriptUtils - [] Executed SQL script from class path resource [scripts/db/h2.create.ddl.sql] in 17 ms.
+2021-10-05 17:37:56 INFO  [main] storage.db.DatabaseInitializer - [] Database created.
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGenerator (com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow)
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGeneratorErrors (com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow)
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: creditApplicationProcess (com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow)
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.SlowWorkflow
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: slowWorkflow (com.nitorcreations.nflow.tests.demo.SlowWorkflow)
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.FibonacciWorkflow
+2021-10-05 17:37:56 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: fibonacci (com.nitorcreations.nflow.tests.demo.FibonacciWorkflow)
+2021-10-05 17:37:56 INFO  [main] apache.cxf.endpoint.ServerImpl - [] Setting the server's publish address to be //
+2021-10-05 17:37:56 INFO  [main] port.DefaultLifecycleProcessor - [] Starting beans in phase 2147483647
+2021-10-05 17:37:56 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Starting.
+2021-10-05 17:37:56 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization completed in 165 ms
+2021-10-05 17:37:56 INFO  [main] .server.handler.ContextHandler - [] Started o.e.j.s.ServletContextHandler@1f346ad2{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static/],AVAILABLE}
+2021-10-05 17:37:56 INFO  [main] .server.AbstractNCSARequestLog - [] Opened /home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-tests/log/2021_10_05.request.log
+2021-10-05 17:37:56 INFO  [main] e.jetty.server.ServerConnector - [] Started 0@46a145ba{HTTP/1.1}{0.0.0.0:46437}
+2021-10-05 17:37:56 INFO  [main] rg.eclipse.jetty.server.Server - [] Started @45422ms
+2021-10-05 17:37:56 INFO  [main] eations.nflow.jetty.StartNflow - [] Successfully started Jetty on port 46437 in 0.617 seconds in environment [local, nflow.db.h2]
+2021-10-05 17:37:56 INFO  [main] eations.nflow.jetty.StartNflow - [] API available at http://0.0.0.0:46437/api/
+2021-10-05 17:37:56 INFO  [main] eations.nflow.jetty.StartNflow - [] Swagger available at http://0.0.0.0:46437/doc/
+2021-10-05 17:37:56 INFO  [main] eations.nflow.jetty.StartNflow - [] Explorer available at http://0.0.0.0:46437/explorer/
+2021-10-05 17:37:56 INFO  [main] eations.nflow.jetty.StartNflow - [] Metrics and health checks available at http://0.0.0.0:46437/metrics/
+2021-10-05 17:37:56 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 95
+Address: http://localhost:46437/api/v1/workflow-instance
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+Payload: {"type":"fibonacci","requestData":{"n":5}}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-104] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 96
+Address: http://localhost:46437/api/v1/workflow-instance
+Encoding: UTF-8
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[42], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+Payload: {"type":"fibonacci","requestData":{"n":5}}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-104] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 96
+Response-Code: 201
+Content-Type: application/json
+Headers: {Location=[http://localhost:46437/api/1], Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf"}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 95
+Response-Code: 201
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT, Tue, 05 Oct 2021 17:37:56 GMT], Location=[http://localhost:46437/api/1], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf"}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 97
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-105] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 98
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-105] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 98
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"begin","nextActivation":"2021-10-05T17:37:56.143Z","stateVariables":{"requestData":{"n":5}},"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:56.144Z"}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 97
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT, Tue, 05 Oct 2021 17:37:56 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"begin","nextActivation":"2021-10-05T17:37:56.143Z","stateVariables":{"requestData":{"n":5}},"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:56.144Z"}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 99
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-106] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 100
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-106] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 100
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"begin","nextActivation":"2021-10-05T17:37:56.143Z","stateVariables":{"requestData":{"n":5}},"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:56.144Z"}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 99
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT, Tue, 05 Oct 2021 17:37:56 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"begin","nextActivation":"2021-10-05T17:37:56.143Z","stateVariables":{"requestData":{"n":5}},"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:56.144Z"}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 101
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-107] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 102
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-107] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 102
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"begin","nextActivation":"2021-10-05T17:37:56.143Z","stateVariables":{"requestData":{"n":5}},"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:56.144Z"}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 101
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT, Tue, 05 Oct 2021 17:37:56 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"begin","nextActivation":"2021-10-05T17:37:56.143Z","stateVariables":{"requestData":{"n":5}},"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:56.144Z"}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 103
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-108] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 104
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [qtp1618489605-108] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 104
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"begin","nextActivation":"2021-10-05T17:37:56.143Z","stateVariables":{"requestData":{"n":5}},"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:56.144Z"}
+--------------------------------------
+2021-10-05 17:37:56 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 103
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:56 GMT, Tue, 05 Oct 2021 17:37:56 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"begin","nextActivation":"2021-10-05T17:37:56.143Z","stateVariables":{"requestData":{"n":5}},"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:56.144Z"}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [nflow-executor-2] w.tests.demo.FibonacciWorkflow - [1] Fibonacci step N = 5
+2021-10-05 17:37:57 INFO  [nflow-executor-2] w.tests.demo.FibonacciWorkflow - [1] Create child workflow N=3
+2021-10-05 17:37:57 INFO  [nflow-executor-2] w.tests.demo.FibonacciWorkflow - [1] Create child workflow N=4
+2021-10-05 17:37:57 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 105
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [qtp1618489605-104] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 106
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [qtp1618489605-104] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 106
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:57 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 105
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:57 GMT, Tue, 05 Oct 2021 17:37:57 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 107
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [qtp1618489605-105] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 108
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [qtp1618489605-105] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 108
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:57 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 107
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:57 GMT, Tue, 05 Oct 2021 17:37:57 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 109
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [qtp1618489605-106] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 110
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [qtp1618489605-106] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 110
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:57 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 109
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:57 GMT, Tue, 05 Oct 2021 17:37:57 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 111
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [qtp1618489605-107] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 112
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [qtp1618489605-107] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 112
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:57 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:57 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 111
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:57 GMT, Tue, 05 Oct 2021 17:37:57 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 113
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-108] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 114
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-108] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 114
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 113
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT, Tue, 05 Oct 2021 17:37:58 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [nflow-executor-3] w.tests.demo.FibonacciWorkflow - [2] Fibonacci step N = 3
+2021-10-05 17:37:58 INFO  [nflow-executor-4] w.tests.demo.FibonacciWorkflow - [3] Fibonacci step N = 4
+2021-10-05 17:37:58 INFO  [nflow-executor-3] w.tests.demo.FibonacciWorkflow - [2] nextN = 1. skipping to done
+2021-10-05 17:37:58 INFO  [nflow-executor-4] w.tests.demo.FibonacciWorkflow - [3] Create child workflow N=2
+2021-10-05 17:37:58 INFO  [nflow-executor-3] w.tests.demo.FibonacciWorkflow - [2] Create child workflow N=2
+2021-10-05 17:37:58 INFO  [nflow-executor-4] w.tests.demo.FibonacciWorkflow - [3] Create child workflow N=3
+2021-10-05 17:37:58 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 115
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-104] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 116
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-104] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 116
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 115
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT, Tue, 05 Oct 2021 17:37:58 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 117
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-105] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 118
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-105] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 118
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 117
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT, Tue, 05 Oct 2021 17:37:58 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 119
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-106] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 120
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-106] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 120
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 119
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT, Tue, 05 Oct 2021 17:37:58 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 121
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-107] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 122
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [qtp1618489605-107] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 122
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:58 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 121
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:58 GMT, Tue, 05 Oct 2021 17:37:58 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 123
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-108] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 124
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-108] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 124
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 123
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT, Tue, 05 Oct 2021 17:37:59 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [nflow-executor-6] w.tests.demo.FibonacciWorkflow - [5] Fibonacci step N = 2
+2021-10-05 17:37:59 INFO  [nflow-executor-6] w.tests.demo.FibonacciWorkflow - [5] nextN = 0. skipping to done
+2021-10-05 17:37:59 INFO  [nflow-executor-5] w.tests.demo.FibonacciWorkflow - [4] Fibonacci step N = 2
+2021-10-05 17:37:59 INFO  [nflow-executor-7] w.tests.demo.FibonacciWorkflow - [6] Fibonacci step N = 3
+2021-10-05 17:37:59 INFO  [nflow-executor-6] w.tests.demo.FibonacciWorkflow - [5] nextN = 1. skipping to done
+2021-10-05 17:37:59 INFO  [nflow-executor-5] w.tests.demo.FibonacciWorkflow - [4] nextN = 0. skipping to done
+2021-10-05 17:37:59 INFO  [nflow-executor-5] w.tests.demo.FibonacciWorkflow - [4] nextN = 1. skipping to done
+2021-10-05 17:37:59 INFO  [nflow-executor-7] w.tests.demo.FibonacciWorkflow - [6] nextN = 1. skipping to done
+2021-10-05 17:37:59 INFO  [nflow-executor-7] w.tests.demo.FibonacciWorkflow - [6] Create child workflow N=2
+2021-10-05 17:37:59 INFO  [nflow-executor-5] xecutor.WorkflowStateProcessor - [4] Woke up parent workflow instance 3
+2021-10-05 17:37:59 INFO  [nflow-executor-5] w.tests.demo.FibonacciWorkflow - [4] We are done: fibonacci(2) == 2
+2021-10-05 17:37:59 INFO  [nflow-executor-6] xecutor.WorkflowStateProcessor - [5] Woke up parent workflow instance 2
+2021-10-05 17:37:59 INFO  [nflow-executor-6] w.tests.demo.FibonacciWorkflow - [5] We are done: fibonacci(2) == 2
+2021-10-05 17:37:59 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 125
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-104] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 126
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-104] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 126
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 125
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT, Tue, 05 Oct 2021 17:37:59 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 127
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-105] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 128
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-105] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 128
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 127
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT, Tue, 05 Oct 2021 17:37:59 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 129
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-106] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 130
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-106] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 130
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 129
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT, Tue, 05 Oct 2021 17:37:59 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 131
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-107] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 132
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [qtp1618489605-107] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 132
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:37:59 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 131
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:37:59 GMT, Tue, 05 Oct 2021 17:37:59 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 133
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-108] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 134
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-108] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 134
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 133
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT, Tue, 05 Oct 2021 17:38:00 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:07.150Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:37:57.150Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [nflow-executor-2] w.tests.demo.FibonacciWorkflow - [7] Fibonacci step N = 2
+2021-10-05 17:38:00 INFO  [nflow-executor-2] w.tests.demo.FibonacciWorkflow - [7] nextN = 0. skipping to done
+2021-10-05 17:38:00 INFO  [nflow-executor-2] w.tests.demo.FibonacciWorkflow - [7] nextN = 1. skipping to done
+2021-10-05 17:38:00 INFO  [nflow-executor-8] xecutor.WorkflowStateProcessor - [2] Woke up parent workflow instance 1
+2021-10-05 17:38:00 INFO  [nflow-executor-8] w.tests.demo.FibonacciWorkflow - [2] We are done: fibonacci(3) == 3
+2021-10-05 17:38:00 INFO  [nflow-executor-2] xecutor.WorkflowStateProcessor - [7] Woke up parent workflow instance 6
+2021-10-05 17:38:00 INFO  [nflow-executor-2] w.tests.demo.FibonacciWorkflow - [7] We are done: fibonacci(2) == 2
+2021-10-05 17:38:00 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 135
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-104] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 136
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-104] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 136
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:00.168Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:00.168Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 135
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT, Tue, 05 Oct 2021 17:38:00 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:00.168Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:00.168Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 137
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-105] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 138
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-105] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 138
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:00.168Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:00.168Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 137
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT, Tue, 05 Oct 2021 17:38:00 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:00.168Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:00.168Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 139
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-106] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 140
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-106] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 140
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:00.168Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:00.168Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 139
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT, Tue, 05 Oct 2021 17:38:00 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:00.168Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:00.168Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 141
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-107] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 142
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [qtp1618489605-107] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 142
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:00.168Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:00.168Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:00 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 141
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:00 GMT, Tue, 05 Oct 2021 17:38:00 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:00.168Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":1,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:00.168Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [nflow-executor-3] xecutor.WorkflowStateProcessor - [6] Woke up parent workflow instance 3
+2021-10-05 17:38:01 INFO  [nflow-executor-3] w.tests.demo.FibonacciWorkflow - [6] We are done: fibonacci(3) == 3
+2021-10-05 17:38:01 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 143
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [qtp1618489605-108] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 144
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [qtp1618489605-108] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 144
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:01 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 143
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:01 GMT, Tue, 05 Oct 2021 17:38:01 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 145
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [qtp1618489605-104] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 146
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [qtp1618489605-104] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 146
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:01 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 145
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:01 GMT, Tue, 05 Oct 2021 17:38:01 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 147
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [qtp1618489605-105] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 148
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [qtp1618489605-105] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 148
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:01 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 147
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:01 GMT, Tue, 05 Oct 2021 17:38:01 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 149
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [qtp1618489605-106] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 150
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [qtp1618489605-106] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 150
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:01 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:01 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 149
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:01 GMT, Tue, 05 Oct 2021 17:38:01 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 151
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-107] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 152
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-107] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 152
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 151
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT, Tue, 05 Oct 2021 17:38:02 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:11.165Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:01.165Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [nflow-executor-5] xecutor.WorkflowStateProcessor - [3] Woke up parent workflow instance 1
+2021-10-05 17:38:02 INFO  [nflow-executor-5] w.tests.demo.FibonacciWorkflow - [3] We are done: fibonacci(4) == 5
+2021-10-05 17:38:02 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 153
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-108] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 154
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-108] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 154
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 153
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT, Tue, 05 Oct 2021 17:38:02 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 155
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-104] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 156
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-104] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 156
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 155
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT, Tue, 05 Oct 2021 17:38:02 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 157
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-105] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 158
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-105] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 158
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 157
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT, Tue, 05 Oct 2021 17:38:02 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 159
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-106] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 160
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [qtp1618489605-106] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 160
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:02 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 159
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:02 GMT, Tue, 05 Oct 2021 17:38:02 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:03 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 161
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:03 INFO  [qtp1618489605-107] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 162
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:03 INFO  [qtp1618489605-107] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 162
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:03 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:03 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 161
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:03 GMT, Tue, 05 Oct 2021 17:38:03 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"inProgress","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"poll","stateText":"Child workflows are not ready yet.","nextActivation":"2021-10-05T17:38:02.169Z","stateVariables":{"requestData":{"n":5},"result":0},"retries":2,"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:02.169Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:03 WARN  [nflow-executor-7] xecutor.WorkflowStateProcessor - [1] Workflow fibonacci trying to wake up non existing parent workflow
+2021-10-05 17:38:03 INFO  [nflow-executor-7] w.tests.demo.FibonacciWorkflow - [1] We are done: fibonacci(5) == 8
+2021-10-05 17:38:03 INFO  [Time-limited test] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 163
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-05 17:38:03 INFO  [qtp1618489605-108] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 164
+Address: http://localhost:46437/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Encoding: UTF-8
+Http-Method: GET
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/json], Host=[localhost:46437], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.3]}
+--------------------------------------
+2021-10-05 17:38:03 INFO  [qtp1618489605-108] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 164
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Tue, 05 Oct 2021 17:38:03 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"finished","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"done","stateText":"Stopped in state done","stateVariables":{"requestData":{"n":5},"result":8},"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1},{"id":40,"type":"stateExecution","state":"poll","stateText":"All is good","retryNo":2,"executionStartTime":"2021-10-05T17:38:03.168Z","executionEndTime":"2021-10-05T17:38:03.172Z","executorId":1,"updatedStateVariables":{"result":8}},{"id":41,"type":"stateExecution","state":"done","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:03.174Z","executionEndTime":"2021-10-05T17:38:03.175Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:03.175Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:03 INFO  [Time-limited test] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 163
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Tue, 05 Oct 2021 17:38:03 GMT, Tue, 05 Oct 2021 17:38:03 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"finished","type":"fibonacci","externalId":"0b9b204b-4055-4790-aaff-f51a34a42ddf","state":"done","stateText":"Stopped in state done","stateVariables":{"requestData":{"n":5},"result":8},"actions":[{"id":1,"type":"stateExecution","state":"begin","stateText":"Starting N = 5","executionStartTime":"2021-10-05T17:37:57.138Z","executionEndTime":"2021-10-05T17:37:57.140Z","executorId":1,"updatedStateVariables":{"result":0}},{"id":2,"type":"stateExecution","state":"nMinus2","stateText":"Creating childWorkflow to process f(3)","executionStartTime":"2021-10-05T17:37:57.143Z","executionEndTime":"2021-10-05T17:37:57.144Z","executorId":1},{"id":3,"type":"stateExecution","state":"nMinus1","stateText":"Creating childWorkflow to process f(4)","executionStartTime":"2021-10-05T17:37:57.146Z","executionEndTime":"2021-10-05T17:37:57.146Z","executorId":1},{"id":4,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","executionStartTime":"2021-10-05T17:37:57.147Z","executionEndTime":"2021-10-05T17:37:57.150Z","executorId":1},{"id":35,"type":"stateExecution","state":"poll","stateText":"Child workflows are not ready yet.","retryNo":1,"executionStartTime":"2021-10-05T17:38:01.162Z","executionEndTime":"2021-10-05T17:38:01.165Z","executorId":1},{"id":40,"type":"stateExecution","state":"poll","stateText":"All is good","retryNo":2,"executionStartTime":"2021-10-05T17:38:03.168Z","executionEndTime":"2021-10-05T17:38:03.172Z","executorId":1,"updatedStateVariables":{"result":8}},{"id":41,"type":"stateExecution","state":"done","stateText":"Stopped in final state","executionStartTime":"2021-10-05T17:38:03.174Z","executionEndTime":"2021-10-05T17:38:03.175Z","executorId":1}],"created":"2021-10-05T17:37:56.144Z","modified":"2021-10-05T17:38:03.175Z","started":"2021-10-05T17:37:57.138Z"}
+--------------------------------------
+2021-10-05 17:38:03 INFO  [main] e.jetty.server.ServerConnector - [] Stopped 0@46a145ba{HTTP/1.1}{0.0.0.0:0}
+2021-10-05 17:38:03 INFO  [main] /                              - [] Closing Spring root WebApplicationContext
+2021-10-05 17:38:03 INFO  [main] ionConfigWebApplicationContext - [] Closing Root WebApplicationContext: startup date [Tue Oct 05 23:07:55 IST 2021]; root of context hierarchy
+2021-10-05 17:38:03 INFO  [main] port.DefaultLifecycleProcessor - [] Stopping beans in phase 2147483647
+2021-10-05 17:38:03 INFO  [main] al.executor.WorkflowDispatcher - [] Shutdown requested.
+2021-10-05 17:38:04 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Shutdown finished.
+2021-10-05 17:38:04 INFO  [main] .zaxxer.hikari.pool.HikariPool - [] HikariCP pool nflow is shutting down.
+2021-10-05 17:38:04 INFO  [main] .server.handler.ContextHandler - [] Stopped o.e.j.s.ServletContextHandler@1f346ad2{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-f17768aa7f97b4fb71b95d6a6201491db3d04403/nflow-rest-api/target/classes/static/],UNAVAILABLE}

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.nitorcreations.nflow.tests.ExecutorRecoveryTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.384 sec - in com.nitorcreations.nflow.tests.ExecutorRecoveryTest
