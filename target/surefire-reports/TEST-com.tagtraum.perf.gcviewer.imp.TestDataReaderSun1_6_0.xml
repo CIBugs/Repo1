@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.059" tests="53" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/repo"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/repo"/>
+    <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="org.apache.commons.logging.simplelog.showShortLogname" value="false"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/suvarna/maven/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/suvarna/maven/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-142-generic"/>
+    <property name="library.jansi.path" value="/home/suvarna/maven/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/home/suvarna"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="suvarna"/>
+    <property name="java.class.path" value="/home/suvarna/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/home/suvarna/maven/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="org.apache.commons.logging.Log" value="org.apache.commons.logging.impl.SimpleLog"/>
+  </properties>
+  <testcase name="testCmsRemarkTimestamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.002"/>
+  <testcase name="testCMSWithoutPrintTimeStamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSConcurrentModeFailureDate" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCmsInitiatingOccupancyFraction" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testMixedLineTimestamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testLineMixesPrintTenuringDistribution" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPrintCmsStatisticsScavengeBeforeRemark" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSConcurrentModeFailure" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSPromotionFailed" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPrintCmsStatisticsConcurrentPreclean" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPromotionFailedWithReference" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSConcurrentModeFailureCmsAbortPreclean" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testAdaptiveSizePolicy" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.007"/>
+  <testcase name="testFullGcIncrementalDatestamp2" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="cmsConcurrentModeFailureWithComma" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testFullGcSystem" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPrintCmsStatisticsConcurrentModeFailure" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCmsGcLocker" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPrintTenuringDistributionPromotionFailed" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testFullGcIncrementalTimestamp2" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testPSPrintTenuringDistribution" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSAdaptiveSizePolicy" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.005"/>
+  <testcase name="testPrintGCDateStamps" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSFullGcCmsInterrupted" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testPrintCmsStatisticsParNewBeforeRemark" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testCMSWithoutPrintTimeStampConcurrentModeFailure" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testPrintCmsStatistics" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCmsMemory" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.002"/>
+  <testcase name="testCMSAbortingPrecleanDatestamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPrintCmsStatisticsConcurrentMark" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testFullGcIncrementalDatestamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSAbortingPrecleanTimestamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testPrintTenuringDistributionPromotionFailedConcurrentModeFailure" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.002"/>
+  <testcase name="testPrintCmsStatisticsRemark" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.003"/>
+  <testcase name="testFullGcIncrementalTimestamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testAdaptiveSizePolicyFullSystemGc" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPrintTenuringDistributionOpenJdk6" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testMixedLineWithEmptyLine" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.002"/>
+  <testcase name="testPrintCmsStatisticsParNewBeforeRemark2" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPrintHeapAtGC" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSScavengeBeforeRemarkWithPrintTenuringDistribution" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCmsConcurrentMarkStart" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPrintWithoutUseAdaptiveSizePolicy" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSScavengeBeforeRemarkDateStamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testPrintTenuringDistribution" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testPSWithoutPrintTimeStamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.002"/>
+  <testcase name="testCMSScavengeBeforeRemarkTimeStamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSPromotionFailedPrintPromotionFailure" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testCmsRemarkSerial" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0"/>
+  <testcase name="testDerivedGenerationValues" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCMSAdaptiveSizePolicyPrintHeapAtGC" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCmsRemarkDatestamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+  <testcase name="testCommaInTimestamp" classname="com.tagtraum.perf.gcviewer.imp.TestDataReaderSun1_6_0" time="0.001"/>
+</testsuite>

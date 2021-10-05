@@ -1,0 +1,10 @@
+org/libjpegturbo/turbojpeg/TJTransformer.class
+org/libjpegturbo/turbojpeg/TJCustomFilter.class
+org/libjpegturbo/turbojpeg/TJDecompressor.class
+org/libjpegturbo/turbojpeg/TJCompressor.class
+org/libjpegturbo/turbojpeg/TJLoader.class
+org/libjpegturbo/turbojpeg/TJScalingFactor.class
+org/libjpegturbo/turbojpeg/TJ.class
+TJExample.class
+TJUnitTest.class
+org/libjpegturbo/turbojpeg/TJTransform.class

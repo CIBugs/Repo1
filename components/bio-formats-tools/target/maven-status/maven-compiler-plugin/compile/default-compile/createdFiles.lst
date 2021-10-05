@@ -1,0 +1,10 @@
+loci/formats/tools/CommandLineTools.class
+loci/formats/tools/ImageInfo.class
+loci/formats/tools/XMLIndent.class
+loci/formats/tools/TiffComment.class
+loci/formats/tools/PrintFormatTable$PrintStyles.class
+loci/formats/tools/PrintDomains.class
+loci/formats/tools/ImageFaker.class
+loci/formats/tools/PrintFormatTable.class
+loci/formats/tools/ImageConverter.class
+loci/formats/tools/XMLValidate.class
