@@ -1,17 +1,17 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[XV7f5f7eN2lOtYf9ub7XNC]]]
-"Thread:520" -> "SimpleStream:1195259493:test" : [s1:m3] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n749235a6)
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[R5Q-Pys3Cdyw8Y862e7XHD]]]
+"Thread:545" -> "SimpleStream:1195259493:test" : [s1:m3] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n6cab2d6f)
 activate "SimpleStream:1195259493:test"
 hnote over "SimpleStream:1195259493:test" #white : [s1] activate
-"SimpleStream:1195259493:test" --> "Thread:520" : [s1:r3; 6,283us] (response to subscribe): \n3A2D3hN0LM15_sg8
+"SimpleStream:1195259493:test" --> "Thread:545" : [s1:r3; 1,920us] (response to subscribe): \nO5Fw9Oic9HAU0Wc2
 deactivate "SimpleStream:1195259493:test"
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[m3Ds0m0T4DRSPLz2opL-7B]]]
-"Thread:520" -> "SimpleStream:1195259493:test" : [s2:m2] publish(hello)
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[aq2ySEVDc3sA75YpMaapND]]]
+"Thread:545" -> "SimpleStream:1195259493:test" : [s2:m2] publish(hello)
 activate "SimpleStream:1195259493:test"
-"SimpleStream:1195259493:test" -> "SimpleStreamProxy:RqAYpseg-\n4a8pfxUQLdMDA" : [s1:m5] onNext(hello, null)
-activate "SimpleStreamProxy:RqAYpseg-\n4a8pfxUQLdMDA"
-"SimpleStreamProxy:RqAYpseg-\n4a8pfxUQLdMDA" --> "SimpleStream:1195259493:test" : [s1:r5; 341us] (response to onNext): null
-deactivate "SimpleStreamProxy:RqAYpseg-\n4a8pfxUQLdMDA"
-"SimpleStream:1195259493:test" --> "Thread:520" : [s2:r2; 4,421us] (response to publish): null
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:\nMUWWVAIdfnlbgBGto7mXQD" : [s1:m5] onNext(hello, null)
+activate "SimpleStreamProxy:\nMUWWVAIdfnlbgBGto7mXQD"
+"SimpleStreamProxy:\nMUWWVAIdfnlbgBGto7mXQD" --> "SimpleStream:1195259493:test" : [s1:r5; 186us] (response to onNext): null
+deactivate "SimpleStreamProxy:\nMUWWVAIdfnlbgBGto7mXQD"
+"SimpleStream:1195259493:test" --> "Thread:545" : [s2:r2; 910us] (response to publish): null
 deactivate "SimpleStream:1195259493:test"
 @enduml

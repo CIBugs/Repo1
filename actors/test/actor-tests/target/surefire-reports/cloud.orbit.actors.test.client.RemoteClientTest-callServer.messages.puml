@@ -1,12 +1,12 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[S1zWpMvE1sUbaX3nIZ4hWD]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[fLdzz91t-2qc-_uGuFUQdA]]]
 "callServer" -> "Hello:1000" : [cc0:m1] sayHello(test)
 activate "Hello:1000"
-"Thread:937" -> "Hello:1000" : [s1:m3] sayHello(test)
+"Thread:437" -> "Hello:1000" : [s1:m3] sayHello(test)
 activate "Hello:1000"
 hnote over "Hello:1000" #white : [s1] activate
-"Hello:1000" --> "Thread:937" : [s1:r3; 2,496us] (response to sayHello): test
+"Hello:1000" --> "Thread:437" : [s1:r3; 3,124us] (response to sayHello): test
 deactivate "Hello:1000"
-"Hello:1000" --> "callServer" : [cc0:r1; 9,737us] (response to sayHello): test
+"Hello:1000" --> "callServer" : [cc0:r1; 8,122us] (response to sayHello): test
 deactivate "Hello:1000"
 @enduml

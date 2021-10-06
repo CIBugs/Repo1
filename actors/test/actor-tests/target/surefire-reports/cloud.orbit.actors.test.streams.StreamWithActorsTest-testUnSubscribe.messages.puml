@@ -1,28 +1,28 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[ReZCKo-kDQk0Cn364_wRPB]]]
-"Thread:568" -> "Hello:0" : [s1:m3] doSubscribe(test)
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[HRveq2bTZrjHgULQfq4hpA]]]
+"Thread:591" -> "Hello:0" : [s1:m3] doSubscribe(test)
 activate "Hello:0"
 hnote over "Hello:0" #white : [s1] activate
 note over "Hello:0": activateAsync
-note over "Hello:0": doSubscribe hash:1778042630
-"Hello:0" -> "SimpleStream:1195259493:test" : [s1:m5] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n4e61b9fb)
+note over "Hello:0": doSubscribe hash:1758691680
+"Hello:0" -> "SimpleStream:1195259493:test" : [s1:m5] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n4827d137)
 activate "SimpleStream:1195259493:test"
 hnote over "SimpleStream:1195259493:test" #white : [s1] activate
-"SimpleStream:1195259493:test" --> "Hello:0" : [s1:r5; 5,203us] (response to subscribe): ddIg-\nf3S8mJRFXIM
+"SimpleStream:1195259493:test" --> "Hello:0" : [s1:r5; 1,590us] (response to subscribe): \ni2SvQlifMQFo6xB1
 deactivate "SimpleStream:1195259493:test"
-"Hello:0" --> "Thread:568" : [s1:r3; 10,886us] (response to doSubscribe): null
+"Hello:0" --> "Thread:591" : [s1:r3; 4,040us] (response to doSubscribe): null
 deactivate "Hello:0"
-"Thread:568" -> "Hello:0" : [s1:m7] doUnSubscribe(test)
+"Thread:591" -> "Hello:0" : [s1:m7] doUnSubscribe(test)
 activate "Hello:0"
-note over "Hello:0": doUnSubscribe hash:1778042630
-"Hello:0" -> "SimpleStream:1195259493:test" : [s1:m8] unsubscribe(ddIg-f3S8mJRFXIM)
+note over "Hello:0": doUnSubscribe hash:1758691680
+"Hello:0" -> "SimpleStream:1195259493:test" : [s1:m8] unsubscribe(i2SvQlifMQFo6xB1)
 activate "SimpleStream:1195259493:test"
-"SimpleStream:1195259493:test" --> "Hello:0" : [s1:r8; 1,083us] (response to unsubscribe): null
+"SimpleStream:1195259493:test" --> "Hello:0" : [s1:r8; 549us] (response to unsubscribe): null
 deactivate "SimpleStream:1195259493:test"
-"Hello:0" --> "Thread:568" : [s1:r7; 3,019us] (response to doUnSubscribe): \nnull
+"Hello:0" --> "Thread:591" : [s1:r7; 1,756us] (response to doUnSubscribe): \nnull
 deactivate "Hello:0"
-"Thread:568" -> "SimpleStream:1195259493:test" : [s1:m9] publish(hello)
+"Thread:591" -> "SimpleStream:1195259493:test" : [s1:m9] publish(hello)
 activate "SimpleStream:1195259493:test"
-"SimpleStream:1195259493:test" --> "Thread:568" : [s1:r9; 135us] (response to publish): null
+"SimpleStream:1195259493:test" --> "Thread:591" : [s1:r9; 103us] (response to publish): null
 deactivate "SimpleStream:1195259493:test"
 @enduml

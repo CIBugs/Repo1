@@ -1,24 +1,19 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[CbKb7-ob9i9h6JUGqP-glB]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[WoNChNJY1AQPvbjD4HtJDC]]]
 "checkReads" -> "SomeMatch:300" : [s1:m3] addPlayer(SomePlayer:101)
 activate "SomeMatch:300"
 hnote over "SomeMatch:300" #white : [s1] activate
-"SomeMatch:300" --> "checkReads" : [s1:r3; 1,560us] (response to addPlayer): null
+"SomeMatch:300" --> "checkReads" : [s1:r3; 2,928us] (response to addPlayer): null
 deactivate "SomeMatch:300"
-"Thread:368" -> "SomePlayer:101" : [s1:m5] matchEvent(SomeMatch:300)
-activate "SomePlayer:101"
-hnote over "SomePlayer:101" #white : [s1] activate
-"SomePlayer:101" --> "Thread:368" : [s1:r5; 615us] (response to matchEvent): null
-deactivate "SomePlayer:101"
 hnote over "SomeMatch:300" #white : [s1] deactivate
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[E6tugM4ge9ie6CwBz8y2bC]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[88eyu_5H35vfCN72Px-oQD]]]
 "checkReads" -> "SomeMatch:300" : [s2:m3] getPlayers
 activate "SomeMatch:300"
 hnote over "SomeMatch:300" #white : [s2] activate
-"SomeMatch:300" --> "checkReads" : [s2:r3; 3,460us] (response to getPlayers): [\ncloud.orbit.actors.test.actors.\nSomePlayer:101]
+"SomeMatch:300" --> "checkReads" : [s2:r3; 3,685us] (response to getPlayers): [\ncloud.orbit.actors.test.actors.\nSomePlayer:101]
 deactivate "SomeMatch:300"
 "checkReads" -> "SomeMatch:300" : [s2:m5] getPlayers
 activate "SomeMatch:300"
-"SomeMatch:300" --> "checkReads" : [s2:r5; 212us] (response to getPlayers): [\ncloud.orbit.actors.test.actors.\nSomePlayer:101]
+"SomeMatch:300" --> "checkReads" : [s2:r5; 125us] (response to getPlayers): [\ncloud.orbit.actors.test.actors.\nSomePlayer:101]
 deactivate "SomeMatch:300"
 @enduml

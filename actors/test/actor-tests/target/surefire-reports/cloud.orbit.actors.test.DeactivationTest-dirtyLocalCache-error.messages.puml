@@ -1,0 +1,20 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[VZxmxnsGhMPNIFJ0BgrKBB]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[NjsgrpVDWBSgqM0gr1fGJB]]]
+"dirtyLocalCache" -> "SomeActor:1" : [s1:m3] sayHello(huuhaa)
+activate "SomeActor:1"
+hnote over "SomeActor:1" #white : [s1] activate
+"SomeActor:1" --> "dirtyLocalCache" : [s1:r3; 629us] (response to sayHello): bla
+deactivate "SomeActor:1"
+"dirtyLocalCache" -> "SomeActor:1" : [s2:m2] sayHelloOnlyIfActivated
+activate "SomeActor:1"
+"SomeActor:1" --> "dirtyLocalCache" : [s2:r2; 458us] (response to \nsayHelloOnlyIfActivated): hello
+deactivate "SomeActor:1"
+hnote over "SomeActor:1" #white : [s1] deactivate
+"dirtyLocalCache" -> "SomeActor:1" : [s2:m3] sayHelloOnlyIfActivated
+activate "SomeActor:1"
+hnote over "SomeActor:1" #white : [s2] activate
+"SomeActor:1" --> "dirtyLocalCache" : [s2:r3; 607us] (response to \nsayHelloOnlyIfActivated): hello
+deactivate "SomeActor:1"
+hnote over "SomeActor:1" #white : [s2] deactivate
+@enduml

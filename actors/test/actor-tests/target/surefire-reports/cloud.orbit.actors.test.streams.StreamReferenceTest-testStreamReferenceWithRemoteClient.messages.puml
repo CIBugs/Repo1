@@ -1,34 +1,34 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[IaVklewAPiYQ5AjllWfuWB]]]
-"Thread:446" -> "Hello:0" : [cc0:m1] getStreamReference
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[niCvqP3VM9vAu6GU9jeGWC]]]
+"Thread:469" -> "Hello:0" : [cc0:m1] getStreamReference
 activate "Hello:0"
-"Thread:22" -> "Hello:0" : [s1:m3] getStreamReference
+"Thread:87" -> "Hello:0" : [s1:m3] getStreamReference
 activate "Hello:0"
 hnote over "Hello:0" #white : [s1] activate
-"Hello:0" --> "Thread:22" : [s1:r3; 42,979us] (response to getStreamReference)\n: cloud.orbit.actors.runtime.\nAsyncStreamReference@13a48425
+"Hello:0" --> "Thread:87" : [s1:r3; 21,901us] (response to getStreamReference)\n: cloud.orbit.actors.runtime.\nAsyncStreamReference@5d13fadb
 deactivate "Hello:0"
-"Hello:0" --> "Thread:446" : [cc0:r1; 135,075us] (response to getStreamReference)\n: cloud.orbit.actors.runtime.\nAsyncStreamReference@4875666d
+"Hello:0" --> "Thread:469" : [cc0:r1; 100,289us] (response to getStreamReference)\n: cloud.orbit.actors.runtime.\nAsyncStreamReference@5c30fe86
 deactivate "Hello:0"
-"Thread:446" -> "ServerSideStreamProxy:0" : [cc0:m2] subscribe(default, 1195259493, hello:0,\n ClientSideStreamProxy:\n28Oax4CCztQ1_1ZlGuIyjA)
+"Thread:469" -> "ServerSideStreamProxy:0" : [cc0:m2] subscribe(default, 1195259493, hello:0,\n ClientSideStreamProxy:\nii4SFI6bwf16FKNKojAFhB)
 activate "ServerSideStreamProxy:0"
-"Thread:304" -> "SimpleStream:1195259493:hello:0" : [s1:m5] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n6870399d)
+"Thread:436" -> "SimpleStream:1195259493:hello:0" : [s1:m5] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n1768d87d)
 activate "SimpleStream:1195259493:hello:0"
 hnote over "SimpleStream:1195259493:hello:0" #white : [s1] activate
-"SimpleStream:1195259493:hello:0" --> "Thread:304" : [s1:r5; 2,915us] (response to subscribe): \nKR9tC3jr77PmAWrh
+"SimpleStream:1195259493:hello:0" --> "Thread:436" : [s1:r5; 2,159us] (response to subscribe): D_\nBH2C5qX62UHbDf
 deactivate "SimpleStream:1195259493:hello:0"
-"ServerSideStreamProxy:0" --> "Thread:446" : [cc0:r2; 34,659us] (response to subscribe): cloud.\norbit.actors.streams.simple.\nStreamReference$\nSimpleStreamHandle@20992688
+"ServerSideStreamProxy:0" --> "Thread:469" : [cc0:r2; 17,032us] (response to subscribe): cloud.\norbit.actors.streams.simple.\nStreamReference$\nSimpleStreamHandle@c260662
 deactivate "ServerSideStreamProxy:0"
-"Thread:446" -> "Hello:0" : [s1:m7] sayHello(hello2)
+"Thread:469" -> "Hello:0" : [s1:m7] sayHello(hello2)
 activate "Hello:0"
 "Hello:0" -> "SimpleStream:1195259493:hello:0" : [s1:m8] publish(hello2)
 activate "SimpleStream:1195259493:hello:0"
-"SimpleStream:1195259493:hello:0" -> "SimpleStreamProxy:\nXZoxIyLRPnE0IilB4s3BaB" : [s1:m9] onNext(hello2, null)
-activate "SimpleStreamProxy:\nXZoxIyLRPnE0IilB4s3BaB"
-"Thread:295" -> "ClientSideStreamProxy:\n28Oax4CCztQ1_1ZlGuIyjA" : [3] onNext(default, hello:0, hello2)
-"SimpleStreamProxy:\nXZoxIyLRPnE0IilB4s3BaB" --> "SimpleStream:1195259493:hello:0" : [s1:r9; 5,304us] (response to onNext): null
-deactivate "SimpleStreamProxy:\nXZoxIyLRPnE0IilB4s3BaB"
-"SimpleStream:1195259493:hello:0" --> "Hello:0" : [s1:r8; 5,537us] (response to publish): null
+"SimpleStream:1195259493:hello:0" -> "SimpleStreamProxy:\niIiaD5MSiKlEtJHBdV5NZC" : [s1:m9] onNext(hello2, null)
+activate "SimpleStreamProxy:\niIiaD5MSiKlEtJHBdV5NZC"
+"Thread:436" -> "ClientSideStreamProxy:\nii4SFI6bwf16FKNKojAFhB" : [3] onNext(default, hello:0, hello2)
+"SimpleStreamProxy:\niIiaD5MSiKlEtJHBdV5NZC" --> "SimpleStream:1195259493:hello:0" : [s1:r9; 3,836us] (response to onNext): null
+deactivate "SimpleStreamProxy:\niIiaD5MSiKlEtJHBdV5NZC"
+"SimpleStream:1195259493:hello:0" --> "Hello:0" : [s1:r8; 4,080us] (response to publish): null
 deactivate "SimpleStream:1195259493:hello:0"
-"Hello:0" --> "Thread:446" : [s1:r7; 5,843us] (response to sayHello): null
+"Hello:0" --> "Thread:469" : [s1:r7; 4,422us] (response to sayHello): null
 deactivate "Hello:0"
 @enduml

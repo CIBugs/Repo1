@@ -1,23 +1,23 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[VIH6fPbE7NDREFtZUUn-2C]]]
-"Thread:545" -> "Hello:0" : [s1:m3] doSubscribe(test)
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[hD88E_I8L-kj_42WNDt-cD]]]
+"Thread:570" -> "Hello:0" : [s1:m3] doSubscribe(test)
 activate "Hello:0"
 hnote over "Hello:0" #white : [s1] activate
 note over "Hello:0": activateAsync
-note over "Hello:0": doSubscribe hash:949270572
-"Hello:0" -> "SimpleStream:1195259493:test" : [s1:m5] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n4a08a18f)
+note over "Hello:0": doSubscribe hash:1892345592
+"Hello:0" -> "SimpleStream:1195259493:test" : [s1:m5] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n7f5a253d)
 activate "SimpleStream:1195259493:test"
 hnote over "SimpleStream:1195259493:test" #white : [s1] activate
-"SimpleStream:1195259493:test" --> "Hello:0" : [s1:r5; 2,692us] (response to subscribe): \n9s1LJQ9fT7irV58o
+"SimpleStream:1195259493:test" --> "Hello:0" : [s1:r5; 1,534us] (response to subscribe): GDk_\n3goW5SCvRgCF
 deactivate "SimpleStream:1195259493:test"
-"Hello:0" --> "Thread:545" : [s1:r3; 19,635us] (response to doSubscribe): null
+"Hello:0" --> "Thread:570" : [s1:r3; 4,002us] (response to doSubscribe): null
 deactivate "Hello:0"
-"Thread:545" -> "SimpleStream:1195259493:test" : [s1:m7] publish(hello)
+"Thread:570" -> "SimpleStream:1195259493:test" : [s1:m7] publish(hello)
 activate "SimpleStream:1195259493:test"
-"SimpleStream:1195259493:test" -> "SimpleStreamProxy:\nLCtwUQwOe9MAqt8sJZs51A" : [s1:m8] onNext(hello, null)
-activate "SimpleStreamProxy:\nLCtwUQwOe9MAqt8sJZs51A"
-"SimpleStreamProxy:\nLCtwUQwOe9MAqt8sJZs51A" --> "SimpleStream:1195259493:test" : [s1:r8; 214us] (response to onNext): null
-deactivate "SimpleStreamProxy:\nLCtwUQwOe9MAqt8sJZs51A"
-"SimpleStream:1195259493:test" --> "Thread:545" : [s1:r7; 427us] (response to publish): null
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:\n5hmIHVmm38KVDfftQo4n3A" : [s1:m8] onNext(hello, null)
+activate "SimpleStreamProxy:\n5hmIHVmm38KVDfftQo4n3A"
+"SimpleStreamProxy:\n5hmIHVmm38KVDfftQo4n3A" --> "SimpleStream:1195259493:test" : [s1:r8; 159us] (response to onNext): null
+deactivate "SimpleStreamProxy:\n5hmIHVmm38KVDfftQo4n3A"
+"SimpleStream:1195259493:test" --> "Thread:570" : [s1:r7; 323us] (response to publish): null
 deactivate "SimpleStream:1195259493:test"
 @enduml

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="cloud.orbit.actors.test.DeactivationTest" time="3.912" errors="0" skipped="1">
+<testsuite tests="10" failures="1" name="cloud.orbit.actors.test.DeactivationTest" time="3.315" errors="0" skipped="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/orbit-bc9f363f4cd6d926eea0e77a70a1dfad7acccfe4"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/orbit-d8261fd8cfb6bcd690d63fe86f4a0ddd44326fce"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/orbit-bc9f363f4cd6d926eea0e77a70a1dfad7acccfe4"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/orbit-d8261fd8cfb6bcd690d63fe86f4a0ddd44326fce"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -62,16 +62,133 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="dirtyLocalCache" time="0.267"/>
-  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="simpleStatelessWorkerDeactivationTest" time="0.277"/>
-  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="simpleCleanupTest" time="0.257"/>
-  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="cleanupTest" time="0.289"/>
-  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="statelessWorkerDeactivationTestWithLeftover" time="0.29">
+  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="dirtyLocalCache" time="0.27">
+    <failure message="expected null, but was:&lt;hello&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;hello&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at cloud.orbit.actors.test.DeactivationTest.dirtyLocalCache(DeactivationTest.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Start
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Test Dump for dirtyLocalCache(cloud.orbit.actors.test.DeactivationTest)
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Error: java.lang.AssertionError: expected null, but was:&lt;hello&gt;
+Create Stage
+info Thu Oct 07 00:48:54 IST 2021 cloud.orbit.actors.Stage Stage started [[Orbit[VZxmxnsGhMPNIFJ0BgrKBB]]]
+Create Stage
+info Thu Oct 07 00:48:54 IST 2021 cloud.orbit.actors.Stage Stage started [[Orbit[NjsgrpVDWBSgqM0gr1fGJB]]]
+&quot;dirtyLocalCache&quot; -&gt; &quot;SomeActor:1&quot; : [s1:m3] sayHello(huuhaa)
+activate &quot;SomeActor:1&quot;
+&quot;SomeActor:1&quot; --&gt; &quot;dirtyLocalCache&quot; : [s1:r3; 629us] (response to sayHello): bla
+deactivate &quot;SomeActor:1&quot;
+&quot;dirtyLocalCache&quot; -&gt; &quot;SomeActor:1&quot; : [s2:m2] sayHelloOnlyIfActivated
+activate &quot;SomeActor:1&quot;
+&quot;SomeActor:1&quot; --&gt; &quot;dirtyLocalCache&quot; : [s2:r2; 458us] (response to \nsayHelloOnlyIfActivated): hello
+deactivate &quot;SomeActor:1&quot;
+&quot;dirtyLocalCache&quot; -&gt; &quot;SomeActor:1&quot; : [s2:m3] sayHelloOnlyIfActivated
+activate &quot;SomeActor:1&quot;
+&quot;SomeActor:1&quot; --&gt; &quot;dirtyLocalCache&quot; : [s2:r3; 607us] (response to \nsayHelloOnlyIfActivated): hello
+deactivate &quot;SomeActor:1&quot;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Test Dump for dirtyLocalCache(cloud.orbit.actors.test.DeactivationTest)
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Error: java.lang.AssertionError: expected null, but was:&lt;hello&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at cloud.orbit.actors.test.DeactivationTest.dirtyLocalCache(DeactivationTest.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Stages: 0
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Clients: 0
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Server Connections: 0
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; End
+Message sequence diagram written to:
+file:///home/suvarna/Vinay/Sept-2021/orbit-d8261fd8cfb6bcd690d63fe86f4a0ddd44326fce/actors/test/actor-tests/target/surefire-reports/cloud.orbit.actors.test.DeactivationTest-dirtyLocalCache-error.messages.puml
+</system-out>
+    <system-err>[main] INFO cloud.orbit.actors.Stage - Starting Stage...
+[main] INFO cloud.orbit.actors.runtime.ClusterHandler - Connecting handler ClusterHandler...
+[OrbitThread-8] INFO cloud.orbit.actors.Stage - Stage started [Orbit[VZxmxnsGhMPNIFJ0BgrKBB]]
+[main] INFO cloud.orbit.actors.Stage - Starting Stage...
+[main] INFO cloud.orbit.actors.runtime.ClusterHandler - Connecting handler ClusterHandler...
+[OrbitThread-8] INFO cloud.orbit.actors.Stage - Stage started [Orbit[NjsgrpVDWBSgqM0gr1fGJB]]
+[OrbitShutdownThread] INFO cloud.orbit.actors.runtime.ClusterHandler - Closing ClusterHandler... 
+[OrbitShutdownThread] INFO cloud.orbit.actors.concurrent.WaitFreeMultiExecutionSerializer - Thread pool shutdown complete
+[OrbitShutdownThread] INFO cloud.orbit.actors.runtime.ClusterHandler - Closing ClusterHandler... 
+[OrbitShutdownThread] INFO cloud.orbit.actors.concurrent.WaitFreeMultiExecutionSerializer - Thread pool shutdown complete
+</system-err>
+  </testcase>
+  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="simpleStatelessWorkerDeactivationTest" time="0.273"/>
+  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="simpleCleanupTest" time="0.26"/>
+  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="cleanupTest" time="0.267"/>
+  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="statelessWorkerDeactivationTestWithLeftover" time="0.268">
     <skipped/>
   </testcase>
-  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="statelessWorkerDeactivationTest" time="0.3"/>
-  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="basicClientTest" time="0.265"/>
-  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="ensureNoObjectsAreCreatedClientTest" time="1.179"/>
-  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="lonelyClientTest" time="0.52"/>
+  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="statelessWorkerDeactivationTest" time="0.278"/>
+  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="basicClientTest" time="0.259"/>
+  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="ensureNoObjectsAreCreatedClientTest" time="0.659"/>
+  <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="lonelyClientTest" time="0.513"/>
   <testcase classname="cloud.orbit.actors.test.DeactivationTest" name="observerTest" time="0.268"/>
 </testsuite>

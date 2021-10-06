@@ -1,18 +1,18 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[j6pEUcqnyvk4mwCSuDmlaA]]]
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[05bKvorTmUc85V7_05TehB]]]
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[AbP5AawV5-HmLAvfXlQ2JB]]]
-"Thread:488" -> "SimpleStream:1195259493:test" : [s3:m2] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n1edb5310)
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[r9XkOc5w-DevxcuxeXxgjB]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[2qHT316IvFrC4sj1_s_GuA]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[YxgoKGh-vv0UszoEqDKqPC]]]
+"Thread:514" -> "SimpleStream:1195259493:test" : [s3:m2] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n4c5b2938)
 activate "SimpleStream:1195259493:test"
-hnote over "SimpleStream:1195259493:test" #white : [s3] activate
-"SimpleStream:1195259493:test" --> "Thread:488" : [s3:r2; 5,814us] (response to subscribe): -n8V-\ng5CQKQHzt9s
+hnote over "SimpleStream:1195259493:test" #white : [s1] activate
+"SimpleStream:1195259493:test" --> "Thread:514" : [s3:r2; 5,712us] (response to subscribe): \nyBrBswxVY2HvlayT
 deactivate "SimpleStream:1195259493:test"
-"Thread:488" -> "SimpleStream:1195259493:test" : [s3:m6] publish(hello)
+"Thread:514" -> "SimpleStream:1195259493:test" : [s3:m6] publish(hello)
 activate "SimpleStream:1195259493:test"
-"SimpleStream:1195259493:test" -> "SimpleStreamProxy:\nYyvbT2HxDgAfpPi747iJUC" : [s3:m7] onNext(hello, null)
-activate "SimpleStreamProxy:\nYyvbT2HxDgAfpPi747iJUC"
-"SimpleStreamProxy:\nYyvbT2HxDgAfpPi747iJUC" --> "SimpleStream:1195259493:test" : [s3:r7; 220us] (response to onNext): null
-deactivate "SimpleStreamProxy:\nYyvbT2HxDgAfpPi747iJUC"
-"SimpleStream:1195259493:test" --> "Thread:488" : [s3:r6; 599us] (response to publish): null
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:\nVkPodD3wvH0uoApxrUlK6A" : [s1:m3] onNext(hello, null)
+activate "SimpleStreamProxy:\nVkPodD3wvH0uoApxrUlK6A"
+"SimpleStreamProxy:\nVkPodD3wvH0uoApxrUlK6A" --> "SimpleStream:1195259493:test" : [s1:r3; 710us] (response to onNext): null
+deactivate "SimpleStreamProxy:\nVkPodD3wvH0uoApxrUlK6A"
+"SimpleStream:1195259493:test" --> "Thread:514" : [s3:r6; 2,058us] (response to publish): null
 deactivate "SimpleStream:1195259493:test"
 @enduml

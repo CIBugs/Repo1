@@ -1,9 +1,9 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[bz5tixWKCMyE1lWfvmsTqB]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[iEvzhixkPj9wkyYYw4VXzA]]]
 "test" -> "Hello:1" : [s1:m3] sayHello(bla)
 activate "Hello:1"
 hnote over "Hello:1" #white : [s1] activate
 note over "Hello:1": sayHello: bla
-"Hello:1" --> "test" : [s1:r3; 3,258us] (response to sayHello): bla
+"Hello:1" --> "test" : [s1:r3; 3,501us] (response to sayHello): bla
 deactivate "Hello:1"
 @enduml

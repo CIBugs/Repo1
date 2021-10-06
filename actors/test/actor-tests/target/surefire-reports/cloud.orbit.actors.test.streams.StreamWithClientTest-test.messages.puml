@@ -1,34 +1,34 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[yGcSNv8sqBJrEs2G4qdRRB]]]
-"Thread:465" -> "Hello:0" : [s1:m3] doPush(testStream, hello)
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[PYcizmQ-iVAQQUk8rMPVHA]]]
+"Thread:488" -> "Hello:0" : [s1:m3] doPush(testStream, hello)
 activate "Hello:0"
 hnote over "Hello:0" #white : [s1] activate
 "Hello:0" -> "SimpleStream:1195259493:\ntestStream" : [s1:m5] publish(hello)
 activate "SimpleStream:1195259493:\ntestStream"
 hnote over "SimpleStream:1195259493:testStream" #white : [s1] activate
-"SimpleStream:1195259493:\ntestStream" --> "Hello:0" : [s1:r5; 1,121us] (response to publish): null
+"SimpleStream:1195259493:\ntestStream" --> "Hello:0" : [s1:r5; 4,069us] (response to publish): null
 deactivate "SimpleStream:1195259493:\ntestStream"
-"Hello:0" --> "Thread:465" : [s1:r3; 6,622us] (response to doPush): null
+"Hello:0" --> "Thread:488" : [s1:r3; 16,250us] (response to doPush): null
 deactivate "Hello:0"
-"Thread:465" -> "ServerSideStreamProxy:0" : [cc0:m1] subscribe(default, 1195259493, \ntestStream, \nClientSideStreamProxy:7vv-jT-\nu1n2CsJlxVXCJSC)
+"Thread:488" -> "ServerSideStreamProxy:0" : [cc0:m1] subscribe(default, 1195259493, \ntestStream, \nClientSideStreamProxy:\nLM7RWF4pLyPAdcKiEOjjNB)
 activate "ServerSideStreamProxy:0"
-"Thread:379" -> "SimpleStream:1195259493:\ntestStream" : [s1:m7] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n4cd3cfbc)
+"Thread:434" -> "SimpleStream:1195259493:\ntestStream" : [s1:m7] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n33b01b01)
 activate "SimpleStream:1195259493:\ntestStream"
-"SimpleStream:1195259493:\ntestStream" --> "Thread:379" : [s1:r7; 2,265us] (response to subscribe): \nb24jI4TCla4pkyUI
+"SimpleStream:1195259493:\ntestStream" --> "Thread:434" : [s1:r7; 2,096us] (response to subscribe): \nj9CCKitCHW-uz0Fc
 deactivate "SimpleStream:1195259493:\ntestStream"
-"ServerSideStreamProxy:0" --> "Thread:465" : [cc0:r1; 18,542us] (response to subscribe): cloud.\norbit.actors.streams.simple.\nStreamReference$\nSimpleStreamHandle@4a3e7127
+"ServerSideStreamProxy:0" --> "Thread:488" : [cc0:r1; 12,386us] (response to subscribe): cloud.\norbit.actors.streams.simple.\nStreamReference$\nSimpleStreamHandle@7e54ba7c
 deactivate "ServerSideStreamProxy:0"
-"Thread:465" -> "Hello:0" : [s1:m8] doPush(testStream, hello2)
+"Thread:488" -> "Hello:0" : [s1:m8] doPush(testStream, hello2)
 activate "Hello:0"
 "Hello:0" -> "SimpleStream:1195259493:\ntestStream" : [s1:m9] publish(hello2)
 activate "SimpleStream:1195259493:\ntestStream"
-"SimpleStream:1195259493:\ntestStream" -> "SimpleStreamProxy:HycxseC_\nYvbJYwy2z1KHRA" : [s1:m10] onNext(hello2, null)
-activate "SimpleStreamProxy:HycxseC_\nYvbJYwy2z1KHRA"
-"Thread:22" -> "ClientSideStreamProxy:7vv-jT-\nu1n2CsJlxVXCJSC" : [2] onNext(default, testStream, hello2)
-"SimpleStreamProxy:HycxseC_\nYvbJYwy2z1KHRA" --> "SimpleStream:1195259493:\ntestStream" : [s1:r10; 350us] (response to onNext): null
-deactivate "SimpleStreamProxy:HycxseC_\nYvbJYwy2z1KHRA"
-"SimpleStream:1195259493:\ntestStream" --> "Hello:0" : [s1:r9; 4,204us] (response to publish): null
+"SimpleStream:1195259493:\ntestStream" -> "SimpleStreamProxy:02lZ2_Y5ShZX-\nWTo8IQsQB" : [s1:m10] onNext(hello2, null)
+activate "SimpleStreamProxy:02lZ2_Y5ShZX-\nWTo8IQsQB"
+"Thread:414" -> "ClientSideStreamProxy:\nLM7RWF4pLyPAdcKiEOjjNB" : [2] onNext(default, testStream, hello2)
+"SimpleStreamProxy:02lZ2_Y5ShZX-\nWTo8IQsQB" --> "SimpleStream:1195259493:\ntestStream" : [s1:r10; 392us] (response to onNext): null
+deactivate "SimpleStreamProxy:02lZ2_Y5ShZX-\nWTo8IQsQB"
+"SimpleStream:1195259493:\ntestStream" --> "Hello:0" : [s1:r9; 759us] (response to publish): null
 deactivate "SimpleStream:1195259493:\ntestStream"
-"Hello:0" --> "Thread:465" : [s1:r8; 4,635us] (response to doPush): null
+"Hello:0" --> "Thread:488" : [s1:r8; 1,172us] (response to doPush): null
 deactivate "Hello:0"
 @enduml

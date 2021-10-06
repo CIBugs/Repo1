@@ -1,11 +1,11 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[tCAGM8CQemRn4GFUYF2mGC]]]
-"Thread:742" -> "SomeChatObserver:\ncsdq3jA2lsBQ70EBgQWP3B" : [s1:m3] receiveMessage(null, hello)
-activate "SomeChatObserver:\ncsdq3jA2lsBQ70EBgQWP3B"
-"SomeChatObserver:\ncsdq3jA2lsBQ70EBgQWP3B" --> "Thread:742" : [s1:r3; 154us] (response to receiveMessage): \nnull
-deactivate "SomeChatObserver:\ncsdq3jA2lsBQ70EBgQWP3B"
-"Thread:742" -> "SomeChatObserver:\ncsdq3jA2lsBQ70EBgQWP3B" : [s1:m4] receiveMessage(null, hello)
-activate "SomeChatObserver:\ncsdq3jA2lsBQ70EBgQWP3B"
-"SomeChatObserver:\ncsdq3jA2lsBQ70EBgQWP3B" --> "Thread:742" : [s1:r4; 655us] (exception at receiveMessage):\ncloud.orbit.actors.exceptions.ObserverNotFound
-deactivate "SomeChatObserver:\ncsdq3jA2lsBQ70EBgQWP3B"
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[yzMDF7fGBOSwFD1DCYKxcC]]]
+"Thread:765" -> "SomeChatObserver:bAx_\nF8dWUw9Dqfyej4kLKB" : [s1:m3] receiveMessage(null, hello)
+activate "SomeChatObserver:bAx_\nF8dWUw9Dqfyej4kLKB"
+"SomeChatObserver:bAx_\nF8dWUw9Dqfyej4kLKB" --> "Thread:765" : [s1:r3; 148us] (response to receiveMessage): \nnull
+deactivate "SomeChatObserver:bAx_\nF8dWUw9Dqfyej4kLKB"
+"Thread:765" -> "SomeChatObserver:bAx_\nF8dWUw9Dqfyej4kLKB" : [s1:m4] receiveMessage(null, hello)
+activate "SomeChatObserver:bAx_\nF8dWUw9Dqfyej4kLKB"
+"SomeChatObserver:bAx_\nF8dWUw9Dqfyej4kLKB" --> "Thread:765" : [s1:r4; 534us] (exception at receiveMessage):\ncloud.orbit.actors.exceptions.ObserverNotFound
+deactivate "SomeChatObserver:bAx_\nF8dWUw9Dqfyej4kLKB"
 @enduml

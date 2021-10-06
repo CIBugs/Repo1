@@ -1,22 +1,24 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[kEUEu32VxmbBHhRyCPjohA]]]
-"Thread:510" -> "SimpleStream:1195259493:test" : [s1:m3] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n2ec7daa7)
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[hvE9_0Gx3KytMiljHs9YyC]]]
+"Thread:535" -> "SimpleStream:1195259493:test" : [s1:m3] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n15604691)
 activate "SimpleStream:1195259493:test"
 hnote over "SimpleStream:1195259493:test" #white : [s1] activate
-"SimpleStream:1195259493:test" --> "Thread:510" : [s1:r3; 3,762us] (response to subscribe): \njPhjjruhJmt7zlZZ
+"SimpleStream:1195259493:test" --> "Thread:535" : [s1:r3; 1,531us] (response to subscribe): \ndVcMzzCgxQqotjm1
 deactivate "SimpleStream:1195259493:test"
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[cvzKb-pdSbaIs6DXPluX5C]]]
-"Thread:510" -> "SimpleStream:1195259493:test" : [s2:m2] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n4d6b40ed)
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[iU51OBezFl5e0K7aLjnxQB]]]
+"Thread:535" -> "SimpleStream:1195259493:test" : [s2:m2] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n76a373b0)
 activate "SimpleStream:1195259493:test"
-"SimpleStream:1195259493:test" --> "Thread:510" : [s2:r2; 6,141us] (response to subscribe): \n6jrEmKwHaR5YeXvs
+"SimpleStream:1195259493:test" --> "Thread:535" : [s2:r2; 2,410us] (response to subscribe): 8XLi-\n3bMXJrODtcm
 deactivate "SimpleStream:1195259493:test"
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[MhS5YC2yJrMA-MMvb8fsyC]]]
-"Thread:510" -> "SimpleStream:1195259493:test" : [s3:m2] publish(hello)
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[1CHFSyz8vo89coXe_wIJnD]]]
+"Thread:535" -> "SimpleStream:1195259493:test" : [s3:m2] publish(hello)
 activate "SimpleStream:1195259493:test"
-"SimpleStream:1195259493:test" -> "SimpleStreamProxy:kY3Xj-\nZVXlJLE8zOpmB61C" : [s1:m5] onNext(hello, null)
-activate "SimpleStreamProxy:kY3Xj-\nZVXlJLE8zOpmB61C"
-"SimpleStream:1195259493:test" -> "SimpleStreamProxy:\n4SdY286pB9DlCueeE8okkB" : [s1:m6] onNext(hello, null)
-activate "SimpleStreamProxy:\n4SdY286pB9DlCueeE8okkB"
-"SimpleStreamProxy:\n4SdY286pB9DlCueeE8okkB" --> "SimpleStream:1195259493:test" : [s1:r6; 575us] (response to onNext): null
-deactivate "SimpleStreamProxy:\n4SdY286pB9DlCueeE8okkB"
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:\nS7w5RqX7IDzhQ4OTCF5XKB" : [s1:m5] onNext(hello, null)
+activate "SimpleStreamProxy:\nS7w5RqX7IDzhQ4OTCF5XKB"
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:\nEnZypTmKqsTZVQt5LLu8uD" : [s1:m6] onNext(hello, null)
+activate "SimpleStreamProxy:\nEnZypTmKqsTZVQt5LLu8uD"
+"SimpleStreamProxy:\nS7w5RqX7IDzhQ4OTCF5XKB" --> "SimpleStream:1195259493:test" : [s1:r5; 144us] (response to onNext): null
+deactivate "SimpleStreamProxy:\nS7w5RqX7IDzhQ4OTCF5XKB"
+"SimpleStreamProxy:\nEnZypTmKqsTZVQt5LLu8uD" --> "SimpleStream:1195259493:test" : [s1:r6; 439us] (response to onNext): null
+deactivate "SimpleStreamProxy:\nEnZypTmKqsTZVQt5LLu8uD"
 @enduml

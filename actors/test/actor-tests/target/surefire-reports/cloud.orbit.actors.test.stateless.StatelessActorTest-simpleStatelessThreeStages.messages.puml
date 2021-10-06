@@ -1,23 +1,23 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[EOfWWudIaZ9MN9UFhyRP0A]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[CKSdRUFdCRYCt3aVQndRTC]]]
 "simpleStatelessThreeStages" -> "StatelessThing:1000" : [s1:m3] sayHello
 activate "StatelessThing:1000"
 hnote over "StatelessThing:1000" #white : [s1] activate
-"StatelessThing:1000" --> "simpleStatelessThreeStages" : [s1:r3; 397us] (response to sayHello): hello \nfrom 1000/189
+"StatelessThing:1000" --> "simpleStatelessThreeStages" : [s1:r3; 491us] (response to sayHello): hello \nfrom 1000/189
 deactivate "StatelessThing:1000"
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[rkgt2ZTA3bhGca0beP_UxB]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[8tMGy-GBMhYlf4LqOCVjYA]]]
 "simpleStatelessThreeStages" -> "StatelessThing:1000" : [s2:m2] sayHello
 activate "StatelessThing:1000"
 hnote over "StatelessThing:1000" #white : [s2] activate
-"StatelessThing:1000" --> "simpleStatelessThreeStages" : [s2:r2; 449us] (response to sayHello): hello \nfrom 1000/190
+"StatelessThing:1000" --> "simpleStatelessThreeStages" : [s2:r2; 714us] (response to sayHello): hello \nfrom 1000/190
 deactivate "StatelessThing:1000"
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[o0GG0wed2RWxdamgstujpB]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[rUB-qVkjjchVWzE1cpzaUA]]]
 hnote over "StatelessThing:1000" #white : [s1] deactivate
 hnote over "StatelessThing:1000" #white : [s2] deactivate
 "simpleStatelessThreeStages" -> "StatelessThing:1000" : [s3:m2] sayHello
 activate "StatelessThing:1000"
 hnote over "StatelessThing:1000" #white : [s3] activate
-"StatelessThing:1000" --> "simpleStatelessThreeStages" : [s3:r2; 516us] (response to sayHello): hello \nfrom 1000/191
+"StatelessThing:1000" --> "simpleStatelessThreeStages" : [s3:r2; 810us] (response to sayHello): hello \nfrom 1000/191
 deactivate "StatelessThing:1000"
 hnote over "StatelessThing:1000" #white : [s3] deactivate
 @enduml

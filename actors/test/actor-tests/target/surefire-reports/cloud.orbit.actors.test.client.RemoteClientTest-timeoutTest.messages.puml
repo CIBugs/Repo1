@@ -1,8 +1,8 @@
 @startuml
-note over "cloud.orbit.actors.Stage": Stage started [[Orbit[ZXn34dhhUwRAx7b2RZJduA]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[tmQhctyRHSrsXt75SmjD8B]]]
 "timeoutTest" -> "Hello:1" : [s1:m3] releaseThenAcquire(aa, bb)
 activate "Hello:1"
 hnote over "Hello:1" #white : [s1] activate
-"Hello:1" --> "timeoutTest" : [s1:r3; 987,701us] (exception at releaseThenAcquire):\njava.util.concurrent.TimeoutException: \nResponse timeout
+"Hello:1" --> "timeoutTest" : [s1:r3; 987,698us] (exception at releaseThenAcquire):\njava.util.concurrent.TimeoutException: \nResponse timeout
 deactivate "Hello:1"
 @enduml
