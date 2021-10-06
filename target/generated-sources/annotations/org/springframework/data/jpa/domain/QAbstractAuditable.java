@@ -32,19 +32,19 @@ public class QAbstractAuditable extends EntityPathBase<AbstractAuditable<?, ? ex
 
     public final DateTimePath<java.util.Date> lastModifiedDate = createDateTime("lastModifiedDate", java.util.Date.class);
 
-    @SuppressWarnings("all")
+    @SuppressWarnings({"all", "rawtypes", "unchecked"})
     public QAbstractAuditable(String variable) {
-        super((Class)AbstractAuditable.class, forVariable(variable));
+        super((Class) AbstractAuditable.class, forVariable(variable));
     }
 
-    @SuppressWarnings("all")
+    @SuppressWarnings({"all", "rawtypes", "unchecked"})
     public QAbstractAuditable(Path<? extends AbstractAuditable> path) {
-        super((Class)path.getType(), path.getMetadata());
+        super((Class) path.getType(), path.getMetadata());
     }
 
-    @SuppressWarnings("all")
+    @SuppressWarnings({"all", "rawtypes", "unchecked"})
     public QAbstractAuditable(PathMetadata metadata) {
-        super((Class)AbstractAuditable.class, metadata);
+        super((Class) AbstractAuditable.class, metadata);
     }
 
 }

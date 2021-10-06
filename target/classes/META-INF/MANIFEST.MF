@@ -64,13 +64,13 @@ Bundle-Version: 1.10.0.BUILD-SNAPSHOT
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Bundle-ManifestVersion: 2
 Bundle-Vendor: Pivotal Software, Inc
-Import-Package: com.querydsl.core;version="[4.0.0,5.0.0)";resolution:=
- "optional",com.querydsl.core.dml;version="[4.0.0,5.0.0)";resolution:=
- "optional",com.querydsl.core.support;version="[4.0.0,5.0.0)";resoluti
- on:="optional",com.querydsl.core.types;version="[4.0.0,5.0.0)";resolu
- tion:="optional",com.querydsl.core.types.dsl;version="[4.0.0,5.0.0)";
- resolution:="optional",com.querydsl.jpa;version="[4.0.0,5.0.0)";resol
- ution:="optional",com.querydsl.jpa.impl;version="[4.0.0,5.0.0)";resol
+Import-Package: com.querydsl.core;version="[4.0.6,5.0.0)";resolution:=
+ "optional",com.querydsl.core.dml;version="[4.0.6,5.0.0)";resolution:=
+ "optional",com.querydsl.core.support;version="[4.0.6,5.0.0)";resoluti
+ on:="optional",com.querydsl.core.types;version="[4.0.6,5.0.0)";resolu
+ tion:="optional",com.querydsl.core.types.dsl;version="[4.0.6,5.0.0)";
+ resolution:="optional",com.querydsl.jpa;version="[4.0.6,5.0.0)";resol
+ ution:="optional",com.querydsl.jpa.impl;version="[4.0.6,5.0.0)";resol
  ution:="optional",javax.annotation;version="0.0.0",javax.enterprise.c
  ontext.spi;version="[1.0.0,2.0.0)";resolution:="optional",javax.enter
  prise.event;version="[1.0.0,2.0.0)";resolution:="optional",javax.ente
