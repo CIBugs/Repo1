@@ -1,0 +1,14 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[vqzmOjHqL-oIVFu48C1anB]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[FtnfUVHf6ErTjeVmQtK-5A]]]
+"simpleStatelessTwoStages" -> "StatelessThing:1000" : [s2:m2] sayHello
+activate "StatelessThing:1000"
+hnote over "StatelessThing:1000" #white : [s2] activate
+"StatelessThing:1000" --> "simpleStatelessTwoStages" : [s2:r2; 520us] (response to sayHello): hello \nfrom 1000/109
+deactivate "StatelessThing:1000"
+"simpleStatelessTwoStages" -> "StatelessThing:1000" : [s1:m3] sayHello
+activate "StatelessThing:1000"
+hnote over "StatelessThing:1000" #white : [s1] activate
+"StatelessThing:1000" --> "simpleStatelessTwoStages" : [s1:r3; 245us] (response to sayHello): hello \nfrom 1000/110
+deactivate "StatelessThing:1000"
+@enduml

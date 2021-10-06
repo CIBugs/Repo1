@@ -1,0 +1,34 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[Ftz4xjFtUV2HU0R5zWSneD]]]
+"Thread:438" -> "Hello:0" : [s1:m3] sayHello(hello1)
+activate "Hello:0"
+hnote over "Hello:0" #white : [s1] activate
+"Hello:0" -> "SimpleStream:1195259493:hello:0" : [s1:m5] publish(hello1)
+activate "SimpleStream:1195259493:hello:0"
+hnote over "SimpleStream:1195259493:hello:0" #white : [s1] activate
+"SimpleStream:1195259493:hello:0" --> "Hello:0" : [s1:r5; 1,160us] (response to publish): null
+deactivate "SimpleStream:1195259493:hello:0"
+"Hello:0" --> "Thread:438" : [s1:r3; 9,830us] (response to sayHello): null
+deactivate "Hello:0"
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[VryI_98n3EDWBUSkMAPM-A]]]
+"Thread:438" -> "Hello:0" : [s2:m2] getStreamReference
+activate "Hello:0"
+"Hello:0" --> "Thread:438" : [s2:r2; 125,506us] (response to getStreamReference)\n: cloud.orbit.actors.runtime.\nAsyncStreamReference@685720fd
+deactivate "Hello:0"
+"Thread:438" -> "SimpleStream:1195259493:hello:0" : [s2:m3] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n3c75f067)
+activate "SimpleStream:1195259493:hello:0"
+"SimpleStream:1195259493:hello:0" --> "Thread:438" : [s2:r3; 3,456us] (response to subscribe): \nMj8GNY3zt--GW2IS
+deactivate "SimpleStream:1195259493:hello:0"
+"Thread:438" -> "Hello:0" : [s1:m7] sayHello(hello2)
+activate "Hello:0"
+"Hello:0" -> "SimpleStream:1195259493:hello:0" : [s1:m8] publish(hello2)
+activate "SimpleStream:1195259493:hello:0"
+"SimpleStream:1195259493:hello:0" -> "SimpleStreamProxy:MkdTE-\n9U8crOTa-Lq23GKB" : [s1:m9] onNext(hello2, null)
+activate "SimpleStreamProxy:MkdTE-\n9U8crOTa-Lq23GKB"
+"SimpleStreamProxy:MkdTE-\n9U8crOTa-Lq23GKB" --> "SimpleStream:1195259493:hello:0" : [s1:r9; 1,050us] (response to onNext): null
+deactivate "SimpleStreamProxy:MkdTE-\n9U8crOTa-Lq23GKB"
+"SimpleStream:1195259493:hello:0" --> "Hello:0" : [s1:r8; 1,381us] (response to publish): null
+deactivate "SimpleStream:1195259493:hello:0"
+"Hello:0" --> "Thread:438" : [s1:r7; 14,163us] (response to sayHello): null
+deactivate "Hello:0"
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+note over "cloud.orbit.actors.Stage": debug: Starting messaging...
+note over "cloud.orbit.actors.Stage": debug: Starting hosting...
+note over "cloud.orbit.actors.Stage": debug: Starting execution...
+note over "cloud.orbit.actors.Stage": debug: Starting extensions...
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[RdOB0ShycZHHBs8ag1jU6A]]]
+"simpleCleanupTest" -> "SomeActor:1000" : [s1:m3] getUniqueActivationId
+activate "SomeActor:1000"
+hnote over "SomeActor:1000" #white : [s1] activate
+"SomeActor:1000" --> "simpleCleanupTest" : [s1:r3; 378us] (response to \ngetUniqueActivationId): \n442be450-da7d-49a2-96ab-\nc8e4ec7fe36f
+deactivate "SomeActor:1000"
+hnote over "SomeActor:1000" #white : [s1] deactivate
+"simpleCleanupTest" -> "SomeActor:1000" : [s1:m5] getUniqueActivationId
+activate "SomeActor:1000"
+hnote over "SomeActor:1000" #white : [s1] activate
+"SomeActor:1000" --> "simpleCleanupTest" : [s1:r5; 154us] (response to \ngetUniqueActivationId): \nb41f5bd7-7f8b-4457-8833-\n30bbfd1031d3
+deactivate "SomeActor:1000"
+@enduml

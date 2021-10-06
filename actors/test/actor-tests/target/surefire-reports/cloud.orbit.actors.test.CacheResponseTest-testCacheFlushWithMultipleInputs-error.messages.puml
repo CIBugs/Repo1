@@ -1,0 +1,13 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[VW8W7XIp4j9Yqn7B4fyLrB]]]
+"Thread:1044" -> "CacheResponse:5934e269-f46a-\n46ce-8fdc-ca69994086a9" : [s1:m3] getNow(hi1)
+activate "CacheResponse:5934e269-f46a-\n46ce-8fdc-ca69994086a9"
+hnote over "CacheResponse:5934e269-f46a-46ce-8fdc-ca69994086a9" #white : [s1] activate
+"CacheResponse:5934e269-f46a-\n46ce-8fdc-ca69994086a9" --> "Thread:1044" : [s1:r3; 460us] (response to getNow): \n107112283476864
+deactivate "CacheResponse:5934e269-f46a-\n46ce-8fdc-ca69994086a9"
+"Thread:1044" -> "CacheResponse:5934e269-f46a-\n46ce-8fdc-ca69994086a9" : [s1:m5] getNow(hi2)
+activate "CacheResponse:5934e269-f46a-\n46ce-8fdc-ca69994086a9"
+"CacheResponse:5934e269-f46a-\n46ce-8fdc-ca69994086a9" --> "Thread:1044" : [s1:r5; 71us] (response to getNow): \n107112283476864
+deactivate "CacheResponse:5934e269-f46a-\n46ce-8fdc-ca69994086a9"
+hnote over "CacheResponse:5934e269-f46a-46ce-8fdc-ca69994086a9" #white : [s1] deactivate
+@enduml

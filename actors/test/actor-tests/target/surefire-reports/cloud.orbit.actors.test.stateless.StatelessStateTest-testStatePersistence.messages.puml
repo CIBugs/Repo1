@@ -1,0 +1,19 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[MXe5LYLX8AbYTuO2PuAIHB]]]
+"testStatePersistence" -> "StatelessHello:1000" : [s1:m3] sayHello(hello1!)
+activate "StatelessHello:1000"
+hnote over "StatelessHello:1000" #white : [s1] activate
+"StatelessHello:1000" --> "testStatePersistence" : [s1:r3; 4,427us] (response to sayHello): hello1!
+deactivate "StatelessHello:1000"
+"testStatePersistence" -> "StatelessHello:1000" : [s1:m5] sayHello(hello2!)
+activate "StatelessHello:1000"
+"StatelessHello:1000" --> "testStatePersistence" : [s1:r5; 118us] (response to sayHello): hello1!\nhello2!
+deactivate "StatelessHello:1000"
+hnote over "StatelessHello:1000" #white : [s1] deactivate
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[aclytYC5ghnp6NTuyHiAvA]]]
+"testStatePersistence" -> "StatelessHello:1000" : [s2:m3] sayHello(hello3!)
+activate "StatelessHello:1000"
+hnote over "StatelessHello:1000" #white : [s2] activate
+"StatelessHello:1000" --> "testStatePersistence" : [s2:r3; 823us] (response to sayHello): hello2!\nhello3!
+deactivate "StatelessHello:1000"
+@enduml

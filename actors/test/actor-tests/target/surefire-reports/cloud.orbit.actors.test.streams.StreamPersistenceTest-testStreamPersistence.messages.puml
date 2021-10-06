@@ -1,0 +1,33 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[3smE5MO8FL1Id6qD3-Ml8C]]]
+"Thread:450" -> "SimpleStream:1195259493:test" : [s1:m3] publish(hello)
+activate "SimpleStream:1195259493:test"
+hnote over "SimpleStream:1195259493:test" #white : [s1] activate
+"SimpleStream:1195259493:test" --> "Thread:450" : [s1:r3; 6,704us] (response to publish): null
+deactivate "SimpleStream:1195259493:test"
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[ZDilTZOAbWJddUIMThQk-A]]]
+"Thread:450" -> "Hello:2" : [s2:m2] doSubscribe(test)
+activate "Hello:2"
+hnote over "Hello:2" #white : [s2] activate
+note over "Hello:2": doSubscribe
+"Hello:2" -> "SimpleStream:1195259493:test" : [s2:m3] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n773530ec)
+activate "SimpleStream:1195259493:test"
+"SimpleStream:1195259493:test" --> "Hello:2" : [s2:r3; 2,389us] (response to subscribe): \nmyWr069-pfZ9E7bq
+deactivate "SimpleStream:1195259493:test"
+"Hello:2" --> "Thread:450" : [s2:r2; 12,418us] (response to doSubscribe): null
+deactivate "Hello:2"
+"Thread:450" -> "SimpleStream:1195259493:test" : [s2:m4] publish(hello2)
+activate "SimpleStream:1195259493:test"
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:_\njIPsjqJvRMP18yxLgDbSC" : [s1:m5] onNext(hello2, null)
+activate "SimpleStreamProxy:_\njIPsjqJvRMP18yxLgDbSC"
+"SimpleStreamProxy:_\njIPsjqJvRMP18yxLgDbSC" --> "SimpleStream:1195259493:test" : [s1:r5; 2,048us] (response to onNext): null
+deactivate "SimpleStreamProxy:_\njIPsjqJvRMP18yxLgDbSC"
+"SimpleStream:1195259493:test" --> "Thread:450" : [s2:r4; 3,497us] (response to publish): null
+deactivate "SimpleStream:1195259493:test"
+hnote over "SimpleStream:1195259493:test" #white : [s1] deactivate
+"Thread:450" -> "SimpleStream:1195259493:test" : [s2:m5] publish(hello3)
+activate "SimpleStream:1195259493:test"
+hnote over "SimpleStream:1195259493:test" #white : [s2] activate
+"SimpleStream:1195259493:test" -> "SimpleStreamProxy:_\njIPsjqJvRMP18yxLgDbSC" : [s2:m7] onNext(hello3, null)
+activate "SimpleStreamProxy:_\njIPsjqJvRMP18yxLgDbSC"
+@enduml

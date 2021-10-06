@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: cloud.orbit.actors.test.stateless.StatelessActorTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.678 sec

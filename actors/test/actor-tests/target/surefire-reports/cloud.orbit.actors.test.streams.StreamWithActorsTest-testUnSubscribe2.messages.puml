@@ -1,0 +1,29 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[MxUCkcRxFAjlSAwnGD2F9A]]]
+"Thread:538" -> "Hello:0" : [s1:m3] doSubscribe(test)
+activate "Hello:0"
+hnote over "Hello:0" #white : [s1] activate
+note over "Hello:0": activateAsync
+note over "Hello:0": doSubscribe hash:2084529775
+"Hello:0" -> "SimpleStream:1195259493:test" : [s1:m5] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n19642fd3)
+activate "SimpleStream:1195259493:test"
+hnote over "SimpleStream:1195259493:test" #white : [s1] activate
+"SimpleStream:1195259493:test" --> "Hello:0" : [s1:r5; 3,016us] (response to subscribe): \naEweLrLS83D0wE_E
+deactivate "SimpleStream:1195259493:test"
+"Hello:0" --> "Thread:538" : [s1:r3; 14,603us] (response to doSubscribe): null
+deactivate "Hello:0"
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[NG9PGu5OMXFGeTfE4uZbXA]]]
+"Thread:538" -> "Hello:0" : [s2:m2] doUnSubscribe(test)
+activate "Hello:0"
+note over "Hello:0": doUnSubscribe hash:2084529775
+"Hello:0" -> "SimpleStream:1195259493:test" : [s1:m7] unsubscribe(aEweLrLS83D0wE_E)
+activate "SimpleStream:1195259493:test"
+"SimpleStream:1195259493:test" --> "Hello:0" : [s1:r7; 1,570us] (response to unsubscribe): null
+deactivate "SimpleStream:1195259493:test"
+"Hello:0" --> "Thread:538" : [s2:r2; 15,685us] (response to doUnSubscribe): \nnull
+deactivate "Hello:0"
+"Thread:538" -> "SimpleStream:1195259493:test" : [s2:m3] publish(hello)
+activate "SimpleStream:1195259493:test"
+"SimpleStream:1195259493:test" --> "Thread:538" : [s2:r3; 1,049us] (response to publish): null
+deactivate "SimpleStream:1195259493:test"
+@enduml

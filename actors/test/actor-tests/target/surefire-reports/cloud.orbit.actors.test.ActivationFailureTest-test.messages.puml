@@ -1,0 +1,13 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[JagZn6v9wSAHKa9dQPQZIA]]]
+"Thread:698" -> "Hello:0" : [s1:m3] sayHello
+activate "Hello:0"
+hnote over "Hello:0" #white : [s1] activate
+"Hello:0" --> "Thread:698" : [s1:r3; 6,630us] (exception at sayHello):\ncloud.orbit.exception.UncheckedException: \nIntentional failure
+deactivate "Hello:0"
+"Thread:698" -> "Hello:0" : [s1:m5] sayHello
+activate "Hello:0"
+hnote over "Hello:0" #white : [s1] activate
+"Hello:0" --> "Thread:698" : [s1:r5; 3,091us] (exception at sayHello):\ncloud.orbit.exception.UncheckedException: \nIntentional failure
+deactivate "Hello:0"
+@enduml

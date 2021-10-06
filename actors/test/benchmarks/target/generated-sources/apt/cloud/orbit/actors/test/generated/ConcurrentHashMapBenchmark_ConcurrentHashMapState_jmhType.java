@@ -1,0 +1,4 @@
+package cloud.orbit.actors.test.generated;
+public class ConcurrentHashMapBenchmark_ConcurrentHashMapState_jmhType extends ConcurrentHashMapBenchmark_ConcurrentHashMapState_jmhType_B3 {
+}
+

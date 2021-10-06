@@ -1,0 +1,8 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[TlMW47q2YJHSnIq9dFymwA]]]
+"simpleStatelessTest" -> "StatelessThing:1000" : [s1:m3] getUniqueActivationId
+activate "StatelessThing:1000"
+hnote over "StatelessThing:1000" #white : [s1] activate
+"StatelessThing:1000" --> "simpleStatelessTest" : [s1:r3; 780us] (response to \ngetUniqueActivationId): \nea831141-cb5d-4561-a32e-\n94658e5bd181
+deactivate "StatelessThing:1000"
+@enduml

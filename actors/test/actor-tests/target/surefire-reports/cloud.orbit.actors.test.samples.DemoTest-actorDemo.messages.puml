@@ -1,0 +1,41 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[K12VTGgVaqANL4AbjSEatB]]]
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[6TwK8S9IY3KuJaC5bz_H9D]]]
+"actorDemo" -> "Bank:ak" : [s2:m2] add(1000)
+activate "Bank:ak"
+hnote over "Bank:ak" #white : [s2] activate
+note over "Bank:ak": bank activated!
+note over "Bank:ak": adding: 1000
+"Bank:ak" --> "actorDemo" : [s2:r2; 6,056us] (response to add): null
+deactivate "Bank:ak"
+"actorDemo" -> "Bank:ak" : [s2:m5] getBalance
+activate "Bank:ak"
+note over "Bank:ak": getBalance: 1000
+"Bank:ak" --> "actorDemo" : [s2:r5; 520us] (response to getBalance): 1000
+deactivate "Bank:ak"
+"actorDemo" -> "Inventory:ak" : [s2:m6] buy(900, food)
+activate "Inventory:ak"
+hnote over "Inventory:ak" #white : [s2] activate
+"Inventory:ak" -> "Bank:ak" : [s2:m9] remove(900)
+activate "Bank:ak"
+"Bank:ak" --> "Inventory:ak" : [s2:r9; 4,217us] (response to remove): null
+deactivate "Bank:ak"
+"Inventory:ak" --> "actorDemo" : [s2:r6; 12,231us] (response to buy): null
+deactivate "Inventory:ak"
+"actorDemo" -> "Bank:ak" : [s2:m10] getBalance
+activate "Bank:ak"
+note over "Bank:ak": getBalance: 100
+"Bank:ak" --> "actorDemo" : [s2:r10; 282us] (response to getBalance): 100
+deactivate "Bank:ak"
+...10 minutes later...
+note over "Bank:ak": bank deactivated!!!
+hnote over "Bank:ak" #white : [s2] deactivate
+hnote over "Inventory:ak" #white : [s2] deactivate
+"actorDemo" -> "Bank:ak" : [s2:m13] getBalance
+activate "Bank:ak"
+hnote over "Bank:ak" #white : [s2] activate
+note over "Bank:ak": bank activated!
+note over "Bank:ak": getBalance: 100
+"Bank:ak" --> "actorDemo" : [s2:r13; 788us] (response to getBalance): 100
+deactivate "Bank:ak"
+@enduml

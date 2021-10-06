@@ -1,0 +1,67 @@
+@startuml
+note over "cloud.orbit.actors.Stage": Stage started [[Orbit[eh74IM-7xAg5pBEnLuZZdD]]]
+note over "testUnsubscribe": subscribing
+"Thread:461" -> "ServerSideStreamProxy:0" : [cc0:m1] subscribe(default, 1195259493, \ntestStream, \nClientSideStreamProxy:\nVnWhQh4xL2BEU1g93CNcGA)
+activate "ServerSideStreamProxy:0"
+"Thread:294" -> "SimpleStream:1195259493:\ntestStream" : [s1:m3] subscribe(cloud.orbit.actors.streams.\nsimple.\nSimpleStreamProxyObject@\n33e5a0e7)
+activate "SimpleStream:1195259493:\ntestStream"
+hnote over "SimpleStream:1195259493:testStream" #white : [s1] activate
+"SimpleStream:1195259493:\ntestStream" --> "Thread:294" : [s1:r3; 2,518us] (response to subscribe): \ncIYpmaHWTdinI41i
+deactivate "SimpleStream:1195259493:\ntestStream"
+"ServerSideStreamProxy:0" --> "Thread:461" : [cc0:r1; 31,841us] (response to subscribe): cloud.\norbit.actors.streams.simple.\nStreamReference$\nSimpleStreamHandle@6e75ba59
+deactivate "ServerSideStreamProxy:0"
+"Thread:461" -> "Hello:0" : [cc0:m2] doPush(testStream, hello)
+activate "Hello:0"
+"Thread:304" -> "Hello:0" : [s1:m5] doPush(testStream, hello)
+activate "Hello:0"
+hnote over "Hello:0" #white : [s1] activate
+"Hello:0" -> "SimpleStream:1195259493:\ntestStream" : [s1:m7] publish(hello)
+activate "SimpleStream:1195259493:\ntestStream"
+"SimpleStream:1195259493:\ntestStream" -> "SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA" : [s1:m8] onNext(hello, null)
+activate "SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA"
+"Thread:295" -> "ClientSideStreamProxy:\nVnWhQh4xL2BEU1g93CNcGA" : [3] onNext(default, testStream, hello)
+"SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA" --> "SimpleStream:1195259493:\ntestStream" : [s1:r8; 287us] (response to onNext): null
+deactivate "SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA"
+"SimpleStream:1195259493:\ntestStream" --> "Hello:0" : [s1:r7; 517us] (response to publish): null
+deactivate "SimpleStream:1195259493:\ntestStream"
+"Hello:0" --> "Thread:304" : [s1:r5; 1,366us] (response to doPush): null
+deactivate "Hello:0"
+"Hello:0" --> "Thread:461" : [cc0:r2; 5,283us] (response to doPush): null
+deactivate "Hello:0"
+note over "testUnsubscribe": unsubscribing
+"Thread:461" -> "Hello:0" : [cc0:m4] doPush(testStream, hello2)
+activate "Hello:0"
+"Thread:386" -> "Hello:0" : [s1:m9] doPush(testStream, hello2)
+activate "Hello:0"
+"Hello:0" -> "SimpleStream:1195259493:\ntestStream" : [s1:m10] publish(hello2)
+activate "SimpleStream:1195259493:\ntestStream"
+"SimpleStream:1195259493:\ntestStream" -> "SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA" : [s1:m11] onNext(hello2, null)
+activate "SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA"
+"Thread:386" -> "ClientSideStreamProxy:\nVnWhQh4xL2BEU1g93CNcGA" : [5] onNext(default, testStream, hello2)
+"SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA" --> "SimpleStream:1195259493:\ntestStream" : [s1:r11; 286us] (response to onNext): null
+deactivate "SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA"
+"SimpleStream:1195259493:\ntestStream" --> "Hello:0" : [s1:r10; 587us] (response to publish): null
+deactivate "SimpleStream:1195259493:\ntestStream"
+"Hello:0" --> "Thread:386" : [s1:r9; 898us] (response to doPush): null
+deactivate "Hello:0"
+"Hello:0" --> "Thread:461" : [cc0:r4; 4,600us] (response to doPush): null
+deactivate "Hello:0"
+note over "testUnsubscribe": subscribing again
+"Thread:461" -> "Hello:0" : [cc0:m6] doPush(testStream, hello3)
+activate "Hello:0"
+"Thread:354" -> "Hello:0" : [s1:m12] doPush(testStream, hello3)
+activate "Hello:0"
+"Hello:0" -> "SimpleStream:1195259493:\ntestStream" : [s1:m13] publish(hello3)
+activate "SimpleStream:1195259493:\ntestStream"
+"SimpleStream:1195259493:\ntestStream" -> "SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA" : [s1:m14] onNext(hello3, null)
+activate "SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA"
+"Thread:368" -> "ClientSideStreamProxy:\nVnWhQh4xL2BEU1g93CNcGA" : [7] onNext(default, testStream, hello3)
+"SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA" --> "SimpleStream:1195259493:\ntestStream" : [s1:r14; 275us] (response to onNext): null
+deactivate "SimpleStreamProxy:7X6tfRq5ZoCeb-\nks42v5DA"
+"SimpleStream:1195259493:\ntestStream" --> "Hello:0" : [s1:r13; 488us] (response to publish): null
+deactivate "SimpleStream:1195259493:\ntestStream"
+"Hello:0" --> "Thread:354" : [s1:r12; 723us] (response to doPush): null
+deactivate "Hello:0"
+"Hello:0" --> "Thread:461" : [cc0:r6; 1,468us] (response to doPush): null
+deactivate "Hello:0"
+@enduml
