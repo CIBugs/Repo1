@@ -1,5 +1,5 @@
-16.10.2021 08:49:20 INFO  [main] .engine.service.ArchiveService - [user:] Archiving starting. Archiving passive workflows older than 2015-07-10T19:57:00.000+05:30, in batches of 10.
-16.10.2021 08:49:20 INFO  [main] .engine.service.ArchiveService - [user:] Archived 10 workflows. Archiving about 1.0E7 workflows / second.
-16.10.2021 08:49:20 INFO  [main] .engine.service.ArchiveService - [user:] Archiving finished. Archived 30 workflows in 0 seconds.
-16.10.2021 08:49:20 INFO  [main] .engine.service.ArchiveService - [user:] Archiving starting. Archiving passive workflows older than 2015-07-10T19:57:00.000+05:30, in batches of 10.
-16.10.2021 08:49:20 INFO  [main] .engine.service.ArchiveService - [user:] Archiving finished. Archived 0 workflows in 0 seconds.
+16.10.2021 08:50:57 INFO  [main] .engine.service.ArchiveService - [user:] Archiving starting. Archiving passive workflows older than 2015-07-10T19:57:00.000+05:30, in batches of 10.
+16.10.2021 08:50:57 INFO  [main] .engine.service.ArchiveService - [user:] Archived 10 workflows. Archiving about 1.0E7 workflows / second.
+16.10.2021 08:50:57 INFO  [main] .engine.service.ArchiveService - [user:] Archiving finished. Archived 30 workflows in 0 seconds.
+16.10.2021 08:50:57 INFO  [main] .engine.service.ArchiveService - [user:] Archiving starting. Archiving passive workflows older than 2015-07-10T19:57:00.000+05:30, in batches of 10.
+16.10.2021 08:50:57 INFO  [main] .engine.service.ArchiveService - [user:] Archiving finished. Archived 0 workflows in 0 seconds.

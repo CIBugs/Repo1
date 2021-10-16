@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.nitorcreations.nflow.tests.StateVariablesTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.696 sec - in com.nitorcreations.nflow.tests.StateVariablesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.634 sec - in com.nitorcreations.nflow.tests.StateVariablesTest

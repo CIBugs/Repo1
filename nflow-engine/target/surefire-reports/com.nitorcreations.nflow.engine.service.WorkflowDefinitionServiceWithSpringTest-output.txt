@@ -1,2 +1,2 @@
-16.10.2021 08:49:20 INFO  [main] vice.WorkflowDefinitionService - [user:] Added workflow type: springdummy (com.nitorcreations.nflow.engine.service.SpringDummyTestWorkflow)
-16.10.2021 08:49:20 INFO  [main] vice.WorkflowDefinitionService - [user:] No non-Spring workflow definitions
+16.10.2021 08:50:57 INFO  [main] vice.WorkflowDefinitionService - [user:] Added workflow type: springdummy (com.nitorcreations.nflow.engine.service.SpringDummyTestWorkflow)
+16.10.2021 08:50:57 INFO  [main] vice.WorkflowDefinitionService - [user:] No non-Spring workflow definitions

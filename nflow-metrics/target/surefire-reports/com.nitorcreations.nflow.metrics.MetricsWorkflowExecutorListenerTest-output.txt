@@ -1,212 +1,212 @@
-14:19:30.799 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
-14:19:30.802 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
-14:19:30.802 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
-14:19:30.803 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
-14:19:30.803 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
-14:19:30.803 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
-14:19:30.819 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
-14:19:30.836 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@11758f2a: startup date [Sat Oct 16 14:19:30 IST 2021]; root of context hierarchy
-14:19:30.837 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@11758f2a: org.springframework.beans.factory.support.DefaultListableBeanFactory@78dd667e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
-14:19:30.844 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:30.844 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:30.850 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
-14:19:30.851 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:30.873 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
-14:19:30.875 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry()
-14:19:30.876 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
-14:19:30.881 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
-14:19:30.882 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
-14:19:30.918 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde
-14:19:30.918 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde'
-14:19:30.921 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af
-14:19:30.921 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af'
-14:19:30.922 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:30.923 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:30.923 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-14:19:30.923 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
-14:19:30.923 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:30.923 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:30.923 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:30.924 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
-14:19:30.924 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:30.924 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:30.924 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:30.925 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
-14:19:30.925 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:30.925 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:30.925 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:30.925 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
-14:19:30.925 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:30.926 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:30.926 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:30.926 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
-14:19:30.926 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:30.927 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3c46e67a]
-14:19:30.928 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@54d9d12d]
-14:19:30.928 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@78dd667e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,metricRegistry,metricsWorkflowExecutorListener,jmxMetricsReporter,executorDao]; root of factory hierarchy
-14:19:30.928 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:30.928 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:30.929 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:30.929 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:30.929 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:30.929 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:30.931 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
-14:19:30.940 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:30.940 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:30.940 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:30.941 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
-14:19:30.942 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:30.942 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:30.942 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:30.943 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
-14:19:30.945 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:30.945 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:30.945 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:30.945 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:30.945 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
-14:19:30.946 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
-14:19:30.947 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'nflowMetrics/metricsContext'
-14:19:30.948 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricRegistry'
-14:19:30.948 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricRegistry'
-14:19:30.948 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:30.961 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricRegistry' to allow for resolving potential circular references
-14:19:30.966 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricRegistry'
-14:19:30.967 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListener'
-14:19:30.967 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListener'
-14:19:30.967 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:30.970 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'executorDao'
-14:19:30.970 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'executorDao'
-14:19:30.971 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.005 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
-14:19:31.009 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@c6974769
-14:19:31.012 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'executorDao' to allow for resolving potential circular references
-14:19:31.017 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'executorDao': public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
-14:19:31.018 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'executorDao'
-14:19:31.018 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metricsWorkflowExecutorListener' via factory method to bean named 'executorDao'
-14:19:31.019 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling MetricsWorkflowExecutorListener
-14:19:31.019 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.021 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListener' to allow for resolving potential circular references
-14:19:31.023 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListener'
-14:19:31.023 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jmxMetricsReporter'
-14:19:31.023 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'jmxMetricsReporter'
-14:19:31.024 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.024 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling Metrics JmxReporter
-14:19:31.025 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.124 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'jmxMetricsReporter' to allow for resolving potential circular references
-14:19:31.125 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'jmxMetricsReporter'
-14:19:31.125 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'executorDao'
-14:19:31.125 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.136 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@306e95ec]
-14:19:31.137 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
-14:19:31.138 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [mockProperties]
-14:19:31.139 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
-14:19:31.140 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.140 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListener'
-14:19:31.194 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
-14:19:31.194 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
-14:19:31.194 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
-14:19:31.194 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
-14:19:31.194 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
-14:19:31.195 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
-14:19:31.195 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
-14:19:31.196 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@428640fa: startup date [Sat Oct 16 14:19:31 IST 2021]; root of context hierarchy
-14:19:31.196 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@428640fa: org.springframework.beans.factory.support.DefaultListableBeanFactory@d9345cd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
-14:19:31.196 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.196 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.197 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.197 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.199 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
-14:19:31.200 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry()
-14:19:31.200 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
-14:19:31.201 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
-14:19:31.201 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
-14:19:31.202 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde
-14:19:31.202 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde'
-14:19:31.202 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af
-14:19:31.203 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af'
-14:19:31.203 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.204 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
-14:19:31.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
-14:19:31.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.205 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@7d4f9aae]
-14:19:31.205 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@72e5a8e]
-14:19:31.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d9345cd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,metricRegistry,metricsWorkflowExecutorListener,jmxMetricsReporter,executorDao]; root of factory hierarchy
-14:19:31.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:31.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:31.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
-14:19:31.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:31.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.207 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
-14:19:31.207 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.207 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.207 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.207 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
-14:19:31.208 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.208 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.208 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.208 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.208 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
-14:19:31.209 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
-14:19:31.209 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'nflowMetrics/metricsContext'
-14:19:31.209 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricRegistry'
-14:19:31.210 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricRegistry'
-14:19:31.210 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.210 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricRegistry' to allow for resolving potential circular references
-14:19:31.211 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricRegistry'
-14:19:31.211 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListener'
-14:19:31.211 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListener'
-14:19:31.211 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.212 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'executorDao'
-14:19:31.212 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'executorDao'
-14:19:31.213 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.213 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
-14:19:31.213 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@c6974769
-14:19:31.214 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'executorDao' to allow for resolving potential circular references
-14:19:31.215 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'executorDao': public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
-14:19:31.215 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'executorDao'
-14:19:31.216 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metricsWorkflowExecutorListener' via factory method to bean named 'executorDao'
-14:19:31.216 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling MetricsWorkflowExecutorListener
-14:19:31.216 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.216 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListener' to allow for resolving potential circular references
-14:19:31.217 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListener'
-14:19:31.217 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jmxMetricsReporter'
-14:19:31.217 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'jmxMetricsReporter'
-14:19:31.217 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.217 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling Metrics JmxReporter
-14:19:31.217 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.218 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'jmxMetricsReporter' to allow for resolving potential circular references
-14:19:31.218 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'jmxMetricsReporter'
-14:19:31.218 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'executorDao'
-14:19:31.218 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.221 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@53aac487]
-14:19:31.222 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
-14:19:31.222 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [mockProperties]
-14:19:31.222 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
-14:19:31.222 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.222 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListener'
-14:19:31.226 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register timer
+14:21:07.815 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
+14:21:07.818 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
+14:21:07.819 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
+14:21:07.819 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
+14:21:07.819 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
+14:21:07.819 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
+14:21:07.836 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+14:21:07.859 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@11758f2a: startup date [Sat Oct 16 14:21:07 IST 2021]; root of context hierarchy
+14:21:07.862 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@11758f2a: org.springframework.beans.factory.support.DefaultListableBeanFactory@78dd667e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
+14:21:07.872 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:07.872 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:07.880 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+14:21:07.881 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:07.910 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
+14:21:07.912 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry()
+14:21:07.913 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
+14:21:07.919 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
+14:21:07.920 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
+14:21:07.965 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde
+14:21:07.966 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde'
+14:21:07.969 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af
+14:21:07.969 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af'
+14:21:07.971 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:07.971 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:07.971 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:21:07.971 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+14:21:07.972 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:07.972 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:07.972 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:07.972 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+14:21:07.972 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:07.972 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:07.972 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:07.974 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+14:21:07.974 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:07.974 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:07.974 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:07.974 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+14:21:07.974 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:07.975 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:07.975 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:07.975 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+14:21:07.975 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:07.976 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3c46e67a]
+14:21:07.977 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@54d9d12d]
+14:21:07.978 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@78dd667e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,metricRegistry,metricsWorkflowExecutorListener,jmxMetricsReporter,executorDao]; root of factory hierarchy
+14:21:07.978 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:07.978 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:07.978 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:07.979 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:07.979 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:07.979 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:07.982 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+14:21:07.994 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:07.994 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:07.994 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:07.995 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+14:21:07.997 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:07.997 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:07.997 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:07.998 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
+14:21:08.001 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.001 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.001 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.001 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.002 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
+14:21:08.003 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
+14:21:08.006 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'nflowMetrics/metricsContext'
+14:21:08.006 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricRegistry'
+14:21:08.006 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricRegistry'
+14:21:08.007 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.024 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricRegistry' to allow for resolving potential circular references
+14:21:08.031 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricRegistry'
+14:21:08.031 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListener'
+14:21:08.031 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListener'
+14:21:08.031 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.035 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'executorDao'
+14:21:08.035 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'executorDao'
+14:21:08.035 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.072 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
+14:21:08.075 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@c6974769
+14:21:08.079 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'executorDao' to allow for resolving potential circular references
+14:21:08.085 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'executorDao': public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
+14:21:08.086 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'executorDao'
+14:21:08.087 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metricsWorkflowExecutorListener' via factory method to bean named 'executorDao'
+14:21:08.087 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling MetricsWorkflowExecutorListener
+14:21:08.088 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.090 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListener' to allow for resolving potential circular references
+14:21:08.092 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListener'
+14:21:08.092 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jmxMetricsReporter'
+14:21:08.092 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'jmxMetricsReporter'
+14:21:08.093 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.093 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling Metrics JmxReporter
+14:21:08.093 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'jmxMetricsReporter' to allow for resolving potential circular references
+14:21:08.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'jmxMetricsReporter'
+14:21:08.207 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'executorDao'
+14:21:08.207 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.223 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@306e95ec]
+14:21:08.223 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:21:08.225 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [mockProperties]
+14:21:08.225 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+14:21:08.226 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.226 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListener'
+14:21:08.240 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
+14:21:08.240 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
+14:21:08.240 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
+14:21:08.241 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
+14:21:08.241 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
+14:21:08.241 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
+14:21:08.242 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+14:21:08.243 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@428640fa: startup date [Sat Oct 16 14:21:08 IST 2021]; root of context hierarchy
+14:21:08.243 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@428640fa: org.springframework.beans.factory.support.DefaultListableBeanFactory@d9345cd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
+14:21:08.244 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.244 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.244 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.244 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.247 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
+14:21:08.248 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry()
+14:21:08.248 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
+14:21:08.250 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
+14:21:08.250 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
+14:21:08.251 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde
+14:21:08.252 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde'
+14:21:08.252 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af
+14:21:08.252 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af'
+14:21:08.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.254 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+14:21:08.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+14:21:08.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.255 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@7d4f9aae]
+14:21:08.256 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@72e5a8e]
+14:21:08.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d9345cd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,metricRegistry,metricsWorkflowExecutorListener,jmxMetricsReporter,executorDao]; root of factory hierarchy
+14:21:08.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:08.256 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:08.257 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+14:21:08.257 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:08.257 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.257 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.257 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+14:21:08.258 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.258 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.258 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.259 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
+14:21:08.259 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.259 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.259 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.260 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.260 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
+14:21:08.261 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
+14:21:08.261 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'nflowMetrics/metricsContext'
+14:21:08.261 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricRegistry'
+14:21:08.261 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricRegistry'
+14:21:08.262 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.262 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricRegistry' to allow for resolving potential circular references
+14:21:08.263 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricRegistry'
+14:21:08.264 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListener'
+14:21:08.264 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListener'
+14:21:08.264 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.265 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'executorDao'
+14:21:08.265 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'executorDao'
+14:21:08.265 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.266 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
+14:21:08.266 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@c6974769
+14:21:08.268 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'executorDao' to allow for resolving potential circular references
+14:21:08.272 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'executorDao': public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
+14:21:08.272 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'executorDao'
+14:21:08.272 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metricsWorkflowExecutorListener' via factory method to bean named 'executorDao'
+14:21:08.273 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling MetricsWorkflowExecutorListener
+14:21:08.273 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.273 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListener' to allow for resolving potential circular references
+14:21:08.274 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListener'
+14:21:08.274 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jmxMetricsReporter'
+14:21:08.274 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'jmxMetricsReporter'
+14:21:08.274 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.275 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling Metrics JmxReporter
+14:21:08.275 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.275 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'jmxMetricsReporter' to allow for resolving potential circular references
+14:21:08.276 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'jmxMetricsReporter'
+14:21:08.276 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'executorDao'
+14:21:08.276 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.281 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@53aac487]
+14:21:08.282 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:21:08.282 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [mockProperties]
+14:21:08.282 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+14:21:08.282 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.283 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListener'
+14:21:08.288 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register timer
 javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0.myWorkflow.my-state.execution-time
 	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_292]
 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_292]
@@ -248,7 +248,7 @@ javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-14:19:31.227 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register histogram
+14:21:08.289 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register histogram
 javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0.myWorkflow.my-state.retries
 	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_292]
 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_292]
@@ -291,111 +291,111 @@ javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-14:19:31.230 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
-14:19:31.230 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
-14:19:31.230 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
-14:19:31.230 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
-14:19:31.230 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
-14:19:31.231 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
-14:19:31.231 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
-14:19:31.232 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@534a5a98: startup date [Sat Oct 16 14:19:31 IST 2021]; root of context hierarchy
-14:19:31.232 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@534a5a98: org.springframework.beans.factory.support.DefaultListableBeanFactory@4f80542f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
-14:19:31.232 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.233 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.233 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.233 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.235 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
-14:19:31.235 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry()
-14:19:31.236 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
-14:19:31.237 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
-14:19:31.238 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
-14:19:31.238 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde
-14:19:31.239 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde'
-14:19:31.239 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af
-14:19:31.239 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af'
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.240 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.240 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
-14:19:31.241 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.242 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@a38c7fe]
-14:19:31.242 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@6fdbe764]
-14:19:31.242 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4f80542f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,metricRegistry,metricsWorkflowExecutorListener,jmxMetricsReporter,executorDao]; root of factory hierarchy
-14:19:31.242 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.242 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.242 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.242 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.242 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:31.243 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:31.243 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
-14:19:31.243 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:31.243 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.243 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.244 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
-14:19:31.244 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.244 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.244 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.245 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
-14:19:31.245 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.245 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.245 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.245 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.246 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
-14:19:31.246 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
-14:19:31.247 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'nflowMetrics/metricsContext'
-14:19:31.247 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricRegistry'
-14:19:31.247 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricRegistry'
-14:19:31.247 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.247 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricRegistry' to allow for resolving potential circular references
-14:19:31.248 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricRegistry'
-14:19:31.248 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListener'
-14:19:31.248 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListener'
-14:19:31.248 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.249 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'executorDao'
-14:19:31.249 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'executorDao'
-14:19:31.249 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.250 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
-14:19:31.250 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@c6974769
-14:19:31.251 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'executorDao' to allow for resolving potential circular references
-14:19:31.252 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'executorDao': public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
-14:19:31.252 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'executorDao'
-14:19:31.252 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metricsWorkflowExecutorListener' via factory method to bean named 'executorDao'
-14:19:31.252 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling MetricsWorkflowExecutorListener
-14:19:31.252 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListener' to allow for resolving potential circular references
-14:19:31.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListener'
-14:19:31.253 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jmxMetricsReporter'
-14:19:31.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'jmxMetricsReporter'
-14:19:31.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.254 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling Metrics JmxReporter
-14:19:31.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.254 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'jmxMetricsReporter' to allow for resolving potential circular references
-14:19:31.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'jmxMetricsReporter'
-14:19:31.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'executorDao'
-14:19:31.255 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.259 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@2e6a8155]
-14:19:31.259 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
-14:19:31.259 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [mockProperties]
-14:19:31.259 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
-14:19:31.260 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.260 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListener'
-14:19:31.260 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register timer
+14:21:08.293 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
+14:21:08.293 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
+14:21:08.293 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
+14:21:08.293 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
+14:21:08.293 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
+14:21:08.293 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
+14:21:08.294 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+14:21:08.295 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@534a5a98: startup date [Sat Oct 16 14:21:08 IST 2021]; root of context hierarchy
+14:21:08.295 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@534a5a98: org.springframework.beans.factory.support.DefaultListableBeanFactory@4f80542f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
+14:21:08.296 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.296 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.296 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.296 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.298 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
+14:21:08.299 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry()
+14:21:08.300 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
+14:21:08.301 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
+14:21:08.302 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
+14:21:08.303 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde
+14:21:08.303 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde'
+14:21:08.303 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af
+14:21:08.303 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af'
+14:21:08.304 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.304 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.304 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:21:08.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+14:21:08.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.306 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.307 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+14:21:08.307 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.307 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@a38c7fe]
+14:21:08.307 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@6fdbe764]
+14:21:08.307 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4f80542f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,metricRegistry,metricsWorkflowExecutorListener,jmxMetricsReporter,executorDao]; root of factory hierarchy
+14:21:08.307 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.308 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.308 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.308 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.308 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:08.308 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:08.308 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+14:21:08.309 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:08.309 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.309 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.309 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+14:21:08.310 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.310 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.310 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.311 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
+14:21:08.311 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.311 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.311 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.311 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.312 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
+14:21:08.312 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
+14:21:08.313 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'nflowMetrics/metricsContext'
+14:21:08.313 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricRegistry'
+14:21:08.313 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricRegistry'
+14:21:08.313 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.314 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricRegistry' to allow for resolving potential circular references
+14:21:08.315 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricRegistry'
+14:21:08.315 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListener'
+14:21:08.315 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListener'
+14:21:08.315 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.316 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'executorDao'
+14:21:08.316 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'executorDao'
+14:21:08.316 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.317 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
+14:21:08.317 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@c6974769
+14:21:08.318 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'executorDao' to allow for resolving potential circular references
+14:21:08.319 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'executorDao': public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
+14:21:08.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'executorDao'
+14:21:08.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metricsWorkflowExecutorListener' via factory method to bean named 'executorDao'
+14:21:08.320 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling MetricsWorkflowExecutorListener
+14:21:08.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.320 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListener' to allow for resolving potential circular references
+14:21:08.321 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListener'
+14:21:08.321 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jmxMetricsReporter'
+14:21:08.321 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'jmxMetricsReporter'
+14:21:08.321 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.322 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling Metrics JmxReporter
+14:21:08.322 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.322 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'jmxMetricsReporter' to allow for resolving potential circular references
+14:21:08.322 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'jmxMetricsReporter'
+14:21:08.322 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'executorDao'
+14:21:08.323 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.328 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@2e6a8155]
+14:21:08.328 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:21:08.328 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [mockProperties]
+14:21:08.329 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+14:21:08.329 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.329 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListener'
+14:21:08.330 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register timer
 javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0.myWorkflow.my-state.execution-time
 	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_292]
 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_292]
@@ -437,7 +437,7 @@ javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-14:19:31.261 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register histogram
+14:21:08.332 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register histogram
 javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0.myWorkflow.my-state.retries
 	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_292]
 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_292]
@@ -480,111 +480,111 @@ javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-14:19:31.264 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
-14:19:31.265 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
-14:19:31.265 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
-14:19:31.265 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
-14:19:31.265 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
-14:19:31.265 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
-14:19:31.266 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
-14:19:31.267 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@6221a451: startup date [Sat Oct 16 14:19:31 IST 2021]; root of context hierarchy
-14:19:31.267 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@6221a451: org.springframework.beans.factory.support.DefaultListableBeanFactory@52719fb6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
-14:19:31.267 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.267 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.268 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.268 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.270 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
-14:19:31.270 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry()
-14:19:31.271 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
-14:19:31.272 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
-14:19:31.274 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
-14:19:31.274 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde
-14:19:31.275 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde'
-14:19:31.275 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af
-14:19:31.275 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af'
-14:19:31.276 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.276 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.276 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-14:19:31.276 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.276 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.277 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.277 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.277 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.277 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.277 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.277 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.277 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
-14:19:31.277 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.277 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.278 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.278 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
-14:19:31.278 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.278 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.278 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.278 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
-14:19:31.278 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.278 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@791f145a]
-14:19:31.278 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@38cee291]
-14:19:31.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@52719fb6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,metricRegistry,metricsWorkflowExecutorListener,jmxMetricsReporter,executorDao]; root of factory hierarchy
-14:19:31.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-14:19:31.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-14:19:31.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-14:19:31.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-14:19:31.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:31.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:31.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
-14:19:31.280 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
-14:19:31.280 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.280 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.280 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
-14:19:31.281 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.281 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.281 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.282 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
-14:19:31.282 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.282 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-14:19:31.282 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-14:19:31.283 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.283 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
-14:19:31.283 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
-14:19:31.284 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'nflowMetrics/metricsContext'
-14:19:31.284 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricRegistry'
-14:19:31.284 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricRegistry'
-14:19:31.284 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.285 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricRegistry' to allow for resolving potential circular references
-14:19:31.286 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricRegistry'
-14:19:31.286 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListener'
-14:19:31.286 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListener'
-14:19:31.286 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.287 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'executorDao'
-14:19:31.287 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'executorDao'
-14:19:31.288 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
-14:19:31.288 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
-14:19:31.289 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@c6974769
-14:19:31.290 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'executorDao' to allow for resolving potential circular references
-14:19:31.290 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'executorDao': public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
-14:19:31.291 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'executorDao'
-14:19:31.291 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metricsWorkflowExecutorListener' via factory method to bean named 'executorDao'
-14:19:31.291 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling MetricsWorkflowExecutorListener
-14:19:31.291 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.292 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListener' to allow for resolving potential circular references
-14:19:31.292 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListener'
-14:19:31.292 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jmxMetricsReporter'
-14:19:31.292 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'jmxMetricsReporter'
-14:19:31.292 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
-14:19:31.293 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling Metrics JmxReporter
-14:19:31.293 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.293 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'jmxMetricsReporter' to allow for resolving potential circular references
-14:19:31.293 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'jmxMetricsReporter'
-14:19:31.294 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'executorDao'
-14:19:31.294 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-14:19:31.296 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@f09733f]
-14:19:31.296 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
-14:19:31.297 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [mockProperties]
-14:19:31.297 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
-14:19:31.297 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
-14:19:31.297 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListener'
-14:19:31.298 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register timer
+14:21:08.335 [main] DEBUG o.s.mock.env.MockEnvironment - Initialized MockEnvironment with PropertySources []
+14:21:08.335 [main] DEBUG o.s.mock.env.MockEnvironment - Adding [mockProperties] PropertySource with lowest search precedence
+14:21:08.335 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'metrics'
+14:21:08.335 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.profiles.active' in [mockProperties]
+14:21:08.335 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.profiles.active' in any property source. Returning [null]
+14:21:08.336 [main] DEBUG o.s.mock.env.MockEnvironment - Activating profile 'jmx'
+14:21:08.336 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+14:21:08.337 [main] INFO  c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Refreshing com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@6221a451: startup date [Sat Oct 16 14:21:08 IST 2021]; root of context hierarchy
+14:21:08.337 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Bean factory for com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$1@6221a451: org.springframework.beans.factory.support.DefaultListableBeanFactory@52719fb6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config]; root of factory hierarchy
+14:21:08.338 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.338 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.338 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.339 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.341 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registered bean definition for imported class 'nflowMetrics/metricsContext'
+14:21:08.342 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricRegistry()
+14:21:08.342 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.metricsWorkflowExecutorListener()
+14:21:08.343 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.NflowMetricsContext.jmxMetricsReporter()
+14:21:08.345 [main] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config.executorDao()
+14:21:08.346 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config; enhanced class name is: com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde
+14:21:08.346 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'metricsWorkflowExecutorListenerTest.Config' existing class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config' with enhanced class name 'com.nitorcreations.nflow.metrics.MetricsWorkflowExecutorListenerTest$Config$$EnhancerBySpringCGLIB$$7888dbde'
+14:21:08.346 [main] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.nitorcreations.nflow.metrics.NflowMetricsContext; enhanced class name is: com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af
+14:21:08.346 [main] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'nflowMetrics/metricsContext' existing class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext' with enhanced class name 'com.nitorcreations.nflow.metrics.NflowMetricsContext$$EnhancerBySpringCGLIB$$a9c948af'
+14:21:08.347 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.347 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.348 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+14:21:08.348 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.348 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.348 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.348 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.348 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.348 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.349 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.349 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.349 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+14:21:08.349 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.349 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.349 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+14:21:08.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+14:21:08.350 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.350 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@791f145a]
+14:21:08.351 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@38cee291]
+14:21:08.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@52719fb6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,metricsWorkflowExecutorListenerTest.Config,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nflowMetrics/metricsContext,metricRegistry,metricsWorkflowExecutorListener,jmxMetricsReporter,executorDao]; root of factory hierarchy
+14:21:08.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:21:08.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:21:08.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:21:08.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:21:08.351 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:08.352 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:08.352 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+14:21:08.353 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+14:21:08.353 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.353 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.353 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+14:21:08.354 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.354 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.354 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.354 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListenerTest.Config' to allow for resolving potential circular references
+14:21:08.355 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.355 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:21:08.355 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:21:08.355 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.356 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'nflowMetrics/metricsContext'
+14:21:08.356 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'nflowMetrics/metricsContext' to allow for resolving potential circular references
+14:21:08.357 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'nflowMetrics/metricsContext'
+14:21:08.357 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricRegistry'
+14:21:08.357 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricRegistry'
+14:21:08.357 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.358 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricRegistry' to allow for resolving potential circular references
+14:21:08.359 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricRegistry'
+14:21:08.359 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'metricsWorkflowExecutorListener'
+14:21:08.359 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'metricsWorkflowExecutorListener'
+14:21:08.359 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.360 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'executorDao'
+14:21:08.360 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'executorDao'
+14:21:08.361 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListenerTest.Config'
+14:21:08.361 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Found init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
+14:21:08.361 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Registered init method on class [com.nitorcreations.nflow.engine.internal.dao.ExecutorDao$$EnhancerByMockitoWithCGLIB$$68fdda]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@c6974769
+14:21:08.362 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'executorDao' to allow for resolving potential circular references
+14:21:08.363 [main] DEBUG o.s.c.a.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'executorDao': public void com.nitorcreations.nflow.engine.internal.dao.ExecutorDao.findHostMaxLength()
+14:21:08.364 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'executorDao'
+14:21:08.364 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'metricsWorkflowExecutorListener' via factory method to bean named 'executorDao'
+14:21:08.364 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling MetricsWorkflowExecutorListener
+14:21:08.364 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.364 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'metricsWorkflowExecutorListener' to allow for resolving potential circular references
+14:21:08.365 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'metricsWorkflowExecutorListener'
+14:21:08.365 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jmxMetricsReporter'
+14:21:08.365 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'jmxMetricsReporter'
+14:21:08.365 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'nflowMetrics/metricsContext'
+14:21:08.366 [main] INFO  c.n.n.metrics.NflowMetricsContext - Enabling Metrics JmxReporter
+14:21:08.366 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.366 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'jmxMetricsReporter' to allow for resolving potential circular references
+14:21:08.366 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'jmxMetricsReporter'
+14:21:08.366 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'executorDao'
+14:21:08.367 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+14:21:08.370 [main] DEBUG c.n.n.m.MetricsWorkflowExecutorListenerTest$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@f09733f]
+14:21:08.370 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:21:08.370 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [mockProperties]
+14:21:08.370 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+14:21:08.370 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricRegistry'
+14:21:08.371 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricsWorkflowExecutorListener'
+14:21:08.372 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register timer
 javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0.myWorkflow.my-state.execution-time
 	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_292]
 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_292]
@@ -626,7 +626,7 @@ javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-14:19:31.299 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register histogram
+14:21:08.373 [main] DEBUG com.codahale.metrics.JmxReporter - Unable to register histogram
 javax.management.InstanceAlreadyExistsException: nflow.metrics:name=foobarName.0.myWorkflow.my-state.retries
 	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_292]
 	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_292]

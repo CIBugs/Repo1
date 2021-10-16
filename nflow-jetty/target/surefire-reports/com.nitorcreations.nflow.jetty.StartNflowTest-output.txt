@@ -1,17 +1,17 @@
-2021-10-16 08:49:25 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
-2021-10-16 08:49:26 INFO  [main] eations.nflow.jetty.StartNflow - [] Static resources served from [file:/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-jetty/target/classes/static, file:/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-rest-api/target/classes/static]
-2021-10-16 08:49:26 INFO  [main] ionConfigWebApplicationContext - [] Refreshing Root WebApplicationContext: startup date [Sat Oct 16 14:19:26 IST 2021]; root of context hierarchy
-2021-10-16 08:49:26 INFO  [main] ionConfigWebApplicationContext - [] Registering annotated classes: [class com.nitorcreations.nflow.jetty.StartNflowTest$DummyContext]
-2021-10-16 08:49:26 INFO  [main] ionConfigWebApplicationContext - [] Successfully resolved class for [com.nitorcreations.nflow.jetty.config.NflowJettyConfiguration]
-2021-10-16 08:49:26 INFO  [main] orage.db.DatabaseConfiguration - [] Database connection to h2 using jdbc:h2:mem:test;TRACE_LEVEL_FILE=4
-2021-10-16 08:49:26 INFO  [main] storage.db.DatabaseInitializer - [] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
-2021-10-16 08:49:27 INFO  [main] storage.db.DatabaseInitializer - [] Database created.
-2021-10-16 08:49:27 INFO  [main] vice.WorkflowDefinitionService - [] No non-Spring workflow definitions
-2021-10-16 08:49:27 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Starting.
-2021-10-16 08:49:28 INFO  [main] eations.nflow.jetty.StartNflow - [] Successfully started Jetty on port 41483 in 2.712 seconds in environment [junit, jmx, nflow.db.h2]
-2021-10-16 08:49:28 INFO  [main] eations.nflow.jetty.StartNflow - [] API available at http://0.0.0.0:41483/api/
-2021-10-16 08:49:28 INFO  [main] eations.nflow.jetty.StartNflow - [] Swagger available at http://0.0.0.0:41483/doc/
-2021-10-16 08:49:28 INFO  [main] eations.nflow.jetty.StartNflow - [] Explorer available at http://0.0.0.0:41483/explorer/
-2021-10-16 08:49:28 INFO  [main] ionConfigWebApplicationContext - [] Closing Root WebApplicationContext: startup date [Sat Oct 16 14:19:26 IST 2021]; root of context hierarchy
-2021-10-16 08:49:28 INFO  [main] al.executor.WorkflowDispatcher - [] Shutdown requested.
-2021-10-16 08:49:29 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Shutdown finished.
+2021-10-16 08:51:02 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-16 08:51:03 INFO  [main] eations.nflow.jetty.StartNflow - [] Static resources served from [file:/home/suvarna/Vinay/Sept-2021/nflow-219e027332878e2866f2012c3f6384b8ec0e211d/nflow-jetty/target/classes/static, file:/home/suvarna/Vinay/Sept-2021/nflow-219e027332878e2866f2012c3f6384b8ec0e211d/nflow-rest-api/target/classes/static]
+2021-10-16 08:51:03 INFO  [main] ionConfigWebApplicationContext - [] Refreshing Root WebApplicationContext: startup date [Sat Oct 16 14:21:03 IST 2021]; root of context hierarchy
+2021-10-16 08:51:03 INFO  [main] ionConfigWebApplicationContext - [] Registering annotated classes: [class com.nitorcreations.nflow.jetty.StartNflowTest$DummyContext]
+2021-10-16 08:51:03 INFO  [main] ionConfigWebApplicationContext - [] Successfully resolved class for [com.nitorcreations.nflow.jetty.config.NflowJettyConfiguration]
+2021-10-16 08:51:04 INFO  [main] orage.db.DatabaseConfiguration - [] Database connection to h2 using jdbc:h2:mem:test;TRACE_LEVEL_FILE=4
+2021-10-16 08:51:04 INFO  [main] storage.db.DatabaseInitializer - [] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
+2021-10-16 08:51:04 INFO  [main] storage.db.DatabaseInitializer - [] Database created.
+2021-10-16 08:51:05 INFO  [main] vice.WorkflowDefinitionService - [] No non-Spring workflow definitions
+2021-10-16 08:51:05 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Starting.
+2021-10-16 08:51:05 INFO  [main] eations.nflow.jetty.StartNflow - [] Successfully started Jetty on port 32949 in 3.167 seconds in environment [junit, jmx, nflow.db.h2]
+2021-10-16 08:51:05 INFO  [main] eations.nflow.jetty.StartNflow - [] API available at http://0.0.0.0:32949/api/
+2021-10-16 08:51:05 INFO  [main] eations.nflow.jetty.StartNflow - [] Swagger available at http://0.0.0.0:32949/doc/
+2021-10-16 08:51:05 INFO  [main] eations.nflow.jetty.StartNflow - [] Explorer available at http://0.0.0.0:32949/explorer/
+2021-10-16 08:51:05 INFO  [main] ionConfigWebApplicationContext - [] Closing Root WebApplicationContext: startup date [Sat Oct 16 14:21:03 IST 2021]; root of context hierarchy
+2021-10-16 08:51:05 INFO  [main] al.executor.WorkflowDispatcher - [] Shutdown requested.
+2021-10-16 08:51:06 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Shutdown finished.
