@@ -1,0 +1,251 @@
+2021-10-16 08:50:34 INFO  [main] DefaultTestContextBootstrapper - [] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-10-16 08:50:34 INFO  [main] DefaultTestContextBootstrapper - [] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6848a051, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@149b0577, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5740ff5e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4a901445, org.springframework.test.context.transaction.TransactionalTestExecutionListener@67f77f6e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2b0b7e5a]
+2021-10-16 08:50:34 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-16 08:50:34 INFO  [main] eations.nflow.jetty.StartNflow - [] Static resources served from [file:/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-jetty/target/classes/static, file:/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-rest-api/target/classes/static]
+2021-10-16 08:50:34 INFO  [main] rg.eclipse.jetty.server.Server - [] jetty-9.2.13.v20150730
+2021-10-16 08:50:34 INFO  [main] /                              - [] Initializing Spring root WebApplicationContext
+2021-10-16 08:50:34 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization started
+2021-10-16 08:50:34 INFO  [main] ionConfigWebApplicationContext - [] Refreshing Root WebApplicationContext: startup date [Sat Oct 16 14:20:34 IST 2021]; root of context hierarchy
+2021-10-16 08:50:34 INFO  [main] ionConfigWebApplicationContext - [] Registering annotated classes: [class com.nitorcreations.nflow.tests.FutureWorkflowTest$DemoConfiguration]
+2021-10-16 08:50:34 INFO  [main] ionConfigWebApplicationContext - [] Successfully resolved class for [com.nitorcreations.nflow.jetty.config.NflowJettyConfiguration]
+2021-10-16 08:50:34 INFO  [main] redAnnotationBeanPostProcessor - [] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2021-10-16 08:50:34 INFO  [main] orage.db.DatabaseConfiguration - [] Database connection to h2 using jdbc:h2:mem:test;TRACE_LEVEL_FILE=4
+2021-10-16 08:50:34 INFO  [main] zaxxer.hikari.HikariDataSource - [] HikariCP pool nflow is starting.
+2021-10-16 08:50:34 INFO  [main] storage.db.DatabaseInitializer - [] Creating database populator using script 'scripts/db/h2.create.ddl.sql'
+2021-10-16 08:50:34 INFO  [main] bc.datasource.init.ScriptUtils - [] Executing SQL script from class path resource [scripts/db/h2.create.ddl.sql]
+2021-10-16 08:50:35 INFO  [main] bc.datasource.init.ScriptUtils - [] Executed SQL script from class path resource [scripts/db/h2.create.ddl.sql] in 13 ms.
+2021-10-16 08:50:35 INFO  [main] storage.db.DatabaseInitializer - [] Database created.
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: demo (com.nitorcreations.nflow.tests.demo.DemoWorkflow)
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGenerator (com.nitorcreations.nflow.tests.demo.WordGeneratorWorkflow)
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: wordGeneratorErrors (com.nitorcreations.nflow.tests.demo.WordGeneratorErrorsWorkflow)
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: creditApplicationProcess (com.nitorcreations.nflow.tests.demo.CreditApplicationWorkflow)
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.SlowWorkflow
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: slowWorkflow (com.nitorcreations.nflow.tests.demo.SlowWorkflow)
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Preparing workflow com.nitorcreations.nflow.tests.demo.FibonacciWorkflow
+2021-10-16 08:50:35 INFO  [main] vice.WorkflowDefinitionService - [] Added workflow type: fibonacci (com.nitorcreations.nflow.tests.demo.FibonacciWorkflow)
+2021-10-16 08:50:35 INFO  [main] apache.cxf.endpoint.ServerImpl - [] Setting the server's publish address to be //
+2021-10-16 08:50:35 INFO  [main] port.DefaultLifecycleProcessor - [] Starting beans in phase 2147483647
+2021-10-16 08:50:35 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Starting.
+2021-10-16 08:50:35 INFO  [main] work.web.context.ContextLoader - [] Root WebApplicationContext: initialization completed in 146 ms
+2021-10-16 08:50:35 INFO  [main] .server.handler.ContextHandler - [] Started o.e.j.s.ServletContextHandler@d535a3d{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-rest-api/target/classes/static/],AVAILABLE}
+2021-10-16 08:50:35 INFO  [main] .server.AbstractNCSARequestLog - [] Opened /home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/log/2021_10_16.request.log
+2021-10-16 08:50:35 INFO  [main] e.jetty.server.ServerConnector - [] Started 0@2d760326{HTTP/1.1}{0.0.0.0:34327}
+2021-10-16 08:50:35 INFO  [main] rg.eclipse.jetty.server.Server - [] Started @63209ms
+2021-10-16 08:50:35 INFO  [main] eations.nflow.jetty.StartNflow - [] Successfully started Jetty on port 34327 in 0.587 seconds in environment [local, nflow.db.h2]
+2021-10-16 08:50:35 INFO  [main] eations.nflow.jetty.StartNflow - [] API available at http://0.0.0.0:34327/api/
+2021-10-16 08:50:35 INFO  [main] eations.nflow.jetty.StartNflow - [] Swagger available at http://0.0.0.0:34327/doc/
+2021-10-16 08:50:35 INFO  [main] eations.nflow.jetty.StartNflow - [] Explorer available at http://0.0.0.0:34327/explorer/
+2021-10-16 08:50:35 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 219
+Address: http://localhost:34327/api/v1/workflow-instance
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+Payload: {"type":"demo","businessKey":"1","activationTime":"2037-12-31T19:32:03.321Z"}
+--------------------------------------
+2021-10-16 08:50:35 INFO  [qtp490766432-188] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 220
+Address: http://localhost:34327/api/v1/workflow-instance
+Encoding: UTF-8
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[77], content-type=[application/json], Host=[localhost:34327], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: {"type":"demo","businessKey":"1","activationTime":"2037-12-31T19:32:03.321Z"}
+--------------------------------------
+2021-10-16 08:50:35 INFO  [qtp490766432-188] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 220
+Response-Code: 201
+Content-Type: application/json
+Headers: {Location=[http://localhost:34327/api/1], Content-Type=[application/json], Date=[Sat, 16 Oct 2021 08:50:35 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"type":"demo","businessKey":"1","externalId":"77602bed-8b50-4534-be51-7300a7670849"}
+--------------------------------------
+2021-10-16 08:50:35 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 219
+Response-Code: 201
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Sat, 16 Oct 2021 08:50:35 GMT, Sat, 16 Oct 2021 08:50:35 GMT], Location=[http://localhost:34327/api/1], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"type":"demo","businessKey":"1","externalId":"77602bed-8b50-4534-be51-7300a7670849"}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 221
+Address: http://localhost:34327/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [qtp490766432-190] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 222
+Address: http://localhost:34327/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Type=[null], Host=[localhost:34327], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [qtp490766432-190] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 222
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Sat, 16 Oct 2021 08:50:45 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"demo","businessKey":"1","externalId":"77602bed-8b50-4534-be51-7300a7670849","state":"begin","nextActivation":"2037-12-31T19:32:03.321Z","created":"2021-10-16T08:50:35.096Z","modified":"2021-10-16T08:50:35.096Z"}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 221
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Sat, 16 Oct 2021 08:50:45 GMT, Sat, 16 Oct 2021 08:50:45 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"demo","businessKey":"1","externalId":"77602bed-8b50-4534-be51-7300a7670849","state":"begin","nextActivation":"2037-12-31T19:32:03.321Z","created":"2021-10-16T08:50:35.096Z","modified":"2021-10-16T08:50:35.096Z"}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 223
+Address: http://localhost:34327/api/v1/workflow-instance/1
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+Payload: {}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [qtp490766432-190] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 224
+Address: http://localhost:34327/api/v1/workflow-instance/1
+Encoding: UTF-8
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[2], content-type=[application/json], Host=[localhost:34327], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: {}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [qtp490766432-190] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 224
+Response-Code: 204
+Content-Type: application/json
+Headers: {Date=[Sat, 16 Oct 2021 08:50:45 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true], Content-Length=[0]}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 223
+Response-Code: 204
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], Date=[Sat, 16 Oct 2021 08:50:45 GMT, Sat, 16 Oct 2021 08:50:45 GMT], Server=[Jetty(9.2.13.v20150730)]}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 225
+Address: http://localhost:34327/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [qtp490766432-190] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 226
+Address: http://localhost:34327/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Type=[null], Host=[localhost:34327], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [qtp490766432-190] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 226
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Sat, 16 Oct 2021 08:50:45 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"created","type":"demo","businessKey":"1","externalId":"77602bed-8b50-4534-be51-7300a7670849","state":"begin","nextActivation":"2037-12-31T19:32:03.321Z","created":"2021-10-16T08:50:35.096Z","modified":"2021-10-16T08:50:35.096Z"}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 225
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Sat, 16 Oct 2021 08:50:45 GMT, Sat, 16 Oct 2021 08:50:45 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"created","type":"demo","businessKey":"1","externalId":"77602bed-8b50-4534-be51-7300a7670849","state":"begin","nextActivation":"2037-12-31T19:32:03.321Z","created":"2021-10-16T08:50:35.096Z","modified":"2021-10-16T08:50:35.096Z"}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 227
+Address: http://localhost:34327/api/v1/workflow-instance/1
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+Payload: {"nextActivationTime":"2021-10-16T08:50:45.145Z"}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [qtp490766432-190] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 228
+Address: http://localhost:34327/api/v1/workflow-instance/1
+Encoding: UTF-8
+Http-Method: PUT
+Content-Type: application/json
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[49], content-type=[application/json], Host=[localhost:34327], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+Payload: {"nextActivationTime":"2021-10-16T08:50:45.145Z"}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [qtp490766432-190] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 228
+Response-Code: 204
+Content-Type: application/json
+Headers: {Date=[Sat, 16 Oct 2021 08:50:45 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true], Content-Length=[0]}
+--------------------------------------
+2021-10-16 08:50:45 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 227
+Response-Code: 204
+Encoding: ISO-8859-1
+Content-Type: 
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], Date=[Sat, 16 Oct 2021 08:50:45 GMT, Sat, 16 Oct 2021 08:50:45 GMT], Server=[Jetty(9.2.13.v20150730)]}
+--------------------------------------
+2021-10-16 08:50:55 INFO  [main] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 229
+Address: http://localhost:34327/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Accept=[application/json]}
+--------------------------------------
+2021-10-16 08:50:55 INFO  [qtp490766432-192] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 230
+Address: http://localhost:34327/api/v1/workflow-instance/1?include=currentStateVariables,actions,actionStateVariables
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], Content-Type=[null], Host=[localhost:34327], Pragma=[no-cache], User-Agent=[Apache CXF 3.1.4]}
+--------------------------------------
+2021-10-16 08:50:55 INFO  [qtp490766432-192] erceptor.LoggingOutInterceptor - [] Outbound Message
+---------------------------
+ID: 230
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Sat, 16 Oct 2021 08:50:55 GMT], Access-Control-Allow-Origin=[*], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Credentials=[true]}
+Payload: {"id":1,"status":"finished","type":"demo","businessKey":"1","externalId":"77602bed-8b50-4534-be51-7300a7670849","state":"done","stateText":"Stopped in state done","actions":[{"id":1,"type":"externalChange","state":"begin","stateText":"API changed nextActivationTime to 2021-10-16T08:50:45.145Z.","executionStartTime":"2021-10-16T08:50:45.148Z","executionEndTime":"2021-10-16T08:50:45.148Z","executorId":1},{"id":2,"type":"stateExecution","state":"begin","stateText":"Go to process state","executionStartTime":"2021-10-16T08:50:46.103Z","executionEndTime":"2021-10-16T08:50:46.104Z","executorId":1},{"id":3,"type":"stateExecution","state":"process","stateText":"Go to done state","executionStartTime":"2021-10-16T08:50:46.107Z","executionEndTime":"2021-10-16T08:50:46.107Z","executorId":1}],"created":"2021-10-16T08:50:35.096Z","modified":"2021-10-16T08:50:46.107Z","started":"2021-10-16T08:50:45.148Z"}
+--------------------------------------
+2021-10-16 08:50:55 INFO  [main] terceptor.LoggingInInterceptor - [] Inbound Message
+----------------------------
+ID: 229
+Response-Code: 200
+Encoding: ISO-8859-1
+Content-Type: application/json
+Headers: {Access-Control-Allow-Credentials=[true], Access-Control-Allow-Headers=[X-Requested-With, Content-Type, Origin, Referer, User-Agent, Accept], Access-Control-Allow-Methods=[OPTIONS, GET, POST, PUT, DELETE], Access-Control-Allow-Origin=[*], content-type=[application/json], Date=[Sat, 16 Oct 2021 08:50:55 GMT, Sat, 16 Oct 2021 08:50:55 GMT], Server=[Jetty(9.2.13.v20150730)], transfer-encoding=[chunked]}
+Payload: {"id":1,"status":"finished","type":"demo","businessKey":"1","externalId":"77602bed-8b50-4534-be51-7300a7670849","state":"done","stateText":"Stopped in state done","actions":[{"id":1,"type":"externalChange","state":"begin","stateText":"API changed nextActivationTime to 2021-10-16T08:50:45.145Z.","executionStartTime":"2021-10-16T08:50:45.148Z","executionEndTime":"2021-10-16T08:50:45.148Z","executorId":1},{"id":2,"type":"stateExecution","state":"begin","stateText":"Go to process state","executionStartTime":"2021-10-16T08:50:46.103Z","executionEndTime":"2021-10-16T08:50:46.104Z","executorId":1},{"id":3,"type":"stateExecution","state":"process","stateText":"Go to done state","executionStartTime":"2021-10-16T08:50:46.107Z","executionEndTime":"2021-10-16T08:50:46.107Z","executorId":1}],"created":"2021-10-16T08:50:35.096Z","modified":"2021-10-16T08:50:46.107Z","started":"2021-10-16T08:50:45.148Z"}
+--------------------------------------
+2021-10-16 08:50:55 INFO  [main] e.jetty.server.ServerConnector - [] Stopped 0@2d760326{HTTP/1.1}{0.0.0.0:0}
+2021-10-16 08:50:55 INFO  [main] /                              - [] Closing Spring root WebApplicationContext
+2021-10-16 08:50:55 INFO  [main] ionConfigWebApplicationContext - [] Closing Root WebApplicationContext: startup date [Sat Oct 16 14:20:34 IST 2021]; root of context hierarchy
+2021-10-16 08:50:55 INFO  [main] port.DefaultLifecycleProcessor - [] Stopping beans in phase 2147483647
+2021-10-16 08:50:55 INFO  [main] al.executor.WorkflowDispatcher - [] Shutdown requested.
+2021-10-16 08:50:56 INFO  [nflow-dispatcher] al.executor.WorkflowDispatcher - [] Shutdown finished.
+2021-10-16 08:50:56 INFO  [main] .zaxxer.hikari.pool.HikariPool - [] HikariCP pool nflow is shutting down.
+2021-10-16 08:50:56 INFO  [main] .server.handler.ContextHandler - [] Stopped o.e.j.s.ServletContextHandler@d535a3d{/,[file:/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-jetty/target/classes/static/, file:/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-rest-api/target/classes/static/],UNAVAILABLE}

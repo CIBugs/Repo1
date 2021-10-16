@@ -1,0 +1,1 @@
+com.nitorcreations.nflow.engine.internal.dao.PollingRaceConditionException: Race condition in polling workflow instances detected. Multiple pollers using same name (junit)

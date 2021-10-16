@@ -1,0 +1,5 @@
+2021-10-16 08:49:25 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-16 08:49:25 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-16 08:49:25 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-16 08:49:25 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties
+2021-10-16 08:49:25 INFO  [main] pring.NflowStandardEnvironment - [] Failed to initialize environment-specific properties from resource common.properties

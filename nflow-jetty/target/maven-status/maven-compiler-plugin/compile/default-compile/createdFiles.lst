@@ -1,0 +1,8 @@
+com/nitorcreations/nflow/jetty/config/NflowJettyConfiguration$JaxRsApiApplication.class
+com/nitorcreations/nflow/jetty/StartNflow.class
+com/nitorcreations/nflow/jetty/validation/CustomValidationExceptionMapper.class
+com/nitorcreations/nflow/jetty/JettyServerContainer.class
+com/nitorcreations/nflow/jetty/config/JmxConfiguration.class
+com/nitorcreations/nflow/jetty/spring/NflowStandardEnvironment.class
+com/nitorcreations/nflow/jetty/spring/NflowAnnotationConfigWebApplicationContext.class
+com/nitorcreations/nflow/jetty/config/NflowJettyConfiguration.class

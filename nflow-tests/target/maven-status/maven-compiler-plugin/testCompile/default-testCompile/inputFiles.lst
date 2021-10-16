@@ -1,0 +1,16 @@
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/ArchiveTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/WorkflowDefinitionUpdateTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/config/RestClientConfiguration.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/config/PropertiesConfiguration.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/PreviewCreditApplicationWorkflowTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/CreditApplicationWorkflowTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/runner/NflowServerRule.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/ExecutorRecoveryTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/ChildWorkflowTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/StateVariablesTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/DemoWorkflowTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/AbstractNflowTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/StatisticsTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/runner/SkipTestMethodsAfterFirstFailureRule.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/FutureWorkflowTest.java
+/home/suvarna/Vinay/Sept-2021/nflow-47e12a62577c5772b9dfdf2a01f52c90dd2427f7/nflow-tests/src/test/java/com/nitorcreations/nflow/tests/runner/SkipNotPersistedDatabaseRule.java
