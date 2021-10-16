@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.squareup.okhttp.UrlConnectionCacheTest
 -------------------------------------------------------------------------------
-Tests run: 109, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 7.423 sec <<< FAILURE! - in com.squareup.okhttp.UrlConnectionCacheTest
-varyAndHttps(com.squareup.okhttp.UrlConnectionCacheTest)  Time elapsed: 0.14 sec  <<< ERROR!
+Tests run: 109, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 7.419 sec <<< FAILURE! - in com.squareup.okhttp.UrlConnectionCacheTest
+varyAndHttps(com.squareup.okhttp.UrlConnectionCacheTest)  Time elapsed: 0.129 sec  <<< ERROR!
 javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject "CN=localhost" is not a CA certificate
 	at sun.security.validator.PKIXValidator.verifyTrustAnchor(PKIXValidator.java:410)
 	at sun.security.validator.PKIXValidator.toArray(PKIXValidator.java:350)
@@ -39,7 +39,7 @@ javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.v
 	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1772)
 	at com.squareup.okhttp.UrlConnectionCacheTest.varyAndHttps(UrlConnectionCacheTest.java:1404)
 
-secureResponseCachingAndProtocolRedirects(com.squareup.okhttp.UrlConnectionCacheTest)  Time elapsed: 0.023 sec  <<< ERROR!
+secureResponseCachingAndProtocolRedirects(com.squareup.okhttp.UrlConnectionCacheTest)  Time elapsed: 0.027 sec  <<< ERROR!
 javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject "CN=localhost" is not a CA certificate
 	at sun.security.validator.PKIXValidator.verifyTrustAnchor(PKIXValidator.java:410)
 	at sun.security.validator.PKIXValidator.toArray(PKIXValidator.java:350)
@@ -74,7 +74,7 @@ javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.v
 	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1772)
 	at com.squareup.okhttp.UrlConnectionCacheTest.secureResponseCachingAndProtocolRedirects(UrlConnectionCacheTest.java:378)
 
-secureResponseCachingAndRedirects(com.squareup.okhttp.UrlConnectionCacheTest)  Time elapsed: 0.017 sec  <<< ERROR!
+secureResponseCachingAndRedirects(com.squareup.okhttp.UrlConnectionCacheTest)  Time elapsed: 0.014 sec  <<< ERROR!
 javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject "CN=localhost" is not a CA certificate
 	at sun.security.validator.PKIXValidator.verifyTrustAnchor(PKIXValidator.java:410)
 	at sun.security.validator.PKIXValidator.toArray(PKIXValidator.java:350)
