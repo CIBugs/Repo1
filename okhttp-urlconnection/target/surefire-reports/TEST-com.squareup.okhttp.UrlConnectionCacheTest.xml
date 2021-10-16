@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.squareup.okhttp.UrlConnectionCacheTest" time="7.384" tests="109" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/okhttp-7bc25677c2b2a7f256d55c06aa990a08f74c3266"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/okhttp-7bc25677c2b2a7f256d55c06aa990a08f74c3266"/>
+    <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/suvarna/maven/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/suvarna/maven/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-142-generic"/>
+    <property name="library.jansi.path" value="/home/suvarna/maven/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/home/suvarna"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="suvarna"/>
+    <property name="java.class.path" value="/home/suvarna/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/home/suvarna/maven/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="requestOnlyIfCachedWithNoResponseCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="conditionalHitUpdatesCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.006"/>
+  <testcase name="statisticsConditionalCacheHit" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.011"/>
+  <testcase name="maxAgePreferredWithMaxAgeAndExpires" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.014"/>
+  <testcase name="contentLocationDoesNotPopulateCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.048"/>
+  <testcase name="requestMethodPostIsNotCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.006"/>
+  <testcase name="varyAndHttps" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.14">
+    <error message="PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject &quot;CN=localhost&quot; is not a CA certificate" type="javax.net.ssl.SSLHandshakeException">javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject "CN=localhost" is not a CA certificate
+	at sun.security.validator.PKIXValidator.verifyTrustAnchor(PKIXValidator.java:410)
+	at sun.security.validator.PKIXValidator.toArray(PKIXValidator.java:350)
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:383)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:291)
+	at sun.security.validator.Validator.validate(Validator.java:271)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:315)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:223)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:129)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:638)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:377)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:422)
+	at sun.security.ssl.TransportContext.dispatch(TransportContext.java:182)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:152)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1383)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1291)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:435)
+	at com.squareup.okhttp.Connection.connectTls(Connection.java:235)
+	at com.squareup.okhttp.Connection.connectSocket(Connection.java:199)
+	at com.squareup.okhttp.Connection.connect(Connection.java:172)
+	at com.squareup.okhttp.Connection.connectAndSetOwner(Connection.java:364)
+	at com.squareup.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+	at com.squareup.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:329)
+	at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:246)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:438)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:389)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:502)
+	at com.squareup.okhttp.internal.huc.DelegatingHttpsURLConnection.getResponseCode(DelegatingHttpsURLConnection.java:105)
+	at com.squareup.okhttp.internal.huc.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:25)
+	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1756)
+	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1772)
+	at com.squareup.okhttp.UrlConnectionCacheTest.varyAndHttps(UrlConnectionCacheTest.java:1404)
+</error>
+    <system-err><![CDATA[Oct 16, 2021 2:54:36 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[51919] starting to accept connections
+Oct 16, 2021 2:54:36 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[46503] starting to accept connections
+Oct 16, 2021 2:54:36 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 execute
+INFO: MockWebServer[46503] connection from /127.0.0.1 failed: javax.net.ssl.SSLHandshakeException: Received fatal alert: certificate_unknown
+Oct 16, 2021 2:54:36 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[46503] done accepting connections: Socket closed
+Oct 16, 2021 2:54:36 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[51919] done accepting connections: Socket closed
+]]></system-err>
+  </testcase>
+  <testcase name="clientPrematureDisconnectWithNoLengthHeaders" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="1.009"/>
+  <testcase name="setIfModifiedSince" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.006"/>
+  <testcase name="noDefaultExpirationForUrlsWithQueryString" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.049"/>
+  <testcase name="maxAgeInTheFutureWithDateHeader" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.009"/>
+  <testcase name="serverReturnsDocumentOlderThanCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.047"/>
+  <testcase name="responseCachingAndInputStreamSkipWithChunkedEncoding" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.011"/>
+  <testcase name="clientSuppliedConditionWithoutCachedResult" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="requestPragmaNoCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.05"/>
+  <testcase name="cacheControlNoStoreAndExpirationDateInTheFuture" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.047"/>
+  <testcase name="requestMethodPutIsNotCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="varyMultipleFieldsWithMatch" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.009"/>
+  <testcase name="cachePlusRange" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.046"/>
+  <testcase name="cacheControlNoCacheAndExpirationDateInTheFuture" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.104"/>
+  <testcase name="requestMaxStale" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.006"/>
+  <testcase name="varyMultipleFieldsWithNoMatch" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.046"/>
+  <testcase name="responseCacheAccessWithOkHttpMember" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.002"/>
+  <testcase name="requestMethodHeadIsNotCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="getHeadersDeletesCached100LevelWarnings" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.009"/>
+  <testcase name="varyMatchesRemovedRequestHeaderField" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.045"/>
+  <testcase name="serverDisconnectsPrematurelyWithNoLengthHeaders" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.002"/>
+  <testcase name="clientPrematureDisconnectWithContentLengthHeader" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="1.006"/>
+  <testcase name="varyAsterisk" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.046"/>
+  <testcase name="clientSuppliedIfModifiedSinceWithCachedResult" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.006"/>
+  <testcase name="secureResponseCachingAndProtocolRedirects" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.023">
+    <error message="PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject &quot;CN=localhost&quot; is not a CA certificate" type="javax.net.ssl.SSLHandshakeException">javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject "CN=localhost" is not a CA certificate
+	at sun.security.validator.PKIXValidator.verifyTrustAnchor(PKIXValidator.java:410)
+	at sun.security.validator.PKIXValidator.toArray(PKIXValidator.java:350)
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:383)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:291)
+	at sun.security.validator.Validator.validate(Validator.java:271)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:315)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:223)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:129)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:638)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:377)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:422)
+	at sun.security.ssl.TransportContext.dispatch(TransportContext.java:182)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:152)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1383)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1291)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:435)
+	at com.squareup.okhttp.Connection.connectTls(Connection.java:235)
+	at com.squareup.okhttp.Connection.connectSocket(Connection.java:199)
+	at com.squareup.okhttp.Connection.connect(Connection.java:172)
+	at com.squareup.okhttp.Connection.connectAndSetOwner(Connection.java:364)
+	at com.squareup.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+	at com.squareup.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:329)
+	at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:246)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:438)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:389)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:502)
+	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1756)
+	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1772)
+	at com.squareup.okhttp.UrlConnectionCacheTest.secureResponseCachingAndProtocolRedirects(UrlConnectionCacheTest.java:378)
+</error>
+    <system-err><![CDATA[Oct 16, 2021 2:54:39 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[54595] starting to accept connections
+Oct 16, 2021 2:54:39 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[37751] starting to accept connections
+Oct 16, 2021 2:54:39 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[37751] received request: GET / HTTP/1.1 and responded: HTTP/1.1 301 OK
+Oct 16, 2021 2:54:39 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 execute
+INFO: MockWebServer[54595] connection from /127.0.0.1 failed: javax.net.ssl.SSLHandshakeException: Received fatal alert: certificate_unknown
+Oct 16, 2021 2:54:39 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[37751] done accepting connections: Socket closed
+Oct 16, 2021 2:54:39 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[54595] done accepting connections: Socket closed
+]]></system-err>
+  </testcase>
+  <testcase name="responseSourceHeaderConditionalCacheNotFetched" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.004"/>
+  <testcase name="clientPrematureDisconnectWithChunkedEncoding" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="2.007"/>
+  <testcase name="useCachesFalseDoesNotReadFromCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.054"/>
+  <testcase name="connectionIsReturnedToPoolAfterConditionalSuccess" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.052"/>
+  <testcase name="maxAgePreferredOverHigherMaxAge" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.052"/>
+  <testcase name="responseSourceHeaderConditionalCacheFetched" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.052"/>
+  <testcase name="getHeadersRetainsCached200LevelWarnings" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.009"/>
+  <testcase name="deleteMethodInvalidatesCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.095"/>
+  <testcase name="testGoldenCacheResponse" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.008"/>
+  <testcase name="getHeadersReturnsNetworkEndToEndHeaders" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.005"/>
+  <testcase name="varyMultipleFieldValuesWithMatch" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.007"/>
+  <testcase name="etagAndExpirationDateInThePast" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.094"/>
+  <testcase name="pragmaNoCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.052"/>
+  <testcase name="retainServedDateFormat" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.01"/>
+  <testcase name="statisticsConditionalCacheMiss" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.09"/>
+  <testcase name="expirationDateInThePastWithLastModifiedHeader" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.094"/>
+  <testcase name="responseSourceHeaderFetched" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="partialRangeResponsesDoNotCorruptCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.048"/>
+  <testcase name="requestMethodOptionsIsNotCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="redirectToCachedResult" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.06"/>
+  <testcase name="serverDisconnectsPrematurelyWithChunkedEncoding" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.009"/>
+  <testcase name="defaultExpirationDateFullyCachedForMoreThan24Hours" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.006"/>
+  <testcase name="useCachesFalseDoesNotWriteToCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.049"/>
+  <testcase name="defaultUseCachesSetsInitialValueOnly" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.001"/>
+  <testcase name="maxAgeInThePastWithDateAndLastModifiedHeaders" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.094"/>
+  <testcase name="responseCachingByResponseCode" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.136"/>
+  <testcase name="serverDisconnectsPrematurelyWithContentLengthHeader" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="emptyResponseHeaderNameFromCacheIsLenient" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.002"/>
+  <testcase name="requestMethodTraceIsNotCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="requestMethodDeleteIsNotCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.002"/>
+  <testcase name="maxAgeInTheFutureWithNoDateHeader" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.006"/>
+  <testcase name="clientSuppliedIfNoneMatchSinceWithCachedResult" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="etag" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.094"/>
+  <testcase name="requestOnlyIfCachedWithFullResponseCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.004"/>
+  <testcase name="responseCachingAndInputStreamSkipWithFixedLength" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.004"/>
+  <testcase name="secureResponseCachingAndRedirects" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.017">
+    <error message="PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject &quot;CN=localhost&quot; is not a CA certificate" type="javax.net.ssl.SSLHandshakeException">javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject "CN=localhost" is not a CA certificate
+	at sun.security.validator.PKIXValidator.verifyTrustAnchor(PKIXValidator.java:410)
+	at sun.security.validator.PKIXValidator.toArray(PKIXValidator.java:350)
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:383)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:291)
+	at sun.security.validator.Validator.validate(Validator.java:271)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:315)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:223)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:129)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:638)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:377)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:422)
+	at sun.security.ssl.TransportContext.dispatch(TransportContext.java:182)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:152)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1383)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1291)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:435)
+	at com.squareup.okhttp.Connection.connectTls(Connection.java:235)
+	at com.squareup.okhttp.Connection.connectSocket(Connection.java:199)
+	at com.squareup.okhttp.Connection.connect(Connection.java:172)
+	at com.squareup.okhttp.Connection.connectAndSetOwner(Connection.java:364)
+	at com.squareup.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+	at com.squareup.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:329)
+	at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:246)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:438)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:389)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:502)
+	at com.squareup.okhttp.internal.huc.DelegatingHttpsURLConnection.getResponseCode(DelegatingHttpsURLConnection.java:105)
+	at com.squareup.okhttp.internal.huc.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:25)
+	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1756)
+	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1772)
+	at com.squareup.okhttp.UrlConnectionCacheTest.secureResponseCachingAndRedirects(UrlConnectionCacheTest.java:341)
+</error>
+    <system-err><![CDATA[Oct 16, 2021 2:54:42 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[54807] starting to accept connections
+Oct 16, 2021 2:54:42 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[51731] starting to accept connections
+Oct 16, 2021 2:54:42 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[51731] done accepting connections: Socket closed
+Oct 16, 2021 2:54:42 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 execute
+INFO: MockWebServer[51731] connection from /127.0.0.1 failed: javax.net.ssl.SSLException: readHandshakeRecord
+Oct 16, 2021 2:54:42 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[54807] done accepting connections: Socket closed
+]]></system-err>
+  </testcase>
+  <testcase name="requestOnlyIfCachedWithUnhelpfulResponseCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.004"/>
+  <testcase name="defaultExpirationDateFullyCachedForLessThan24Hours" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.003"/>
+  <testcase name="varyMatchesAbsentRequestHeaderField" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.009"/>
+  <testcase name="postInvalidatesCacheWithUncacheableResponse" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.086"/>
+  <testcase name="maxAgePreferredOverLowerSharedMaxAge" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.005"/>
+  <testcase name="responseCachingAndRedirects" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.047"/>
+  <testcase name="expiresDateBeforeModifiedDate" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.094"/>
+  <testcase name="varyMatchesUnchangedRequestHeaderField" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.005"/>
+  <testcase name="cachePlusCookies" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.009"/>
+  <testcase name="authorizationRequestFullyCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.007"/>
+  <testcase name="statisticsFullCacheHit" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.002"/>
+  <testcase name="varyMatchesChangedRequestHeaderField" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.053"/>
+  <testcase name="expirationDateInTheFuture" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.004"/>
+  <testcase name="maxAgeInTheFutureWithDateAndLastModifiedHeaders" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.008"/>
+  <testcase name="maxAgeWithLastModifiedButNoServedDate" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.005"/>
+  <testcase name="responseSourceHeaderCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.006"/>
+  <testcase name="requestOnlyIfCachedWithConditionalResponseCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.005"/>
+  <testcase name="varyFieldsAreCaseInsensitive" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.002"/>
+  <testcase name="etagAndExpirationDateInTheFuture" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.002"/>
+  <testcase name="pragmaNoCacheAndExpirationDateInTheFuture" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.092"/>
+  <testcase name="requestMinFresh" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.05"/>
+  <testcase name="defaultExpirationDateConditionallyCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.093"/>
+  <testcase name="requestMaxAge" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.051"/>
+  <testcase name="nonIdentityEncodingAndConditionalCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.011"/>
+  <testcase name="notModifiedSpecifiesEncoding" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.049"/>
+  <testcase name="expirationDateInThePastWithNoLastModifiedHeader" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.048"/>
+  <testcase name="maxAgeInThePastWithDateHeaderButNoLastModifiedHeader" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.049"/>
+  <testcase name="requestMethodGetIsCached" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.005"/>
+  <testcase name="nonIdentityEncodingAndFullCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.007"/>
+  <testcase name="requestMaxStaleNotHonoredWithMustRevalidate" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.047"/>
+  <testcase name="secureResponseCaching" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.022">
+    <error message="PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject &quot;CN=localhost&quot; is not a CA certificate" type="javax.net.ssl.SSLHandshakeException">javax.net.ssl.SSLHandshakeException: PKIX path validation failed: sun.security.validator.ValidatorException: TrustAnchor with subject "CN=localhost" is not a CA certificate
+	at sun.security.validator.PKIXValidator.verifyTrustAnchor(PKIXValidator.java:410)
+	at sun.security.validator.PKIXValidator.toArray(PKIXValidator.java:350)
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:383)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:291)
+	at sun.security.validator.Validator.validate(Validator.java:271)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:315)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:223)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:129)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:638)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:377)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444)
+	at sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:422)
+	at sun.security.ssl.TransportContext.dispatch(TransportContext.java:182)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:152)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1383)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1291)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:435)
+	at com.squareup.okhttp.Connection.connectTls(Connection.java:235)
+	at com.squareup.okhttp.Connection.connectSocket(Connection.java:199)
+	at com.squareup.okhttp.Connection.connect(Connection.java:172)
+	at com.squareup.okhttp.Connection.connectAndSetOwner(Connection.java:364)
+	at com.squareup.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+	at com.squareup.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:329)
+	at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:246)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:438)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:389)
+	at com.squareup.okhttp.internal.huc.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:502)
+	at com.squareup.okhttp.internal.huc.DelegatingHttpsURLConnection.getResponseCode(DelegatingHttpsURLConnection.java:105)
+	at com.squareup.okhttp.internal.huc.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:25)
+	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1756)
+	at com.squareup.okhttp.UrlConnectionCacheTest.readAscii(UrlConnectionCacheTest.java:1772)
+	at com.squareup.okhttp.UrlConnectionCacheTest.secureResponseCaching(UrlConnectionCacheTest.java:257)
+</error>
+    <system-err><![CDATA[Oct 16, 2021 2:54:43 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[39415] starting to accept connections
+Oct 16, 2021 2:54:43 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[49491] starting to accept connections
+Oct 16, 2021 2:54:43 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[49491] done accepting connections: Socket closed
+Oct 16, 2021 2:54:43 PM com.squareup.okhttp.mockwebserver.MockWebServer$4 execute
+INFO: MockWebServer[49491] connection from /127.0.0.1 failed: javax.net.ssl.SSLException: readHandshakeRecord
+Oct 16, 2021 2:54:43 PM com.squareup.okhttp.mockwebserver.MockWebServer$3 acceptConnections
+INFO: MockWebServer[39415] done accepting connections: Socket closed
+]]></system-err>
+  </testcase>
+  <testcase name="cacheControlNoCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.046"/>
+  <testcase name="gzipAndVaryOnAcceptEncoding" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.007"/>
+  <testcase name="cacheControlNoStore" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.049"/>
+  <testcase name="conditionalCacheHitIsNotDoublePooled" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.012"/>
+  <testcase name="varyMultipleFieldValuesWithNoMatch" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.047"/>
+  <testcase name="postInvalidatesCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.099"/>
+  <testcase name="putInvalidatesCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.092"/>
+  <testcase name="getHeadersReturnsCachedHopByHopHeaders" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.008"/>
+  <testcase name="requestCacheControlNoCache" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.047"/>
+  <testcase name="varyMatchesAddedRequestHeaderField" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.045"/>
+  <testcase name="responseCachingAndInputStreamSkipWithNoLengthHeaders" classname="com.squareup.okhttp.UrlConnectionCacheTest" time="0.005"/>
+</testsuite>

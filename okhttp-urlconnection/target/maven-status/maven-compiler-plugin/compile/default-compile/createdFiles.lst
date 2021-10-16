@@ -1,0 +1,5 @@
+com/squareup/okhttp/internal/huc/DelegatingHttpsURLConnection.class
+com/squareup/okhttp/OkUrlFactory$1.class
+com/squareup/okhttp/OkUrlFactory.class
+com/squareup/okhttp/internal/huc/HttpURLConnectionImpl.class
+com/squareup/okhttp/internal/huc/HttpsURLConnectionImpl.class

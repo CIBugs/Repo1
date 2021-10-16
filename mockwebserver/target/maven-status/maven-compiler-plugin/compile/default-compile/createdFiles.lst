@@ -1,0 +1,16 @@
+com/squareup/okhttp/mockwebserver/MockWebServer$TruncatingBuffer.class
+com/squareup/okhttp/internal/SslContextBuilder.class
+com/squareup/okhttp/mockwebserver/MockWebServer$3.class
+com/squareup/okhttp/mockwebserver/MockWebServer$4.class
+com/squareup/okhttp/mockwebserver/MockResponse.class
+com/squareup/okhttp/mockwebserver/QueueDispatcher.class
+com/squareup/okhttp/mockwebserver/RecordedRequest.class
+com/squareup/okhttp/mockwebserver/Dispatcher.class
+com/squareup/okhttp/mockwebserver/MockWebServer$FramedSocketHandler.class
+com/squareup/okhttp/mockwebserver/MockWebServer$5.class
+com/squareup/okhttp/mockwebserver/MockWebServer.class
+com/squareup/okhttp/internal/framed/FramedServer.class
+com/squareup/okhttp/mockwebserver/MockWebServer$1.class
+com/squareup/okhttp/mockwebserver/PushPromise.class
+com/squareup/okhttp/mockwebserver/MockWebServer$2.class
+com/squareup/okhttp/mockwebserver/SocketPolicy.class
