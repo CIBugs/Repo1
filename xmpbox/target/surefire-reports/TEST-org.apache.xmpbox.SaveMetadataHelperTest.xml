@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.apache.xmpbox.SaveMetadataHelperTest" time="0" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="org.apache.xmpbox.SaveMetadataHelperTest" time="0.011" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/pdfbox-0c45b8bc5076762bf9d143cbffe967e96a4e13c4"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/pdfbox-84b999737f60ee43b0129240cfa88f79d12014e6"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/pdfbox-0c45b8bc5076762bf9d143cbffe967e96a4e13c4"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/pdfbox-84b999737f60ee43b0129240cfa88f79d12014e6"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,6 +61,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testMetadataParsing" classname="org.apache.xmpbox.SaveMetadataHelperTest" time="0"/>
+  <testcase name="testMetadataParsing" classname="org.apache.xmpbox.SaveMetadataHelperTest" time="0.011"/>
   <testcase name="testSchemaParsing" classname="org.apache.xmpbox.SaveMetadataHelperTest" time="0"/>
 </testsuite>

@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest
-testInlineImage(org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.getStencilImage(SampledImageReader.java:99)
-	at org.apache.pdfbox.pdmodel.graphics.image.PDInlineImage.getStencilImage(PDInlineImage.java:350)
-	at org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest.testInlineImage(PDInlineImageTest.java:99)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.apache.pdfbox.pdmodel.graphics.image.PDInlineImageTest

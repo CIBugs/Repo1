@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.apache.pdfbox.rendering.TestRendering" time="5.806" tests="9" errors="3" skipped="0" failures="0">
+<testsuite name="org.apache.pdfbox.rendering.TestRendering" time="7.28" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/pdfbox-0c45b8bc5076762bf9d143cbffe967e96a4e13c4"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/pdfbox-84b999737f60ee43b0129240cfa88f79d12014e6"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/pdfbox-0c45b8bc5076762bf9d143cbffe967e96a4e13c4"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/pdfbox-84b999737f60ee43b0129240cfa88f79d12014e6"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,72 +61,13 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="render[26101_Colors.ai]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.158"/>
-  <testcase name="render[4PP-Highlighting.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.039"/>
-  <testcase name="render[test-landscape2.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.002"/>
-  <testcase name="render[tiger-as-form-xobject.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.947"/>
-  <testcase name="render[survey.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.31">
-    <error type="java.lang.NullPointerException:"><![CDATA[java.lang.NullPointerException: null
-	at org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.getStencilImage(SampledImageReader.java:99)
-	at org.apache.pdfbox.pdmodel.graphics.image.PDInlineImage.getStencilImage(PDInlineImage.java:350)
-	at org.apache.pdfbox.rendering.PageDrawer.drawImage(PageDrawer.java:979)
-	at org.apache.pdfbox.contentstream.operator.graphics.BeginInlineImage.process(BeginInlineImage.java:44)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processOperator(PDFStreamEngine.java:838)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processStreamOperators(PDFStreamEngine.java:495)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processTilingPattern(PDFStreamEngine.java:394)
-	at org.apache.pdfbox.rendering.PageDrawer.drawTilingPattern(PageDrawer.java:244)
-	at org.apache.pdfbox.rendering.TilingPaint.getImage(TilingPaint.java:187)
-	at org.apache.pdfbox.rendering.TilingPaint.<init>(TilingPaint.java:107)
-	at org.apache.pdfbox.rendering.TilingPaintFactory.create(TilingPaintFactory.java:53)
-	at org.apache.pdfbox.rendering.PageDrawer.getPaint(PageDrawer.java:283)
-	at org.apache.pdfbox.rendering.PageDrawer.getNonStrokingPaint(PageDrawer.java:630)
-	at org.apache.pdfbox.rendering.PageDrawer.fillPath(PageDrawer.java:701)
-	at org.apache.pdfbox.contentstream.operator.graphics.FillEvenOddRule.process(FillEvenOddRule.java:36)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processOperator(PDFStreamEngine.java:838)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processStreamOperators(PDFStreamEngine.java:495)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processStream(PDFStreamEngine.java:469)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processPage(PDFStreamEngine.java:150)
-	at org.apache.pdfbox.rendering.PageDrawer.drawPage(PageDrawer.java:206)
-	at org.apache.pdfbox.rendering.PDFRenderer.renderImage(PDFRenderer.java:145)
-	at org.apache.pdfbox.rendering.PDFRenderer.renderImage(PDFRenderer.java:68)
-	at org.apache.pdfbox.rendering.PDFRenderer.renderImage(PDFRenderer.java:55)
-	at org.apache.pdfbox.rendering.TestRendering.render(TestRendering.java:79)
-]]></error>
-  </testcase>
-  <testcase name="render[source.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.381"/>
-  <testcase name="render[FANTASTICCMYK.ai]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.459"/>
-  <testcase name="render[HOTRODCMYK.ai]" classname="org.apache.pdfbox.rendering.TestRendering" time="1.32">
-    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.getStencilImage(SampledImageReader.java:99)
-	at org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.getStencilImage(PDImageXObject.java:436)
-	at org.apache.pdfbox.rendering.PageDrawer.drawImage(PageDrawer.java:979)
-	at org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process(DrawObject.java:62)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processOperator(PDFStreamEngine.java:838)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processStreamOperators(PDFStreamEngine.java:495)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processStream(PDFStreamEngine.java:469)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processPage(PDFStreamEngine.java:150)
-	at org.apache.pdfbox.rendering.PageDrawer.drawPage(PageDrawer.java:206)
-	at org.apache.pdfbox.rendering.PDFRenderer.renderImage(PDFRenderer.java:145)
-	at org.apache.pdfbox.rendering.PDFRenderer.renderImage(PDFRenderer.java:68)
-	at org.apache.pdfbox.rendering.PDFRenderer.renderImage(PDFRenderer.java:55)
-	at org.apache.pdfbox.rendering.TestRendering.render(TestRendering.java:79)
-</error>
-  </testcase>
-  <testcase name="render[ARCHIVERGB.ai]" classname="org.apache.pdfbox.rendering.TestRendering" time="2.19">
-    <error type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.getStencilImage(SampledImageReader.java:99)
-	at org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.getStencilImage(PDImageXObject.java:436)
-	at org.apache.pdfbox.rendering.PageDrawer.drawImage(PageDrawer.java:979)
-	at org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process(DrawObject.java:62)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processOperator(PDFStreamEngine.java:838)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processStreamOperators(PDFStreamEngine.java:495)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processStream(PDFStreamEngine.java:469)
-	at org.apache.pdfbox.contentstream.PDFStreamEngine.processPage(PDFStreamEngine.java:150)
-	at org.apache.pdfbox.rendering.PageDrawer.drawPage(PageDrawer.java:206)
-	at org.apache.pdfbox.rendering.PDFRenderer.renderImage(PDFRenderer.java:145)
-	at org.apache.pdfbox.rendering.PDFRenderer.renderImage(PDFRenderer.java:68)
-	at org.apache.pdfbox.rendering.PDFRenderer.renderImage(PDFRenderer.java:55)
-	at org.apache.pdfbox.rendering.TestRendering.render(TestRendering.java:79)
-</error>
-  </testcase>
+  <testcase name="render[26101_Colors.ai]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.155"/>
+  <testcase name="render[test-landscape2.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.105"/>
+  <testcase name="render[4PP-Highlighting.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.025"/>
+  <testcase name="render[tiger-as-form-xobject.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.714"/>
+  <testcase name="render[survey.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.507"/>
+  <testcase name="render[FANTASTICCMYK.ai]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.423"/>
+  <testcase name="render[source.pdf]" classname="org.apache.pdfbox.rendering.TestRendering" time="0.424"/>
+  <testcase name="render[HOTRODCMYK.ai]" classname="org.apache.pdfbox.rendering.TestRendering" time="1.222"/>
+  <testcase name="render[ARCHIVERGB.ai]" classname="org.apache.pdfbox.rendering.TestRendering" time="3.705"/>
 </testsuite>

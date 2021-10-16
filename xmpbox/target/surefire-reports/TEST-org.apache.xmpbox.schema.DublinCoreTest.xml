@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.apache.xmpbox.schema.DublinCoreTest" time="0.3" tests="108" errors="0" skipped="0" failures="0">
+<testsuite name="org.apache.xmpbox.schema.DublinCoreTest" time="0.204" tests="108" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/pdfbox-0c45b8bc5076762bf9d143cbffe967e96a4e13c4"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/pdfbox-84b999737f60ee43b0129240cfa88f79d12014e6"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/pdfbox-0c45b8bc5076762bf9d143cbffe967e96a4e13c4"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/pdfbox-84b999737f60ee43b0129240cfa88f79d12014e6"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,111 +61,111 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testPropertySetterInArray[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.006"/>
-  <testcase name="testSettingValueInArray[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
-  <testcase name="testRandomSettingValueInArray[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.007"/>
-  <testcase name="testRandomPropertySetterSimple[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testRandomPropertySetterInArray[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
-  <testcase name="testInitializedToNull[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testSettingValue[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testPropertySetterInArray[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testSettingValueInArray[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testRandomSettingValueInArray[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.009"/>
+  <testcase name="testRandomPropertySetterSimple[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomPropertySetterInArray[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.005"/>
+  <testcase name="testInitializedToNull[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testSettingValue[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testRandomSettingValue[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
-  <testcase name="testPropertySetterSimple[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
-  <testcase name="testPropertySetterInArray[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testSettingValueInArray[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomSettingValueInArray[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testPropertySetterSimple[0]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testPropertySetterInArray[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testSettingValueInArray[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomSettingValueInArray[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testRandomPropertySetterSimple[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
-  <testcase name="testRandomPropertySetterInArray[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
-  <testcase name="testInitializedToNull[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testSettingValue[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testRandomSettingValue[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
+  <testcase name="testRandomPropertySetterInArray[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
+  <testcase name="testInitializedToNull[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
+  <testcase name="testSettingValue[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomSettingValue[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
   <testcase name="testPropertySetterSimple[1]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testPropertySetterInArray[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testSettingValueInArray[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testRandomSettingValueInArray[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.005"/>
-  <testcase name="testRandomPropertySetterSimple[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testRandomPropertySetterInArray[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.005"/>
-  <testcase name="testInitializedToNull[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomSettingValueInArray[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
+  <testcase name="testRandomPropertySetterSimple[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomPropertySetterInArray[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
+  <testcase name="testInitializedToNull[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testSettingValue[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testRandomSettingValue[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testPropertySetterSimple[2]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testPropertySetterInArray[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testSettingValueInArray[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
+  <testcase name="testSettingValueInArray[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testRandomSettingValueInArray[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.006"/>
   <testcase name="testRandomPropertySetterSimple[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
-  <testcase name="testRandomPropertySetterInArray[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.019"/>
-  <testcase name="testInitializedToNull[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.02"/>
-  <testcase name="testSettingValue[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomSettingValue[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
-  <testcase name="testPropertySetterSimple[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testPropertySetterInArray[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testSettingValueInArray[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.007"/>
-  <testcase name="testRandomSettingValueInArray[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
-  <testcase name="testRandomPropertySetterSimple[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.012"/>
-  <testcase name="testRandomPropertySetterInArray[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testInitializedToNull[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
+  <testcase name="testRandomPropertySetterInArray[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.007"/>
+  <testcase name="testInitializedToNull[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testSettingValue[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomSettingValue[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testPropertySetterSimple[3]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testPropertySetterInArray[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testSettingValueInArray[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomSettingValueInArray[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomPropertySetterSimple[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
+  <testcase name="testRandomPropertySetterInArray[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testInitializedToNull[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testSettingValue[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
-  <testcase name="testRandomSettingValue[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.008"/>
-  <testcase name="testPropertySetterSimple[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testPropertySetterInArray[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testSettingValueInArray[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.006"/>
-  <testcase name="testRandomSettingValueInArray[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomSettingValue[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.006"/>
+  <testcase name="testPropertySetterSimple[4]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
+  <testcase name="testPropertySetterInArray[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testSettingValueInArray[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testRandomSettingValueInArray[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
   <testcase name="testRandomPropertySetterSimple[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testRandomPropertySetterInArray[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
-  <testcase name="testInitializedToNull[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.01"/>
-  <testcase name="testSettingValue[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
+  <testcase name="testRandomPropertySetterInArray[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testInitializedToNull[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
+  <testcase name="testSettingValue[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
   <testcase name="testRandomSettingValue[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testPropertySetterSimple[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testPropertySetterSimple[5]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testPropertySetterInArray[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testSettingValueInArray[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testRandomSettingValueInArray[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testRandomPropertySetterSimple[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
+  <testcase name="testRandomPropertySetterSimple[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testRandomPropertySetterInArray[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testInitializedToNull[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
-  <testcase name="testSettingValue[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testInitializedToNull[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testSettingValue[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testRandomSettingValue[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testPropertySetterSimple[6]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
-  <testcase name="testPropertySetterInArray[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testSettingValueInArray[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testPropertySetterInArray[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testSettingValueInArray[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testRandomSettingValueInArray[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testRandomPropertySetterSimple[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomPropertySetterInArray[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testInitializedToNull[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testSettingValue[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomSettingValue[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testPropertySetterSimple[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testPropertySetterInArray[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testSettingValueInArray[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomSettingValueInArray[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomPropertySetterSimple[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomPropertySetterInArray[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testInitializedToNull[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testSettingValue[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomSettingValue[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testPropertySetterSimple[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testPropertySetterInArray[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testSettingValueInArray[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomSettingValueInArray[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
-  <testcase name="testRandomPropertySetterSimple[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
-  <testcase name="testRandomPropertySetterInArray[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.007"/>
-  <testcase name="testInitializedToNull[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.01"/>
-  <testcase name="testSettingValue[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
+  <testcase name="testRandomPropertySetterSimple[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomPropertySetterInArray[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
+  <testcase name="testInitializedToNull[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testSettingValue[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomSettingValue[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testPropertySetterSimple[7]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testPropertySetterInArray[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testSettingValueInArray[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomSettingValueInArray[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
+  <testcase name="testRandomPropertySetterSimple[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomPropertySetterInArray[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
+  <testcase name="testInitializedToNull[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testSettingValue[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomSettingValue[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testPropertySetterSimple[8]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testPropertySetterInArray[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testSettingValueInArray[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testRandomSettingValueInArray[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomPropertySetterSimple[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testRandomPropertySetterInArray[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testInitializedToNull[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testSettingValue[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testRandomSettingValue[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testPropertySetterSimple[9]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testPropertySetterInArray[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testSettingValueInArray[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
+  <testcase name="testPropertySetterInArray[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testSettingValueInArray[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testRandomSettingValueInArray[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testRandomPropertySetterSimple[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testRandomPropertySetterInArray[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
+  <testcase name="testRandomPropertySetterSimple[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testRandomPropertySetterInArray[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
   <testcase name="testInitializedToNull[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
-  <testcase name="testSettingValue[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.012"/>
+  <testcase name="testSettingValue[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0"/>
   <testcase name="testRandomSettingValue[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testPropertySetterSimple[10]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testPropertySetterInArray[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testSettingValueInArray[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
-  <testcase name="testRandomSettingValueInArray[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.022"/>
-  <testcase name="testRandomPropertySetterSimple[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.004"/>
+  <testcase name="testRandomSettingValueInArray[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
+  <testcase name="testRandomPropertySetterSimple[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testRandomPropertySetterInArray[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.003"/>
-  <testcase name="testInitializedToNull[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
+  <testcase name="testInitializedToNull[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.002"/>
   <testcase name="testSettingValue[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testRandomSettingValue[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
   <testcase name="testPropertySetterSimple[11]" classname="org.apache.xmpbox.schema.DublinCoreTest" time="0.001"/>
