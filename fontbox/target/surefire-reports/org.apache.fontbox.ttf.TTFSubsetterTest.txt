@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.apache.fontbox.ttf.TTFSubsetterTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.663 sec <<< FAILURE! - in org.apache.fontbox.ttf.TTFSubsetterTest
-testEmptySubset2(org.apache.fontbox.ttf.TTFSubsetterTest)  Time elapsed: 0.025 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at org.apache.fontbox.ttf.TrueTypeFont.nameToGID(TrueTypeFont.java:580)
-	at org.apache.fontbox.ttf.TTFSubsetterTest.testEmptySubset2(TTFSubsetterTest.java:90)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.014 sec - in org.apache.fontbox.ttf.TTFSubsetterTest

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.pdfbox.preflight.TestIsartorBavaria
+-------------------------------------------------------------------------------
+Tests run: 204, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.147 sec <<< FAILURE! - in org.apache.pdfbox.preflight.TestIsartorBavaria
+validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.2 Output intent/isartor-6-2-2-t02-fail-a.pdf](org.apache.pdfbox.preflight.TestIsartorBavaria)  Time elapsed: 0.008 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 36
+	at java.awt.color.ICC_Profile.getProfileDataFromStream(ICC_Profile.java:1029)
+	at java.awt.color.ICC_Profile.getInstance(ICC_Profile.java:1015)
+	at org.apache.pdfbox.preflight.process.CatalogValidationProcess.validateICCProfile(CatalogValidationProcess.java:360)
+	at org.apache.pdfbox.preflight.process.CatalogValidationProcess.validateOutputIntent(CatalogValidationProcess.java:285)
+	at org.apache.pdfbox.preflight.process.CatalogValidationProcess.validate(CatalogValidationProcess.java:148)
+	at org.apache.pdfbox.preflight.utils.ContextHelper.callValidation(ContextHelper.java:84)
+	at org.apache.pdfbox.preflight.utils.ContextHelper.validateElement(ContextHelper.java:122)
+	at org.apache.pdfbox.preflight.PreflightDocument.validate(PreflightDocument.java:163)
+	at org.apache.pdfbox.preflight.TestIsartorBavaria.validate(TestIsartorBavaria.java:190)
+

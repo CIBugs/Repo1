@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.pdfbox.preflight.TestIsartorBavaria" time="3.001" tests="204" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/pdfbox-be521c95ec08d43c6c97bd3daded7e5ae62e4f00"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/pdfbox-be521c95ec08d43c6c97bd3daded7e5ae62e4f00"/>
+    <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/suvarna/maven/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/suvarna/maven/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-142-generic"/>
+    <property name="library.jansi.path" value="/home/suvarna/maven/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/home/suvarna"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="suvarna"/>
+    <property name="java.class.path" value="/home/suvarna/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/home/suvarna/maven/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.2 Font types/isartor-6-3-2-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.385"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.2 Font types/isartor-6-3-2-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.022"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.2 Font types/isartor-6-3-2-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.037"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.5 Font subsets/isartor-6-3-5-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.014"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.5 Font subsets/isartor-6-3-5-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.019"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.5 Font subsets/isartor-6-3-5-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.015"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.5 Font subsets/isartor-6-3-5-t01-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.012"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.5 Font subsets/isartor-6-3-5-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.014"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.5 Font subsets/isartor-6-3-5-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.035"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.7 Character encodings/isartor-6-3-7-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.013"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.7 Character encodings/isartor-6-3-7-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.02"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.7 Character encodings/isartor-6-3-7-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.018"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.6 Font metrics/isartor-6-3-6-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.069"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.6 Font metrics/isartor-6-3-6-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.033"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.6 Font metrics/isartor-6-3-6-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.015"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.4 Embedded font programs/isartor-6-3-4-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.012"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.4 Embedded font programs/isartor-6-3-4-t01-fail-f.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.027"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.4 Embedded font programs/isartor-6-3-4-t01-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.011"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.4 Embedded font programs/isartor-6-3-4-t01-fail-g.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.024"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.4 Embedded font programs/isartor-6-3-4-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.016"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.4 Embedded font programs/isartor-6-3-4-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.106"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.4 Embedded font programs/isartor-6-3-4-t01-fail-h.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.008"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.4 Embedded font programs/isartor-6-3-4-t01-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.007"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.3 Composite fonts/6.3.3.2 CIDFonts/isartor-6-3-3-2-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.3 Composite fonts/6.3.3.3 CMaps/isartor-6-3-3-3-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.028"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.3 Composite fonts/6.3.3.3 CMaps/isartor-6-3-3-3-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.054"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.3 Composite fonts/6.3.3.1 General/isartor-6-3-3-1-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.051"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.3 Fonts/6.3.3 Composite fonts/6.3.3.1 General/isartor-6-3-3-1-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.034"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.011"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t04-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.012"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t04-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.01"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t02-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.008"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t04-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.01"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.007"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t03-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.008"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.012"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t03-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.023"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t03-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.02"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t04-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.012"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t02-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t02-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.3 Annotation dictionaries/isartor-6-5-3-t02-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t02-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.008"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t01-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.01"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.01"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t01-fail-f.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t02-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.007"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.01"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t01-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.01"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t01-fail-h.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.008"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.5 Annotations/6.5.2 Annotation types/isartor-6-5-2-t01-fail-g.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.032"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.4 Transparency/isartor-6-4-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.4 Transparency/isartor-6-4-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.007"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.4 Transparency/isartor-6-4-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.06"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.4 Transparency/isartor-6-4-t05-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.4 Transparency/isartor-6-4-t04-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.4 Transparency/isartor-6-4-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.007"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.9 Validation/isartor-6-7-9-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.11 Version and conformance level identification/isartor-6-7-11-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.11 Version and conformance level identification/isartor-6-7-11-t01-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.11 Version and conformance level identification/isartor-6-7-11-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.11 Version and conformance level identification/isartor-6-7-11-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.3 Document information dictionary/isartor-6-7-3-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.3 Document information dictionary/isartor-6-7-3-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.3 Document information dictionary/isartor-6-7-3-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-k.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-f.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-i.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-g.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-j.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-h.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.8 Extension schemas/isartor-6-7-8-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.2 Properties/isartor-6-7-2-t02-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.2 Properties/isartor-6-7-2-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.2 Properties/isartor-6-7-2-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.2 Properties/isartor-6-7-2-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.2 Properties/isartor-6-7-2-t02-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.5 XMP header/isartor-6-7-5-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.7 Metadata/6.7.5 XMP header/isartor-6-7-5-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.6 Reference XObjects/isartor-6-2-6-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.10 Content Streams/isartor-6-2-10-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.10 Content Streams/isartor-6-2-10-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.10 Content Streams/isartor-6-2-10-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.5 Form Xobjects/isartor-6-2-5-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.7 PostScript XObjects/isartor-6-2-7-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.007"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.7 PostScript XObjects/isartor-6-2-7-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.4 Separation and DeviceN colour spaces/isartor-6-2-3-4-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.019"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.4 Separation and DeviceN colour spaces/isartor-6-2-3-4-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t05-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.026"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t04-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t04-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t04-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-h.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-g.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.007"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t04-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-i.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t03-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t03-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-j.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t03-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-f.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t05-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t03-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.014"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.014"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.3 Colour spaces/6.2.3.3 Uncalibrated colour spaces/isartor-6-2-3-3-t02-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.9 Rendering intents/isartor-6-2-9-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.4 Images/isartor-6-2-4-t04-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.4 Images/isartor-6-2-4-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.4 Images/isartor-6-2-4-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.4 Images/isartor-6-2-4-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.2 Output intent/isartor-6-2-2-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.008">
+    <error message="36" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: 36
+	at java.awt.color.ICC_Profile.getProfileDataFromStream(ICC_Profile.java:1029)
+	at java.awt.color.ICC_Profile.getInstance(ICC_Profile.java:1015)
+	at org.apache.pdfbox.preflight.process.CatalogValidationProcess.validateICCProfile(CatalogValidationProcess.java:360)
+	at org.apache.pdfbox.preflight.process.CatalogValidationProcess.validateOutputIntent(CatalogValidationProcess.java:285)
+	at org.apache.pdfbox.preflight.process.CatalogValidationProcess.validate(CatalogValidationProcess.java:148)
+	at org.apache.pdfbox.preflight.utils.ContextHelper.callValidation(ContextHelper.java:84)
+	at org.apache.pdfbox.preflight.utils.ContextHelper.validateElement(ContextHelper.java:122)
+	at org.apache.pdfbox.preflight.PreflightDocument.validate(PreflightDocument.java:163)
+	at org.apache.pdfbox.preflight.TestIsartorBavaria.validate(TestIsartorBavaria.java:190)
+</error>
+    <system-out><![CDATA[  isartor-6-2-2-t02-fail-a.pdf
+]]></system-out>
+  </testcase>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.2 Output intent/isartor-6-2-2-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.2 Output intent/isartor-6-2-2-t02-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.2 Output intent/isartor-6-2-2-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.8 Extended graphics state/isartor-6-2-8-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.8 Extended graphics state/isartor-6-2-8-t02-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.8 Extended graphics state/isartor-6-2-8-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.8 Extended graphics state/isartor-6-2-8-t02-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.8 Extended graphics state/isartor-6-2-8-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.8 Extended graphics state/isartor-6-2-8-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.2 Graphics/6.2.8 Extended graphics state/isartor-6-2-8-t01-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t04-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t03-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t03-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.007"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t02-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t03-fail-g.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t02-fail-i.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t04-fail-f.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t03-fail-h.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t03-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t04-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t04-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t04-fail-i.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t03-fail-i.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t02-fail-g.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t04-fail-h.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t02-fail-f.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t02-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t03-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t02-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t04-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t01-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t03-fail-f.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t04-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t01-fail-i.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t02-fail-e.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t01-fail-g.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t02-fail-h.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t01-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t01-fail-h.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t01-fail-f.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.1 General/isartor-6-6-1-t04-fail-g.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.6 Actions/6.6.2 Trigger events/isartor-6-6-2-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.9 Interactive Forms/isartor-6-9-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.013"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.9 Interactive Forms/isartor-6-9-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.005"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.9 Interactive Forms/isartor-6-9-t02-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.065"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.12 Implementation Limits/isartor-6-1-12-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.12 Implementation Limits/isartor-6-1-12-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.576"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.12 Implementation Limits/isartor-6-1-12-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.12 Implementation Limits/isartor-6-1-12-t01-fail-d.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.11 Embedded Files/isartor-6-1-11-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.11 Embedded Files/isartor-6-1-11-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.10 Filters/isartor-6-1-10-t01-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.009"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.10 Filters/isartor-6-1-10-t01-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.10 Filters/isartor-6-1-10-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.6 String objects/isartor-6-1-6-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.8 Indirect objects/isartor-6-1-8-t05-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.8 Indirect objects/isartor-6-1-8-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.8 Indirect objects/isartor-6-1-8-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.8 Indirect objects/isartor-6-1-8-t06-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.8 Indirect objects/isartor-6-1-8-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.8 Indirect objects/isartor-6-1-8-t04-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.4 Cross reference trailer/isartor-6-1-4-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.4 Cross reference trailer/isartor-6-1-4-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.3 File trailer/isartor-6-1-3-t04-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.3 File trailer/isartor-6-1-3-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.21"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.3 File trailer/isartor-6-1-3-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.006"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.3 File trailer/isartor-6-1-3-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.13 Optional content/isartor-6-1-13-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.7 Stream objects/isartor-6-1-7-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.7 Stream objects/isartor-6-1-7-t04-fail-c.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.004"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.7 Stream objects/isartor-6-1-7-t03-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.7 Stream objects/isartor-6-1-7-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.7 Stream objects/isartor-6-1-7-t04-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.7 Stream objects/isartor-6-1-7-t04-fail-b.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.003"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.2 File header/isartor-6-1-2-t02-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.002"/>
+  <testcase name="validate[target/pdfs/Isartor testsuite/PDFA-1b/6.1 File structure/6.1.2 File header/isartor-6-1-2-t01-fail-a.pdf]" classname="org.apache.pdfbox.preflight.TestIsartorBavaria" time="0.001"/>
+</testsuite>

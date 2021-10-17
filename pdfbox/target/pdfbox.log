@@ -1,0 +1,282 @@
+Oct 16, 2021 3:42:49 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:42:49 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:42:54 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:42:57 PM org.apache.pdfbox.pdmodel.PDDocument setVersion
+SEVERE: It's not allowed to downgrade the version of a pdf.
+Oct 16, 2021 3:42:57 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Opening: AlignmentTests.pdf
+Oct 16, 2021 3:42:57 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Rendering: AlignmentTests.pdf
+Oct 16, 2021 3:42:58 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:42:58 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:42:58 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Writing: /home/suvarna/Vinay/Sept-2021/pdfbox-be521c95ec08d43c6c97bd3daded7e5ae62e4f00/pdfbox/target/test-output/AlignmentTests.pdf-1.png
+Oct 16, 2021 3:42:58 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Comparing: AlignmentTests.pdf
+Oct 16, 2021 3:42:59 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+WARNING: *** TEST FAILURE *** Input and output not identical for file: AlignmentTests.pdf-1.png
+Oct 16, 2021 3:42:59 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Opening: AlignmentTests-flattened.pdf
+Oct 16, 2021 3:42:59 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Rendering: AlignmentTests-flattened.pdf
+Oct 16, 2021 3:42:59 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Writing: /home/suvarna/Vinay/Sept-2021/pdfbox-be521c95ec08d43c6c97bd3daded7e5ae62e4f00/pdfbox/target/test-output/AlignmentTests-flattened.pdf-1.png
+Oct 16, 2021 3:42:59 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Comparing: AlignmentTests-flattened.pdf
+Oct 16, 2021 3:42:59 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+WARNING: *** TEST FAILURE *** Input and output not identical for file: AlignmentTests-flattened.pdf-1.png
+Oct 16, 2021 3:42:59 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Opening: AlignmentTests-flattened-noRef.pdf
+Oct 16, 2021 3:42:59 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Rendering: AlignmentTests-flattened-noRef.pdf
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Writing: /home/suvarna/Vinay/Sept-2021/pdfbox-be521c95ec08d43c6c97bd3daded7e5ae62e4f00/pdfbox/target/test-output/AlignmentTests-flattened-noRef.pdf-1.png
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Comparing: AlignmentTests-flattened-noRef.pdf
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+WARNING: *** TEST FAILURE *** Input and output not identical for file: AlignmentTests-flattened-noRef.pdf-1.png
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Opening: AcroFormsRotation.pdf
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Rendering: AcroFormsRotation.pdf
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Writing: /home/suvarna/Vinay/Sept-2021/pdfbox-be521c95ec08d43c6c97bd3daded7e5ae62e4f00/pdfbox/target/test-output/AcroFormsRotation.pdf-1.png
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Writing: /home/suvarna/Vinay/Sept-2021/pdfbox-be521c95ec08d43c6c97bd3daded7e5ae62e4f00/pdfbox/target/test-output/AcroFormsRotation.pdf-2.png
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Comparing: AcroFormsRotation.pdf
+Oct 16, 2021 3:43:00 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+WARNING: *** TEST FAILURE *** Input and output not identical for file: AcroFormsRotation.pdf-2.png
+Oct 16, 2021 3:43:01 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+WARNING: *** TEST FAILURE *** Input and output not identical for file: AcroFormsRotation.pdf-1.png
+Oct 16, 2021 3:43:01 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Opening: MultilineFields.pdf
+Oct 16, 2021 3:43:01 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Rendering: MultilineFields.pdf
+Oct 16, 2021 3:43:01 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:01 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:01 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Writing: /home/suvarna/Vinay/Sept-2021/pdfbox-be521c95ec08d43c6c97bd3daded7e5ae62e4f00/pdfbox/target/test-output/MultilineFields.pdf-1.png
+Oct 16, 2021 3:43:01 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+INFO: Comparing: MultilineFields.pdf
+Oct 16, 2021 3:43:02 PM org.apache.pdfbox.rendering.TestPDFToImage doTestFile
+WARNING: *** TEST FAILURE *** Input and output not identical for file: MultilineFields.pdf-1.png
+Oct 16, 2021 3:43:02 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:02 PM org.apache.pdfbox.pdmodel.common.PDNumberTreeNode getValue
+WARNING: NumberTreeNode does not have "nums" nor "kids" objects.
+Oct 16, 2021 3:43:06 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:06 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:06 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:06 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:06 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO: Processing embedded file 48.rcpt.pdf:
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO:   size: 57501
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.pdmodel.PDDocument protect
+WARNING: do not call setAllSecurityToBeRemoved(true) before calling protect(), as protect() implies setAllSecurityToBeRemoved(false)
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO: Processing embedded file 48.rcpt.pdf:
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO:   size: 57501
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.pdmodel.PDDocument protect
+WARNING: do not call setAllSecurityToBeRemoved(true) before calling protect(), as protect() implies setAllSecurityToBeRemoved(false)
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO: Processing embedded file 48.rcpt.pdf:
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO:   size: 57501
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.pdmodel.PDDocument protect
+WARNING: do not call setAllSecurityToBeRemoved(true) before calling protect(), as protect() implies setAllSecurityToBeRemoved(false)
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO: Processing embedded file 48.rcpt.pdf:
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO:   size: 57501
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.pdmodel.PDDocument protect
+WARNING: do not call setAllSecurityToBeRemoved(true) before calling protect(), as protect() implies setAllSecurityToBeRemoved(false)
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO: Processing embedded file 48.rcpt.pdf:
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.encryption.TestSymmetricKeyEncryption extractEmbeddedFile
+INFO:   size: 57501
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:08 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+Oct 16, 2021 3:43:09 PM org.apache.pdfbox.pdmodel.PDDocument protect
+WARNING: do not call setAllSecurityToBeRemoved(true) before calling protect(), as protect() implies setAllSecurityToBeRemoved(false)
+Oct 16, 2021 3:43:10 PM org.apache.pdfbox.pdmodel.PDDocument protect
+WARNING: do not call setAllSecurityToBeRemoved(true) before calling protect(), as protect() implies setAllSecurityToBeRemoved(false)
+Oct 16, 2021 3:43:12 PM org.apache.pdfbox.pdmodel.PDDocument protect
+WARNING: do not call setAllSecurityToBeRemoved(true) before calling protect(), as protect() implies setAllSecurityToBeRemoved(false)
+Oct 16, 2021 3:43:13 PM org.apache.pdfbox.pdmodel.PDDocument protect
+WARNING: do not call setAllSecurityToBeRemoved(true) before calling protect(), as protect() implies setAllSecurityToBeRemoved(false)
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse BidiSample.pdf for sorted test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse BidiSample.pdf for standard test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse hello3.pdf for standard test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse hello3.pdf for sorted test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse yaddatest.pdf for standard test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse yaddatest.pdf for sorted test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3061-092465-reduced.pdf for standard test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3061-092465-reduced.pdf for sorted test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse FC60_Times.pdf for standard test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse FC60_Times.pdf for sorted test
+Oct 16, 2021 3:43:14 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3044-010197-p5-ligatures.pdf for standard test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3044-010197-p5-ligatures.pdf for sorted test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse data-000001.pdf for standard test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse data-000001.pdf for sorted test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3025.pdf for standard test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3025.pdf for sorted test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3110-poems-beads-cropbox.pdf for standard test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3110-poems-beads-cropbox.pdf for sorted test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3123-ADSFWTRB3HBZBZKEVESVTBRZC2MNKZF5_reduced.pdf for standard test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3123-ADSFWTRB3HBZBZKEVESVTBRZC2MNKZF5_reduced.pdf for sorted test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse cweb.pdf for standard test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for circlecopyrt (13) in font KVUGCP+CMSY10
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for visiblespace (32) in font QEJSSK+CMTT10
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for angbracketleft (104) in font KVUGCP+CMSY10
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for angbracketright (105) in font KVUGCP+CMSY10
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for negationslash (54) in font KVUGCP+CMSY10
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse cweb.pdf for sorted test
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for circlecopyrt (13) in font KVUGCP+CMSY10
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for visiblespace (32) in font QEJSSK+CMTT10
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for angbracketleft (104) in font KVUGCP+CMSY10
+Oct 16, 2021 3:43:15 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for angbracketright (105) in font KVUGCP+CMSY10
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDSimpleFont toUnicode
+WARNING: No Unicode mapping for negationslash (54) in font KVUGCP+CMSY10
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse sample_fonts_solidconvertor.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDTrueTypeFont <init>
+WARNING: Using fallback font 'ArialMT' for 'Tahoma'
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDTrueTypeFont <init>
+WARNING: Using fallback font 'ArialMT' for 'ArialNarrow'
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDTrueTypeFont <init>
+WARNING: Using fallback font 'Arial-BoldMT' for 'ArialRoundedMTBold'
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDFont <init>
+WARNING: Invalid ToUnicode CMap in font Verdana
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDFont <init>
+WARNING: Invalid ToUnicode CMap in font MSReferenceSansSerif
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse sample_fonts_solidconvertor.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDTrueTypeFont <init>
+WARNING: Using fallback font 'ArialMT' for 'Tahoma'
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDTrueTypeFont <init>
+WARNING: Using fallback font 'ArialMT' for 'ArialNarrow'
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDTrueTypeFont <init>
+WARNING: Using fallback font 'Arial-BoldMT' for 'ArialRoundedMTBold'
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDFont <init>
+WARNING: Invalid ToUnicode CMap in font Verdana
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.pdmodel.font.PDFont <init>
+WARNING: Invalid ToUnicode CMap in font MSReferenceSansSerif
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse sampleForSpec.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse sampleForSpec.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3062-002207-p1.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3062-002207-p1.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3062-N2MOQ7YZICIYGTPLQJAWJ4HLN6CCEMHZ-reduced.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3062-N2MOQ7YZICIYGTPLQJAWJ4HLN6CCEMHZ-reduced.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse openoffice-test-document.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse openoffice-test-document.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3195.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3195.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3038-001033-p2.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3038-001033-p2.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3053-reduced.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3053-reduced.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3110-poems-beads.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3110-poems-beads.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3127-RAU4G6QMOVRYBISJU7R6MOVZCRFUO7P4-VFont.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3127-RAU4G6QMOVRYBISJU7R6MOVZCRFUO7P4-VFont.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3067-negativeTf.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3067-negativeTf.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3042-003177-p2.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3042-003177-p2.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse simple-openoffice.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse simple-openoffice.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse Liste732004001452_001_0.pdf_0_.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse Liste732004001452_001_0.pdf_0_.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse rotation.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse rotation.pdf for sorted test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3062-005717-p1.pdf for standard test
+Oct 16, 2021 3:43:16 PM org.apache.pdfbox.text.TestTextStripper doTestFile
+INFO: Preparing to parse PDFBOX-3062-005717-p1.pdf for sorted test
