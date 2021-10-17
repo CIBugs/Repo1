@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="1" name="mikera.vectorz.TestVectors" time="0.156" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="mikera.vectorz.TestVectors" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/vectorz-1cf4860456917341c0ab8d3ac7a460a5caf4f79d"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/vectorz-c008bfa1607bbf964f175b739b77660055268ce0"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/vectorz-1cf4860456917341c0ab8d3ac7a460a5caf4f79d"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/vectorz-c008bfa1607bbf964f175b739b77660055268ce0"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -66,46 +66,10 @@
   <testcase classname="mikera.vectorz.TestVectors" name="testSubVectorCopy" time="0"/>
   <testcase classname="mikera.vectorz.TestVectors" name="testWrap" time="0"/>
   <testcase classname="mikera.vectorz.TestVectors" name="testCreateFromIterable" time="0"/>
-  <testcase classname="mikera.vectorz.TestVectors" name="genericTests" time="0.154">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at mikera.vectorz.AVector.addToArray(AVector.java:700)
-	at mikera.vectorz.TestVectors.testAddToArray(TestVectors.java:96)
-	at mikera.vectorz.TestVectors.doGenericTests(TestVectors.java:308)
-	at mikera.vectorz.TestVectors.genericTests(TestVectors.java:325)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
-  </testcase>
+  <testcase classname="mikera.vectorz.TestVectors" name="genericTests" time="0"/>
   <testcase classname="mikera.vectorz.TestVectors" name="testDistances" time="0"/>
   <testcase classname="mikera.vectorz.TestVectors" name="testClampMax" time="0"/>
   <testcase classname="mikera.vectorz.TestVectors" name="testClampMin" time="0"/>
   <testcase classname="mikera.vectorz.TestVectors" name="testClamping" time="0"/>
-  <testcase classname="mikera.vectorz.TestVectors" name="testString" time="0.002"/>
+  <testcase classname="mikera.vectorz.TestVectors" name="testString" time="0"/>
 </testsuite>
