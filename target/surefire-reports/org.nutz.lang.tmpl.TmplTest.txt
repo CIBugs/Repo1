@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.nutz.lang.tmpl.TmplTest
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.nutz.lang.tmpl.TmplTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.nutz.lang.tmpl.TmplTest

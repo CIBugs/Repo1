@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: org.nutz.mvc.upload.unit.UploadingUnitTest
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.51 sec - in org.nutz.mvc.upload.unit.UploadingUnitTest
+Tests run: 15, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.008 sec <<< FAILURE! - in org.nutz.mvc.upload.unit.UploadingUnitTest
+test_upload_1txt_3img(org.nutz.mvc.upload.unit.UploadingUnitTest)  Time elapsed: 0.756 sec  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at org.junit.Assert.assertTrue(Assert.java:54)
+	at org.nutz.mvc.upload.unit.UploadingUnitTest.test_upload_1txt_3img(UploadingUnitTest.java:361)
+

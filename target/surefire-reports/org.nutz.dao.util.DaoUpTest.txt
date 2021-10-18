@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: org.nutz.dao.util.DaoUpTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.nutz.dao.util.DaoUpTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.nutz.dao.util.DaoUpTest
 org.nutz.dao.util.DaoUpTest  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException: null
 	at java.util.Properties$LineReader.readLine(Properties.java:434)

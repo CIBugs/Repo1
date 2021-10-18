@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.nutz.lang.StringsTest
 -------------------------------------------------------------------------------
-Tests run: 51, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.nutz.lang.StringsTest
+Tests run: 51, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.nutz.lang.StringsTest

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.nutz.lang.reflect.FastClassFactoryTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.648 sec - in org.nutz.lang.reflect.FastClassFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.114 sec - in org.nutz.lang.reflect.FastClassFactoryTest
