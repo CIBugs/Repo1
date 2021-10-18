@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.nutz.dao.util.DaoUpTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in org.nutz.dao.util.DaoUpTest
+org.nutz.dao.util.DaoUpTest  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at org.nutz.dao.util.DaoUp.init(DaoUp.java:169)
+	at org.nutz.dao.util.DaoUpTest.setUp(DaoUpTest.java:74)
+

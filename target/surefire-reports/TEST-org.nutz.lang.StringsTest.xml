@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.nutz.lang.StringsTest" time="0.054" tests="51" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-a6fe8cd2d5991f7bb3853ce9fae4928fbb830b5e"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-a6fe8cd2d5991f7bb3853ce9fae4928fbb830b5e"/>
+    <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/suvarna/maven/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/suvarna/maven/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-142-generic"/>
+    <property name="library.jansi.path" value="/home/suvarna/maven/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/home/suvarna"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="suvarna"/>
+    <property name="java.class.path" value="/home/suvarna/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/home/suvarna/maven/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="test_line_2_hump" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_hump_2_line" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_split_with_escape_quote" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_split_by_whitespace" classname="org.nutz.lang.StringsTest" time="0.001"/>
+  <testcase name="test_by_eacape" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_by_escape_in_quote" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_pipes_parse2" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_pipes_parse" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_tokens_parse" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_isQuoteBy_null" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_is_full_width_character" classname="org.nutz.lang.StringsTest" time="0.019"/>
+  <testcase name="test_is_full_width_string" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_is_half_width_string" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_is_chinese_character" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_char_length" classname="org.nutz.lang.StringsTest" time="0.001"/>
+  <testcase name="test_dup_char_sequence" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_dup_char" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_upperFirst" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_lower_first" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_replaceBy" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_equals_string_ignore_case" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_equals_string" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_is_empty" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_is_blank" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_trim" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_split_ignore_blank" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_fill_digit" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_fill_hex" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_fill_binary" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_to_digit" classname="org.nutz.lang.StringsTest" time="0.001"/>
+  <testcase name="test_to_hex" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_to_binary" classname="org.nutz.lang.StringsTest" time="0.004"/>
+  <testcase name="test_cut_right" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_cut_left" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_align_left" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_align_right" classname="org.nutz.lang.StringsTest" time="0.001"/>
+  <testcase name="test_is_quote_by_ignore_blank" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_is_quote_by" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_max_length_4_collection" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_max_length_4_array" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_default_string_when_null" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_default_string_when_blank" classname="org.nutz.lang.StringsTest" time="0.001"/>
+  <testcase name="test_remove_first" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_remove_first_special_char" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_string_is_in_array" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_is_email" classname="org.nutz.lang.StringsTest" time="0.026"/>
+  <testcase name="test_upper_word" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_escape_html" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_issue461" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_join_array" classname="org.nutz.lang.StringsTest" time="0"/>
+  <testcase name="test_change_charset" classname="org.nutz.lang.StringsTest" time="0"/>
+</testsuite>
