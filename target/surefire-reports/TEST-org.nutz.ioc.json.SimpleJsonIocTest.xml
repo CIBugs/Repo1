@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="28" failures="0" name="org.nutz.ioc.json.SimpleJsonIocTest" time="0.183" errors="0" skipped="0">
+<testsuite tests="28" failures="0" name="org.nutz.ioc.json.SimpleJsonIocTest" time="0.166" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -62,32 +62,32 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_2darray_by_map_iocvalue" time="0.01"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_break_parent" time="0.001"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_break_parent2" time="0.001"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_load_from_dir" time="0.022"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_load_from_reader" time="0.007"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_get_ioc_self" time="0.002"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_env_list" time="0.025"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_sys_list" time="0.002"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_json_format_itself" time="0.006"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_java_neg" time="0.028"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_nan" time="0.001"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_2darray_iocvalue" time="0.011"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_refer_self" time="0.002"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_null_json_file" time="0.003"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_normal" time="0.005"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_singleon" time="0.003"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_refer" time="0.011"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_array_and_refer" time="0.002"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_env" time="0.001"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_sys" time="0.001"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_file" time="0.002"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_inner" time="0.01"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_map" time="0.002"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_java_simple" time="0.014"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_java_with_arguments" time="0.003"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_parent" time="0.002"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_muilt_parent" time="0.001"/>
-  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_create_by_args" time="0.005"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_2darray_iocvalue" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_refer_self" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_null_json_file" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_normal" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_singleon" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_refer" time="0.002"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_array_and_refer" time="0.012"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_env" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_sys" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_file" time="0.024"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_inner" time="0.007"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_map" time="0.035"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_java_simple" time="0.017"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_java_with_arguments" time="0.006"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_parent" time="0.004"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_muilt_parent" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_create_by_args" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_break_parent" time="0.004"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_break_parent2" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_load_from_dir" time="0.009"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_load_from_reader" time="0.003"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_get_ioc_self" time="0.004"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_env_list" time="0.006"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_sys_list" time="0.003"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_json_format_itself" time="0.03"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_java_neg" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_2darray_by_map_iocvalue" time="0"/>
+  <testcase classname="org.nutz.ioc.json.SimpleJsonIocTest" name="test_nan" time="0"/>
 </testsuite>

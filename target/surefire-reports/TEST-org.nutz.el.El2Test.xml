@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="39" failures="0" name="org.nutz.el.El2Test" time="0.096" errors="0" skipped="0">
+<testsuite tests="39" failures="0" name="org.nutz.el.El2Test" time="0.1" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -62,9 +62,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.nutz.el.El2Test" name="bit" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="notCalculateOneNumber" time="0"/>
+  <testcase classname="org.nutz.el.El2Test" name="notCalculateOneNumber" time="0.001"/>
   <testcase classname="org.nutz.el.El2Test" name="simpleCalculate" time="0"/>
+  <testcase classname="org.nutz.el.El2Test" name="bit" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="multiStageOperation" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="sikpSpace" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="testNull" time="0"/>
@@ -75,30 +75,30 @@
   <testcase classname="org.nutz.el.El2Test" name="negative" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="callMethod" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="test_simple_condition" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="custom" time="0"/>
+  <testcase classname="org.nutz.el.El2Test" name="custom" time="0.011"/>
   <testcase classname="org.nutz.el.El2Test" name="speed" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="lssue_486" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="complexOperation" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="testIssues87" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="testIssue168" time="0"/>
+  <testcase classname="org.nutz.el.El2Test" name="lssue_486" time="0.001"/>
+  <testcase classname="org.nutz.el.El2Test" name="complexOperation" time="0.002"/>
+  <testcase classname="org.nutz.el.El2Test" name="testIssues87" time="0.001"/>
+  <testcase classname="org.nutz.el.El2Test" name="testIssue168" time="0.001"/>
   <testcase classname="org.nutz.el.El2Test" name="testIssue277" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="testIssue277_2" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="testIssue279" time="0"/>
+  <testcase classname="org.nutz.el.El2Test" name="testIssue279" time="0.013"/>
   <testcase classname="org.nutz.el.El2Test" name="testIssue292" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="testIssue293" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="testIssue303" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="testIssue306" time="0.091"/>
-  <testcase classname="org.nutz.el.El2Test" name="testIssue307" time="0"/>
+  <testcase classname="org.nutz.el.El2Test" name="testIssue293" time="0.001"/>
+  <testcase classname="org.nutz.el.El2Test" name="testIssue303" time="0.001"/>
+  <testcase classname="org.nutz.el.El2Test" name="testIssue306" time="0.061"/>
+  <testcase classname="org.nutz.el.El2Test" name="testIssue307" time="0.003"/>
   <testcase classname="org.nutz.el.El2Test" name="testIssue308" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="test_issue314" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="test_issue411" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="test_uu32_uu64" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="test_base64" time="0.001"/>
-  <testcase classname="org.nutz.el.El2Test" name="test_urlencode" time="0.001"/>
-  <testcase classname="org.nutz.el.El2Test" name="test_map_get" time="0.001"/>
+  <testcase classname="org.nutz.el.El2Test" name="test_urlencode" time="0.002"/>
+  <testcase classname="org.nutz.el.El2Test" name="test_map_get" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="context" time="0.001"/>
   <testcase classname="org.nutz.el.El2Test" name="array" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="list" time="0"/>
-  <testcase classname="org.nutz.el.El2Test" name="field" time="0.001"/>
+  <testcase classname="org.nutz.el.El2Test" name="field" time="0"/>
   <testcase classname="org.nutz.el.El2Test" name="map" time="0"/>
 </testsuite>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="28" failures="0" name="org.nutz.mapl.MaplTest" time="0.031" errors="0" skipped="0">
+<testsuite tests="28" failures="0" name="org.nutz.mapl.MaplTest" time="0.029" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -64,30 +64,30 @@
   </properties>
   <testcase classname="org.nutz.mapl.MaplTest" name="cellTestSpecialKey" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="cellTest" time="0.001"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="cellArrayTest" time="0.001"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="cellArrayTest1" time="0"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="cellArrayTest2" time="0.001"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="cellArrayTest" time="0"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="cellArrayTest1" time="0.004"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="cellArrayTest2" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="cellArrayTest3" time="0"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="includeFilterConvertTest" time="0.001"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="excludeFilterConvertTest" time="0.002"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="includeFilterConvertTest" time="0"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="excludeFilterConvertTest" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="excludeFilterConvertTest2" time="0"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="objCompileTest" time="0.002"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="objCompileTest2" time="0.002"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="objCompileTest" time="0"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="objCompileTest2" time="0.007"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="objCompileArrayTest" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="objCompileCircularReferenceTest" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="structureConvertSimple" time="0.001"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="structureConvertSimpleArray" time="0.001"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="structureConvertSimpleArray" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="structureConvertMultiPath" time="0.001"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="structureConvertRoot2Array" time="0.001"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="structureConvertRoot2Array" time="0.011"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="structureConvertArray2Root" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="addItemTest" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="delItemTest" time="0"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="updateItemTest" time="0.001"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="updateItemTest" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="issue243Test" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="issue243Test2" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="testIssue322" time="0"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="excludeFilterConvertTest_MultiplePath1" time="0.001"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="excludeFilterConvertTest_MultiplePath1" time="0"/>
   <testcase classname="org.nutz.mapl.MaplTest" name="excludeFilterConvertTest_MultiplePath2" time="0"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="test_maplrebuild" time="0.003"/>
-  <testcase classname="org.nutz.mapl.MaplTest" name="test_complex_prefix" time="0.012"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="test_maplrebuild" time="0"/>
+  <testcase classname="org.nutz.mapl.MaplTest" name="test_complex_prefix" time="0.004"/>
 </testsuite>

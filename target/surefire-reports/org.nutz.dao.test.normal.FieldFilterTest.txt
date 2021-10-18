@@ -1,15 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: org.nutz.dao.test.normal.FieldFilterTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
-test_insert_by_filter(org.nutz.dao.test.normal.FieldFilterTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at org.nutz.ioc.weaver.DefaultWeaver.born(DefaultWeaver.java:67)
-	at org.nutz.ioc.ObjectProxy.get(ObjectProxy.java:70)
-	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:218)
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+test_insert_by_filter(org.nutz.dao.test.normal.FieldFilterTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.nutz.ioc.IocException: [dao, dataSource, config] # FAIL to create Ioc Bean name=[config]
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:149)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
+	at org.nutz.ioc.java.IocObjectNode.getValue(IocObjectNode.java:19)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:24)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:19)
+	at org.nutz.ioc.val.JavaValue.get(JavaValue.java:69)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:31)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.val.ReferValue.get(ReferValue.java:24)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:75)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
 	at org.nutz.dao.test.DaoCase.setUp(DaoCase.java:21)
-	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
@@ -38,15 +49,33 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@2116e9cf ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+	at org.nutz.lang.Lang.makeThrow(Lang.java:104)
+	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:44)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:32)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	... 44 more
 
 test_update_by_filter(org.nutz.dao.test.normal.FieldFilterTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at org.nutz.ioc.weaver.DefaultWeaver.born(DefaultWeaver.java:67)
-	at org.nutz.ioc.ObjectProxy.get(ObjectProxy.java:70)
-	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:218)
+org.nutz.ioc.IocException: [dao, dataSource, config] # FAIL to create Ioc Bean name=[config]
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:149)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
+	at org.nutz.ioc.java.IocObjectNode.getValue(IocObjectNode.java:19)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:24)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:19)
+	at org.nutz.ioc.val.JavaValue.get(JavaValue.java:69)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:31)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.val.ReferValue.get(ReferValue.java:24)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:75)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
 	at org.nutz.dao.test.DaoCase.setUp(DaoCase.java:21)
-	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
@@ -75,15 +104,33 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@20bc72af ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+	at org.nutz.lang.Lang.makeThrow(Lang.java:104)
+	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:44)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:32)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	... 44 more
 
 test_select_by_filter(org.nutz.dao.test.normal.FieldFilterTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at org.nutz.ioc.weaver.DefaultWeaver.born(DefaultWeaver.java:67)
-	at org.nutz.ioc.ObjectProxy.get(ObjectProxy.java:70)
-	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:218)
+org.nutz.ioc.IocException: [dao, dataSource, config] # FAIL to create Ioc Bean name=[config]
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:149)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
+	at org.nutz.ioc.java.IocObjectNode.getValue(IocObjectNode.java:19)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:24)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:19)
+	at org.nutz.ioc.val.JavaValue.get(JavaValue.java:69)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:31)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.val.ReferValue.get(ReferValue.java:24)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:75)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
 	at org.nutz.dao.test.DaoCase.setUp(DaoCase.java:21)
-	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
@@ -112,15 +159,33 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@7f0977d6 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+	at org.nutz.lang.Lang.makeThrow(Lang.java:104)
+	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:44)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:32)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	... 44 more
 
 test_query_by_filter(org.nutz.dao.test.normal.FieldFilterTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at org.nutz.ioc.weaver.DefaultWeaver.born(DefaultWeaver.java:67)
-	at org.nutz.ioc.ObjectProxy.get(ObjectProxy.java:70)
-	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:218)
+org.nutz.ioc.IocException: [dao, dataSource, config] # FAIL to create Ioc Bean name=[config]
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:149)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
+	at org.nutz.ioc.java.IocObjectNode.getValue(IocObjectNode.java:19)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:24)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:19)
+	at org.nutz.ioc.val.JavaValue.get(JavaValue.java:69)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:31)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.val.ReferValue.get(ReferValue.java:24)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:75)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
 	at org.nutz.dao.test.DaoCase.setUp(DaoCase.java:21)
-	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
@@ -149,15 +214,33 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@1f02ce3 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+	at org.nutz.lang.Lang.makeThrow(Lang.java:104)
+	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:44)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:32)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	... 44 more
 
 test_filter_no_field_match(org.nutz.dao.test.normal.FieldFilterTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at org.nutz.ioc.weaver.DefaultWeaver.born(DefaultWeaver.java:67)
-	at org.nutz.ioc.ObjectProxy.get(ObjectProxy.java:70)
-	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:218)
+org.nutz.ioc.IocException: [dao, dataSource, config] # FAIL to create Ioc Bean name=[config]
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:149)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
+	at org.nutz.ioc.java.IocObjectNode.getValue(IocObjectNode.java:19)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:24)
+	at org.nutz.ioc.java.ChainNode.eval(ChainNode.java:19)
+	at org.nutz.ioc.val.JavaValue.get(JavaValue.java:69)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:31)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
+	at org.nutz.ioc.val.ReferValue.get(ReferValue.java:24)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:75)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:201)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:227)
 	at org.nutz.dao.test.DaoCase.setUp(DaoCase.java:21)
-	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
@@ -186,4 +269,11 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@62a5e4c7 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+	at org.nutz.lang.Lang.makeThrow(Lang.java:104)
+	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:44)
+	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:32)
+	at org.nutz.ioc.weaver.DefaultWeaver.fill(DefaultWeaver.java:56)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:135)
+	... 44 more
 

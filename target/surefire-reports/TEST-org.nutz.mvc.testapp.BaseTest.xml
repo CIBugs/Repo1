@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="org.nutz.mvc.testapp.BaseTest" time="4.212" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="org.nutz.mvc.testapp.BaseTest" time="4.612" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -62,12 +62,12 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_json_adaptor" time="0.491"/>
-  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_base" time="0.25"/>
-  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_pathargs" time="1.483"/>
-  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_param" time="0.247"/>
-  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_req_param" time="0.246"/>
-  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_req_param2" time="0.5"/>
-  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_servlet_obj" time="0.247"/>
-  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_aop_trans_1" time="0.748"/>
+  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_json_adaptor" time="0.54"/>
+  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_base" time="0.27"/>
+  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_pathargs" time="1.619"/>
+  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_param" time="0.27"/>
+  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_req_param" time="0.272"/>
+  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_req_param2" time="0.541"/>
+  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_servlet_obj" time="0.271"/>
+  <testcase classname="org.nutz.mvc.testapp.BaseTest" name="test_aop_trans_1" time="0.829"/>
 </testsuite>

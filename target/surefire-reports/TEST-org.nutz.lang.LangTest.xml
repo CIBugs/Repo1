@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="29" failures="0" name="org.nutz.lang.LangTest" time="6.708" errors="0" skipped="1">
+<testsuite tests="29" failures="0" name="org.nutz.lang.LangTest" time="0.023" errors="0" skipped="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-1b757e31ea90ceea7f80efa6d7a89863ce98cbf1"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-0add00d450e28e72f8c6cf9a390bd40431df1aab"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -62,35 +62,35 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.nutz.lang.LangTest" name="test_map_equles" time="0.001"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_string_array2array" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_array2_object_array" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_concat" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_concat4_offset_len" time="0.001"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_obj2map" time="2.888"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_readAll" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_isWin" time="0.001">
+  <testcase classname="org.nutz.lang.LangTest" name="test_obj2map" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_equals_simple" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_map2map" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_isWin" time="0">
     <skipped message="测试平台不一定为Windows"/>
   </testcase>
-  <testcase classname="org.nutz.lang.LangTest" name="test_merge" time="0.001"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_char_reader" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_map_to_obj" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_arrayUniq" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_array2map" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_concat4_offset_len" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_readAll" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_concat" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_map2object" time="0.009"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_char_writer" time="0.001"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_string_array2array" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_map_equles" time="0.001"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_merge" time="0.002"/>
   <testcase classname="org.nutz.lang.LangTest" name="test_array_first" time="0"/>
   <testcase classname="org.nutz.lang.LangTest" name="test_array_last" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_parse_boolean" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_first4_map_collection" time="0.001"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_length" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_parse_boolean" time="0.001"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_first4_map_collection" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_length" time="0.001"/>
   <testcase classname="org.nutz.lang.LangTest" name="test_2bytes" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_str2number" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_str2number" time="0.001"/>
   <testcase classname="org.nutz.lang.LangTest" name="test_md5" time="0.001"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_reverse" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_obj2map_again" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_reverse" time="0.004"/>
   <testcase classname="org.nutz.lang.LangTest" name="test_map_filter" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_copy_properties" time="0.517"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_arrayUniq" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_map_to_obj" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_equals_simple" time="0.001"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_array2map" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_map2object" time="3.295"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_map2map" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_char_reader" time="0"/>
-  <testcase classname="org.nutz.lang.LangTest" name="test_char_writer" time="0.001"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_obj2map_again" time="0"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_copy_properties" time="0.002"/>
+  <testcase classname="org.nutz.lang.LangTest" name="test_array2_object_array" time="0"/>
 </testsuite>
