@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.nutz.ioc.json.SimpleJsonIocTest
+-------------------------------------------------------------------------------
+Tests run: 29, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.207 sec <<< FAILURE! - in org.nutz.ioc.json.SimpleJsonIocTest
+test_factory_by_factory(org.nutz.ioc.json.SimpleJsonIocTest)  Time elapsed: 0.015 sec  <<< ERROR!
+org.nutz.ioc.IocException: IocBean[c] throw Exception when creating
+	at java.lang.Class.isAssignableFrom(Native Method)
+	at org.nutz.ioc.aop.impl.DefaultMirrorFactory.getMirror(DefaultMirrorFactory.java:49)
+	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:97)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:210)
+	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:239)
+	at org.nutz.ioc.json.SimpleJsonIocTest.test_factory_by_factory(SimpleJsonIocTest.java:307)
+

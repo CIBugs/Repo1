@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.nutz.json.JsonTest" time="0.115" tests="90" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-d8c20cde351510b69629b7642ae2bf07db95f73f"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-d8c20cde351510b69629b7642ae2bf07db95f73f"/>
+    <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/suvarna/maven/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/suvarna/maven/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-142-generic"/>
+    <property name="library.jansi.path" value="/home/suvarna/maven/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/home/suvarna"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="suvarna"/>
+    <property name="java.class.path" value="/home/suvarna/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/home/suvarna/maven/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testBoolean" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testMap" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_enum" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_eval_radix" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_region_as_String" classname="org.nutz.json.JsonTest" time="0.031"/>
+  <testcase name="test_empty_obj_toJson" classname="org.nutz.json.JsonTest" time="0.008"/>
+  <testcase name="test_empty_array_field" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_map_in_map" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_bear_error_end_list" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_bear_error_end_map" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_toJson_with_enum" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_toJson_with_super_field" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_map_class_item" classname="org.nutz.json.JsonTest" time="0.004"/>
+  <testcase name="test_map_class_item_as_string" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_unknown_field_in_json_string" classname="org.nutz.json.JsonTest" time="0.003"/>
+  <testcase name="field_name_with_colon" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="with_var_ioc_as_prefix" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="born_with_map" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="when_name_has_unsupport_char" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="when_name_has_number_char_at_first" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleObject" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testFloat" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testLongg" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testDatetime" classname="org.nutz.json.JsonTest" time="0.002"/>
+  <testcase name="testSimpleAbc" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testAllTypesInMap" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleString" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleMap" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleMap_asMap" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleMap2" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleMap3" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleMap4" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimplePersonObject" classname="org.nutz.json.JsonTest" time="0.001"/>
+  <testcase name="testPersonObject" classname="org.nutz.json.JsonTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSimpleArray" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleArray2" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleList" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_parse_simple_empty_array" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleArraySingleInteger" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleArraySingleDate" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testSimpleArraySingleObject" classname="org.nutz.json.JsonTest" time="0.002"/>
+  <testcase name="testSimpleObjectArray" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testNiceModeSimple" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testParseNullFieldObject" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testPrintJsonObject" classname="org.nutz.json.JsonTest" time="0.003"/>
+  <testcase name="testFilterField" classname="org.nutz.json.JsonTest" time="0.001"/>
+  <testcase name="testFilterField2" classname="org.nutz.json.JsonTest" time="0.002"/>
+  <testcase name="testOutpuProjectsAsList" classname="org.nutz.json.JsonTest" time="0.008"/>
+  <testcase name="testUndefined" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testEnumOutput" classname="org.nutz.json.JsonTest" time="0.002"/>
+  <testcase name="testEmptyMap" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="testEmptyObject" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_output_not_quote_name" classname="org.nutz.json.JsonTest" time="0.011"/>
+  <testcase name="testDuplicateArrayList" classname="org.nutz.json.JsonTest" time="0.001"/>
+  <testcase name="test_special_char" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_number_output" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_dollar_as_name" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_output_json_string" classname="org.nutz.json.JsonTest" time="0.001"/>
+  <testcase name="test_generic_type_list" classname="org.nutz.json.JsonTest" time="0.001"/>
+  <testcase name="test_ioc_value" classname="org.nutz.json.JsonTest" time="0.003"/>
+  <testcase name="test_field_as_map_with_list_value" classname="org.nutz.json.JsonTest" time="0.002"/>
+  <testcase name="test_output_nostr_key_map" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_separator" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_setvalue_by_setter" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_toJson" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_X" classname="org.nutz.json.JsonTest" time="0.001"/>
+  <testcase name="test_toList" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_bad_json" classname="org.nutz.json.JsonTest" time="0.002"/>
+  <testcase name="test_render_char" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_inner_class" classname="org.nutz.json.JsonTest" time="0.004"/>
+  <testcase name="test_map_null" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_from_list" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_sp" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_json3" classname="org.nutz.json.JsonTest" time="0.001"/>
+  <testcase name="test_ignore_numbers" classname="org.nutz.json.JsonTest" time="0.005"/>
+  <testcase name="test_unicode" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_json_date" classname="org.nutz.json.JsonTest" time="0.012"/>
+  <testcase name="test_json_date2" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_self_toString_toJson" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_number_formt_tojson" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_date_formt" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_circule_map_pojo" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_ptype_map" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_null_as_emtry_string" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_json_all_string" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_json_timezone" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_json_nullAsEmtry" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_json_nullStringAsEmtry" classname="org.nutz.json.JsonTest" time="0.004"/>
+  <testcase name="test_json_08" classname="org.nutz.json.JsonTest" time="0"/>
+  <testcase name="test_issue_1285" classname="org.nutz.json.JsonTest" time="0"/>
+</testsuite>
