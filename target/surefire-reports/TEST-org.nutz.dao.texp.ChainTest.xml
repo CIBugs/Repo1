@@ -5,7 +5,7 @@
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-a6fe8cd2d5991f7bb3853ce9fae4928fbb830b5e"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-e06580a6dcfb9c30cd832ae9875aa9384060d8da"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-a6fe8cd2d5991f7bb3853ce9fae4928fbb830b5e"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-e06580a6dcfb9c30cd832ae9875aa9384060d8da"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="test_chain_from_object" classname="org.nutz.dao.texp.ChainTest" time="0.001">
+  <testcase name="test_chain_from_object" classname="org.nutz.dao.texp.ChainTest" time="0">
     <error message="IocBean[dao -&gt; dataSource] throw Exception when creating" type="org.nutz.ioc.IocException">org.nutz.ioc.IocException: IocBean[dao -> dataSource] throw Exception when creating
 	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:150)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:210)
@@ -212,7 +212,7 @@ Caused by: java.lang.RuntimeException: IocBean[config] fail at field=[paths]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@4a070cf0 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@23c767e6 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
 	at org.nutz.lang.Lang.wrapThrow(Lang.java:167)
 	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:62)
 	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:33)
@@ -308,7 +308,7 @@ Caused by: java.lang.RuntimeException: folder or file like '^.+[.]properties$' n
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </error>
   </testcase>
-  <testcase name="test_chain_from_map" classname="org.nutz.dao.texp.ChainTest" time="0">
+  <testcase name="test_chain_from_map" classname="org.nutz.dao.texp.ChainTest" time="0.001">
     <error message="IocBean[dao -&gt; dataSource] throw Exception when creating" type="org.nutz.ioc.IocException">org.nutz.ioc.IocException: IocBean[dao -> dataSource] throw Exception when creating
 	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:150)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:210)
@@ -459,7 +459,7 @@ Caused by: java.lang.RuntimeException: IocBean[config] fail at field=[paths]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@764b14b8 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@feb098f ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
 	at org.nutz.lang.Lang.wrapThrow(Lang.java:167)
 	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:62)
 	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:33)
@@ -706,7 +706,7 @@ Caused by: java.lang.RuntimeException: IocBean[config] fail at field=[paths]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@202d9236 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@19e21f89 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
 	at org.nutz.lang.Lang.wrapThrow(Lang.java:167)
 	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:62)
 	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:33)

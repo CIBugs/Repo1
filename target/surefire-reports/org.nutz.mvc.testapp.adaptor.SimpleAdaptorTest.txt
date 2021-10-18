@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.nutz.mvc.testapp.adaptor.SimpleAdaptorTest
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.63 sec <<< FAILURE! - in org.nutz.mvc.testapp.adaptor.SimpleAdaptorTest
-test_issue_543(org.nutz.mvc.testapp.adaptor.SimpleAdaptorTest)  Time elapsed: 1.81 sec  <<< FAILURE!
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.978 sec <<< FAILURE! - in org.nutz.mvc.testapp.adaptor.SimpleAdaptorTest
+test_issue_543(org.nutz.mvc.testapp.adaptor.SimpleAdaptorTest)  Time elapsed: 1.118 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<1348416000000> but was:<1348425000000>
 	at org.junit.Assert.fail(Assert.java:91)
 	at org.junit.Assert.failNotEquals(Assert.java:645)

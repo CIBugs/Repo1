@@ -5,7 +5,7 @@
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-a6fe8cd2d5991f7bb3853ce9fae4928fbb830b5e"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/nutz-e06580a6dcfb9c30cd832ae9875aa9384060d8da"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-a6fe8cd2d5991f7bb3853ce9fae4928fbb830b5e"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/nutz-e06580a6dcfb9c30cd832ae9875aa9384060d8da"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -65,6 +65,10 @@
   <testcase name="test_param_names" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
   <testcase name="test_sql_types" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
   <testcase name="test_toPreparedStatement_regularly" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
+  <testcase name="test_dot_with_param" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
+  <testcase name="test_param_names_putall_map" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
+  <testcase name="test_between" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
+  <testcase name="test_change_placeholder" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
   <testcase name="test_chinese_var_name" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
   <testcase name="test_chinese_param_name" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
   <testcase name="test_name_with_underline" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
@@ -72,9 +76,5 @@
   <testcase name="test_var_set_index" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
   <testcase name="test_toPreparedStatement" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
   <testcase name="test_dot_with_var" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
-  <testcase name="test_dot_with_param" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
   <testcase name="test_var_names" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
-  <testcase name="test_param_names_putall_map" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
-  <testcase name="test_between" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
-  <testcase name="test_change_placeholder" classname="org.nutz.dao.impl.sql.SqlLiteralTest" time="0"/>
 </testsuite>

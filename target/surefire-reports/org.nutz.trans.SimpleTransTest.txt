@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.nutz.trans.SimpleTransTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.nutz.trans.SimpleTransTest
-test_issue312(org.nutz.trans.SimpleTransTest)  Time elapsed: 0 sec  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE! - in org.nutz.trans.SimpleTransTest
+test_update_rollback(org.nutz.trans.SimpleTransTest)  Time elapsed: 0.005 sec  <<< ERROR!
 org.nutz.ioc.IocException: IocBean[dao -> dataSource] throw Exception when creating
 	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:150)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:210)
@@ -157,7 +157,7 @@ Caused by: java.lang.RuntimeException: IocBean[config] fail at field=[paths]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@5ac6c4f2 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@7a904f32 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
 	at org.nutz.lang.Lang.wrapThrow(Lang.java:167)
 	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:62)
 	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:33)
@@ -254,7 +254,7 @@ Caused by: java.lang.RuntimeException: folder or file like '^.+[.]properties$' n
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-test_update_rollback(org.nutz.trans.SimpleTransTest)  Time elapsed: 0 sec  <<< ERROR!
+test_batch_update_rollback(org.nutz.trans.SimpleTransTest)  Time elapsed: 0 sec  <<< ERROR!
 org.nutz.ioc.IocException: IocBean[dao -> dataSource] throw Exception when creating
 	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:150)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:210)
@@ -409,7 +409,7 @@ Caused by: java.lang.RuntimeException: IocBean[config] fail at field=[paths]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@2aa6311a ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@2b59501e ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
 	at org.nutz.lang.Lang.wrapThrow(Lang.java:167)
 	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:62)
 	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:33)
@@ -506,7 +506,7 @@ Caused by: java.lang.RuntimeException: folder or file like '^.+[.]properties$' n
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-test_batch_update_rollback(org.nutz.trans.SimpleTransTest)  Time elapsed: 0.001 sec  <<< ERROR!
+test_issue312(org.nutz.trans.SimpleTransTest)  Time elapsed: 0.001 sec  <<< ERROR!
 org.nutz.ioc.IocException: IocBean[dao -> dataSource] throw Exception when creating
 	at org.nutz.ioc.impl.ObjectMakerImpl.make(ObjectMakerImpl.java:150)
 	at org.nutz.ioc.impl.NutIoc.get(NutIoc.java:210)
@@ -661,7 +661,7 @@ Caused by: java.lang.RuntimeException: IocBean[config] fail at field=[paths]
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@249e0271 ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
+Caused by: java.lang.RuntimeException: Fail to set '[nutz-test.properties]'[ [Ljava.lang.String;@4eed2acf ] by setter org.nutz.ioc.impl.PropertiesProxy.'setPaths()' because [java.lang.RuntimeException: folder or file like '^.+[.]properties$' no found in nutz-test.properties]: folder or file like '^.+[.]properties$' no found in nutz-test.properties
 	at org.nutz.lang.Lang.wrapThrow(Lang.java:167)
 	at org.nutz.lang.inject.InjectBySetter.inject(InjectBySetter.java:62)
 	at org.nutz.ioc.weaver.FieldInjector.inject(FieldInjector.java:33)
