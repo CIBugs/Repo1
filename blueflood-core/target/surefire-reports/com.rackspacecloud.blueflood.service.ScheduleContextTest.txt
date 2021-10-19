@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.rackspacecloud.blueflood.service.ScheduleContextTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.729 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.415 sec

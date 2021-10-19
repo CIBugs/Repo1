@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.rackspacecloud.blueflood.io.serializers.IMetricSerializerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.642 sec <<< FAILURE!
-testSetSerialization(com.rackspacecloud.blueflood.io.serializers.IMetricSerializerTest)  Time elapsed: 0.107 sec  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.501 sec <<< FAILURE!
+testSetSerialization(com.rackspacecloud.blueflood.io.serializers.IMetricSerializerTest)  Time elapsed: 0.188 sec  <<< FAILURE!
 junit.framework.ComparisonFailure: expected:<..."count":9,"hashes":[[746007989,1875251108,98262,103159993,1727114331,-1034140067,98699,1062516268,99644]]}> but was:<..."count":9,"hashes":[[-1034140067,746007989,1875251108,98262,1062516268,1727114331,98699,99644,103159993]]}>
 	at junit.framework.Assert.assertEquals(Assert.java:85)
 	at junit.framework.Assert.assertEquals(Assert.java:91)
