@@ -1,26 +1,26 @@
-22:15:32.116 [main] ERROR o.u.d.util.CharacterTableLoader - In parseCharTableString: Premature end of file.
-22:15:32.119 [main] ERROR o.u.d.util.CharacterTableLoader - Failed to parse character table
-22:15:32.121 [main] ERROR o.u.d.util.CharacterTableLoader - In parseCharTableString: XML document structures must start and end within the same entity.
-22:15:32.121 [main] ERROR o.u.d.util.CharacterTableLoader - Failed to parse character table
-22:15:32.123 [main] ERROR o.u.d.util.CharacterTableLoader - Invalid Node Name "chrcter" exist.
-22:15:32.136 [main] ERROR o.u.d.util.CharacterTableLoader - In parseCharTableString: Premature end of file.
-22:15:32.136 [main] ERROR o.u.d.util.CharacterTableLoader - Failed to parse character table
-22:15:32.138 [main] ERROR o.u.d.util.ResultDistributor - Specified output format is null...
-22:15:32.141 [main] ERROR o.u.d.util.ResultDistributor - Output stream is null...
-22:15:32.142 [main] ERROR o.u.d.util.ResultDistributor - Output stream is null...
-22:15:32.170 [main] ERROR o.u.docvalidator.util.FileLoader - Input Stream is null
-22:15:32.179 [main] ERROR o.u.d.u.ValidationConfigurationLoader - XML document structures must start and end within the same entity.
-22:15:32.179 [main] ERROR o.u.d.u.ValidationConfigurationLoader - Failed to parse configuration string
-22:15:32.180 [main] ERROR o.u.d.u.ValidationConfigurationLoader - Premature end of file.
-22:15:32.180 [main] ERROR o.u.d.u.ValidationConfigurationLoader - Failed to parse configuration string
-22:15:32.181 [main] ERROR o.u.d.u.ValidationConfigurationLoader - InputStream cannot be null
-22:15:32.181 [main] ERROR o.u.d.u.ValidationConfigurationLoader - Failed to parse configuration string
-22:15:32.674 [main] ERROR o.u.docvalidator.ConfigurationLoader - No "validator" block found in the configuration
-22:15:32.675 [main] ERROR o.u.docvalidator.ConfigurationLoader - No "character-table" block found in the configuration
-22:15:32.677 [main] ERROR o.u.docvalidator.ConfigurationLoader - No "configuration" block found in the configuration
-22:15:32.678 [main] ERROR o.u.docvalidator.ConfigurationLoader - Premature end of file.
-22:15:32.678 [main] ERROR o.u.docvalidator.ConfigurationLoader - Failed to parse configuration string
-22:15:32.679 [main] ERROR o.u.docvalidator.ConfigurationLoader - InputStream cannot be null
-22:15:32.679 [main] ERROR o.u.docvalidator.ConfigurationLoader - Failed to parse configuration string
-22:15:32.680 [main] ERROR o.u.docvalidator.ConfigurationLoader - XML document structures must start and end within the same entity.
-22:15:32.680 [main] ERROR o.u.docvalidator.ConfigurationLoader - Failed to parse configuration string
+22:15:36.739 [main] ERROR o.u.d.util.CharacterTableLoader - In parseCharTableString: Premature end of file.
+22:15:36.742 [main] ERROR o.u.d.util.CharacterTableLoader - Failed to parse character table
+22:15:36.744 [main] ERROR o.u.d.util.CharacterTableLoader - In parseCharTableString: Premature end of file.
+22:15:36.744 [main] ERROR o.u.d.util.CharacterTableLoader - Failed to parse character table
+22:15:36.745 [main] ERROR o.u.d.util.CharacterTableLoader - In parseCharTableString: XML document structures must start and end within the same entity.
+22:15:36.746 [main] ERROR o.u.d.util.CharacterTableLoader - Failed to parse character table
+22:15:36.747 [main] ERROR o.u.d.util.CharacterTableLoader - Invalid Node Name "chrcter" exist.
+22:15:36.755 [main] ERROR o.u.d.util.ResultDistributor - Specified output format is null...
+22:15:36.755 [main] ERROR o.u.d.util.ResultDistributor - Output stream is null...
+22:15:36.756 [main] ERROR o.u.d.util.ResultDistributor - Output stream is null...
+22:15:36.778 [main] ERROR o.u.docvalidator.util.FileLoader - Input Stream is null
+22:15:36.788 [main] ERROR o.u.d.u.ValidationConfigurationLoader - XML document structures must start and end within the same entity.
+22:15:36.789 [main] ERROR o.u.d.u.ValidationConfigurationLoader - Failed to parse configuration string
+22:15:36.790 [main] ERROR o.u.d.u.ValidationConfigurationLoader - Premature end of file.
+22:15:36.791 [main] ERROR o.u.d.u.ValidationConfigurationLoader - Failed to parse configuration string
+22:15:36.792 [main] ERROR o.u.d.u.ValidationConfigurationLoader - InputStream cannot be null
+22:15:36.792 [main] ERROR o.u.d.u.ValidationConfigurationLoader - Failed to parse configuration string
+22:15:37.195 [main] ERROR o.u.docvalidator.ConfigurationLoader - No "validator" block found in the configuration
+22:15:37.196 [main] ERROR o.u.docvalidator.ConfigurationLoader - No "character-table" block found in the configuration
+22:15:37.196 [main] ERROR o.u.docvalidator.ConfigurationLoader - No "configuration" block found in the configuration
+22:15:37.197 [main] ERROR o.u.docvalidator.ConfigurationLoader - Premature end of file.
+22:15:37.197 [main] ERROR o.u.docvalidator.ConfigurationLoader - Failed to parse configuration string
+22:15:37.198 [main] ERROR o.u.docvalidator.ConfigurationLoader - InputStream cannot be null
+22:15:37.198 [main] ERROR o.u.docvalidator.ConfigurationLoader - Failed to parse configuration string
+22:15:37.199 [main] ERROR o.u.docvalidator.ConfigurationLoader - XML document structures must start and end within the same entity.
+22:15:37.199 [main] ERROR o.u.docvalidator.ConfigurationLoader - Failed to parse configuration string
