@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.487" tests="82" errors="0" skipped="0" failures="11">
+<testsuite name="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.201" tests="82" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-fdd5f42698649b85c5d1d83c4c0ca9ef304c90a1"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-5dc890c9eab61e810f04484fbedd91231ae6fbd2"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-fdd5f42698649b85c5d1d83c4c0ca9ef304c90a1"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-5dc890c9eab61e810f04484fbedd91231ae6fbd2"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,190 +61,86 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="prematureEOFAfterAnnotationPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.156">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotationPropertyFrame(ManchesterOWLSyntaxEditorParser.java:1457)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1087)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAtEOF(ManchesterOWLSyntaxParserErrorsTestCase.java:588)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.prematureEOFAfterAnnotationPropertyAnnotationsShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:426)
-</failure>
-  </testcase>
+  <testcase name="prematureEOFAfterAnnotationPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.059"/>
   <testcase name="unknownObjectPropertyNameShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="prematureEOFAfterIndividualDifferentFromShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.014"/>
-  <testcase name="prematureEOFAfterDataPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.006"/>
-  <testcase name="prematureEOFAfterRuleAtomShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.011"/>
-  <testcase name="unrecognisedAnnotationPropertyAfterAnnotationPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotationPropertyFrame(ManchesterOWLSyntaxEditorParser.java:1457)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1087)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.unrecognisedAnnotationPropertyAfterAnnotationPropertyAnnotationsShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:433)
-</failure>
-  </testcase>
-  <testcase name="unrecognizedCharacteristicAfterDataPropertyCharacteristicsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.003"/>
-  <testcase name="prematureEOFAfterClassSubClassOfAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="prematureEOFAfterAnnotationPropertyShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.008"/>
-  <testcase name="unknownDataPropertyNameShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.006"/>
-  <testcase name="unrecognizedClassAfterIndividualTypesShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.01"/>
-  <testcase name="unknownClassNameShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterDisjointUnionOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterObjectPropertyShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.012"/>
-  <testcase name="prematureEOFAfterClassHasKeyAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.008"/>
-  <testcase name="prematureEOFAfterClassEquivalentToAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterAnnotationPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.008">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotationPropertyFrame(ManchesterOWLSyntaxEditorParser.java:1457)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1087)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAtEOF(ManchesterOWLSyntaxParserErrorsTestCase.java:588)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.prematureEOFAfterAnnotationPropertySubPropertyOfShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:467)
-</failure>
-  </testcase>
-  <testcase name="prematureEOFAfterIndividualFactsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.008"/>
-  <testcase name="prematureEOFAfterHasKeyShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="unrecognizedPropertyAfterObjectPropertyDisjointWithToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.008"/>
-  <testcase name="unrecognizedIndividualAfterIndividualDifferentFromShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.004"/>
-  <testcase name="prematureEOFAfterObjectPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.006"/>
-  <testcase name="unmarkedVariableInRuleAtomShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.004"/>
-  <testcase name="prematureEOFAfterDisjointWithShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.004"/>
-  <testcase name="prematureEOFAfterSubClassOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.012"/>
-  <testcase name="missingLiteralTypeShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterDataPropertyCharacteristicsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.004"/>
-  <testcase name="prematureEOFAfterClassEquivalentToListShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotatedListItems(ManchesterOWLSyntaxEditorParser.java:2896)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrameSections(ManchesterOWLSyntaxEditorParser.java:1395)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseClassFrame(ManchesterOWLSyntaxEditorParser.java:1320)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseClassFrame(ManchesterOWLSyntaxEditorParser.java:1301)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1072)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAtEOF(ManchesterOWLSyntaxParserErrorsTestCase.java:588)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.prematureEOFAfterClassEquivalentToListShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:164)
-</failure>
-  </testcase>
-  <testcase name="unrecognizedPropertyAfterDataPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.004"/>
-  <testcase name="unknownAnnotationPropertyNameShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.008"/>
-  <testcase name="prematureEOFAfterDataPropertyShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.008"/>
+  <testcase name="prematureEOFAfterIndividualDifferentFromShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.003"/>
+  <testcase name="prematureEOFAfterDataPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="prematureEOFAfterRuleAtomShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.004"/>
+  <testcase name="unrecognisedAnnotationPropertyAfterAnnotationPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unrecognizedCharacteristicAfterDataPropertyCharacteristicsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="prematureEOFAfterClassSubClassOfAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.003"/>
+  <testcase name="prematureEOFAfterAnnotationPropertyShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unknownDataPropertyNameShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unrecognizedClassAfterIndividualTypesShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unknownClassNameShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="prematureEOFAfterDisjointUnionOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.006"/>
+  <testcase name="prematureEOFAfterObjectPropertyShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.01"/>
+  <testcase name="prematureEOFAfterClassHasKeyAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterClassEquivalentToAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.01"/>
+  <testcase name="prematureEOFAfterAnnotationPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="prematureEOFAfterIndividualFactsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.003"/>
+  <testcase name="prematureEOFAfterHasKeyShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognizedPropertyAfterObjectPropertyDisjointWithToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unrecognizedIndividualAfterIndividualDifferentFromShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="prematureEOFAfterObjectPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.007"/>
+  <testcase name="unmarkedVariableInRuleAtomShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
+  <testcase name="prematureEOFAfterDisjointWithShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
+  <testcase name="prematureEOFAfterSubClassOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
+  <testcase name="missingLiteralTypeShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="prematureEOFAfterDataPropertyCharacteristicsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="prematureEOFAfterClassEquivalentToListShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unrecognizedPropertyAfterDataPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unknownAnnotationPropertyNameShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterDataPropertyShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
   <testcase name="unrecognizedCharacteristicAfterObjectPropertyCharacteristicsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
   <testcase name="unrecognizedPropertyAfterObjectPropertyEquivalentToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="unrecognisedAnnotationPropertyAfterDataPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterClassDisjointWithAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.016"/>
-  <testcase name="unrecognizedPropertyAfterDataPropertyEquivalentToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
+  <testcase name="unrecognisedAnnotationPropertyAfterDataPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterClassDisjointWithAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unrecognizedPropertyAfterDataPropertyEquivalentToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
   <testcase name="prematureEOFAfterObjectPropertyCharacteristicsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="unrecognizedPropertyAfterObjectPropertyInverseOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="prematureEOFAfterObjectPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.011"/>
+  <testcase name="unrecognizedPropertyAfterObjectPropertyInverseOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterObjectPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
   <testcase name="unrecognizedPropertyAfterObjectPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterEquivalentToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="unrecognisedPropertyAfterRuleShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="unrecognizedPropertyAfterIndividualFactsNotShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
+  <testcase name="prematureEOFAfterEquivalentToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognisedPropertyAfterRuleShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unrecognizedPropertyAfterIndividualFactsNotShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
   <testcase name="prematureEOFAfterClassAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
   <testcase name="prematureEOFAfterDataPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
   <testcase name="prematureEOFAfterDataPropertyDisjointWithShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="prematureEOFAfterAnnotationPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.003">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotationPropertyFrame(ManchesterOWLSyntaxEditorParser.java:1457)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1087)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAtEOF(ManchesterOWLSyntaxParserErrorsTestCase.java:588)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.prematureEOFAfterAnnotationPropertyRangeShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:453)
-</failure>
-  </testcase>
+  <testcase name="prematureEOFAfterAnnotationPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
   <testcase name="prematureEOFAfterObjectPropertyDisjointWithShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="unrecognizedClassAfterAnnotationPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.005">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotationPropertyFrame(ManchesterOWLSyntaxEditorParser.java:1457)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1087)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.unrecognizedClassAfterAnnotationPropertyRangeShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:460)
-</failure>
-  </testcase>
-  <testcase name="unrecognizedClassAfterObjectPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
+  <testcase name="unrecognizedClassAfterAnnotationPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognizedClassAfterObjectPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
   <testcase name="prematureEOFAfterObjectPropertyInverseOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
-  <testcase name="prematureEOFAfterClassDisjointUnionOfListShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.009"/>
-  <testcase name="prematureEOFAfterObjectPropertySubPropertyChainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterDataPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="unrecognizedClassAfterDataPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.003"/>
-  <testcase name="prematureEOFAfterObjectPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.013"/>
-  <testcase name="unrecognizedClassAfterDataPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="unrecognizedPropertyAfterAnnotationPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotationPropertyFrame(ManchesterOWLSyntaxEditorParser.java:1457)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1087)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.unrecognizedPropertyAfterAnnotationPropertySubPropertyOfShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:474)
-</failure>
-  </testcase>
-  <testcase name="unrecognizedPropertyAfterDataPropertyDisjointWithToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="unknownNamedIndividualShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.014"/>
-  <testcase name="unrecognizedAnnotationPropertyAfterIndividualAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterClassDisjointUnionOfAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterDataPropertyEquivalentToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterClassDisjointWithListShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.016">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotatedListItems(ManchesterOWLSyntaxEditorParser.java:2896)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrameSections(ManchesterOWLSyntaxEditorParser.java:1395)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseClassFrame(ManchesterOWLSyntaxEditorParser.java:1320)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseClassFrame(ManchesterOWLSyntaxEditorParser.java:1301)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1072)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAtEOF(ManchesterOWLSyntaxParserErrorsTestCase.java:588)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.prematureEOFAfterClassDisjointWithListShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:177)
-</failure>
-  </testcase>
-  <testcase name="prematureEOFAfterObjectPropertyEquivalentToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterIndividualFactsNotShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
-  <testcase name="prematureEOFAfterRuleShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="unrecognizedClassAfterAnnotationPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.017">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotationPropertyFrame(ManchesterOWLSyntaxEditorParser.java:1457)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1087)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.unrecognizedClassAfterAnnotationPropertyDomainShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:447)
-</failure>
-  </testcase>
+  <testcase name="prematureEOFAfterClassDisjointUnionOfListShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="prematureEOFAfterObjectPropertySubPropertyChainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterDataPropertyAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognizedClassAfterDataPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterObjectPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="unrecognizedClassAfterDataPropertyRangeShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognizedPropertyAfterAnnotationPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognizedPropertyAfterDataPropertyDisjointWithToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
+  <testcase name="unknownNamedIndividualShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognizedAnnotationPropertyAfterIndividualAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterClassDisjointUnionOfAxiomAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterDataPropertyEquivalentToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterClassDisjointWithListShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterObjectPropertyEquivalentToShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
+  <testcase name="prematureEOFAfterIndividualFactsNotShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.003"/>
+  <testcase name="prematureEOFAfterRuleShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
+  <testcase name="unrecognizedClassAfterAnnotationPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
   <testcase name="unrecognizedPropertyAfterObjectPropertySubPropertyChainOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
-  <testcase name="prematureEOFAfterObjectPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.005"/>
-  <testcase name="prematureEOFInDeclarationShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.005"/>
-  <testcase name="unrecognizedClassAfterObjectPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.005"/>
-  <testcase name="prematureEOFAfterDataPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="unrecognizedPropertyAfterIndividualFactsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.011"/>
-  <testcase name="unrecognizedIndividualAfterIndividualSameAsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="unknownDatatypeNameShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterIndividualSameAsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.005"/>
+  <testcase name="prematureEOFAfterObjectPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFInDeclarationShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognizedClassAfterObjectPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterDataPropertySubPropertyOfShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognizedPropertyAfterIndividualFactsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unrecognizedIndividualAfterIndividualSameAsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="unknownDatatypeNameShouldCauseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterIndividualSameAsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
   <testcase name="prematureEOFAfterIndividualTypesShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.002"/>
-  <testcase name="unclosedLiteralShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0"/>
-  <testcase name="prematureEOFAfterIndividualAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.008"/>
-  <testcase name="prematureEOFAfterClassSubClassOfListShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotatedListItems(ManchesterOWLSyntaxEditorParser.java:2896)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrameSections(ManchesterOWLSyntaxEditorParser.java:1395)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseClassFrame(ManchesterOWLSyntaxEditorParser.java:1320)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseClassFrame(ManchesterOWLSyntaxEditorParser.java:1301)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1072)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAtEOF(ManchesterOWLSyntaxParserErrorsTestCase.java:588)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.prematureEOFAfterClassSubClassOfListShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:151)
-</failure>
-  </testcase>
-  <testcase name="prematureEOFAfterAnnotationPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseAnnotationPropertyFrame(ManchesterOWLSyntaxEditorParser.java:1457)
-	at org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser.parseFrames(ManchesterOWLSyntaxEditorParser.java:1087)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase$ParserWrapper.parse(ManchesterOWLSyntaxParserErrorsTestCase.java:604)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAt(ManchesterOWLSyntaxParserErrorsTestCase.java:577)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.checkForExceptionAtEOF(ManchesterOWLSyntaxParserErrorsTestCase.java:588)
-	at org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase.prematureEOFAfterAnnotationPropertyDomainShouldCauseParseException(ManchesterOWLSyntaxParserErrorsTestCase.java:440)
-</failure>
-  </testcase>
+  <testcase name="unclosedLiteralShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterIndividualAnnotationsShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterClassSubClassOfListShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
+  <testcase name="prematureEOFAfterAnnotationPropertyDomainShouldCauseParseException" classname="org.semanticweb.owlapi.api.test.syntax.ManchesterOWLSyntaxParserErrorsTestCase" time="0.001"/>
 </testsuite>

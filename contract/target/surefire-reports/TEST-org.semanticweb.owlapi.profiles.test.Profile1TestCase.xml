@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.484" tests="174" errors="0" skipped="1" failures="0">
+<testsuite name="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.314" tests="174" errors="0" skipped="1" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-fdd5f42698649b85c5d1d83c4c0ca9ef304c90a1"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-5dc890c9eab61e810f04484fbedd91231ae6fbd2"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-fdd5f42698649b85c5d1d83c4c0ca9ef304c90a1"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-5dc890c9eab61e810f04484fbedd91231ae6fbd2"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,180 +61,180 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testTestCase3AWebOnt2DI462D0052DDirect" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dhasvalue2Dinst2Dsubj" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.007"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dbool2Dunion2Dterm" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Drange2Dcond" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Dsubprop2Dtrans" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dsymmetric2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dmaxcard2Dinst2Dobj2Done" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testTestCase3AWebOnt2DI462D0052DDirect" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dhasvalue2Dinst2Dsubj" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dbool2Dunion2Dterm" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Drange2Dcond" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Dsubprop2Dtrans" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dsymmetric2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dmaxcard2Dinst2Dobj2Done" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_New2DFeature2DNegativeDataPropertyAssertion2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqprop2Drflxv" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqprop2Dsubst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_New2DFeature2DKeys2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.01"/>
-  <testcase name="testURIResolver_New2DFeature2DKeys2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_New2DFeature2DKeys2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_New2DFeature2DKeys2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
   <testcase name="testURIResolver_New2DFeature2DKeys2D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_New2DFeature2DKeys2D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.013"/>
+  <testcase name="testURIResolver_New2DFeature2DKeys2D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
   <testcase name="testURIResolver_New2DFeature2DKeys2D005" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_New2DFeature2DKeys2D006" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
-  <testcase name="testURIResolver_New2DFeature2DKeys2D007" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_New2DFeature2DIrreflexiveProperty2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.01"/>
+  <testcase name="testURIResolver_New2DFeature2DKeys2D006" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_New2DFeature2DKeys2D007" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_New2DFeature2DIrreflexiveProperty2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dsomevalues2Dcmp2Dprop" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_TestCase3AWebOnt2Dmiscellaneous2D204" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_TestCase3AWebOnt2Dmiscellaneous2D204" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Owl22Drl2Dvalid2Drightside2Dallvaluesfrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_New2DFeature2DObjectPropertyChain2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.007"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Dsubclass2Dcond" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqclass2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dmincard" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_New2DFeature2DNegativeObjectPropertyAssertion2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_Inconsistent2Dinteger2Dfiller" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_New2DFeature2DObjectPropertyChain2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Dsubclass2Dcond" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqclass2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dmincard" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_New2DFeature2DNegativeObjectPropertyAssertion2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Inconsistent2Dinteger2Dfiller" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dbool2Dintersection2Dterm" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Denum2Dinst2Dincluded" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dmaxqcr2Dinst2Dobj2Dzero" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqclass2Dsym" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0">
     <skipped message="An ontology missing the &lt;Ontology&gt; tag is not a valid ontology, but the current OWLOntology interface does not allow the profile checkers to know."/>
   </testcase>
-  <testcase name="testURIResolver_TestCase3AWebOnt2Ddescription2Dlogic2D104" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.011"/>
-  <testcase name="testURIResolver_TestCase3AWebOnt2Ddescription2Dlogic2D901" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_TestCase3AWebOnt2Ddescription2Dlogic2D104" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_TestCase3AWebOnt2Ddescription2Dlogic2D901" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_TestCase3AWebOnt2Ddescription2Dlogic2D902" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testTestCase3AWebOnt2DI5212D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.011"/>
+  <testcase name="testTestCase3AWebOnt2DI5212D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Drdfsext2Drange2Dsubprop" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Inconsistent2Dbyte2Dfiller" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_Datacomplement2Dplus2Drestrictions" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Dsubprop2Dcond" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.007"/>
+  <testcase name="testURIResolver_Inconsistent2Dbyte2Dfiller" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Datacomplement2Dplus2Drestrictions" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Dsubprop2Dcond" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testTestCase3AWebOnt2DI5242D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testTestCase3AWebOnt2DI5242D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_New2DFeature2DAsymmetricProperty2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_Owl22Drl2Drules2Dfp2DdifferentFrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Datatype2DFloat2DDiscrete2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.009"/>
-  <testcase name="testTestCase3AWebOnt2DI5262D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testTestCase3AWebOnt2DI5262D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testTestCase3AWebOnt2DI5262D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testTestCase3AWebOnt2DI5262D005" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testTestCase3AWebOnt2DI5242D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_New2DFeature2DAsymmetricProperty2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Owl22Drl2Drules2Dfp2DdifferentFrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Datatype2DFloat2DDiscrete2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
+  <testcase name="testTestCase3AWebOnt2DI5262D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testTestCase3AWebOnt2DI5262D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testTestCase3AWebOnt2DI5262D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testTestCase3AWebOnt2DI5262D005" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testTestCase3AWebOnt2DI5262D009" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testTestCase3AWebOnt2DI5262D010" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqclass2Dsubst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqclass2Dsubst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dinversefunc2Ddata" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dinversefunc2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dleftside2Dallvaluesfrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Contradicting2DdateTime2Drestrictions" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.01"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dsomevalues2Dcmp2Dclass" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
-  <testcase name="testURIResolver_String2Dinteger2Dclash" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dleftside2Dallvaluesfrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Contradicting2DdateTime2Drestrictions" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dsomevalues2Dcmp2Dclass" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_String2Dinteger2Dclash" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dallvalues2Dcmp2Dclass" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Datatype2Drestriction2Dmin2Dmax2Dinconsistency" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_Datatype2Drestriction2Dmin2Dmax2Dinconsistency" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Contradicting2Ddatatype2Drestrictions" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dsomevalues2Dinst2Dsubj" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqprop2Dsubprop2D2" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dasymmetric2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dsomevalues2Dinst2Dsubj" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqprop2Dsubprop2D2" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dasymmetric2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dasymmetric2Dterm" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Inconsistent_datatypes" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Functionality2Dclash" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Drightside2Dsomevaluesfrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_Functionality2Dclash" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Drightside2Dsomevaluesfrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisclass2Dirrflxv" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dhasvalue2Dinst2Dobj" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_TestCase3AWebOnt2DunionOf2D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_TestCase3AWebOnt2DunionOf2D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_TestCase3AWebOnt2DunionOf2D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_TestCase3AWebOnt2DunionOf2D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testTestCase3AWebOnt2DI452D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testTestCase3AWebOnt2DI452D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_New2DFeature2DDisjointObjectProperties2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_New2DFeature2DDisjointObjectProperties2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
+  <testcase name="testTestCase3AWebOnt2DI452D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_New2DFeature2DDisjointObjectProperties2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_New2DFeature2DDisjointObjectProperties2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dndis2Dalldisjointclasses2Dfw" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testTestCase3AWebOnt2DI462D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Dsubclass2Dtrans" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Dsubclass2Dtrans" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dbool2Dunion2Dinst2Dcomp" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dhasvalue2Dcmp2Dprop" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dhasvalue2Dcmp2Dprop" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dbool2Dintersection2Dinst2Dcomp" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dbool2Dintersection2Dinst2Dexpr" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dndis2Dalldisjointproperties2Dfw" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_New2DFeature2DReflexiveProperty2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Ddomain2Dcond" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_New2DFeature2DReflexiveProperty2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfs2Ddomain2Dcond" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_New2DFeature2DObjectPropertyChain2DBJP2D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_New2DFeature2DObjectPropertyChain2DBJP2D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dtransitive2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dfunctional2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Chain2trans" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Plus2Dand2Dminus2D02Dintegers" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dmaxqcr2Dinst2Dobj2Done" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisclass2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfsext2Drange2Dsuperclass" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_New2DFeature2DSelfRestriction2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_New2DFeature2DSelfRestriction2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dleftside2Dmaxcard" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisclass2Deqclass" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_New2DFeature2DObjectPropertyChain2DBJP2D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dtransitive2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dfunctional2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.016"/>
+  <testcase name="testURIResolver_Chain2trans" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Plus2Dand2Dminus2D02Dintegers" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dmaxqcr2Dinst2Dobj2Done" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisclass2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drdfsext2Drange2Dsuperclass" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_New2DFeature2DSelfRestriction2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_New2DFeature2DSelfRestriction2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dleftside2Dmaxcard" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisclass2Deqclass" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_TestCase3AWebOnt2DOntology2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_DisjointClasses2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_DisjointClasses2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.008"/>
+  <testcase name="testURIResolver_DisjointClasses2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_DisjointClasses2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
   <testcase name="testURIResolver_DisjointClasses2D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_TestCase3AWebOnt2DAnnotationProperty2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_TestCase3AWebOnt2DAnnotationProperty2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_TestCase3AWebOnt2DAnnotationProperty2D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_TestCase3AWebOnt2DAnnotationProperty2D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Dsameas2Drflxv" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Dsameas2Dsubst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Dsameas2Dtrans" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Dsameas2Drflxv" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Dsameas2Dsubst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Dsameas2Dtrans" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddifferent2Dirrflxv" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisprop2Deqprop" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisprop2Deqprop" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Owl22Drl2Dvalid2Doneof" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testTestCase3AWebOnt2DI522D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testTestCase3AWebOnt2DI522D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testTestCase3AWebOnt2DI522D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testTestCase3AWebOnt2DI522D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testTestCase3AWebOnt2DI522D005" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testTestCase3AWebOnt2DI522D006" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.025"/>
+  <testcase name="testTestCase3AWebOnt2DI522D004" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testTestCase3AWebOnt2DI522D005" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testTestCase3AWebOnt2DI522D006" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dallvalues2Dinst2Dobj" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisprop2Dirrflxv" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
-  <testcase name="testTestCase3AWebOnt2DI532D006" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testTestCase3AWebOnt2DI532D008" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisprop2Dirrflxv" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testTestCase3AWebOnt2DI532D006" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testTestCase3AWebOnt2DI532D008" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testTestCase3AWebOnt2DI532D010" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testTestCase3AWebOnt2DI532D011" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testTestCase3AWebOnt2DI532D011" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_TestCase3AWebOnt2DSymmetricProperty2D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testTestCase3AWebOnt2DI552D005" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testTestCase3AWebOnt2DI582D006" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testTestCase3AWebOnt2DI582D007" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testTestCase3AWebOnt2DI582D007" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testTestCase3AWebOnt2DI582D008" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testTestCase3AWebOnt2DI582D009" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testTestCase3AWebOnt2DI582D010" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testTestCase3AWebOnt2DI582D009" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testTestCase3AWebOnt2DI582D010" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Bnode2somevaluesfrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Consistent2Dinteger2Dfiller" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_Consistent2Dinteger2Dfiller" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Drdfsext2Ddomain2Dsuperclass" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_New2DFeature2DRational2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
-  <testcase name="testURIResolver_New2DFeature2DRational2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
-  <testcase name="testURIResolver_New2DFeature2DRational2D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
-  <testcase name="testURIResolver_Owl22Drl2Danonymous2Dindividual" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dallvalues2Dcmp2Dprop" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dndis2Dalldifferent2Dfw2Ddistinctmembers" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Doneof" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dowlreal" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dclass2Dnothing2Dterm" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqprop2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dndis2Dalldifferent2Dfw" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_New2DFeature2DRational2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_New2DFeature2DRational2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_New2DFeature2DRational2D003" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_Owl22Drl2Danonymous2Dindividual" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dallvalues2Dcmp2Dprop" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dndis2Dalldifferent2Dfw2Ddistinctmembers" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Doneof" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dowlreal" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dclass2Dnothing2Dterm" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqprop2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dndis2Dalldifferent2Dfw" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Ddisprop2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dinv2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_TestCase3AWebOnt2DRestriction2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_TestCase3AWebOnt2DRestriction2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_TestCase3AWebOnt2DRestriction2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dkey2Ddef" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.005"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dkey2Ddef" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Drdfsext2Ddomain2Dsubprop" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_New2DFeature2DObjectQCR2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.006"/>
-  <testcase name="testURIResolver_New2DFeature2DObjectQCR2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.008"/>
-  <testcase name="testURIResolver_Plus2Dminus2D02Dplus2Ddisjointness" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.006"/>
-  <testcase name="testURIResolver_New2DFeature2DDisjointUnion2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dnpa2Ddat2Dfw" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_New2DFeature2DDisjointDataProperties2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_New2DFeature2DObjectQCR2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_New2DFeature2DObjectQCR2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
+  <testcase name="testURIResolver_Plus2Dminus2D02Dplus2Ddisjointness" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_New2DFeature2DDisjointUnion2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dnpa2Ddat2Dfw" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_New2DFeature2DDisjointDataProperties2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
   <testcase name="testURIResolver_New2DFeature2DDisjointDataProperties2D002" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.004"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dmaxcard2Dinst2Dobj2Dzero" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Consistent2Ddataproperty2Ddisjointness" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Drestrict2Dmaxcard2Dinst2Dobj2Dzero" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Consistent2Ddataproperty2Ddisjointness" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Minus2Dinf2Dnot2Dowlreal" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testURIResolver_Different2Dtypes2Dplus2Dcomplement" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Owl22Drl2Drules2Difp2DdifferentFrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_TestCase3AWebOnt2DInverseFunctionalProperty2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dunionof" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Dsameas2Dsym" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dirreflexive2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Datatype2Drestrictions2Ddifferent2Dtypes" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.007"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dbool2Dcomplement2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Dchain2Ddef" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
-  <testcase name="testSpecialURIResolverTestCase3AWebOnt2DI522D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Different2Dtypes2Dplus2Dcomplement" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.003"/>
+  <testcase name="testURIResolver_Owl22Drl2Drules2Difp2DdifferentFrom" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_TestCase3AWebOnt2DInverseFunctionalProperty2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
+  <testcase name="testURIResolver_Owl22Drl2Dinvalid2Dunionof" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Dsameas2Dsym" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.008"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dchar2Dirreflexive2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Datatype2Drestrictions2Ddifferent2Dtypes" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dbool2Dcomplement2Dinst" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Dchain2Ddef" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0"/>
+  <testcase name="testSpecialURIResolverTestCase3AWebOnt2DI522D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Owl22Drl2Dinvalid2Drightside2Dunionof" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_TestCase3AWebOnt2DequivalentClass2D006" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
   <testcase name="testURIResolver_Datatype2DDataComplementOf2D001" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
-  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqclass2Dsubclass2D2" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
+  <testcase name="testURIResolver_Rdfbased2Dsem2Deqdis2Deqclass2Dsubclass2D2" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.002"/>
   <testcase name="testURIResolver_Rdfbased2Dsem2Dnpa2Dind2Dfw" classname="org.semanticweb.owlapi.profiles.test.Profile1TestCase" time="0.001"/>
 </testsuite>

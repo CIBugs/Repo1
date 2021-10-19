@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.semanticweb.owlapi.model.XSDVocabularyTestCase
 -------------------------------------------------------------------------------
-Tests run: 92, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.semanticweb.owlapi.model.XSDVocabularyTestCase
+Tests run: 92, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec - in org.semanticweb.owlapi.model.XSDVocabularyTestCase

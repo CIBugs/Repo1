@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.semanticweb.owlapi.api.test.axioms.DeclarationsTestCase
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in org.semanticweb.owlapi.api.test.axioms.DeclarationsTestCase

@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.semanticweb.owlapi.profiles.test.Profile1TestCase
--------------------------------------------------------------------------------
-Tests run: 174, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.574 sec - in org.semanticweb.owlapi.profiles.test.Profile1TestCase

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.01" tests="138" errors="0" skipped="0" failures="0">
+<testsuite name="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.065" tests="138" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-fdd5f42698649b85c5d1d83c4c0ca9ef304c90a1"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-5dc890c9eab61e810f04484fbedd91231ae6fbd2"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-fdd5f42698649b85c5d1d83c4c0ca9ef304c90a1"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-5dc890c9eab61e810f04484fbedd91231ae6fbd2"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,11 +61,11 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[0]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[0]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.004"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[0]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[1]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[1]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[1]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[2]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[2]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.002"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[2]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[3]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[3]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
@@ -74,7 +74,7 @@
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[5]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[5]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[6]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[6]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[6]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[7]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[7]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[8]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
@@ -83,28 +83,28 @@
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[9]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[10]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[10]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[11]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[11]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[11]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.008"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[11]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[12]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[12]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[13]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[13]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[13]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[13]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.004"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[14]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[14]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[15]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[15]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[14]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.002"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[15]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[15]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[16]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[16]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[17]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[17]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[18]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[18]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[18]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[18]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.013"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[19]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[19]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[20]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[20]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[21]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[21]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[21]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[22]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[22]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[23]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
@@ -113,7 +113,7 @@
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[24]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[25]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[25]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[26]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[26]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.007"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[26]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[27]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[27]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
@@ -121,18 +121,18 @@
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[28]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[29]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[29]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[30]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[30]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[30]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[31]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[31]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[32]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[32]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[33]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[33]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[33]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[34]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[34]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[35]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[35]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[35]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[36]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[36]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[37]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
@@ -145,20 +145,20 @@
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[40]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[41]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[41]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[42]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[42]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[42]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[43]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[43]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[44]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[44]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[45]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[45]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[45]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[46]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[46]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[47]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[47]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[48]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[48]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[48]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.013"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[49]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[49]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[50]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
@@ -166,13 +166,13 @@
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[51]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[51]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[52]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[52]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[53]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[52]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[53]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[53]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[54]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[54]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[54]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[55]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[55]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[55]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[56]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[56]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[57]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
@@ -180,18 +180,18 @@
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[58]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[58]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[59]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[59]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[59]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[60]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[60]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[61]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[61]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[62]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[62]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[62]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[63]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[63]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[64]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[64]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[65]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[65]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[65]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithSWRLBuiltInsPrefix[66]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithSWRLBuiltInsPrefixName[66]" classname="org.semanticweb.owlapi.model.SWRLBuiltInsVocabularyTestCase" time="0"/>

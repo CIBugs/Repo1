@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.semanticweb.owlapi.api.test.syntax.TestParser08TestCase
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec - in org.semanticweb.owlapi.api.test.syntax.TestParser08TestCase
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.semanticweb.owlapi.api.test.syntax.TestParser08TestCase
