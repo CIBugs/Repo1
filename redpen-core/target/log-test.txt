@@ -1,3 +1,3 @@
-22:04:47.864 [main] ERROR cc.redpen.util.DictionaryLoader - Failed to load input default-resources/invalid-word/invalid-word-ja.dat
-22:04:48.205 [main] ERROR cc.redpen.ConfigurationLoader - There is no validator-list block
-22:04:48.283 [main] ERROR cc.redpen.ConfigurationLoader - There is no validator-list block
+22:04:53.318 [main] ERROR cc.redpen.util.DictionaryLoader - Failed to load input default-resources/invalid-word/invalid-word-ja.dat
+22:04:53.422 [main] ERROR cc.redpen.ConfigurationLoader - There is no validator-list block
+22:04:53.438 [main] ERROR cc.redpen.ConfigurationLoader - There is no validator-list block

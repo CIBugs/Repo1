@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="25" failures="0" name="cc.redpen.parser.SentenceExtractorTest" time="0.027" errors="0" skipped="0">
+<testsuite tests="25" failures="0" name="cc.redpen.parser.SentenceExtractorTest" time="0.01" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/redpen-12dd7c558c3cfc80800dd4005207b3b20ccf937d"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/redpen-6ca46a8442054c8fe3f1cd5d890eb2dd84075deb"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/redpen-12dd7c558c3cfc80800dd4005207b3b20ccf937d"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/redpen-6ca46a8442054c8fe3f1cd5d890eb2dd84075deb"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -62,29 +62,29 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJapanesSentenceWithEndWithNonFullStop" time="0"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testSentenceWithWhiteWordPosition" time="0"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesWithWhiteWordPosition" time="0.001"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testVoidLine" time="0.001"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJustPeriodLine" time="0.005"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testConstructPatternStringWithoutEscape" time="0.001"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testThrowExceptionGivenVoidList" time="0.001"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testThrowExceptionGivenNull" time="0.009"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJustPeriodLine" time="0.001"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testConstructPatternStringWithoutEscape" time="0.002"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testThrowExceptionGivenVoidList" time="0"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testThrowExceptionGivenNull" time="0"/>
   <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testSimple" time="0"/>
   <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentences" time="0"/>
   <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testTwoSentencesWithDifferentStopCharacters" time="0"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesWithoutPeriodInTheEnd" time="0"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesWithoutPeriodInTheEnd" time="0.001"/>
   <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testEndWithDoubleQuotation" time="0"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testEndWithSingleQuotation" time="0"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testEndWithDoubleQuotationEnglishVersion" time="0.001"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testEndWithSingleQuotationEnglishVersion" time="0.002"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesOneOfThemIsEndWithDoubleQuotation" time="0.001"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testEndWithSingleQuotation" time="0.002"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testEndWithDoubleQuotationEnglishVersion" time="0"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testEndWithSingleQuotationEnglishVersion" time="0"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesOneOfThemIsEndWithDoubleQuotation" time="0"/>
   <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesWithPartialSplit" time="0"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesWithSplitInEndOfSentence" time="0"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesWithPartialSentence" time="0.002"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesWithSplitInEndOfSentence" time="0.001"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesWithPartialSentence" time="0"/>
   <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJapaneseSimple" time="0"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJapaneseSimpleWithSpace" time="0.001"/>
-  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJapaneseSimpleWithEndQuotations" time="0.001"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJapaneseSimpleWithSpace" time="0"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJapaneseSimpleWithEndQuotations" time="0"/>
   <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJapaneseMultipleSentencesWithEndQuotations" time="0"/>
   <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJapaneseMultipleSentencesWithPartialSplit" time="0.001"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testJapanesSentenceWithEndWithNonFullStop" time="0"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testSentenceWithWhiteWordPosition" time="0.001"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testMultipleSentencesWithWhiteWordPosition" time="0"/>
+  <testcase classname="cc.redpen.parser.SentenceExtractorTest" name="testVoidLine" time="0.001"/>
 </testsuite>
