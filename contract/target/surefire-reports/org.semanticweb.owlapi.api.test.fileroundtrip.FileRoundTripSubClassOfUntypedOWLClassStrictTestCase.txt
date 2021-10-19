@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.semanticweb.owlapi.api.test.fileroundtrip.FileRoundTripSubClassOfUntypedOWLClassStrictTestCase
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.818 sec - in org.semanticweb.owlapi.api.test.fileroundtrip.FileRoundTripSubClassOfUntypedOWLClassStrictTestCase

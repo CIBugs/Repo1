@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.428" tests="39" errors="1" skipped="0" failures="0">
+<testsuite name="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="1.09" tests="39" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-a77ee9c4fded63ebc7af16e357b8cb32b638f8cd"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-a77ee9c4fded63ebc7af16e357b8cb32b638f8cd"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,83 +61,43 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="shouldBuildObjectPropertyDomain" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.14"/>
-  <testcase name="shouldBuildHasKey" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.107">
-    <error message="uk.ac.manchester.cs.owl.owlapi.OWLObjectPropertyImplis not an OWLObjectPropertyExpression" type="java.lang.ClassCastException">java.lang.ClassCastException: uk.ac.manchester.cs.owl.owlapi.OWLObjectPropertyImplis not an OWLObjectPropertyExpression
-	at org.semanticweb.owlapi.model.OWLPropertyExpression.asObjectPropertyExpression(OWLPropertyExpression.java:75)
-	at org.semanticweb.owlapi.model.OWLHasKeyAxiom.lambda$objectPropertyExpressions$1(OWLHasKeyAxiom.java:94)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485)
-	at org.semanticweb.owlapi.util.StructureWalker.visit(StructureWalker.java:456)
-	at org.semanticweb.owlapi.model.OWLHasKeyAxiom.accept(OWLHasKeyAxiom.java:133)
-	at org.semanticweb.owlapi.util.StructureWalker.lambda$visit$1(StructureWalker.java:155)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.util.Collections$2.tryAdvance(Collections.java:4719)
-	at java.util.Collections$2.forEachRemaining(Collections.java:4727)
-	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:647)
-	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:272)
-	at java.util.Iterator.forEachRemaining(Iterator.java:116)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485)
-	at org.semanticweb.owlapi.util.StructureWalker.visit(StructureWalker.java:155)
-	at org.semanticweb.owlapi.model.OWLOntology.accept(OWLOntology.java:582)
-	at org.semanticweb.owlapi.util.OWLObjectWalker.lambda$walkStructure$1(OWLObjectWalker.java:118)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.semanticweb.owlapi.util.OWLObjectWalker.walkStructure(OWLObjectWalker.java:118)
-	at org.semanticweb.owlapi.profiles.OWL2Profile.checkOntology(OWL2Profile.java:77)
-	at org.semanticweb.owlapi.profiles.OWL2DLProfile.checkOntology(OWL2DLProfile.java:137)
-	at org.semanticweb.owlapitools.builders.BaseBuilder.applyChanges(BaseBuilder.java:117)
-	at org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase.checkAxiom(BuildersOntologyTestCase.java:488)
-	at org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase.shouldBuildHasKey(BuildersOntologyTestCase.java:301)
-</error>
-  </testcase>
-  <testcase name="shouldBuildDatatypeDefinition" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.037"/>
-  <testcase name="shouldBuildReflexiveObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
-  <testcase name="shouldBuildPropertyChain" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.032"/>
-  <testcase name="shouldBuildSubDataProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.003"/>
-  <testcase name="shouldBuildDisjointUnion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.012"/>
-  <testcase name="shouldBuildDisjointObjectProperties" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.017"/>
-  <testcase name="shouldBuildSWRLRule" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.023"/>
-  <testcase name="shouldBuildNegativeDataPropertyAssertion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.002"/>
+  <testcase name="shouldBuildObjectPropertyDomain" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.456"/>
+  <testcase name="shouldBuildHasKey" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.458"/>
+  <testcase name="shouldBuildDatatypeDefinition" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.03"/>
+  <testcase name="shouldBuildReflexiveObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.002"/>
+  <testcase name="shouldBuildPropertyChain" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.028"/>
+  <testcase name="shouldBuildSubDataProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.009"/>
+  <testcase name="shouldBuildDisjointUnion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.003"/>
+  <testcase name="shouldBuildDisjointObjectProperties" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.007"/>
+  <testcase name="shouldBuildSWRLRule" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.004"/>
+  <testcase name="shouldBuildNegativeDataPropertyAssertion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildDeclaration" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
-  <testcase name="shouldBuildDisjointClasses" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.007"/>
-  <testcase name="shouldBuildSubAnnotationPropertyOf" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.002"/>
+  <testcase name="shouldBuildDisjointClasses" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.005"/>
+  <testcase name="shouldBuildSubAnnotationPropertyOf" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.005"/>
   <testcase name="shouldBuildEquivalentObjectProperties" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.003"/>
-  <testcase name="shouldBuildAnnotationAssertion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildSubObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
+  <testcase name="shouldBuildAnnotationAssertion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildFunctionalObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildNegativeObjectPropertyAssertion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildSubClass" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildTransitiveObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildInverseObjectProperties" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
-  <testcase name="shouldBuildAnnotationPropertyRange" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
-  <testcase name="shouldBuildDataPropertyRange" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.002"/>
-  <testcase name="shouldBuildObjectPropertyRange" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.005"/>
+  <testcase name="shouldBuildAnnotationPropertyRange" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.017"/>
+  <testcase name="shouldBuildDataPropertyRange" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.006"/>
+  <testcase name="shouldBuildObjectPropertyRange" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.008"/>
   <testcase name="shouldBuildObjectPropertyAssertion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
-  <testcase name="shouldBuildAsymmetricObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.002"/>
+  <testcase name="shouldBuildAsymmetricObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.005"/>
   <testcase name="shouldBuildSymmetricObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildIrreflexiveObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.002"/>
-  <testcase name="shouldBuildFunctionalDataProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildAnnotationPropertyDomain" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildDataPropertyAssertion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
-  <testcase name="shouldBuildDifferentIndividuals" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.003"/>
+  <testcase name="shouldBuildFunctionalDataProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
+  <testcase name="shouldBuildDifferentIndividuals" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.005"/>
   <testcase name="shouldBuildDataPropertyDomain" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
-  <testcase name="shouldBuildEquivalentClasses" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.003"/>
+  <testcase name="shouldBuildEquivalentClasses" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.008"/>
   <testcase name="shouldBuildInverseFunctionalObjectProperty" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.002"/>
   <testcase name="shouldBuildDisjointDataProperties" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.003"/>
   <testcase name="shouldBuildClassAssertion" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.001"/>
   <testcase name="shouldBuildSameIndividual" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.002"/>
-  <testcase name="shouldBuildEquivalentDataProperties" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.002"/>
+  <testcase name="shouldBuildEquivalentDataProperties" classname="org.semanticweb.owlapitools.builders.test.BuildersOntologyTestCase" time="0.006"/>
 </testsuite>

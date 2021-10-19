@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.semanticweb.owlapi.api.test.annotations.AnnotatedPunningTestCase
+-------------------------------------------------------------------------------
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.028 sec - in org.semanticweb.owlapi.api.test.annotations.AnnotatedPunningTestCase

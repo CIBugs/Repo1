@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase
 -------------------------------------------------------------------------------
-Tests run: 179, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.993 sec - in uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase
+Tests run: 179, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.929 sec - in uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase

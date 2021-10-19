@@ -1,0 +1,4 @@
+org/semanticweb/owlapi/io/LoadXZOntologyViaHTTPIntegrationTestCase.class
+org/coode/owlapi/obo12/LoadCellTestCase.class
+org/semanticweb/owlapi/api/test/VerifyVersionInfoIntegrationTestCase.class
+org/semanticweb/owlapi/BundleIsLoadableIntegrationTestCase.class

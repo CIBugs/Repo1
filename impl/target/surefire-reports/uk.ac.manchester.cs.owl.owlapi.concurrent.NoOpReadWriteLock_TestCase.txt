@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: uk.ac.manchester.cs.owl.owlapi.concurrent.NoOpReadWriteLock_TestCase
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in uk.ac.manchester.cs.owl.owlapi.concurrent.NoOpReadWriteLock_TestCase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 sec - in uk.ac.manchester.cs.owl.owlapi.concurrent.NoOpReadWriteLock_TestCase

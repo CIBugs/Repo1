@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.993" tests="179" errors="0" skipped="0" failures="0">
+<testsuite name="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.929" tests="179" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-a77ee9c4fded63ebc7af16e357b8cb32b638f8cd"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-a77ee9c4fded63ebc7af16e357b8cb32b638f8cd"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,182 +61,182 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="shouldDelegateTo_containsIndividualInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.307"/>
-  <testcase name="shouldDelegateTo_containsIndividualInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
-  <testcase name="shouldDelegateTo_getLogicalAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getObjectPropertyAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getDataPropertiesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getDataPropertiesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.006"/>
-  <testcase name="shouldDelegateTo_getDatatypesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
-  <testcase name="shouldDelegateTo_getDatatypesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.01"/>
-  <testcase name="shouldDelegateTo_isDeclared_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_containsIndividualInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.275"/>
+  <testcase name="shouldDelegateTo_containsIndividualInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.007"/>
+  <testcase name="shouldDelegateTo_getLogicalAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
+  <testcase name="shouldDelegateTo_getObjectPropertyAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getDataPropertiesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.007"/>
+  <testcase name="shouldDelegateTo_getDataPropertiesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getDatatypesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getDatatypesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.005"/>
+  <testcase name="shouldDelegateTo_isDeclared_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.011"/>
   <testcase name="shouldDelegateTo_saveOntology_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_saveOntology_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.018"/>
+  <testcase name="shouldDelegateTo_saveOntology_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.01"/>
   <testcase name="shouldDelegateTo_saveOntology_withReadLock_4" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_saveOntology_withReadLock_5" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_saveOntology_withReadLock_5" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_saveOntology_withReadLock_6" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_saveOntology_withReadLock_7" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_saveOntology_withReadLock_8" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
-  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getReferencedAnonymousIndividuals_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAnnotationPropertiesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_saveOntology_withReadLock_7" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_saveOntology_withReadLock_8" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.013"/>
+  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getReferencedAnonymousIndividuals_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.016"/>
+  <testcase name="shouldDelegateTo_getAnnotationPropertiesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.011"/>
   <testcase name="shouldDelegateTo_getAnnotationPropertiesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getLogicalAxioms_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getLogicalAxioms_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getHasKeyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getLogicalAxioms_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.004"/>
+  <testcase name="shouldDelegateTo_getLogicalAxioms_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
+  <testcase name="shouldDelegateTo_getHasKeyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.01"/>
   <testcase name="shouldDelegateTo_getReferencingAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_10" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_11" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_12" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_13" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_14" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.016"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_15" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_16" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.004"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_10" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_11" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_12" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_13" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.008"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_14" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.018"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_15" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_16" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getAxioms_withReadLock_17" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_18" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.011"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_19" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_20" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_21" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_22" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.006"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_23" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_24" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.005"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_18" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_19" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_20" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_21" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.005"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_22" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_23" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_24" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getAxioms_withReadLock_25" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.004"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_26" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
-  <testcase name="shouldDelegateTo_getDataSubPropertyAxiomsForSuperProperty_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxiomCount_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_26" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.006"/>
+  <testcase name="shouldDelegateTo_getDataSubPropertyAxiomsForSuperProperty_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
+  <testcase name="shouldDelegateTo_getAxiomCount_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.008"/>
   <testcase name="shouldDelegateTo_getAxiomCount_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxiomCount_withReadLock_4" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxiomCount_withReadLock_5" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.004"/>
+  <testcase name="shouldDelegateTo_getAxiomCount_withReadLock_4" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getAxiomCount_withReadLock_5" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getAxiomCount_withReadLock_6" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getDifferentIndividualAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getImports_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.004"/>
-  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock_4" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getDifferentIndividualAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getImports_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock_4" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock_5" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock_6" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.009"/>
-  <testcase name="shouldDelegateTo_getDataPropertiesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getClassAssertionAxioms_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.01"/>
-  <testcase name="shouldDelegateTo_containsAxiom_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.33"/>
+  <testcase name="shouldDelegateTo_containsEntityInSignature_withReadLock_6" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getDataPropertiesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getClassAssertionAxioms_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_containsAxiom_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
   <testcase name="shouldDelegateTo_getAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getDisjointClassesAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getObjectPropertyRangeAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getImportsDeclarations_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getDisjointClassesAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getObjectPropertyRangeAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getImportsDeclarations_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getDisjointObjectPropertiesAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_isAnonymous_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsDatatypeInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.009"/>
+  <testcase name="shouldDelegateTo_isAnonymous_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_containsDatatypeInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
   <testcase name="shouldDelegateTo_containsAxiomIgnoreAnnotations_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getDataPropertyRangeAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getDataPropertyRangeAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getRBoxAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsClassInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.01"/>
-  <testcase name="shouldDelegateTo_containsAxiom_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_containsAxiom_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_containsClassInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_containsAxiom_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_containsAxiom_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
   <testcase name="shouldDelegateTo_containsAnnotationPropertyInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsAnnotationPropertyInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
-  <testcase name="shouldDelegateTo_getReflexiveObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_containsAnnotationPropertyInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getReflexiveObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_filterAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getSubClassAxiomsForSuperClass_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAnnotationAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getEntitiesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.004"/>
+  <testcase name="shouldDelegateTo_getAnnotationAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getEntitiesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getOntologyID_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getABoxAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getABoxAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.014"/>
+  <testcase name="shouldDelegateTo_getSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getEntitiesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getEntitiesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxiomCount_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsAxiomIgnoreAnnotations_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getAxiomCount_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
+  <testcase name="shouldDelegateTo_containsAxiomIgnoreAnnotations_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getEquivalentObjectPropertiesAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getDataPropertyAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_containsReference_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getDataPropertyAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.008"/>
+  <testcase name="shouldDelegateTo_containsReference_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.007"/>
   <testcase name="shouldDelegateTo_containsReference_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getEquivalentClassesAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getLogicalAxiomCount_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.015"/>
-  <testcase name="shouldDelegateTo_getDatatypeDefinitions_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getGeneralClassAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getReferencingAxioms_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getReferencingAxioms_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getObjectSubPropertyAxiomsForSuperProperty_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsObjectPropertyInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.012"/>
+  <testcase name="shouldDelegateTo_getEquivalentClassesAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.053"/>
+  <testcase name="shouldDelegateTo_getLogicalAxiomCount_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.004"/>
+  <testcase name="shouldDelegateTo_getDatatypeDefinitions_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getGeneralClassAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getReferencingAxioms_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.005"/>
+  <testcase name="shouldDelegateTo_getReferencingAxioms_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getObjectSubPropertyAxiomsForSuperProperty_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_containsObjectPropertyInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getObjectPropertyDomainAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAnnotations_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getAnnotations_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getDirectImportsDocuments_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getDatatypesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getDatatypesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.004"/>
   <testcase name="shouldDelegateTo_getNegativeObjectPropertyAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getFunctionalObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsIndividualInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_containsDatatypeInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_containsIndividualInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_containsDatatypeInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_containsDatatypeInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getClassesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getLogicalAxiomCount_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getLogicalAxiomCount_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAnnotationPropertyRangeAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getLogicalAxiomCount_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getAnnotationPropertyRangeAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getObjectPropertiesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getObjectPropertiesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getObjectPropertiesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
   <testcase name="shouldDelegateTo_isBottomEntity_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsDataPropertyInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_containsDataPropertyInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.008"/>
   <testcase name="shouldDelegateTo_containsDataPropertyInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getImportsClosure_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getSymmetricObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getSymmetricObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.019"/>
   <testcase name="shouldDelegateTo_getDataSubPropertyAxiomsForSubProperty_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getIrreflexiveObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getNegativeDataPropertyAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getIrreflexiveObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getNegativeDataPropertyAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_containsDataPropertyInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_setOWLOntologyManager_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_isTopEntity_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_isTopEntity_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.029"/>
   <testcase name="shouldDelegateTo_getAxiomsIgnoreAnnotations_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxiomsIgnoreAnnotations_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getObjectPropertiesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getTransitiveObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getFunctionalDataPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsClassInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_containsClassInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getAxiomsIgnoreAnnotations_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.011"/>
+  <testcase name="shouldDelegateTo_getObjectPropertiesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
+  <testcase name="shouldDelegateTo_getTransitiveObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.005"/>
+  <testcase name="shouldDelegateTo_getFunctionalDataPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
+  <testcase name="shouldDelegateTo_containsClassInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.017"/>
+  <testcase name="shouldDelegateTo_containsClassInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.009"/>
   <testcase name="shouldDelegateTo_getInverseObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_saveOntology_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAsymmetricObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_isDeclared_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_containsReference_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_saveOntology_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getAsymmetricObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_isDeclared_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_containsReference_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.011"/>
   <testcase name="shouldDelegateTo_contains_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getClassAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getClassAssertionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getAnonymousIndividuals_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getPunnedIRIs_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getNestedClassExpressions_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getObjectSubPropertyAxiomsForSubProperty_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getOWLOntologyManager_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getObjectSubPropertyAxiomsForSubProperty_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.009"/>
+  <testcase name="shouldDelegateTo_getOWLOntologyManager_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
   <testcase name="shouldDelegateTo_getAxioms_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_4" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.013"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_4" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getAxioms_withReadLock_5" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getAxioms_withReadLock_6" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getAxioms_withReadLock_7" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getAxioms_withReadLock_8" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxioms_withReadLock_9" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0"/>
+  <testcase name="shouldDelegateTo_getAxioms_withReadLock_9" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_applyChange_withWriteLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_addAxiom_withWriteLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getSubAnnotationPropertyOfAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_addAxiom_withWriteLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.006"/>
+  <testcase name="shouldDelegateTo_getSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getSubAnnotationPropertyOfAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getInverseFunctionalObjectPropertyAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAnnotationPropertyDomainAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_isEmpty_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0"/>
+  <testcase name="shouldDelegateTo_getAnnotationPropertyDomainAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.014"/>
+  <testcase name="shouldDelegateTo_isEmpty_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getOWLOntologyManager_withWriteLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getDisjointUnionAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getAxiomsIgnoreAnnotations_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getReferencedAnonymousIndividuals_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getAxiomsIgnoreAnnotations_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getReferencedAnonymousIndividuals_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.015"/>
   <testcase name="shouldDelegateTo_getAnnotationPropertiesInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_applyChanges_withWriteLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getSubClassAxiomsForSubClass_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_addAxioms_withWriteLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_applyChanges_withWriteLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getSubClassAxiomsForSubClass_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.01"/>
+  <testcase name="shouldDelegateTo_addAxioms_withWriteLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_containsAnnotationPropertyInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getEquivalentDataPropertiesAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getClassesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getClassesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getDeclarationAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getSameIndividualAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.003"/>
+  <testcase name="shouldDelegateTo_getClassesInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getClassesInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getDeclarationAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.01"/>
+  <testcase name="shouldDelegateTo_getSameIndividualAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getTBoxAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
-  <testcase name="shouldDelegateTo_getDisjointDataPropertiesAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
+  <testcase name="shouldDelegateTo_getDisjointDataPropertiesAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
   <testcase name="shouldDelegateTo_getDataPropertyDomainAxioms_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getIndividualsInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.002"/>
+  <testcase name="shouldDelegateTo_getIndividualsInSignature_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.01"/>
   <testcase name="shouldDelegateTo_getIndividualsInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
-  <testcase name="shouldDelegateTo_getIndividualsInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0"/>
+  <testcase name="shouldDelegateTo_getIndividualsInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_containsObjectPropertyInSignature_withReadLock_2" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_containsObjectPropertyInSignature_withReadLock_3" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>
   <testcase name="shouldDelegateTo_getDirectImports_withReadLock" classname="uk.ac.manchester.cs.owl.owlapi.concurrent.ConcurrentOWLOntologyImpl_TestCase" time="0.001"/>

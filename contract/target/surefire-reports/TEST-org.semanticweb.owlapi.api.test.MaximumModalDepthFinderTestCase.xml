@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0.006" tests="72" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-a77ee9c4fded63ebc7af16e357b8cb32b638f8cd"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-a77ee9c4fded63ebc7af16e357b8cb32b638f8cd"/>
+    <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/suvarna/maven/apache-maven-3.6.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/home/suvarna/maven/apache-maven-3.6.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-142-generic"/>
+    <property name="library.jansi.path" value="/home/suvarna/maven/apache-maven-3.6.3/lib/jansi-native"/>
+    <property name="user.home" value="/home/suvarna"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="suvarna"/>
+    <property name="java.class.path" value="/home/suvarna/maven/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/home/suvarna/maven/apache-maven-3.6.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testAssertion[0]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0.002"/>
+  <testcase name="testAssertion[1]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[2]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[3]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[4]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[5]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0.002"/>
+  <testcase name="testAssertion[6]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0.001"/>
+  <testcase name="testAssertion[7]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[8]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[9]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[10]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[11]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[12]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[13]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[14]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[15]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[16]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[17]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[18]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[19]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[20]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[21]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[22]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[23]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[24]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[25]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[26]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[27]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[28]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[29]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[30]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[31]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[32]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[33]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[34]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[35]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[36]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[37]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[38]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[39]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[40]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[41]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[42]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[43]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[44]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[45]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0.001"/>
+  <testcase name="testAssertion[46]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[47]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[48]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[49]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[50]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[51]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[52]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[53]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[54]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[55]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[56]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[57]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[58]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[59]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[60]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[61]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[62]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[63]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[64]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[65]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[66]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[67]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[68]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[69]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[70]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+  <testcase name="testAssertion[71]" classname="org.semanticweb.owlapi.api.test.MaximumModalDepthFinderTestCase" time="0"/>
+</testsuite>

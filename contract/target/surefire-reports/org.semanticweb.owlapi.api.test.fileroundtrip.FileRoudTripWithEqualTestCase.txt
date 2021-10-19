@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.semanticweb.owlapi.api.test.fileroundtrip.FileRoudTripWithEqualTestCase
+-------------------------------------------------------------------------------
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.544 sec - in org.semanticweb.owlapi.api.test.fileroundtrip.FileRoudTripWithEqualTestCase

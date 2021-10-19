@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.022" tests="91" errors="0" skipped="0" failures="0">
+<testsuite name="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.007" tests="91" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-a77ee9c4fded63ebc7af16e357b8cb32b638f8cd"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-a77ee9c4fded63ebc7af16e357b8cb32b638f8cd"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,10 +61,10 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="shouldTest[0]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.008"/>
+  <testcase name="shouldTest[0]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[1]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[2]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[3]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[2]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[3]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[4]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[5]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[6]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
@@ -75,9 +75,9 @@
   <testcase name="shouldTest[11]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[12]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[13]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[14]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
-  <testcase name="shouldTest[15]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
-  <testcase name="shouldTest[16]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
+  <testcase name="shouldTest[14]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
+  <testcase name="shouldTest[15]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
+  <testcase name="shouldTest[16]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
   <testcase name="shouldTest[17]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[18]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[19]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
@@ -86,9 +86,9 @@
   <testcase name="shouldTest[22]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[23]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[24]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[25]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
+  <testcase name="shouldTest[25]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
   <testcase name="shouldTest[26]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[27]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[27]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[28]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[29]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[30]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
@@ -101,23 +101,23 @@
   <testcase name="shouldTest[37]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[38]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[39]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[40]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.003"/>
+  <testcase name="shouldTest[40]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[41]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[42]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[43]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[44]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[45]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[46]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[47]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[46]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[47]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[48]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[49]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[50]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[51]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[51]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[52]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[53]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[54]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
+  <testcase name="shouldTest[54]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
   <testcase name="shouldTest[55]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[56]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[56]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[57]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[58]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[59]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
@@ -129,12 +129,12 @@
   <testcase name="shouldTest[65]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[66]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[67]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[68]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[68]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[69]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[70]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[71]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[72]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
-  <testcase name="shouldTest[73]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[72]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
+  <testcase name="shouldTest[73]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[74]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[75]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[76]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
@@ -143,13 +143,13 @@
   <testcase name="shouldTest[79]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[80]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[81]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[82]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
+  <testcase name="shouldTest[82]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
   <testcase name="shouldTest[83]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[84]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[85]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[86]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
+  <testcase name="shouldTest[86]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
   <testcase name="shouldTest[87]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[88]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
   <testcase name="shouldTest[89]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
-  <testcase name="shouldTest[90]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0.001"/>
+  <testcase name="shouldTest[90]" classname="org.semanticweb.owlapitools.builders.test.BuildersTestCase" time="0"/>
 </testsuite>

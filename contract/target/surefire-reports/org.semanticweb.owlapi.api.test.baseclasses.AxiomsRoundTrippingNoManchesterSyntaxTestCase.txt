@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.semanticweb.owlapi.api.test.baseclasses.AxiomsRoundTrippingNoManchesterSyntaxTestCase
+-------------------------------------------------------------------------------
+Tests run: 121, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.387 sec - in org.semanticweb.owlapi.api.test.baseclasses.AxiomsRoundTrippingNoManchesterSyntaxTestCase
