@@ -1,0 +1,6 @@
+com/rackspacecloud/blueflood/outputs/handlers/KafkaService.class
+com/rackspacecloud/blueflood/utils/KafkaGraphiteReporter.class
+com/rackspacecloud/blueflood/outputs/handlers/helpers/KafkaProducerWork.class
+com/rackspacecloud/blueflood/utils/KafkaGraphiteReporterMBean.class
+com/rackspacecloud/blueflood/service/KafkaConfig.class
+com/rackspacecloud/blueflood/outputs/serializers/KafkaRollupSerializer.class

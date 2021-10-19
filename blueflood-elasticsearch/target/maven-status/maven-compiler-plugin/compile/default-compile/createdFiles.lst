@@ -1,0 +1,7 @@
+com/rackspacecloud/blueflood/service/ElasticClientManager.class
+com/rackspacecloud/blueflood/io/ElasticIO$Discovery.class
+com/rackspacecloud/blueflood/io/ElasticIO$ESFieldLabel.class
+com/rackspacecloud/blueflood/io/ElasticIO.class
+com/rackspacecloud/blueflood/service/RemoteElasticSearchServer.class
+com/rackspacecloud/blueflood/service/ElasticIOConfig.class
+com/rackspacecloud/blueflood/io/EventElasticSearchIO.class
