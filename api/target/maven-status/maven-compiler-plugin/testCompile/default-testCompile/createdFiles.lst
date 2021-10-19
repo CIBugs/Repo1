@@ -1,0 +1,8 @@
+org/semanticweb/owlapi/io/XZStreamDocumentSourceTestCase.class
+org/semanticweb/owlapi/util/OWLOntologyIRIShortFormProviderTestCase.class
+org/semanticweb/owlapi/util/OWLOntologyFormatFactoryImplTestCase.class
+org/semanticweb/owlapi/model/VocabularyEnumTestCase.class
+org/semanticweb/owlapi/io/StreamDocumentSourceBaseTestCase$1.class
+org/semanticweb/owlapi/io/StreamDocumentSourceBaseTestCase.class
+org/semanticweb/owlapi/model/NodeIDTestCase.class
+org/semanticweb/owlapi/change/OWLOntologyChangeRecordTest.class

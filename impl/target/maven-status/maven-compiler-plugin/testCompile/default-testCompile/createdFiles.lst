@@ -1,0 +1,10 @@
+uk/ac/manchester/cs/owl/owlapi/concurrent/NoOpReadWriteLock_TestCase.class
+uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentOWLOntologyImpl_TestCase.class
+org/semanticweb/owlapi/datafactory/OWLDataFactoryTestCase.class
+uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentOWLOntologyBuilder_TestCase.class
+uk/ac/manchester/cs/owl/owlapi/concurrent/OWLOntologyManager_Concurrent_TestCase$2.class
+uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentOWLOntologyImpl_TestCase$TestConsumer.class
+uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentPriorityCollection_TestCase.class
+uk/ac/manchester/cs/owl/owlapi/concurrent/OWLOntologyManager_Concurrent_TestCase.class
+uk/ac/manchester/cs/owl/owlapi/concurrent/NoOpLock_TestCase.class
+uk/ac/manchester/cs/owl/owlapi/concurrent/OWLOntologyManager_Concurrent_TestCase$1.class

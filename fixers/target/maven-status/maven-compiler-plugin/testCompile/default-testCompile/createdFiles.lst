@@ -1,0 +1,4 @@
+org/semanticweb/owlapitools/builders/test/BuildersTestUtil.class
+org/semanticweb/owlapitools/builders/test/BuildersEqualTestCase.class
+org/semanticweb/owlapitools/builders/test/BuildersTestCase.class
+org/semanticweb/owlapitools/builders/test/BuildersOntologyTestCase.class

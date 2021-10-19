@@ -1,0 +1,7 @@
+/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6/impl/src/test/java/org/semanticweb/owlapi/datafactory/OWLDataFactoryTestCase.java
+/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6/impl/src/test/java/uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentOWLOntologyImpl_TestCase.java
+/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6/impl/src/test/java/uk/ac/manchester/cs/owl/owlapi/concurrent/NoOpLock_TestCase.java
+/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6/impl/src/test/java/uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentOWLOntologyBuilder_TestCase.java
+/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6/impl/src/test/java/uk/ac/manchester/cs/owl/owlapi/concurrent/OWLOntologyManager_Concurrent_TestCase.java
+/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6/impl/src/test/java/uk/ac/manchester/cs/owl/owlapi/concurrent/NoOpReadWriteLock_TestCase.java
+/home/suvarna/Vinay/Sept-2021/owlapi-44b9a02fd653e38e47d189918c8c04d8f5afcef6/impl/src/test/java/uk/ac/manchester/cs/owl/owlapi/concurrent/ConcurrentPriorityCollection_TestCase.java
