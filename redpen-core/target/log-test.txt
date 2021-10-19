@@ -1,0 +1,4 @@
+21:56:06.171 [main] ERROR cc.redpen.util.DictionaryLoader - Failed to load input default-resources/invalid-word/invalid-word-ja.dat
+21:56:06.365 [main] ERROR cc.redpen.ConfigurationLoader - There is no validator-list block
+21:56:06.368 [main] ERROR cc.redpen.ConfigurationLoader - There is no validator-list block
+21:56:16.676 [main] ERROR cc.redpen.parser.AsciiDocParser - Asciidoctor parser error: (TypeError) exception class/object expected
