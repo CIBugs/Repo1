@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.081" tests="27" errors="0" skipped="0" failures="0">
+<testsuite name="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.074" tests="27" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-b3e2e8fbf9d3d7445ba1a6b3312d0a60d74bac93"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-4a4680d490231ca0ae6928bc7ac0d4f34220be24"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-b3e2e8fbf9d3d7445ba1a6b3312d0a60d74bac93"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-4a4680d490231ca0ae6928bc7ac0d4f34220be24"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,31 +61,31 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testPosSomeValuesFrom" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.002"/>
-  <testcase name="testObjectUnionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="testPosObjectIntersectionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.002"/>
-  <testcase name="testNegAllValuesFrom" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.012"/>
-  <testcase name="testObjectHasValue" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.009"/>
-  <testcase name="testDoubleNegation" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.002"/>
+  <testcase name="testPosSomeValuesFrom" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.014"/>
+  <testcase name="testObjectUnionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.007"/>
+  <testcase name="testPosObjectIntersectionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
+  <testcase name="testNegAllValuesFrom" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
+  <testcase name="testObjectHasValue" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
+  <testcase name="testDoubleNegation" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
   <testcase name="testObjectIntersectionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
   <testcase name="testNamedClass" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="testObjectAll" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="testObjectMax" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.008"/>
+  <testcase name="testObjectAll" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
+  <testcase name="testObjectMax" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
   <testcase name="testObjectMin" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="testNegSomeValuesFrom" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.008"/>
-  <testcase name="testNegObjectMaxCardinality" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.005"/>
-  <testcase name="testNegObjectMinCardinality" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.007"/>
-  <testcase name="testPosOWLClass" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.005"/>
+  <testcase name="testNegSomeValuesFrom" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
+  <testcase name="testNegObjectMaxCardinality" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
+  <testcase name="testNegObjectMinCardinality" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.02"/>
+  <testcase name="testPosOWLClass" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.006"/>
   <testcase name="testObjectSome" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="testNegObjectIntersectionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.004"/>
-  <testcase name="testPosObjectUnionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.002"/>
+  <testcase name="testNegObjectIntersectionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
+  <testcase name="testPosObjectUnionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
   <testcase name="testNegObjectUnionOf" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="testPosObjectMaxCardinality" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="testNestedA" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="testNestedB" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
+  <testcase name="testPosObjectMaxCardinality" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
+  <testcase name="testNestedA" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.004"/>
+  <testcase name="testNestedB" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.005"/>
   <testcase name="testTripleNegation" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="testNegOWLClass" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.003"/>
-  <testcase name="testPosAllValuesFrom" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
-  <testcase name="testPosObjectMinCardinality" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
-  <testcase name="checkVerify" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
+  <testcase name="testNegOWLClass" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.001"/>
+  <testcase name="testPosAllValuesFrom" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.006"/>
+  <testcase name="testPosObjectMinCardinality" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0"/>
+  <testcase name="checkVerify" classname="org.semanticweb.owlapi.api.test.axioms.NNFTestCase" time="0.002"/>
 </testsuite>

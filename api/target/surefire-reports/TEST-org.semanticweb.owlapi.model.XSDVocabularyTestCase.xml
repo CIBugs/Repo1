@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.013" tests="92" errors="0" skipped="0" failures="0">
+<testsuite name="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.039" tests="92" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-b3e2e8fbf9d3d7445ba1a6b3312d0a60d74bac93"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-4a4680d490231ca0ae6928bc7ac0d4f34220be24"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-b3e2e8fbf9d3d7445ba1a6b3312d0a60d74bac93"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-4a4680d490231ca0ae6928bc7ac0d4f34220be24"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,15 +61,15 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[0]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[0]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[0]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[1]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[1]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[2]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[2]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[2]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[3]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[3]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[4]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[4]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[4]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[5]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[5]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
@@ -78,26 +78,26 @@
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[7]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[7]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[8]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[8]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[8]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[9]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[9]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[10]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[10]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[11]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[11]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[12]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[12]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[12]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.002"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[12]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[13]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[13]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[14]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[14]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[14]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.011"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[15]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[15]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[15]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[16]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[16]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[17]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[17]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[18]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
+  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[18]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[18]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[19]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[19]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
@@ -116,18 +116,18 @@
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[26]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[26]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[27]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[27]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[27]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.005"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[28]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[28]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[29]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[29]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[30]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[30]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[30]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.002"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[31]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[31]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[32]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[32]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[33]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.009"/>
+  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[33]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.004"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[33]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[34]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[34]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
@@ -137,10 +137,10 @@
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[36]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[37]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[37]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[38]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
+  <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[38]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.008"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[38]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[39]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
-  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[39]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
+  <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[39]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0.001"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[40]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getIRI_shouldReturnAnIRIThatStartsWithXSDPrefix[40]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>
   <testcase name="getPrefixedName_shouldStartWithXSDPrefixName[41]" classname="org.semanticweb.owlapi.model.XSDVocabularyTestCase" time="0"/>

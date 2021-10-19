@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.semanticweb.owlapi.api.test.objectproperties.InverseFunctionalObjectPropertyTestCase
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 sec - in org.semanticweb.owlapi.api.test.objectproperties.InverseFunctionalObjectPropertyTestCase
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in org.semanticweb.owlapi.api.test.objectproperties.InverseFunctionalObjectPropertyTestCase

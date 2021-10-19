@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.075" tests="118" errors="0" skipped="0" failures="0">
+<testsuite name="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.036" tests="118" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.292-b10"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-b3e2e8fbf9d3d7445ba1a6b3312d0a60d74bac93"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/suvarna/Vinay/Sept-2021/owlapi-4a4680d490231ca0ae6928bc7ac0d4f34220be24"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-b3e2e8fbf9d3d7445ba1a6b3312d0a60d74bac93"/>
+    <property name="user.dir" value="/home/suvarna/Vinay/Sept-2021/owlapi-4a4680d490231ca0ae6928bc7ac0d4f34220be24"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -61,75 +61,75 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="shouldCreateViolationForOWLInverseFunctionalObjectPropertyAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.009"/>
+  <testcase name="shouldCreateViolationForOWLInverseFunctionalObjectPropertyAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDisjointClassesAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDataExactCardinalityInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDataExactCardinalityInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForSWRLRuleInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForIRIInOWL2Profile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForIRIInOWL2Profile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDatatypeRestrictionInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLInverseFunctionalObjectPropertyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLSameIndividualAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.01"/>
-  <testcase name="shouldCreateViolationForOWLObjectAllValuesFromInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLInverseFunctionalObjectPropertyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLSameIndividualAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLObjectAllValuesFromInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLDataPropertyDomainAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2Profile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLEquivalentClassesAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLAnnotationPropertyInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLAnnotationPropertyInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLOntologyInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDatatypeRestrictionInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDataAllValuesFromInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDataAllValuesFromInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLNegativeDataPropertyAssertionAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLObjectMaxCardinalityInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLObjectPropertyInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLDisjointUnionAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLObjectPropertyInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLDisjointUnionAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLObjectPropertyRangeAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDataMinCardinalityInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLDataComplementOfInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLObjectUnionOfInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLObjectUnionOfInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.004"/>
   <testcase name="shouldCreateViolationForOWLDataUnionOfInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDisjointUnionAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDisjointUnionAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLFunctionalDataPropertyAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLSubPropertyChainOfAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLSubPropertyChainOfAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLEquivalentObjectPropertiesAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDataUnionOfInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDataUnionOfInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDatatypeInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLAsymmetricObjectPropertyAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLHasKeyAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDifferentIndividualsAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLObjectInverseOfInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDatatypeInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLHasKeyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDatatypeInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLHasKeyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLOntologyInOWL2Profile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLObjectExactCardinalityInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLObjectExactCardinalityInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.002"/>
   <testcase name="shouldCreateViolationForOWLEquivalentDataPropertiesAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLFunctionalObjectPropertyAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLSubClassOfAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDataOneOfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLFunctionalObjectPropertyAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLSubClassOfAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDataOneOfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLClassAssertionAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDisjointDataPropertiesAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLIrreflexiveObjectPropertyAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLDisjointDataPropertiesAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLIrreflexiveObjectPropertyAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLTransitiveObjectPropertyAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDatatypeRestrictionInOWL2Profile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLObjectPropertyDomainAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLObjectMinCardinalityInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDatatypeRestrictionInOWL2Profile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLObjectPropertyDomainAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLObjectMinCardinalityInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLNegativeObjectPropertyAssertionAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLEquivalentDataPropertiesAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLDataOneOfInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLInverseFunctionalObjectPropertyAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLDisjointClassesAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDataPropertyDomainAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.002"/>
-  <testcase name="shouldCreateViolationForOWLSubDataPropertyOfAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLDataPropertyDomainAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLSubDataPropertyOfAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.004"/>
   <testcase name="shouldCreateViolationForOWLEquivalentClassesAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDataIntersectionOfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDataIntersectionOfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDisjointObjectPropertiesAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLObjectComplementOfInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLObjectMaxCardinalityInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLSymmetricObjectPropertyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForSWRLRuleInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForSWRLRuleInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLObjectOneOfInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLObjectPropertyRangeAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLSameIndividualAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLSameIndividualAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDisjointClassesAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLAnonymousIndividualInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDataComplementOfInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
@@ -139,14 +139,14 @@
   <testcase name="shouldCreateViolationForOWLDatatypeRestrictionInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLAnonymousIndividualInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDataComplementOfInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDataUnionOfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLDataUnionOfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLDataPropertyInOWL2DLProfile1" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDataPropertyInOWL2DLProfile2" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDataPropertyInOWL2DLProfile3" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDataPropertyInOWL2DLProfile3" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDataPropertyInOWL2DLProfile4" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDatatypeInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLDatatypeInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLDisjointUnionAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLNamedIndividualInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLNamedIndividualInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLHasKeyAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLObjectExactCardinalityInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLObjectIntersectionOfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
@@ -156,27 +156,27 @@
   <testcase name="shouldCreateViolationForOWLFunctionalDataPropertyAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLDisjointDataPropertiesAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLSubPropertyChainOfAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2DLProfile_cycles" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDatatypeInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDatatypeDefinitionAxiomInOWL2DLProfile_cycles" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLDatatypeInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLObjectPropertyDomainAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLInverseObjectPropertiesAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLAsymmetricObjectPropertyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLObjectMinCardinalityInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLAsymmetricObjectPropertyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLObjectMinCardinalityInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLHasKeyAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLLiteralInOWL2Profile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLDataMaxCardinalityInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLFunctionalObjectPropertyAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLDataOneOfInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLObjectHasSelfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForOWLDisjointDataPropertiesAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLFunctionalObjectPropertyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLFunctionalObjectPropertyAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLDataOneOfInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLObjectHasSelfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLDisjointDataPropertiesAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLFunctionalObjectPropertyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLClassInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
   <testcase name="shouldCreateViolationForOWLIrreflexiveObjectPropertyAxiomInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLDataOneOfInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
-  <testcase name="shouldCreateViolationForOWLDisjointObjectPropertiesAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.009"/>
-  <testcase name="shouldCreateViolationForOWLClassAssertionAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.003"/>
-  <testcase name="shouldCreateViolationForOWLEquivalentClassesAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.002"/>
-  <testcase name="shouldCreateViolationForOWLIrreflexiveObjectPropertyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
-  <testcase name="shouldCreateViolationForSWRLRuleInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLDisjointObjectPropertiesAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLClassAssertionAxiomInOWL2RLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
+  <testcase name="shouldCreateViolationForOWLEquivalentClassesAxiomInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForOWLIrreflexiveObjectPropertyAxiomInOWL2ELProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
+  <testcase name="shouldCreateViolationForSWRLRuleInOWL2QLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0.001"/>
   <testcase name="shouldCreateViolationForOWLObjectOneOfInOWL2DLProfile" classname="org.semanticweb.owlapi.profiles.test.OWLProfileTestCase" time="0"/>
 </testsuite>
