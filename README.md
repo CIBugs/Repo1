@@ -46,7 +46,7 @@ This is a collection of regression bugs from the real time build pipe line (Trav
 
 
 ## Setup
-Each bug is setup as a separate branch. Each branch as 3 commits, (i) Initial commit with read me file, ignore this, (ii) buggy commit and (iii) bug fixed commit. To setup a bug, clone the repo and checkout the required branch and only take the last 2 commits of the interested branch.
+Each bug is setup as a separate branch. Each branch as 3 commits, (i) Initial commit with read me file, ignore this, (ii) buggy commit and (iii) bug fixed commit. Each bug has link to the original github in comments for reference To setup a bug, clone the repo and checkout the required branch and only take the last 2 commits of the interested branch.
 
 ### Example to setup the Bug1
 
