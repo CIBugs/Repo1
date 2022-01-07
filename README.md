@@ -24,7 +24,7 @@ To setup a bug, below are the steps
   - e.g. : git checkout Bug1
 - cd Repo1
   
-#### 3. Get all commits for the bug and pick last 2 commits
+#### 3. Get all commits for the bug and pick 2 commits (Fixed and Buggy)
 - git log --pretty=format:"%h - %s"
   - 804fcb6a3 - Fixed from https://github.com/petergeneric/stdlib/commit/e423651b7c715465271a4da4482d2cf2a9b3c955
   - 4e628d461 - Buggy from https://github.com/petergeneric/stdlib/commit/b63a6a839e276ac66a45b4e114894fb20cd7fa00
@@ -80,7 +80,3 @@ To setup a bug, below are the steps
 |vavr-io|vavr|3|
 |xetorthio|jedis|1|
 |yamcs|yamcs|1|
-
-
-
-
