@@ -17,7 +17,7 @@ To setup a bug, below are the steps
 ### Example to setup a bug
 
 #### 1. Clone the Repo
-git clone https://github.com/CIBugs/Repo1.git
+- git clone https://github.com/CIBugs/Repo1.git
 
 #### 2. Checkout a specific Bug
 - git checkout <'bug id'>
@@ -26,9 +26,9 @@ git clone https://github.com/CIBugs/Repo1.git
   
 #### 3. Get all commits for the bug and pick last 2 commits
 - git log --pretty=format:"%h - %s"
-  - 804fcb6a3   - Fixed from https://github.com/petergeneric/stdlib/commit/e423651b7c715465271a4da4482d2cf2a9b3c955
-  - 4e628d461   - Buggy from https://github.com/petergeneric/stdlib/commit/b63a6a839e276ac66a45b4e114894fb20cd7fa00
-  - 4daa8d962   - Initial commit
+  - 804fcb6a3 - Fixed from https://github.com/petergeneric/stdlib/commit/e423651b7c715465271a4da4482d2cf2a9b3c955
+  - 4e628d461 - Buggy from https://github.com/petergeneric/stdlib/commit/b63a6a839e276ac66a45b4e114894fb20cd7fa00
+  - 4daa8d962 - Initial commit
 
 #### 4. Point to Fixed Commit
 - git reset --hard <'commit id'>
