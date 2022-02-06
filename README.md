@@ -1,9 +1,12 @@
 # CI-Bugs 
 
-This is a collection of 102 regression bugs from the real time build pipe line (Travis) from 40 diverse projects.
+This is a collection of 102 regression bugs from the real time build pipe line (Travis) from 40 diverse projects. At first sight this might look as only a read me page but it has the complete dataset within the branches of this repo. Please read the below instructions carefully to setup the bugs.
 
 ## Setup
-Each bug is setup as a separate branch and each branch as 3 commits.
+
+The bugs are setup in the branches of this repo. Each bug is setup in a seperate branch.
+
+Each branch as 3 commits.
 - Initial commit (ignore this commit)
 - Buggy commit 
 - Fixed commit
