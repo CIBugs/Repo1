@@ -10,7 +10,7 @@ There are 2 ways to setup the bugs of this benchmark
 2. Refer to the repository created here (branches created for each bug, bugs copied from various projects)
 
 ### Method 1
-The table below contains details (scroll to right to see complete data)
+The table below contains details (scroll the table to right to see all columns)
 1. Bug Id
 2. Count of files modified
 3. Count of lines modified
