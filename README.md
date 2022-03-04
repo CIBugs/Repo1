@@ -4,45 +4,21 @@ This is a collection of 102 regression bugs from the real time build pipe line (
 
 ## Setup
 
-The bugs are setup in the branches of this repo. Each bug is setup in a seperate branch.
+There are 2 ways to setup the bugs of this benchmark
 
-Each branch as 3 commits.
-- Initial commit (ignore this commit)
-- Buggy commit 
-- Fixed commit
+1. Refer the original links of the bugs from the respective githubs shared in the table belo
+2. Refer to the repository created here (branches created for each bug, bugs copied from various projects)
 
-To setup a bug, below are the steps
-- Clone the repo 
-- Chckout the required buggy branch 
-- Take the last 2 commits (Buggy and Fixed Commit)
-  - *Every commit has link to the original github in comments for reference. 
+### Method 1
+The table below contains details (scroll to right to see complete data)
+1. Bug Id
+2. Count of files modified
+3. Count of lines modified
+4. Buggy Commit
+5. Fixed Commit
+6. Diff Link
 
-### Example to setup a bug
-
-#### 1. Clone the Repo
-- git clone https://github.com/CIBugs/Repo1.git
-
-#### 2. Checkout a specific Bug
-- git checkout <'bug id'>
-  - e.g. : git checkout Bug1
-- cd Repo1
-  
-#### 3. Get all commits for the bug and pick 2 commits (Fixed and Buggy)
-- git log --pretty=format:"%h - %s"
-  - 804fcb6a3 - Fixed from https://github.com/petergeneric/stdlib/commit/e423651b7c715465271a4da4482d2cf2a9b3c955
-  - 4e628d461 - Buggy from https://github.com/petergeneric/stdlib/commit/b63a6a839e276ac66a45b4e114894fb20cd7fa00
-  - 4daa8d962 - Initial commit
-
-#### 4. Point to Fixed Commit
-- git reset --hard <'commit id'>
-  - e.g. : git reset --hard 804fcb6a3
-  
-#### 5. Point to Buggy Commit
-- git reset --hard <'commit id'>  
-  - e.g. : git reset --hard 4e628d461
-
-## Details of Bugs, Commits and Lines Modified 
-|Bug Id|File Changes|Line Changes|Buggy Commit|Fixed Commit|Diff Compare|
+|Bug Id|Files modified|Lines modified|Buggy Commit|Fixed Commit|Diff Compare|
 | ------------- | ------------- |-------------  | ------------- | ------------- |-------------  |
 |Bug1|1|1|https://github.com/petergeneric/stdlib/commit/b63a6a839e276ac66a45b4e114894fb20cd7fa00 |https://github.com/petergeneric/stdlib/commit/e423651b7c715465271a4da4482d2cf2a9b3c955 |https://github.com/petergeneric/stdlib/compare/b63a6a839e276ac66a45b4e114894fb20cd7fa00..e423651b7c715465271a4da4482d2cf2a9b3c955 |
 |Bug2|1|2|https://github.com/petergeneric/stdlib/commit/babdc2ac4bc058b470b1995e3965de8d44e9959d |https://github.com/petergeneric/stdlib/commit/4c51a3b3fcb881ab4177655389beac1796aec844 |https://github.com/petergeneric/stdlib/compare/babdc2ac4bc058b470b1995e3965de8d44e9959d..4c51a3b3fcb881ab4177655389beac1796aec844 |
@@ -146,6 +122,45 @@ To setup a bug, below are the steps
 |Bug105|1|1|https://github.com/xetorthio/jedis/commit/8af9fe1 |https://github.com/xetorthio/jedis/commit/8c1bf69 |https://github.com/xetorthio/jedis/compare/8af9fe1..8c1bf69 |
 |Bug106|1|3|https://github.com/yegor256/takes/commit/5388dd0 |https://github.com/yegor256/takes/commit/bad5f15 |https://github.com/yegor256/takes/compare/5388dd0..bad5f15 |
 |Bug107|1|1|https://github.com/chewiebug/GCViewer/commit/cbe1f1d68b53 |https://github.com/chewiebug/GCViewer/commit/f395e2f8bd6dac |https://github.com/chewiebug/GCViewer/compare/cbe1f1d68b53..f395e2f8bd6dac |
+
+
+### Method 2
+The bugs are setup in the branches of this repo. Each bug is setup in a seperate branch.
+
+Each branch as 3 commits.
+- Initial commit (ignore this commit)
+- Buggy commit 
+- Fixed commit
+
+To setup a bug, below are the steps
+- Clone the repo 
+- Chckout the required buggy branch 
+- Take the last 2 commits (Buggy and Fixed Commit)
+  - *Every commit has link to the original github in comments for reference. 
+
+#### Example to setup a bug
+
+#### 1. Clone the Repo
+- git clone https://github.com/CIBugs/Repo1.git
+
+#### 2. Checkout a specific Bug
+- git checkout <'bug id'>
+  - e.g. : git checkout Bug1
+- cd Repo1
+  
+#### 3. Get all commits for the bug and pick 2 commits (Fixed and Buggy)
+- git log --pretty=format:"%h - %s"
+  - 804fcb6a3 - Fixed from https://github.com/petergeneric/stdlib/commit/e423651b7c715465271a4da4482d2cf2a9b3c955
+  - 4e628d461 - Buggy from https://github.com/petergeneric/stdlib/commit/b63a6a839e276ac66a45b4e114894fb20cd7fa00
+  - 4daa8d962 - Initial commit
+
+#### 4. Point to Fixed Commit
+- git reset --hard <'commit id'>
+  - e.g. : git reset --hard 804fcb6a3
+  
+#### 5. Point to Buggy Commit
+- git reset --hard <'commit id'>  
+  - e.g. : git reset --hard 4e628d461
 
 ## Bugs and Project Details
 | Organization  | Project | Bugs |
